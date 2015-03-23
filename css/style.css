@@ -1,0 +1,18 @@
+body {
+	background-color: #f6f4f4;
+}
+
+.card {
+	border-style: solid;
+	border-width: 2px;
+	background-color: white;
+	height: 192.5px !important;
+	width: 192.5px !important;
+}
+
+.two {
+	margin-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 5px;
+
+}
