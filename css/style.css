@@ -1,18 +1,47 @@
 body {
 	background-color: #f6f4f4;
+	font-family: Avenir;
+}
+
+strong{
+	font-weight: 600 !important;
+	font-size: 1.3em;
+	letter-spacing: 1.2px;
+}
+
+.author{
+	text-transform: uppercase;
+	font-size: 0.9em;
+	letter-spacing: 1.5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .card {
-	border-style: solid;
-	border-width: 2px;
+	/*border-width: 2px;*/
 	background-color: white;
 	height: 192.5px !important;
 	width: 192.5px !important;
+	border-left: solid;
+	border-left-width: 6px;
+	padding: 15px !important;
+	margin-right: 6px;
 }
 
 .two {
 	margin-bottom: 20px;
 	padding-right: 5px;
 	padding-left: 5px;
+}
 
+@media(max-width:320px) {
+	.card{
+		width: 80% !important;
+		position: relative;
+		/*display: table;*/
+		left: 10%;
+		/*position: static;
+		margin-left: auto;
+		margin-right: auto;*/
+	}
 }
