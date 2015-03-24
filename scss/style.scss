@@ -67,12 +67,8 @@ p {
 		display: none;
 	}
 
-	.row:first-child {
+	div.card:first-of-type{
+		margin-top: 10%;
 
-    .card:nth-child(4) {
-    	margin-top: 10%;
-    }
-}
-
-
+	}
 }

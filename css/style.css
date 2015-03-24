@@ -257,7 +257,7 @@ p {
   .hide {
     display: none; }
 
-  .row:first-child .card:nth-child(4) {
+  div.card:first-of-type {
     margin-top: 10%; } }
 
 /*# sourceMappingURL=style.css.map */
