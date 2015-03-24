@@ -12,7 +12,7 @@ strong{
 .author{
 	text-transform: uppercase;
 	font-size: 0.9em;
-	letter-spacing: 1.5px;
+	letter-spacing: 1.8px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -22,10 +22,10 @@ strong{
 	background-color: white;
 	height: 192.5px !important;
 	width: 192.5px !important;
-	border-left: solid;
-	border-left-width: 6px;
+	border-bottom: solid;
+	border-bottom-width: 3px;
 	padding: 15px !important;
-	margin-right: 6px;
+	/*margin-right: 6px;*/
 }
 
 .two {
@@ -38,7 +38,7 @@ strong{
 	.card{
 		width: 80% !important;
 		position: relative;
-		/*display: table;*/
+		height: 256px !important;
 		left: 10%;
 		/*position: static;
 		margin-left: auto;
