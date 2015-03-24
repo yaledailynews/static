@@ -254,7 +254,8 @@ p {
     width: 80% !important;
     position: relative;
     /*height: 250px !important;*/
-    left: 10%; }
+    left: 10%;
+    margin-top: 5px; }
 
   .hide {
     display: none; } }
