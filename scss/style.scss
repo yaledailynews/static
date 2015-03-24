@@ -38,11 +38,10 @@ p {
 .card {
 	/*border-width: 2px;*/
 	background-color: white;
-	/*height: 192.5px !important;*/
-	width: 192.5px !important;
+
 	border-bottom: solid;
 	border-bottom-width: 3px;
-	padding: 15px !important;
+	padding: 15px;
 	/*margin-right: 6px;*/
 }
 
@@ -58,9 +57,8 @@ p {
 	}
 
 	.card{
-		width: 80% !important;
+		width: 80%;
 		position: relative;
-		/*height: 250px !important;*/
 		left: 10%;
 		margin-top: 5px;
 	}
