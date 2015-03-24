@@ -255,6 +255,9 @@ p {
     margin-top: 5px; }
 
   .hide {
-    display: none; } }
+    display: none; }
+
+  .row:first-child .card:nth-child(4) {
+    margin-top: 10%; } }
 
 /*# sourceMappingURL=style.css.map */
