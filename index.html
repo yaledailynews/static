@@ -2,98 +2,84 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Skeleton Test</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Static Homepage</title>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--[if lt IE 9]>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+ <![endif]-->
+
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css"> 
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./js/packery.pkgd.min.js"></script>
+
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="header">
-      <img src="./images/logo.png">
+  <div class="header">
+    <img src="./images/logo.png">
+    <nav class="navigation">
+      <h1>Navigation</h1>
+    </nav>
+  </div>
+  <section id="stories" class="js-packery container" data-packery-options='{ "itemSelector": ".card", "gutter": 10 }'>
+    <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you...</p>
     </div>
-    <div class="container">
-      <nav class="navigation">
-        <h1>Navigation</h1>
-        <p class="author">christopher wan</p>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you...</p>
-      </nav>
-      <section class="stories">
-        <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you...</p>
-        </div>
-        <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you...</p>
-        </div>
-        <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you...</p>
-        </div>
-        <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
-        </div>
-        <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
-        </div>
-          <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
-        </div>
-        <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit.</p>
-        </div>
-        <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
-        </div>
-          <div class="card">
-          <h1>Basic Page</h1>
-          <p class="author">christopher wan</p>
-          <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
-        </div>
-      </section>
-      <div class="most-read">
-        <h1>Most Read</h1>
-        <p class="author">christopher wan</p>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
-      </div>
+    <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you...</p>
     </div>
+    <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you...</p>
+    </div>
+    <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
+    </div>
+    <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
+    </div>
+      <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
+    </div>
+    <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit.</p>
+    </div>
+    <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
+    </div>
+      <div class="card">
+      <h1>Basic Page</h1>
+      <p class="author">christopher wan</p>
+      <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the.</p>
+    </div>
+  </section>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
