@@ -18,7 +18,10 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   background: transparent;
-  position: relative; }
+  position: relative;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -73,7 +76,6 @@ a:focus {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 20px;
   box-sizing: border-box; }
 
 .column,
@@ -107,7 +109,7 @@ a:focus {
   .two.columns {
     width: 14.3333333333%; }
 
-  .three.columns {
+  .three.columns, .card {
     width: 22%; }
 
   .four.columns {
@@ -223,26 +225,25 @@ p {
 
 .header {
   background-color: white;
-  box-shadow: 0 0 5px 0; }
+  box-shadow: 0 0 5px 0;
+  padding-top: 5px;
+  padding-bottom: 5px; }
   .header img {
-    width: 200px;
+    width: 175px;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto; }
 
+.container {
+  margin-top: 3%;
+  display: table; }
+
 .card {
-  /*border-width: 2px;*/
   background-color: white;
   border-bottom: solid;
   border-bottom-width: 3px;
-  padding: 15px;
-  /*margin-right: 6px;*/ }
-
-.two {
-  margin-bottom: 20px;
-  padding-right: 5px;
-  padding-left: 5px; }
+  padding: 15px; }
 
 @media (max-width: 400px) {
   p {
@@ -257,7 +258,7 @@ p {
   .hide {
     display: none; }
 
-  .row:first-child .card:nth-child(4) {
-    margin-top: 10%; } }
+  div.card:first-of-type {
+    margin-top: 5%; } }
 
 /*# sourceMappingURL=style.css.map */
