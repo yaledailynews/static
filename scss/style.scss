@@ -49,6 +49,14 @@ p {
 	@extend .three.columns;
 }
 
+.article{
+	background-color: white;
+	border-bottom: solid;
+	border-bottom-width: 3px;
+	padding: 15px;
+	@extend .four.columns;
+}
+
 // .two {
 // 	margin-bottom: 20px;
 // 	padding-right: 5px;
