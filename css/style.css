@@ -112,13 +112,13 @@ a:focus {
   .three.columns, .card {
     width: 22%; }
 
-  .four.columns, .article {
+  .four.columns {
     width: 30.6666666667%; }
 
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns {
+  .six.columns, .article {
     width: 48%; }
 
   .seven.columns {
