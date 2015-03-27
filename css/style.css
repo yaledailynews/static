@@ -239,6 +239,10 @@ p {
   margin-top: 3%;
   display: table; }
 
+.article-container {
+  display: table;
+  width: 80%; }
+
 .card {
   background-color: white;
   border-bottom: solid;
