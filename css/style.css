@@ -112,7 +112,7 @@ a:focus {
   .three.columns, .card {
     width: 22%; }
 
-  .four.columns {
+  .four.columns, .article {
     width: 30.6666666667%; }
 
   .five.columns {
@@ -240,6 +240,12 @@ p {
   display: table; }
 
 .card {
+  background-color: white;
+  border-bottom: solid;
+  border-bottom-width: 3px;
+  padding: 15px; }
+
+.article {
   background-color: white;
   border-bottom: solid;
   border-bottom-width: 3px;
