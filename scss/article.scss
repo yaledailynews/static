@@ -37,30 +37,11 @@ p {
 }
 
 .container{
-	margin-top: 3%;
-	display:table;
+	// margin-top: 3%;
+	// display:table;
 }
 
-.article-container{
-	display: table;
-	width: 80%;
-}
 
-.card {
-	background-color: white;
-	border-bottom: solid;
-	border-bottom-width: 3px;
-	padding: 15px;
-	@extend .three.columns;
-}
-
-.article{
-	background-color: white;
-	border-bottom: solid;
-	border-bottom-width: 3px;
-	padding: 15px;
-	@extend .six.columns;
-}
 
 // .two {
 // 	margin-bottom: 20px;
@@ -74,23 +55,5 @@ p {
 
 
 @media(max-width:400px) {
-	p{
-		font-size: 1em;
-	}
 
-	.card{
-		width: 80%;
-		position: relative;
-		left: 10%;
-		margin-top: 5px;
-	}
-
-	.hide {
-		display: none;
-	}
-
-	div.card:first-of-type{
-		margin-top: 5%;
-
-	}
 }
