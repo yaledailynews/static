@@ -250,6 +250,9 @@ h1 {
   font-style: book;
   line-height: 1.2em; }
 
+.article-body-img {
+  max-width: 960px; }
+
 p {
   margin-top: 20px;
   font-size: 0.8em; }
