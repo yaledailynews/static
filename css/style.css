@@ -298,10 +298,5 @@ p {
 .navbar-link.active {
   color: #fff; }
 
-.stickit {
-  position: fixed;
-  top: 0;
-  background: #ffffff;
-  z-index: 100; }
 
 /*# sourceMappingURL=style.css.map */
