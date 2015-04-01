@@ -242,7 +242,7 @@ h1 {
     font-size: 18.67px;
     font-style: heavyweight;
     letter-spacing: 2px;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-bottom: 40px; }
 
 .article-text {
@@ -251,6 +251,7 @@ h1 {
   line-height: 1.2em; }
 
 .article-body-img {
+  margin-top: 20px;
   max-width: 960px; }
 
 p {
@@ -260,6 +261,7 @@ p {
 h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1em;
-  margin-top: 20px; }
+  margin-top: 20px;
+  letter-spacing: 1.5px; }
 
 /*# sourceMappingURL=article.css.map */
