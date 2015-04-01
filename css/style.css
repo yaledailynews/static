@@ -214,26 +214,62 @@ h1 {
   letter-spacing: 1.2px; }
 
 p {
-  font-size: 0.8em; }
+  font-size: 0.8em; 
+  }
 
 .author {
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 1.8px;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-weight: 600; }
 
 .header {
   background-color: white;
-  box-shadow: 0 0 5px 0;
   padding-top: 5px;
   padding-bottom: 5px; }
   .header img {
-    width: 175px;
+    width: 210px;
     height: auto;
     display: block;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;}
+
+  .navigation{
+  background-color: white;
+  box-shadow: 0 4px 2px -2px gray;
+  }
+
+    .navbar-list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;}
+
+  .navbar-item {
+    display: inline;
+    position: relative;
+    padding: .75rem 0;
+     }
+
+  .navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-decoration: none;
+/*    line-height: 3rem;
+*/    
+    color: #938383; }
+  .navbar-link.active {
+    color: #fff; }
+
+  .stickit {
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+    z-index: 100;
+    }
 
 .container {
   margin-top: 3%;
