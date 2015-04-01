@@ -118,7 +118,7 @@ a:focus {
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .article {
+  .six.columns {
     width: 48%; }
 
   .seven.columns {
@@ -280,12 +280,6 @@ p {
   width: 80%; }
 
 .card {
-  background-color: white;
-  border-bottom: solid;
-  border-bottom-width: 3px;
-  padding: 15px; }
-
-.article {
   background-color: white;
   border-bottom: solid;
   border-bottom-width: 3px;

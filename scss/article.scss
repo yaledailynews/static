@@ -1,0 +1,107 @@
+@import "html5-reset", "grid";
+
+
+//style notes
+//title = 50pt, letter spacing 5px, line height = auto
+//author and date = 14pt avenir fontstyle heavyweight, letter spacing 2px, 
+
+body {
+  background-color: #f6f4f4;
+  font-family: Avenir;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1.2px;
+}
+
+
+
+.author{
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1.8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  background-color: white;
+  box-shadow: 0 0 5px 0;
+  img {
+    width: 175px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.article-header {
+  margin-top: 75px;
+  h1{
+    font-size: 66.67px;
+    letter-spacing: 3px;
+  }
+  p {
+    text-transform: uppercase;
+    font-size: 18.67px;
+    font-style: heavyweight;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  @extend .nine.columns;
+}
+
+.article-text{
+  //body = 16 avenir fontstyle book, letter spacing 2 or 4px 1.4em, line height 22pt - 8px
+  font-size: 21.33px;
+  font-style: book;
+  //letter-spacing: 1.4em;
+  line-height: 1.2em;
+  @extend .six.columns;
+
+}
+
+.article-body-img{
+  max-width: 960px;
+}
+
+
+p{
+  margin-top: 20px;
+  font-size: 0.8em;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+  margin-top: 20px;
+
+}
+
+  
+.container{
+  // margin-top: 3%;
+  // display:table;
+}
+
+
+
+// .two {
+//  margin-bottom: 20px;
+//  padding-right: 5px;
+//  padding-left: 5px;
+// }
+
+.stories {
+}
+
+
+
+@media(max-width:400px) {
+
+}
