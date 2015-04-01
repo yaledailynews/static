@@ -264,13 +264,6 @@ p {
   .navbar-link.active {
     color: #fff; }
 
-  .stickit {
-    position: fixed;
-    top: 0;
-    background: #ffffff;
-    z-index: 100;
-    }
-
 .container {
   margin-top: 3%;
   display: table; }
