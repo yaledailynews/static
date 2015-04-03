@@ -33,12 +33,31 @@ p {
 	border-bottom-width: 3px;
 	padding: 15px;
 	height: 212px;
+
+    //headline - playfair bold 20pt, line spacing 20px, 
+    //  author - avenir, font style heavy, text size 10px, letter spacing - 2px
+    //  preview - avenir medium, 12 pt (preview box is font style avenir black, 800, letter space 2px, see university = 50% capacity-->
+
+  title{
+    font-family: Playfair;
+    font-style: bold;
+    font-size: 20px;
+    line-spacing: 20px;
+    letter-spacing: 2px;
+  }
+  .author{
+
+  }
+  .preview{
+
+  }
+
 	@extend .three.columns;
 }
 
 
 
-.card-2-2{
+.breaking{
 	background-color: white;
 	border-bottom: solid;
 	border-bottom-width: 3px;
