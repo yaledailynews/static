@@ -118,7 +118,7 @@ a:focus {
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .card-2-2 {
+  .six.columns, .breaking {
     width: 48%; }
 
   .seven.columns {
@@ -230,8 +230,14 @@ p {
   border-bottom-width: 3px;
   padding: 15px;
   height: 212px; }
+  .card title {
+    font-family: Playfair;
+    font-style: bold;
+    font-size: 20px;
+    line-spacing: 20px;
+    letter-spacing: 2px; }
 
-.card-2-2 {
+.breaking {
   background-color: white;
   border-bottom: solid;
   border-bottom-width: 3px;
