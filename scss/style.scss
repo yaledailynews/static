@@ -40,13 +40,19 @@ p {
 
   title{
     font-family: Playfair;
-    font-style: bold;
+    font-weight: bold;
     font-size: 20px;
-    line-spacing: 20px;
+    line-height: 20px;
     letter-spacing: 2px;
+    display: inline;
   }
-  .author{
-
+  .author {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1.8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600; 
   }
   .preview{
 
@@ -98,13 +104,7 @@ p {
 
 	}
 }
-.author {
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1.8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 600; }
+
 
 .header {
   background-color: white;
