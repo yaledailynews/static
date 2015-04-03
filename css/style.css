@@ -232,10 +232,18 @@ p {
   height: 212px; }
   .card title {
     font-family: Playfair;
-    font-style: bold;
+    font-weight: bold;
     font-size: 20px;
-    line-spacing: 20px;
-    letter-spacing: 2px; }
+    line-height: 20px;
+    letter-spacing: 2px;
+    display: inline; }
+  .card .author {
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1.8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600; }
 
 .breaking {
   background-color: white;
@@ -259,14 +267,6 @@ p {
 
   div.card:first-of-type {
     margin-top: 5%; } }
-.author {
-  text-transform: uppercase;
-  font-size: 0.8em;
-  letter-spacing: 1.8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 600; }
-
 .header {
   background-color: white;
   padding-top: 5px;
