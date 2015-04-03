@@ -306,4 +306,25 @@ p {
   background: #ffffff;
   z-index: 100; }
 
+.opinion {
+  background: -moz-linear-gradient(top, transparent 0%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, transparent), color-stop(59%, transparent), color-stop(100%, rgba(0, 0, 0, 0.65))), url("../images/chris.JPG") no-repeat;
+  background: -webkit-linear-gradient(top, transparent 0%, #06f7b2 59%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: -o-linear-gradient(top, transparent 0%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: -ms-linear-gradient(top, transparent 0%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: linear-gradient(to bottom, transparent 0%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background-size: 212.5px 212.5px;
+  color: white; }
+  .opinion p {
+    bottom: 20px;
+    position: absolute;
+    text-transform: uppercase; }
+  .opinion p.author {
+    margin-bottom: 20px; }
+  .opinion p.description {
+    color: #E6E6E6; }
+  .opinion h1 {
+    font-size: 21px;
+    line-height: 30px; }
+
 /*# sourceMappingURL=style.css.map */
