@@ -281,7 +281,8 @@ p {
 
 .navigation {
   background-color: white;
-  box-shadow: 0 4px 2px -2px gray; }
+  box-shadow: 0 4px 2px -2px gray;
+  z-index: 1; }
 
 .navbar-list {
   display: flex;

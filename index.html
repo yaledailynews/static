@@ -22,7 +22,9 @@
   <script src="./js/packery.pkgd.min.js"></script>
   <script src="./js/ScrollMagic.min.js"></script>
   <script src="./js/TweenMax.min.js"></script>
- <script src="./js/debug.addIndicators.min.js"></script>
+  <script src="./js/debug.addIndicators.min.js"></script>
+  <script src="./js/jquery.sticky.js"></script>
+ 
 
 </head>
 <body>
@@ -35,29 +37,27 @@
     <img src="./images/logo.png">
   </div>
   <div id="anchor"></div>
-  <div id="pin1" style="z-index:1">
-    <nav class="navigation">
+  <nav class="navigation" id="navigation">
+    <div>
       <div>
-      <div>
-      <div class="container" style="margin-top: 0">
-      <div class="container" style="margin-top: 0" id= "navigation"> 
-        <ul class="navbar-list">
-          <li class="navbar-item"><a class="navbar-link" href="#">University</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Opinion</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">City</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Scitech</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Culture</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Ytv</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Wknd</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#">Mag</a></li>
-        </ul>
+        <div class="container" style="margin-top: 0">
+          <div class="container" style="margin-top: 0" id= "navigation"> 
+            <ul class="navbar-list">
+              <li class="navbar-item"><a class="navbar-link" href="#">University</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Opinion</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">City</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Scitech</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Culture</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Ytv</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Wknd</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="#">Mag</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </nav>
 </div>
-    </nav>
-  </div>
-
 
   
   <section id="stories" class="js-packery container" data-packery-options='{ "itemSelector": ".card, .card-2-2", "gutter": 38.5, "containerStyle": null }'>
@@ -158,18 +158,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script>
-  var controller = new ScrollMagic.Controller();
+$(document).ready(function(){
+    $("#navigation").sticky({topSpacing:0});
+  });
 </script>
 
-<script>
-    var scene = new ScrollMagic.Scene({
-              triggerElement: "#anchor",
-              triggerHook: "0",
-            })
-            .setPin("#pin1")
-            //.addIndicators({name: "1"}) // add indicators (requires plugin)
-            .addTo(controller);
-</script>
 
 </body>
 </html>
