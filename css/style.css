@@ -317,24 +317,23 @@ p {
   z-index: 100; }
 
 .opinion {
-  background: -moz-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, rgba(20, 121, 242, 0.9) 100%), url("../images/chris.JPG") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, rgba(20, 121, 242, 0.9) 100%), url("../images/chris.JPG") no-repeat;
-  background: -o-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, rgba(20, 121, 242, 0.9) 100%), url("../images/chris.JPG") no-repeat;
-  background: -ms-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, rgba(20, 121, 242, 0.9) 100%), url("../images/chris.JPG") no-repeat;
-  background: linear-gradient(to bottom, rgba(6, 247, 178, 0.6) 20%, rgba(20, 121, 242, 0.9) 100%), url("../images/chris.JPG") no-repeat;
+  background: -moz-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: -webkit-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: -o-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: -ms-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
+  background: linear-gradient(to bottom, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
   background-size: 212.5px 212.5px;
   color: white; }
   .opinion p {
     bottom: 20px;
     position: absolute;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    line-height: 0px; }
   .opinion p.author {
     margin-bottom: 20px; }
   .opinion p.description {
-    color: #E6E6E6; }
-  .opinion h1 {
-    font-size: 21px;
-    line-height: 30px; }
+    color: #E6E6E6;
+    letter-spacing: 1.8px; }
 
 /*# sourceMappingURL=style.css.map */
 
