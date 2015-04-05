@@ -206,12 +206,18 @@ a:focus {
   .offset-by-one-half.columns {
     margin-left: 52%; } }
 body {
-  background-color: #f6f4f4;
-  font-family: Avenir; }
+  font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif; }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 1.2px; }
+.card h1 {
+  font-family: 'Playfair Display', "Georgia", serif; }
+
+body {
+  background-color: #f6f4f4; }
+
+.card h1 {
+  letter-spacing: .1em;
+  line-height: 1.2;
+  font-weight: 600; }
 
 p {
   font-size: 0.8em; }
@@ -220,30 +226,23 @@ p {
   margin-top: 3%;
   display: table; }
 
-.article-container {
-  display: table;
-  width: 80%; }
+.byline {
+  text-transform: uppercase;
+  letter-spacing: 1.8;
+  font-weight: 600; }
 
 .card {
   background-color: white;
-  border-bottom: solid;
-  border-bottom-width: 3px;
   padding: 15px;
   height: 212px; }
-  .card title {
-    font-family: Playfair;
-    font-weight: bold;
+  .card h1 {
     font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 2px;
     display: inline; }
-  .card .author {
+  .card .byline {
     text-transform: uppercase;
     font-size: 0.8em;
-    letter-spacing: 1.8px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: 600; }
+    margin-bottom: 10px; }
 
 .breaking {
   background-color: white;
@@ -267,13 +266,12 @@ p {
 
   div.card:first-of-type {
     margin-top: 5%; } }
-
-header {
+.header {
   background-color: white;
   padding-top: 5px;
   padding-bottom: 5px; }
 
-header img {
+.header img {
   width: 210px;
   height: auto;
   display: block;
@@ -281,15 +279,9 @@ header img {
   margin-right: auto; }
 
 .navigation {
-  text-align: center;
   background-color: white;
   box-shadow: 0 4px 2px -2px gray;
   z-index: 100; }
-
-.nav{
-  width: 64%;
-  margin-top: 0;
-}
 
 .navbar-list {
   display: flex;
@@ -302,12 +294,13 @@ header img {
   padding: .75rem 0; }
 
 .navbar-link {
-  display: inline;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: .2rem;
   text-decoration: none;
+  /*    line-height: 3rem;
+  */
   color: #938383; }
 
 .navbar-link.active {
@@ -337,23 +330,3 @@ header img {
   .opinion p.description {
     color: #E6E6E6;
     letter-spacing: 1.8px; }
-
-/*# sourceMappingURL=style.css.map */
-
-  /*Alex additions*/
-    .story-preview{
-      height: 462.5px;
-    }
-    .readmore{
-      text-transform: uppercase;
-      position: absolute;
-      padding: 10px;
-      width: 100%;
-      bottom: 0;
-      left: 0px;
-      line-height: 20px;
-      color: #ffffff;
-      /*customizable*/
-      background: #FE5959;
-    }
-  /*end*/

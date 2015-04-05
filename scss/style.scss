@@ -1,36 +1,42 @@
 @import "html5-reset", "grid";
 
-body {
-	background-color: #f6f4f4;
-	font-family: Avenir;
+%face-sans {
+  font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
 }
 
-h1{
-	font-family: 'Playfair Display', serif;
-	letter-spacing: 1.2px;
+%face-serif {
+  font-family: 'Playfair Display', "Georgia", serif;
+}
+
+body {
+	background-color: #f6f4f4;
+  @extend %face-sans;
+}
+
+%face-header {
+  @extend %face-serif;
+	letter-spacing: .1em;
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 p {
 	font-size: 0.8em;
 }
 
-
-.guttersizer{}
-
 .container{
 	margin-top: 3%;
-	display:table;
+	display: table;
 }
 
-.article-container{
-	display: table;
-	width: 80%;
+.byline {
+  text-transform: uppercase;
+  letter-spacing: 1.8;
+  font-weight: 600; 
 }
 
 .card {
 	background-color: white;
-	border-bottom: solid;
-	border-bottom-width: 3px;
 	padding: 15px;
 	height: 212px;
 
@@ -38,21 +44,16 @@ p {
     //  author - avenir, font style heavy, text size 10px, letter spacing - 2px
     //  preview - avenir medium, 12 pt (preview box is font style avenir black, 800, letter space 2px, see university = 50% capacity-->
 
-  title{
-    font-family: Playfair;
-    font-weight: bold;
+  h1 {
+    @extend %face-header;
     font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 2px;
     display: inline;
   }
-  .author {
+  .byline {
     text-transform: uppercase;
     font-size: 0.8em;
-    letter-spacing: 1.8px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-weight: 600; 
   }
   .preview{
 
