@@ -158,18 +158,19 @@ p {
 //06F7b2 = green
 //100% opacity at bottom 50% opacity at top
 .opinion{
-    background: -moz-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,0.9) 100%), url('../images/chris.JPG') no-repeat;
+    background: -moz-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
     // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), url('../images/chris.JPG') no-repeat;
-    background: -webkit-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,0.9) 100%), url('../images/chris.JPG') no-repeat;
-    background: -o-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,0.9) 100%), url('../images/chris.JPG') no-repeat;
-    background: -ms-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,0.9) 100%), url('../images/chris.JPG') no-repeat;
-    background: linear-gradient(to bottom, rgba(6,247,178,0.6) 20%,rgba(20,121,242,0.9) 100%), url('../images/chris.JPG') no-repeat;
+    background: -webkit-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+    background: -o-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+    background: -ms-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+    background: linear-gradient(to bottom, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
     background-size: 212.5px 212.5px;
     color: white;
     p{
       bottom: 20px;
       position: absolute;
       text-transform: uppercase;
+      line-height: 0px;
     }
 
     p.author{
@@ -178,9 +179,6 @@ p {
 
     p.description{
       color: #E6E6E6;
-    }
-    h1{
-      font-size: 21px;
-      line-height: 30px;
+      letter-spacing: 1.8px;
     }
 }
