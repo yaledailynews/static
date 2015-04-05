@@ -284,6 +284,11 @@ p {
   box-shadow: 0 4px 2px -2px gray;
   z-index: 100; }
 
+.nav{
+  width: 64%;
+  margin-top: 0;
+}
+
 .navbar-list {
   display: flex;
   justify-content: space-between;
@@ -300,8 +305,6 @@ p {
   font-weight: 700;
   letter-spacing: .2rem;
   text-decoration: none;
-  /*    line-height: 3rem;
-  */
   color: #938383; }
 
 .navbar-link.active {
@@ -334,3 +337,21 @@ p {
     line-height: 30px; }
 
 /*# sourceMappingURL=style.css.map */
+
+  /*Alex additions*/
+    .story-preview{
+      height: 462.5px;
+    }
+    .readmore{
+      text-transform: uppercase;
+      position: absolute;
+      padding: 10px;
+      width: 100%;
+      bottom: 0;
+      left: 0px;
+      line-height: 20px;
+      color: #ffffff;
+      /*customizable*/
+      background: #FE5959;
+    }
+  /*end*/
