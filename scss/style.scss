@@ -2,11 +2,17 @@
 
 %face-sans {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
 }
 
 %face-serif {
   font-family: 'Playfair Display', "Georgia", serif;
+  font-weight: 400;
 }
+
+$card-height: 212px;
+$gutter-height: 38.5px;
+
 
 body {
 	background-color: #f6f4f4;
@@ -36,53 +42,67 @@ p {
 }
 
 .card {
+  @extend .three.columns;
 	background-color: white;
 	padding: 15px;
-	height: 212px;
+	height: $card-height;
+  overflow: hidden;
 
     //headline - playfair bold 20pt, line spacing 20px, 
     //  author - avenir, font style heavy, text size 10px, letter spacing - 2px
     //  preview - avenir medium, 12 pt (preview box is font style avenir black, 800, letter space 2px, see university = 50% capacity-->
-
   h1 {
     @extend %face-header;
     font-size: 20px;
     display: inline;
   }
-  .byline {
-    text-transform: uppercase;
-    font-size: 0.8em;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  &.story {
+    .byline {
+      text-transform: uppercase;
+      font-size: 0.8em;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .card-preview {
+
+    }
+    :not(.card-image) {
+      z-index: 1;
+    }
+    .card-image {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
   }
-  .preview{
-
+  &.story-major {
+    height: 462.5px;
+    @extend .six.columns;
   }
-
-	@extend .three.columns;
+  &.story-preview {
+    height: $card-height + $card-height + $gutter-height;
+  }
+  &.story-photo {
+  }
+  &.story-preview.story-photo {
+  }
+  &.story-opinion {
+  }
 }
 
-
-
-.breaking{
-	background-color: white;
-	border-bottom: solid;
-	border-bottom-width: 3px;
-	padding: 15px;
-	height: 462.5px;
-	@extend .six.columns;
+section.category {
+  clear: both;
+  width: 100%;
+  padding: 2em 0;
+  h2 {
+  }
+  aside.category-jump {
+  }
 }
-
-// .two {
-// 	margin-bottom: 20px;
-// 	padding-right: 5px;
-// 	padding-left: 5px;
-// }
-
-.stories {
-}
-
-
+ 
 
 @media(max-width:400px) {
 	p{
@@ -158,28 +178,28 @@ p {
 //1479F2 = blue
 //06F7b2 = green
 //100% opacity at bottom 50% opacity at top
-.opinion{
-    background: -moz-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
-    // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), url('../images/chris.JPG') no-repeat;
-    background: -webkit-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
-    background: -o-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
-    background: -ms-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
-    background: linear-gradient(to bottom, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
-    background-size: 212.5px 212.5px;
-    color: white;
-    p{
-      bottom: 20px;
-      position: absolute;
-      text-transform: uppercase;
-      line-height: 0px;
-    }
+// .opinion{
+//     background: -moz-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+//     // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), url('../images/chris.JPG') no-repeat;
+//     background: -webkit-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+//     background: -o-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+//     background: -ms-linear-gradient(top, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+//     background: linear-gradient(to bottom, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), url('../images/chris.JPG') no-repeat;
+//     background-size: $card-height.5px $card-height.5px;
+//     color: white;
+//     p{
+//       bottom: 20px;
+//       position: absolute;
+//       text-transform: uppercase;
+//       line-height: 0px;
+//     }
 
-    p.author{
-      margin-bottom: 20px;
-    }
+//     p.author{
+//       margin-bottom: 20px;
+//     }
 
-    p.description{
-      color: #E6E6E6;
-      letter-spacing: 1.8px;
-    }
-}
+//     p.description{
+//       color: #E6E6E6;
+//       letter-spacing: 1.8px;
+//     }
+// }

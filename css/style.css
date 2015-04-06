@@ -118,7 +118,7 @@ a:focus {
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .breaking {
+  .six.columns, .card.story-major {
     width: 48%; }
 
   .seven.columns {
@@ -206,10 +206,12 @@ a:focus {
   .offset-by-one-half.columns {
     margin-left: 52%; } }
 body {
-  font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif; }
+  font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+  font-weight: 400; }
 
 .card h1 {
-  font-family: 'Playfair Display', "Georgia", serif; }
+  font-family: 'Playfair Display', "Georgia", serif;
+  font-weight: 400; }
 
 body {
   background-color: #f6f4f4; }
@@ -234,22 +236,34 @@ p {
 .card {
   background-color: white;
   padding: 15px;
-  height: 212px; }
+  height: 212px;
+  overflow: hidden; }
   .card h1 {
     font-size: 20px;
     display: inline; }
-  .card .byline {
+  .card.story .byline {
     text-transform: uppercase;
     font-size: 0.8em;
     margin-top: 10px;
     margin-bottom: 10px; }
+  .card.story :not(.card-image) {
+    z-index: 1; }
+  .card.story .card-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  .card.story-major {
+    height: 462.5px; }
+  .card.story-preview {
+    height: 462.5px; }
 
-.breaking {
-  background-color: white;
-  border-bottom: solid;
-  border-bottom-width: 3px;
-  padding: 15px;
-  height: 462.5px; }
+section.category {
+  clear: both;
+  width: 100%;
+  padding: 2em 0; }
 
 @media (max-width: 400px) {
   p {
@@ -311,22 +325,3 @@ p {
   top: 0;
   background: #ffffff;
   z-index: 100; }
-
-.opinion {
-  background: -moz-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
-  background: -webkit-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
-  background: -o-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
-  background: -ms-linear-gradient(top, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
-  background: linear-gradient(to bottom, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), url("../images/chris.JPG") no-repeat;
-  background-size: 212.5px 212.5px;
-  color: white; }
-  .opinion p {
-    bottom: 20px;
-    position: absolute;
-    text-transform: uppercase;
-    line-height: 0px; }
-  .opinion p.author {
-    margin-bottom: 20px; }
-  .opinion p.description {
-    color: #E6E6E6;
-    letter-spacing: 1.8px; }
