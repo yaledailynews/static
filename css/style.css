@@ -209,17 +209,18 @@ body {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 400; }
 
-.card h1 {
+.card h1, header .navbar-link {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
 body {
   background-color: #f6f4f4; }
 
-.card h1 {
-  letter-spacing: .1em;
+.card h1, header .navbar-link {
+  letter-spacing: .05em;
   line-height: 1.2;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #433f3f; }
 
 p {
   font-size: 0.8em; }
@@ -231,7 +232,8 @@ p {
 .byline {
   text-transform: uppercase;
   letter-spacing: 1.8;
-  font-weight: 600; }
+  font-weight: 600;
+  color: #696565; }
 
 .card {
   background-color: white;
@@ -245,12 +247,24 @@ p {
     text-transform: uppercase;
     font-size: 0.8em;
     margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: .05em; }
+  .card.story .card-preview {
+    line-height: 1.3em;
+    letter-spacing: .02em; }
+  .card.story time {
+    position: absolute;
+    bottom: 35px;
+    text-transform: uppercase; }
+  .card.story .category {
+    position: absolute;
+    bottom: 15px;
+    text-transform: uppercase; }
   .card.story :not(.card-image) {
     z-index: 1; }
   .card.story .card-image {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -258,6 +272,8 @@ p {
   .card.story-major {
     height: 462.5px; }
   .card.story-preview {
+    height: 462.5px; }
+  .card.story-photo {
     height: 462.5px; }
 
 section.category {
@@ -280,48 +296,17 @@ section.category {
 
   div.card:first-of-type {
     margin-top: 5%; } }
-.header {
-  background-color: white;
-  padding-top: 5px;
-  padding-bottom: 5px; }
-
-.header img {
-  width: 210px;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.navigation {
-  background-color: white;
-  box-shadow: 0 4px 2px -2px gray;
-  z-index: 100; }
-
-.navbar-list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px; }
-
-.navbar-item {
-  display: inline;
-  position: relative;
-  padding: .75rem 0; }
-
-.navbar-link {
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .2rem;
-  text-decoration: none;
-  /*    line-height: 3rem;
-  */
-  color: #938383; }
-
-.navbar-link.active {
-  color: #fff; }
-
-.stickit {
-  position: fixed;
-  top: 0;
-  background: #ffffff;
-  z-index: 100; }
+header {
+  background-color: #ffffff; }
+  header .header {
+    width: 210px;
+    display: block;
+    margin: 0 auto; }
+  header .navigation {
+    background-color: #ffffff;
+    box-shadow: 0 4px 2px -2px gray;
+    text-align: center; }
+  header .navbar-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #938383; }
