@@ -217,7 +217,8 @@ body {
   text-transform: uppercase;
   position: absolute;
   font-size: .8em;
-  color: #696565; }
+  color: #696565;
+  margin-left: 15px; }
 
 body {
   background-color: #f6f4f4; }
@@ -226,7 +227,8 @@ body {
   letter-spacing: .05em;
   line-height: 1.2;
   font-weight: 600;
-  color: #433f3f; }
+  color: #433f3f;
+  margin-left: 15px; }
 
 p {
   font-size: 0.8em; }
@@ -239,11 +241,11 @@ p {
   text-transform: uppercase;
   letter-spacing: 1.8;
   font-weight: 600;
-  color: #696565; }
+  color: #696565;
+  margin-left: 15px; }
 
 .card {
   background-color: white;
-  padding: 15px;
   height: 212px;
   overflow: hidden; }
   .card h1 {
@@ -257,7 +259,9 @@ p {
   .card.story .card-preview {
     line-height: 1.3em;
     letter-spacing: .02em;
-    color: #696565; }
+    color: #696565;
+    margin-left: 15px;
+    z-index: 11; }
   .card.story time {
     bottom: 35px; }
   .card.story .category {
@@ -273,6 +277,14 @@ p {
     z-index: 0; }
   .card.story-major {
     height: 462.5px; }
+    .card.story-major .gradient {
+      height: 462.5px;
+      background: -moz-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
+      background: -webkit-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
+      background: -o-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
+      background: -ms-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
+      background: linear-gradient(to right, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
+      z-index: 10; }
   .card.story-preview {
     height: 462.5px; }
   .card.story-photo {
