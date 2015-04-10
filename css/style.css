@@ -305,8 +305,11 @@ header {
   header .navigation {
     background-color: #ffffff;
     box-shadow: 0 4px 2px -2px gray;
-    text-align: center; }
+    text-align: center;
+    z-index: 100; }
   header .navbar-link {
     text-transform: uppercase;
     text-decoration: none;
     color: #938383; }
+
+/*# sourceMappingURL=style.css.map */
