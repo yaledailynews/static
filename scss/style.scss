@@ -15,6 +15,7 @@
   position: absolute;
   font-size: .8em;
   color: #696565;
+  margin-left: 15px;
 
 }
 
@@ -33,6 +34,7 @@ body {
   line-height: 1.2;
   font-weight: 600;
   color: #433f3f;
+  margin-left: 15px;
 }
 
 p {
@@ -49,6 +51,7 @@ p {
   letter-spacing: 1.8;
   font-weight: 600; 
   color: #696565;
+  margin-left: 15px;
 }
 
 
@@ -56,7 +59,6 @@ p {
 .card {
   @extend .three.columns;
 	background-color: white;
-	padding: 15px;
 	height: $card-height;
   overflow: hidden;
 
@@ -80,6 +82,8 @@ p {
       line-height: 1.3em;
       letter-spacing: .02em;
       color: #696565;
+      margin-left: 15px;
+      z-index: 11;
     }
     time{
       bottom: 35px;
@@ -107,6 +111,16 @@ p {
   &.story-major {
     height: 2 * $card-height + $gutter-height;
     @extend .six.columns;
+
+    .gradient{
+      height: 2*$card-height + $gutter-height;
+      background: -moz-linear-gradient(left, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), no-repeat;
+      background: -webkit-linear-gradient(left, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), no-repeat;
+      background: -o-linear-gradient(left, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), no-repeat;
+      background: -ms-linear-gradient(left, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), no-repeat;
+      background: linear-gradient(to right, rgba(6,247,178,0.6) 20%,rgba(20,121,242,1) 100%), no-repeat;
+      z-index: 10;
+    }
 
     h1, p {
       @extend .six.columns;
