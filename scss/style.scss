@@ -66,7 +66,7 @@ p {
   h1 {
     @extend %face-header;
     font-size: 20px;
-    display: inline;
+    //display: inline;
   }
   &.story {
     .byline {
@@ -102,8 +102,13 @@ p {
     }
   }
   &.story-major {
-    height: 462.5px;
+    height: 2 * $card-height + $gutter-height;
     @extend .six.columns;
+
+    h1, p {
+      @extend .six.columns;
+    }
+
   }
   &.story-preview {
     height: 2 * $card-height + $gutter-height;

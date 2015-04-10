@@ -118,7 +118,7 @@ a:focus {
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .card.story-major {
+  .six.columns, .card.story-major, .card.story-major h1, .card.story-major p {
     width: 48%; }
 
   .seven.columns {
@@ -247,8 +247,7 @@ p {
   height: 212px;
   overflow: hidden; }
   .card h1 {
-    font-size: 20px;
-    display: inline; }
+    font-size: 20px; }
   .card.story .byline {
     text-transform: uppercase;
     font-size: 0.8em;
