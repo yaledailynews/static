@@ -10,6 +10,14 @@
   font-weight: 400;
 }
 
+%time-category-style{
+  text-transform: uppercase;
+  position: absolute;
+  font-size: .8em;
+  color: #696565;
+
+}
+
 $card-height: 212px;
 $gutter-height: 38.5px;
 
@@ -43,6 +51,8 @@ p {
   color: #696565;
 }
 
+
+
 .card {
   @extend .three.columns;
 	background-color: white;
@@ -69,16 +79,15 @@ p {
     .card-preview {
       line-height: 1.3em;
       letter-spacing: .02em;
+      color: #696565;
     }
     time{
-      position: absolute;
       bottom: 35px;
-      text-transform: uppercase;
+      @extend %time-category-style;
     }
     .category{
-      position: absolute;
       bottom: 15px;
-      text-transform: uppercase;
+      @extend %time-category-style;
     }
     :not(.card-image) {
       z-index: 1;

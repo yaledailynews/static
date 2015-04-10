@@ -213,6 +213,12 @@ body {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
+.card.story time, .card.story .category {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: .8em;
+  color: #696565; }
+
 body {
   background-color: #f6f4f4; }
 
@@ -251,15 +257,12 @@ p {
     letter-spacing: .05em; }
   .card.story .card-preview {
     line-height: 1.3em;
-    letter-spacing: .02em; }
+    letter-spacing: .02em;
+    color: #696565; }
   .card.story time {
-    position: absolute;
-    bottom: 35px;
-    text-transform: uppercase; }
+    bottom: 35px; }
   .card.story .category {
-    position: absolute;
-    bottom: 15px;
-    text-transform: uppercase; }
+    bottom: 15px; }
   .card.story :not(.card-image) {
     z-index: 1; }
   .card.story .card-image {
