@@ -136,7 +136,7 @@ a:focus {
   .eleven.columns {
     width: 91.3333333333%; }
 
-  .twelve.columns {
+  .twelve.columns, .card.story-major .gradient {
     width: 100%;
     margin-left: 0; }
 
@@ -228,7 +228,8 @@ body {
   line-height: 1.2;
   font-weight: 600;
   color: #433f3f;
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-top: 15px; }
 
 p {
   font-size: 0.8em; }
@@ -247,7 +248,8 @@ p {
 .card {
   background-color: white;
   height: 212px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 2; }
   .card h1 {
     font-size: 20px; }
   .card.story .byline {
@@ -267,7 +269,7 @@ p {
   .card.story .category {
     bottom: 15px; }
   .card.story :not(.card-image) {
-    z-index: 1; }
+    z-index: 2; }
   .card.story .card-image {
     height: 100%;
     width: auto;
@@ -279,12 +281,15 @@ p {
     height: 462.5px; }
     .card.story-major .gradient {
       height: 462.5px;
-      background: -moz-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
-      background: -webkit-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
-      background: -o-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
-      background: -ms-linear-gradient(left, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
-      background: linear-gradient(to right, rgba(6, 247, 178, 0.6) 20%, #1479f2 100%), no-repeat;
-      z-index: 10; }
+      position: absolute;
+      background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+      background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+      background: -o-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+      background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+      z-index: 1; }
+    .card.story-major h1, .card.story-major p {
+      z-index: 2; }
   .card.story-preview {
     height: 462.5px; }
   .card.story-photo {
