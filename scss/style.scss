@@ -89,6 +89,8 @@ article.story-photo::after {
 	height: $card-height;
   overflow: hidden;
   z-index: 2;
+  border-style: solid;
+  border-bottom: thick solid #7096ff;
 
     //headline - playfair bold 20pt, line spacing 20px, 
     //  author - avenir, font style heavy, text size 10px, letter spacing - 2px
