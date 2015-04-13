@@ -262,7 +262,9 @@ article.card::after {
   background-color: white;
   height: 212px;
   overflow: hidden;
-  z-index: 2; }
+  z-index: 2;
+  border-style: solid;
+  border-bottom: thick solid #7096ff; }
   .card h1 {
     font-size: 20px; }
   .card.story .byline {
