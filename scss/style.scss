@@ -60,7 +60,7 @@ article.card::after {
       background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
       background: -o-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
       background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
-      background: linear-gradient(to right, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;     top: 0;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
       top: 0;
       left: 0;
       width:100%;
@@ -81,7 +81,6 @@ article.story-photo::after {
       height:100%;
       content: "";
       position: absolute;
-      background-color: black;
 }
 
 .card {
