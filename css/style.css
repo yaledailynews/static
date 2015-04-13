@@ -304,9 +304,10 @@ article.story-photo::after {
     left: 0;
     z-index: 0; }
   .card.story-major {
-    height: 464px; }
+    height: 462.5px; }
     .card.story-major .card-image {
-      top: 0; }
+      top: 0;
+      height: 465.5px; }
     .card.story-major h1, .card.story-major p {
       z-index: 2; }
   .card.story-preview {

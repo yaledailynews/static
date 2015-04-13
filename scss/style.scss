@@ -152,10 +152,11 @@ $border-width: 3px;
     }
   }
   &.story-major {
-    height: 2 * $card-height + $gutter-height + $border-width/2;
+    height: 2 * $card-height + $gutter-height;
     @extend .six.columns;
     .card-image {
       top:0;
+      height: 2 * $card-height + $gutter-height + $border-width;
     }
     
 
