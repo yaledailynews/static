@@ -136,7 +136,7 @@ a:focus {
   .eleven.columns {
     width: 91.3333333333%; }
 
-  .twelve.columns, .card.story .gradient {
+  .twelve.columns {
     width: 100%;
     margin-left: 0; }
 
@@ -244,6 +244,20 @@ p {
   color: #696565;
   margin-left: 15px; }
 
+article.card::after {
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
+  top: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute; }
+
 .card {
   background-color: white;
   height: 212px;
@@ -251,15 +265,6 @@ p {
   z-index: 2; }
   .card h1 {
     font-size: 20px; }
-  .card.story .gradient {
-    height: 462.5px;
-    position: absolute;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.99) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
-    z-index: 1; }
   .card.story .byline {
     text-transform: uppercase;
     font-size: 0.8em;
