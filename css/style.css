@@ -301,17 +301,24 @@ article.story-photo::after {
     height: 100%;
     width: auto;
     position: absolute;
-    top: 0;
     left: 0;
     z-index: 0; }
   .card.story-major {
-    height: 462.5px; }
+    height: 464px; }
+    .card.story-major .card-image {
+      top: 0; }
     .card.story-major h1, .card.story-major p {
       z-index: 2; }
   .card.story-preview {
     height: 462.5px; }
   .card.story-photo {
     height: 462.5px; }
+    .card.story-photo .card-image {
+      height: 50%;
+      bottom: 0; }
+  .card.story-opinion .card-image {
+    top: 0;
+    height: 215px; }
 
 section.category {
   clear: both;

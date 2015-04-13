@@ -83,6 +83,8 @@ article.story-photo::after {
       position: absolute;
 }
 
+$border-width: 3px;
+
 .card {
   @extend .three.columns;
 	background-color: white;
@@ -141,7 +143,7 @@ article.story-photo::after {
       height: 100%;
       width: auto;
       position: absolute;
-      top: 0;
+      //top: 0;
       left: 0;
       z-index: 0;
 
@@ -150,8 +152,12 @@ article.story-photo::after {
     }
   }
   &.story-major {
-    height: 2 * $card-height + $gutter-height;
+    height: 2 * $card-height + $gutter-height + $border-width/2;
     @extend .six.columns;
+    .card-image {
+      top:0;
+    }
+    
 
 
     h1, p {
@@ -162,13 +168,22 @@ article.story-photo::after {
   }
   &.story-preview {
     height: 2 * $card-height + $gutter-height;
+
   }
   &.story-photo {
     height: 2 * $card-height + $gutter-height;
+    .card-image{
+      height:50%;
+      bottom: 0;
+    }
   }
   &.story-preview.story-photo {
   }
   &.story-opinion {
+    .card-image{
+      top: 0;
+      height: $card-height + $border-width;
+    }
 
   }
 }
