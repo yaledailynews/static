@@ -277,6 +277,13 @@ article.story-photo::after {
   z-index: 2;
   border-style: solid;
   border-bottom: thick solid #7096ff; }
+  .card.category-jump {
+    padding: 15px;
+    line-height: 1.8em; }
+    .card.category-jump strong {
+      font-style: italic;
+      font-size: 20px;
+      display: block; }
   .card h1 {
     font-size: 20px; }
   .card.story .byline {
@@ -315,6 +322,11 @@ article.story-photo::after {
   .card.story-photo {
     height: 462.5px; }
     .card.story-photo .card-image {
+      height: 50%;
+      bottom: 0; }
+  .card.story-preview.story-photo {
+    height: 462.5px; }
+    .card.story-preview.story-photo .card-image {
       height: 50%;
       bottom: 0; }
   .card.story-opinion .card-image {
