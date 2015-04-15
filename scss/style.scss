@@ -109,6 +109,7 @@ $weekend-color: #3faac6;
 $magazine-color: #5740b2;
 
 
+
 .card {
   @extend .three.columns;
 	background-color: white;
@@ -294,6 +295,53 @@ header {
 
   }
 
+.university{
+  .category-jump{
+    background-color: $university-color;
+  }
+}
+
+.opinion{
+  .category-jump{
+    background-color: $opinion-color;
+  }
+}
+
+.city{
+  .category-jump{
+    background-color: $city-color;
+  }
+}
+
+.scitech{
+  .category-jump{
+    background-color: $scitech-color;
+  }
+}
+
+.ytv{
+  .category-jump{
+    background-color: $ytv-color;
+  }
+}
+
+.magazine{
+  .category-jump{
+    background-color: $magazine-color;
+  }
+}
+
+.weekend{
+  .category-jump{
+    background-color: $weekend-color;
+  }
+}
+
+.sports{
+  .category-jump{
+    background-color: $sports-color;
+  }
+}
 
 //1479F2 = blue
 //06F7b2 = green

@@ -393,4 +393,28 @@ header {
     text-decoration: none;
     color: #938383; }
 
+.university .category-jump {
+  background-color: #7096ff; }
+
+.opinion .category-jump {
+  background-color: #b15ce1; }
+
+.city .category-jump {
+  background-color: #a73848; }
+
+.scitech .category-jump {
+  background-color: #f5e638; }
+
+.ytv .category-jump {
+  background-color: #fe9e48; }
+
+.magazine .category-jump {
+  background-color: #5740b2; }
+
+.weekend .category-jump {
+  background-color: #3faac6; }
+
+.sports .category-jump {
+  background-color: #483fc2; }
+
 /*# sourceMappingURL=style.css.map */
