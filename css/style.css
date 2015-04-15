@@ -419,4 +419,8 @@ header {
 .sports .category-jump {
   background-color: #483fc2; }
 
+img.card-image {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
 /*# sourceMappingURL=style.css.map */

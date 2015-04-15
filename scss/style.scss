@@ -350,6 +350,11 @@ header {
   }
 }
 
+img.card-image{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
 //1479F2 = blue
 //06F7b2 = green
 //100% opacity at bottom 50% opacity at top
