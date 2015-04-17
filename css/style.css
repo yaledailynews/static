@@ -127,7 +127,7 @@ a:focus {
   .eight.columns {
     width: 65.3333333333%; }
 
-  .nine.columns {
+  .nine.columns, .card.story-breaking h1 {
     width: 74.0%; }
 
   .ten.columns {
@@ -205,11 +205,11 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, .card h1, header .navbar-link {
+body {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 400; }
 
-.card.category-jump strong {
+.card h1, header .navbar-link, .card.category-jump strong {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -346,6 +346,8 @@ article.story-opinion::after {
     top: 0;
     width: 100%;
     height: auto; }
+  .card.story-breaking h1 {
+    font-size: 60px; }
   .card.story-preview {
     height: 462.5px; }
     .card.story-preview .card-preview {

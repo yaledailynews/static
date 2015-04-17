@@ -29,7 +29,7 @@ body {
 }
 
 %face-header {
-  @extend %face-sans;
+  @extend %face-serif;
 	letter-spacing: .05em;
   line-height: 1.2;
   font-weight: 600;
@@ -217,6 +217,10 @@ $magazine-color: #5740b2;
       top:0;
       width: 100%;
       height: auto; 
+    }
+    h1{
+      @extend .nine.columns;
+      font-size: 60px;
     }
   }
 
