@@ -178,6 +178,8 @@ $magazine-color: #5740b2;
       
     }
   }
+
+
   &.story-major {
     height: 2 * $card-height + $gutter-height;
     h1, p, time{
@@ -197,6 +199,17 @@ $magazine-color: #5740b2;
     }
 
   }
+
+  &.story-breaking{
+    @extend .twelve.columns;
+    @extend .story-major;
+    .card-image{
+      top:0;
+      width: 100%;
+      height: auto; 
+    }
+  }
+
   &.story-preview {
     height: 2 * $card-height + $gutter-height;
     .card-preview{

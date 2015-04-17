@@ -118,7 +118,7 @@ a:focus {
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .card.story-major, .card.story-major h1, .card.story-major p {
+  .six.columns, .card.story-major, .card.story-breaking, .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p {
     width: 48%; }
 
   .seven.columns {
@@ -136,7 +136,7 @@ a:focus {
   .eleven.columns {
     width: 91.3333333333%; }
 
-  .twelve.columns {
+  .twelve.columns, .card.story-breaking {
     width: 100%;
     margin-left: 0; }
 
@@ -240,7 +240,7 @@ p {
   color: #696565;
   margin-left: 15px; }
 
-article.story-major::after {
+article.story-major::after, article.card.story-breaking::after {
   background: -moz-linear-gradient(left, rgba(20, 121, 242, 0.5) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
   background: -webkit-linear-gradient(left, rgba(20, 121, 242, 0.5) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
   background: -o-linear-gradient(left, rgba(20, 121, 242, 0.5) 0%, rgba(20, 121, 242, 0.5) 100%), no-repeat;
@@ -254,11 +254,11 @@ article.story-major::after {
   position: absolute; }
 
 article.story-photo::after {
-  background: -moz-linear-gradient(bottom, white 60%, transparent 100%), no-repeat;
-  background: -webkit-linear-gradient(bottom, white 60%, transparent 100%), no-repeat;
-  background: -o-linear-gradient(bottom, white 60%, transparent 100%), no-repeat;
-  background: -ms-linear-gradient(bottom, white 60%, transparent 100%), no-repeat;
-  background: linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+  background: -moz-linear-gradient(bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: -webkit-linear-gradient(bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: -o-linear-gradient(bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: -ms-linear-gradient(bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
   top: 0;
   left: 0;
   width: 100%;
@@ -267,11 +267,11 @@ article.story-photo::after {
   position: absolute; }
 
 article.story-opinion::after {
-  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-  background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
   top: 0;
   left: 0;
   width: 100%;
@@ -320,15 +320,19 @@ article.story-opinion::after {
     position: absolute;
     left: 0;
     z-index: 0; }
-  .card.story-major {
+  .card.story-major, .card.story-breaking {
     height: 462.5px; }
-    .card.story-major h1, .card.story-major p, .card.story-major time {
+    .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p, .card.story-major time, .card.story-breaking time {
       color: white; }
-    .card.story-major .card-image {
+    .card.story-major .card-image, .card.story-breaking .card-image {
       top: 0;
       height: 465.5px; }
-    .card.story-major h1, .card.story-major p {
+    .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p {
       z-index: 2; }
+  .card.story-breaking .card-image {
+    top: 0;
+    width: 100%;
+    height: auto; }
   .card.story-preview {
     height: 462.5px; }
     .card.story-preview .card-preview {
@@ -419,5 +423,3 @@ header {
 img.card-image {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
-
-/*# sourceMappingURL=style.css.map */
