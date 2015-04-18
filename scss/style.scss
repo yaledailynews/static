@@ -61,36 +61,6 @@ p {
 }
 
 
-article.story-major::after {
-  @include bg-gradienter (( to right, rgba(20, 121, 242, 0.5) 0%, rgba(20, 121, 242, 0.5) 100% ));
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  content: "";
-  position: absolute;
-}
-
-article.story-photo::after {
-  @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 60%, rgba(0,0,0,0) 100% ));
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  content: "";
-  position: absolute;
-}
-
-article.story-opinion::after {
-  @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100% ));
-  top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  content: "";
-  position: absolute;
-}
-
 $card-border-width: 3px;
 
 $university-color: #7096ff;
@@ -192,16 +162,21 @@ $magazine-color: #5740b2;
     @extend .six.columns;
     .card-image {
       top:0;
-      height: 2 * $card-height + $gutter-height + $border-width;
+      height: 2 * $card-height + $gutter-height + $card-border-width;
     }
-    
-
-
     h1, p {
       z-index: 2;
       @extend .six.columns;
     }
-
+    &::after {
+      @include bg-gradienter (( to right, rgba(20, 121, 242, 0.5) 0%, rgba(20, 121, 242, 0.5) 100% ));
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      content: "";
+      position: absolute;
+    }
   }
 
   &.story-breaking{
@@ -228,6 +203,7 @@ $magazine-color: #5740b2;
     }
 
   }
+
   &.story-photo {
     height: 2 * $card-height + $gutter-height;
     .card-image{
@@ -237,6 +213,15 @@ $magazine-color: #5740b2;
     .card-preview{
       color:#696565;
     }
+    &::after {
+      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 60%, rgba(0,0,0,0) 100% ));
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      content: "";
+      position: absolute;
+    }  
   }
   &.story-preview.story-photo {
     height: 2 * $card-height + $gutter-height;
@@ -247,14 +232,22 @@ $magazine-color: #5740b2;
     .card-preview{
       color:#696565;
     }
-
   }
+
   &.story-opinion {
     .card-image{
       top: 0;
-      height: $card-height + $border-width;
+      height: $card-height + $card-border-width;
     }
-
+    &::after {
+      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100% ));
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      content: "";
+      position: absolute;
+    }
   }
 }
 
