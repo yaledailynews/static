@@ -73,7 +73,6 @@ $weekend-color: #3faac6;
 $magazine-color: #5740b2;
 
 
-
 .card {
   @extend .three.columns;
 	background-color: white;
@@ -82,7 +81,6 @@ $magazine-color: #5740b2;
   z-index: 2;
   border-style: solid;
   border-bottom: thick solid $university-color;
-
 
   &.category-jump{
     bottom: 0;
@@ -104,7 +102,7 @@ $magazine-color: #5740b2;
     }
   }
 
-    //headline - playfair bold 20pt, line spacing 20px, 
+    //  headline - playfair bold 20pt, line spacing 20px, 
     //  author - avenir, font style heavy, text size 10px, letter spacing - 2px
     //  preview - avenir medium, 12 pt (preview box is font style avenir black, 800, letter space 2px, see university = 50% capacity-->
   h1 {
@@ -119,7 +117,6 @@ $magazine-color: #5740b2;
       margin-bottom: 10px;
       letter-spacing: .05em;
     }
-
     .card-preview {
       line-height: 1.3em;
       letter-spacing: .02em;
@@ -127,7 +124,7 @@ $magazine-color: #5740b2;
       margin-left: 15px;
       z-index: 11;
     }
-    time{
+    time {
       bottom: 35px;
       color:white;
       @extend %time-category-style;
@@ -148,8 +145,6 @@ $magazine-color: #5740b2;
       left: 0;
       z-index: 0;
 
-
-      
     }
   }
 
@@ -263,11 +258,11 @@ section.category {
  
 
 @media(max-width:400px) {
-	p{
+	p {
 		font-size: 1em;
 	}
 
-	.card{
+	.card {
 		width: 80%;
 		position: relative;
 		left: 10%;
