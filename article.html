@@ -27,6 +27,11 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./js/packery.pkgd.min.js"></script>
+  <script src="./js/ScrollMagic.min.js"></script>
+  <script src="./js/TweenMax.min.js"></script>
+  <script src="./js/debug.addIndicators.min.js"></script>
+  <script src="./js/jquery.sticky.js"></script>
   <script>
   $(document).ready(function() {
   	var width = $(window).width();
@@ -37,6 +42,21 @@
 </head>
 
 <body>
+
+<header id="site-header">
+  <img src="./images/logo.png" class="header" id="header">
+  <nav class="navigation" id="navigation">
+          <a class="navbar-link" href="#">University</a>
+          <a class="navbar-link" href="#">Opinion</a>
+          <a class="navbar-link" href="#">City</a>
+          <a class="navbar-link" href="#">Sports</a>
+          <a class="navbar-link" href="#">Scitech</a>
+          <a class="navbar-link" href="#">Culture</a>
+          <a class="navbar-link" href="#">Ytv</a>
+          <a class="navbar-link" href="#">Wknd</a>
+          <a class="navbar-link" href="#">Mag</a>
+  </nav>
+</header>
 
 	<article>
 		<img class="hero-image" src="images/wall-street.jpg" />
@@ -224,7 +244,19 @@
 				<p>I want to watch Shloe’s movies and I want to see Mark’s musicals and I want to volunteer with Joe’s non-profit and eat at Annie’s restaurant and send my kids to schools Jeff’s reformed and I’m JUST SCARED about this industry that’s taking all my friends and telling them this is the best way for them to be spending their time. Any of their time. Maybe I’m ignorant and idealistic but I just feel like that can’t possibly be true. I feel like we know that. I feel like we can do something really cool to this world. And I fear — at 23, 24, 25 — we might forget.</p>
 			</section>
 		</div>
+		<div class="bottom-bar">
+			<p> UNIVERSITY | Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</p> 
+			<p class="byline"> by Christopher Wan </p>
+		</div>
 	</article>
+
+
+
+<script>
+$(document).ready(function(){
+    $("#navigation").sticky({topSpacing:0});
+  });
+</script>
 
 </body>
 
