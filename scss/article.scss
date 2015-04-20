@@ -71,6 +71,7 @@ h1{
   //letter-spacing: 1.4em;
   line-height: 1.2em;
   @extend .six.columns;
+  margin-bottom: 40px;
 
 }
 
@@ -128,7 +129,22 @@ h3 {
 .stories {
 }
 
-
+.bottom-bar{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:40px;
+  width:100%;
+  background:white;
+  padding: 10px 10px 10px 20px;
+  z-index: 3;
+  p{
+    display: inline;
+    &.byline{
+      font-style: italic;
+    }
+  }
+}
 
 @media(max-width:400px) {
 

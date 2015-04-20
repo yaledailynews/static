@@ -252,7 +252,8 @@ h1 {
 .article-text {
   font-size: 21.33px;
   font-style: book;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-bottom: 40px; }
 
 .article-body-img {
   margin-top: 20px;
@@ -287,5 +288,19 @@ h3 {
     margin: 10px 0px 10px 0px;
     color: black;
     font-size: 13px; }
+
+.bottom-bar {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  background: white;
+  padding: 10px 10px 10px 20px;
+  z-index: 3; }
+  .bottom-bar p {
+    display: inline; }
+    .bottom-bar p.byline {
+      font-style: italic; }
 
 /*# sourceMappingURL=article.css.map */
