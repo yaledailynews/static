@@ -35,7 +35,7 @@ body {
 }
 
 %face-header {
-  @extend %face-serif;
+  @extend %face-sans;
 	letter-spacing: .05em;
   line-height: 1.2;
   font-weight: 600;
@@ -294,6 +294,8 @@ header {
     box-shadow: 0 4px 2px -2px gray;
     text-align: center;
     z-index:100;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .navbar-link {
