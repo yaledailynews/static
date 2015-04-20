@@ -9,6 +9,15 @@
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400;
 }
+
+%face-header {
+  @extend %face-sans;
+  letter-spacing: .05em;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #433f3f;
+  margin: 15px;
+}
 //style notes
 //title = 50pt, letter spacing 5px, line height = auto
 //author and date = 14pt avenir fontstyle heavyweight, letter spacing 2px, 
@@ -22,6 +31,33 @@ h1{
   font-family: 'Playfair Display', serif;
   letter-spacing: 1.2px;
 }
+
+header {
+  background-color: #ffffff;
+  .header {
+    width: 210px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    }
+
+  .navigation{ 
+    background-color: #ffffff;
+    box-shadow: 0 4px 2px -2px gray;
+    text-align: center;
+    z-index:100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navbar-link {
+    @extend %face-header;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #938383; 
+    }
+
+  }
 
 
 
