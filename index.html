@@ -35,15 +35,15 @@
 <header id="site-header">
   <img src="./images/logo.png" class="header" id="header">
   <nav class="navigation" id="navigation">
-          <a class="navbar-link" href="#">University</a>
-          <a class="navbar-link" href="#">Opinion</a>
-          <a class="navbar-link" href="#">City</a>
-          <a class="navbar-link" href="#">Sports</a>
-          <a class="navbar-link" href="#">Scitech</a>
-          <a class="navbar-link" href="#">Culture</a>
-          <a class="navbar-link" href="#">Ytv</a>
-          <a class="navbar-link" href="#">Wknd</a>
-          <a class="navbar-link" href="#">Mag</a>
+          <a id= "tag-university"class="navbar-link" href="#">University</a>
+          <a id= "tag-opinion"class="navbar-link" href="#">Opinion</a>
+          <a id= "tag-city"class="navbar-link" href="#">City</a>
+          <a id= "tag-sports"class="navbar-link" href="#">Sports</a>
+          <a id= "tag-scitech"class="navbar-link" href="#">Scitech</a>
+          <a id= "tag-culture"class="navbar-link" href="#">Culture</a>
+          <a id= "tag-ytv"class="navbar-link" href="#">Ytv</a>
+          <a id= "tag-weekend"class="navbar-link" href="#">Wknd</a>
+          <a id= "tag-magazine"class="navbar-link" href="#">Mag</a>
   </nav>
 </header>
   
@@ -252,7 +252,7 @@
       </aside></a>
     </section><!-- /culture -->
 
-    <section id="stories" class="js-packery container category weekend" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="weekend" class="js-packery container category weekend" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>Weekend</h2>
 
       some stories here
@@ -357,20 +357,40 @@ $(document).ready(function(){
   var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
 
   // build scenes
-  new ScrollMagic.Scene({triggerElement: "#sec1"})
-          .setClassToggle("#high1", "active") // add class toggle
+  new ScrollMagic.Scene({triggerElement: "#university"})
+          .setClassToggle("#tag-university", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#sec2"})
-          .setClassToggle("#high2", "active") // add class toggle
+  new ScrollMagic.Scene({triggerElement: "#opinion"})
+          .setClassToggle("#tag-opinion", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#sec3"})
-          .setClassToggle("#high3", "active") // add class toggle
+  new ScrollMagic.Scene({triggerElement: "#city"})
+          .setClassToggle("#tag-city", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#sec4"})
-          .setClassToggle("#high4", "active") // add class toggle
+  new ScrollMagic.Scene({triggerElement: "#scitech"})
+          .setClassToggle("#tag-scitech", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#culture"})
+          .setClassToggle("#tag-culture", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#weekend"})
+          .setClassToggle("#tag-weekend", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);  
+  new ScrollMagic.Scene({triggerElement: "#magazine"})
+          .setClassToggle("#tag-magazine", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#ytv"})
+          .setClassToggle("#tag-ytv", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);     
+  new ScrollMagic.Scene({triggerElement: "#sports"})
+          .setClassToggle("#tag-sports", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
 </script>
