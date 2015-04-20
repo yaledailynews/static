@@ -99,7 +99,7 @@
     </section><!-- /front-page -->
 
 
-    <section id="stories" class="js-packery container category university" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="university" class="js-packery container category university" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>University</h2>
 
       <a href="#"><article class="card story story-photo story-preview">
@@ -125,7 +125,7 @@
       </aside></a>
     </section><!-- /university -->
 
-   <section id="stories" class="js-packery container category opinion" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+   <section id="opinion" class="js-packery container category opinion" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>Opinion</h2>
 
       <a href="#"><article class="card story story-opinion">
@@ -165,7 +165,7 @@
       </aside></a>
     </section><!-- /opinion -->
 
-    <section id="stories" class="js-packery container category city" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="city" class="js-packery container category city" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>City</h2>
 
       <a href="#"><article class="card story">
@@ -196,7 +196,7 @@
       </aside></a>
     </section><!-- /city -->
 
-    <section id="stories" class="js-packery container category scitech" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="scitech" class="js-packery container category scitech" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>Scitech</h2>
       <a href="#"><article class="card story story-preview story-photo">
         <h1>Admins Meet YCC Halfway On Mental Health Proposals</h1>
@@ -224,7 +224,7 @@
       </aside></a>
     </section><!-- /scitech -->
 
-    <section id="stories" class="js-packery container category culture" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="culture" class="js-packery container category culture" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>Culture</h2>
       <a href="#"><article class="card story story-photo">
         <h1>Admins Meet YCC Halfway On Mental Health Proposals</h1>
@@ -262,7 +262,7 @@
       </aside></a>
     </section><!-- /weekend -->
 
-    <section id="stories" class="js-packery container category magazine" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="magazine" class="js-packery container category magazine" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>Magazine</h2>
       <a href="#"><article class="card story story-photo">
         <h1>OCS same-day appointments serve job seekers</h1>
@@ -295,7 +295,7 @@
       </aside></a>
     </section><!-- /magazine -->
 
-   <section id="stories" class="js-packery container category ytv" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+   <section id="ytv" class="js-packery container category ytv" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>YTV</h2>
 
       some stories here
@@ -306,7 +306,7 @@
     </section><!-- /YTV -->
 
 
-    <section id="stories" class="js-packery container category sports" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="sports" class="js-packery container category sports" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
       <h2>Sports</h2>
       <a href="#"><article class="card story story-photo">
         <h1>OCS same-day appointments serve job seekers</h1>
@@ -352,6 +352,28 @@ $(document).ready(function(){
   });
 </script>
 
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
+
+  // build scenes
+  new ScrollMagic.Scene({triggerElement: "#sec1"})
+          .setClassToggle("#high1", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#sec2"})
+          .setClassToggle("#high2", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#sec3"})
+          .setClassToggle("#high3", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#sec4"})
+          .setClassToggle("#high4", "active") // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+</script>
 
 </body>
 </html>
