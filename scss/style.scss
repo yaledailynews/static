@@ -120,13 +120,12 @@ $magazine-color: #5740b2;
     .card-preview {
       line-height: 1.3em;
       letter-spacing: .02em;
-      //color: #696565;
       margin-left: 15px;
       z-index: 11;
     }
     time {
       bottom: 35px;
-      color:white;
+      color: #433f3f; 
       @extend %time-category-style;
     }
     .category{
@@ -208,6 +207,9 @@ $magazine-color: #5740b2;
     .card-preview{
       color:#696565;
     }
+    time {
+        color: white;
+      }
     &::after {
       @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 60%, rgba(0,0,0,0) 100% ));
       top: 0;
@@ -234,6 +236,9 @@ $magazine-color: #5740b2;
       top: 0;
       height: $card-height + $card-border-width;
     }
+    time {
+        color: white;
+      }
     &::after {
       @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100% ));
       top: 0;

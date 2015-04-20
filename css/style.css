@@ -282,7 +282,7 @@ p {
     z-index: 11; }
   .card.story time {
     bottom: 35px;
-    color: white; }
+    color: #433f3f; }
   .card.story .category {
     bottom: 15px;
     color: #7096ff; }
@@ -334,6 +334,8 @@ p {
       bottom: 0; }
     .card.story-photo .card-preview {
       color: #696565; }
+    .card.story-photo time {
+      color: white; }
     .card.story-photo::after {
       background: -moz-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
       background: -webkit-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
@@ -356,6 +358,8 @@ p {
   .card.story-opinion .card-image {
     top: 0;
     height: 215px; }
+  .card.story-opinion time {
+    color: white; }
   .card.story-opinion::after {
     background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
     background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
