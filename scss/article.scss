@@ -1,6 +1,14 @@
 @import "html5-reset", "grid";
 
+%face-sans {
+  font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
+}
 
+%face-serif {
+  font-family: 'Playfair Display', "Georgia", serif;
+  font-weight: 400;
+}
 //style notes
 //title = 50pt, letter spacing 5px, line height = auto
 //author and date = 14pt avenir fontstyle heavyweight, letter spacing 2px, 
@@ -92,7 +100,30 @@ h3 {
 }
 
 
-
+.card {
+  @extend .four.columns;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  float:right;
+  border-top: thick solid black;
+  font-style: Avenir;
+  padding: 10px 15px 10px 15px;
+  h2{
+    font-size: 22px;
+    margin-top: 10px;
+    @extend %face-serif;
+    font-style: italic;
+    font-weight: 600;
+  }
+  a{
+    text-decoration: none;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    color: black;
+    font-size: 13px;
+  }
+}
 
 .stories {
 }
