@@ -315,50 +315,72 @@ header {
   .category{
     color:$university-color;
   }
+  .card{
+  border-bottom: thick solid $university-color;
 
+  }
 }
 
 .opinion{
   .category-jump{
     background-color: $opinion-color;
   }
-  
+  .card{
+  border-bottom: thick solid $opinion-color;
+ }
 }
-
 .city{
   .category-jump{
     background-color: $city-color;
   }
+  .card{
+  border-bottom: thick solid $city-color;
+  }
 }
-
 .scitech{
   .category-jump{
     background-color: $scitech-color;
   }
+    .card{
+    border-bottom: thick solid $scitech-color;
+    }
 }
 
 .ytv{
   .category-jump{
     background-color: $ytv-color;
   }
+    .card{
+    border-bottom: thick solid $ytv-color;
+    }
 }
+
 
 .magazine{
   .category-jump{
     background-color: $magazine-color;
   }
+    .card{
+    border-bottom: thick solid $magazine-color;
+    }
 }
 
 .weekend{
   .category-jump{
     background-color: $weekend-color;
   }
+    .card{
+    border-bottom: thick solid $weekend-color;
+    }
 }
 
 .sports{
   .category-jump{
     background-color: $sports-color;
   }
+.card{
+    border-bottom: thick solid $sports-color;
+    }
 }
 
 img.card-image{
