@@ -440,6 +440,13 @@ header {
 .scitech .card {
   border-bottom: thick solid #f5e638; }
 
+.culture .category-jump {
+  background-color: #1fea7c; }
+.culture .story .category {
+  color: #1fea7c; }
+.culture .card {
+  border-bottom: thick solid #1fea7c; }
+
 .ytv .category-jump {
   background-color: #fe9e48; }
 .ytv .story .category {
@@ -474,5 +481,8 @@ img.card-image {
 
 footer {
   height: 50px; }
+
+.active {
+  background-color: #307FB5; }
 
 /*# sourceMappingURL=style.css.map */

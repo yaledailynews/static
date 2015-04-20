@@ -71,6 +71,7 @@ $sports-color:#483fc2;
 $ytv-color: #fe9e48;
 $weekend-color: #3faac6;
 $magazine-color: #5740b2;
+$culture-color: #1fea7c;
 
 
 .card {
@@ -361,6 +362,18 @@ header {
     }
 }
 
+.culture{
+  .category-jump{
+    background-color: $culture-color;
+  }
+  .story .category{
+    color:$culture-color;
+  }
+    .card{
+    border-bottom: thick solid $culture-color;
+    }
+}
+
 .ytv{
   .category-jump{
     background-color: $ytv-color;
@@ -418,6 +431,10 @@ img.card-image{
 footer{
   height: 50px;
 }
+
+  .active {
+    background-color: #307FB5;
+  }
 
 //1479F2 = blue
 //06F7b2 = green
