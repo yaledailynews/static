@@ -35,7 +35,7 @@ body {
 }
 
 %face-header {
-  @extend %face-serif;
+  @extend %face-sans;
 	letter-spacing: .05em;
   line-height: 1.2;
   font-weight: 600;
@@ -294,6 +294,8 @@ header {
     box-shadow: 0 4px 2px -2px gray;
     text-align: center;
     z-index:100;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .navbar-link {
@@ -312,18 +314,20 @@ header {
   .category-jump{
     background-color: $university-color;
   }
-  .category{
+  .story .category{
     color:$university-color;
   }
   .card{
   border-bottom: thick solid $university-color;
-
   }
 }
 
 .opinion{
   .category-jump{
     background-color: $opinion-color;
+  }
+  .story .category{
+    color:$opinion-color;
   }
   .card{
   border-bottom: thick solid $opinion-color;
@@ -333,6 +337,9 @@ header {
   .category-jump{
     background-color: $city-color;
   }
+  .story .category{
+    color:$city-color;
+  }
   .card{
   border-bottom: thick solid $city-color;
   }
@@ -340,6 +347,9 @@ header {
 .scitech{
   .category-jump{
     background-color: $scitech-color;
+  }
+  .story .category{
+    color:$scitech-color;
   }
     .card{
     border-bottom: thick solid $scitech-color;
@@ -349,6 +359,9 @@ header {
 .ytv{
   .category-jump{
     background-color: $ytv-color;
+  }
+  .story .category{
+    color:$ytv-color;
   }
     .card{
     border-bottom: thick solid $ytv-color;
@@ -360,6 +373,9 @@ header {
   .category-jump{
     background-color: $magazine-color;
   }
+  .story .category{
+    color:$magazine-color;
+  }
     .card{
     border-bottom: thick solid $magazine-color;
     }
@@ -368,6 +384,9 @@ header {
 .weekend{
   .category-jump{
     background-color: $weekend-color;
+  }
+  .story .category{
+    color:$weekend-color;
   }
     .card{
     border-bottom: thick solid $weekend-color;
@@ -378,6 +397,9 @@ header {
   .category-jump{
     background-color: $sports-color;
   }
+  .story .category{
+    color:$sports-color;
+  }
 .card{
     border-bottom: thick solid $sports-color;
     }
@@ -386,6 +408,10 @@ header {
 img.card-image{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+}
+
+footer{
+  height: 50px;
 }
 
 //1479F2 = blue

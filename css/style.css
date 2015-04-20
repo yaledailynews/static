@@ -205,11 +205,11 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body {
+body, .card h1, header .navbar-link {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 400; }
 
-.card h1, header .navbar-link, .card.category-jump strong {
+.card.category-jump strong {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -335,11 +335,11 @@ p {
     .card.story-photo .card-preview {
       color: #696565; }
     .card.story-photo::after {
-      background: -moz-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
-      background: -webkit-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
-      background: -o-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
-      background: -ms-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
-      background: linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: -moz-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+      background: -webkit-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+      background: -o-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+      background: -ms-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+      background: linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
       top: 0;
       left: 0;
       width: 100%;
@@ -357,11 +357,11 @@ p {
     top: 0;
     height: 215px; }
   .card.story-opinion::after {
-    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
-    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
-    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
-    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -400,7 +400,9 @@ header {
     background-color: #ffffff;
     box-shadow: 0 4px 2px -2px gray;
     text-align: center;
-    z-index: 100; }
+    z-index: 100;
+    padding-top: 10px;
+    padding-bottom: 10px; }
   header .navbar-link {
     text-transform: uppercase;
     text-decoration: none;
@@ -408,46 +410,65 @@ header {
 
 .university .category-jump {
   background-color: #7096ff; }
-.university .category {
+.university .story .category {
   color: #7096ff; }
 .university .card {
   border-bottom: thick solid #7096ff; }
 
 .opinion .category-jump {
   background-color: #b15ce1; }
+.opinion .story .category {
+  color: #b15ce1; }
 .opinion .card {
   border-bottom: thick solid #b15ce1; }
 
 .city .category-jump {
   background-color: #a73848; }
+.city .story .category {
+  color: #a73848; }
 .city .card {
   border-bottom: thick solid #a73848; }
 
 .scitech .category-jump {
   background-color: #f5e638; }
+.scitech .story .category {
+  color: #f5e638; }
 .scitech .card {
   border-bottom: thick solid #f5e638; }
 
 .ytv .category-jump {
   background-color: #fe9e48; }
+.ytv .story .category {
+  color: #fe9e48; }
 .ytv .card {
   border-bottom: thick solid #fe9e48; }
 
 .magazine .category-jump {
   background-color: #5740b2; }
+.magazine .story .category {
+  color: #5740b2; }
 .magazine .card {
   border-bottom: thick solid #5740b2; }
 
 .weekend .category-jump {
   background-color: #3faac6; }
+.weekend .story .category {
+  color: #3faac6; }
 .weekend .card {
   border-bottom: thick solid #3faac6; }
 
 .sports .category-jump {
   background-color: #483fc2; }
+.sports .story .category {
+  color: #483fc2; }
 .sports .card {
   border-bottom: thick solid #483fc2; }
 
 img.card-image {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
+
+footer {
+  height: 50px; }
+
+/*# sourceMappingURL=style.css.map */
