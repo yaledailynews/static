@@ -413,45 +413,57 @@ $(document).ready(function(){
 
 <script>
   // init controller
-  var controller = new ScrollMagic.Controller({globalSceneOptions: {duration: 100}});
+  var controller = new ScrollMagic.Controller();
 
+  function getSectionHeight(section) {
+    return parseInt($(section).height());
+  }
   // build scenes
-  new ScrollMagic.Scene({triggerElement: "#university"})
+  var university = new ScrollMagic.Scene({triggerElement: "#university"})
           .setClassToggle("#tag-university", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#opinion"})
+setTimeout(function(){university.duration(getSectionHeight('#university'))},500);
+  var opinion = new ScrollMagic.Scene({triggerElement: "#opinion"})
           .setClassToggle("#tag-opinion", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#city"})
+setTimeout(function(){opinion.duration(getSectionHeight('#opinion'))},500);
+  var city = new ScrollMagic.Scene({triggerElement: "#city"})
           .setClassToggle("#tag-city", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#scitech"})
+setTimeout(function(){city.duration(getSectionHeight('#city'))},500);
+  var scitech = new ScrollMagic.Scene({triggerElement: "#scitech"})
           .setClassToggle("#tag-scitech", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#culture"})
+setTimeout(function(){scitech.duration(getSectionHeight('#scitech'))},500);
+  var culture = new ScrollMagic.Scene({triggerElement: "#culture"})
           .setClassToggle("#tag-culture", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#weekend"})
+setTimeout(function(){culture.duration(getSectionHeight('#culture'))},500);
+  var weekend = new ScrollMagic.Scene({triggerElement: "#weekend"})
           .setClassToggle("#tag-weekend", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);  
-  new ScrollMagic.Scene({triggerElement: "#magazine"})
+          .addTo(controller); 
+setTimeout(function(){weekend.duration(getSectionHeight('#weekend'))},500);
+  var magazine = new ScrollMagic.Scene({triggerElement: "#magazine"})
           .setClassToggle("#tag-magazine", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-  new ScrollMagic.Scene({triggerElement: "#ytv"})
+setTimeout(function(){magazine.duration(getSectionHeight('#magazine'))},500);
+  var ytv = new ScrollMagic.Scene({triggerElement: "#ytv",})
           .setClassToggle("#tag-ytv", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);     
-  new ScrollMagic.Scene({triggerElement: "#sports"})
+setTimeout(function(){ytv.duration(getSectionHeight('#ytv'))},500);
+  var sports = new ScrollMagic.Scene({triggerElement: "#sports",})
           .setClassToggle("#tag-sports", "active") // add class toggle
           .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
+setTimeout(function(){sports.duration(getSectionHeight('#sports'))},500);
 </script>
 
 </body>

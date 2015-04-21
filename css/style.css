@@ -484,7 +484,7 @@ img.card-image {
   filter: grayscale(100%); }
 
 footer {
-  height: 50px; }
+  height: 400px; }
 
 .active {
   background-color: #307FB5; }
