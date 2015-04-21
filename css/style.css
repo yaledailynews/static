@@ -379,21 +379,6 @@ section.category {
   width: 100%;
   padding: 2em 0; }
 
-@media (max-width: 400px) {
-  p {
-    font-size: 1em; }
-
-  .card {
-    width: 80%;
-    position: relative;
-    left: 10%;
-    margin-top: 5px; }
-
-  .hide {
-    display: none; }
-
-  div.card:first-of-type {
-    margin-top: 5%; } }
 header {
   background-color: #ffffff; }
   header .header {
