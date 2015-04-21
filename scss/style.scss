@@ -2,7 +2,8 @@
 
 %face-sans {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 %face-serif {
@@ -435,7 +436,18 @@ img.card-image{
 footer{
   margin-top: 100px;
   height: 50px;
-  background: #eee;
+  background: #C9C9C9;
+  text-align: center;
+  a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: white;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0px 10px 0px 10px;
+  }
 }
 
   .active {
