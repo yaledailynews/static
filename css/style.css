@@ -209,7 +209,7 @@ body, .card h1, header .navbar-link {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 400; }
 
-.card.category-jump strong {
+.card.category-jump strong, section.category h2 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -338,11 +338,11 @@ p {
     .card.story-photo time {
       color: white; }
     .card.story-photo::after {
-      background: -moz-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -webkit-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -o-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -ms-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+      background: -moz-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: -webkit-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: -o-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: -ms-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
       top: 0;
       left: 0;
       width: 100%;
@@ -362,11 +362,11 @@ p {
   .card.story-opinion time {
     color: white; }
   .card.story-opinion::after {
-    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -378,6 +378,9 @@ section.category {
   clear: both;
   width: 100%;
   padding: 2em 0; }
+  section.category h2 {
+    font-style: italic;
+    font-size: 2.75em; }
 
 header {
   background-color: #ffffff; }
@@ -470,5 +473,3 @@ footer {
 
 .active {
   background-color: #307FB5; }
-
-/*# sourceMappingURL=style.css.map */
