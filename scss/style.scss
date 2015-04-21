@@ -27,7 +27,8 @@
   background: linear-gradient($args), no-repeat;
 }
 
-$card-height: 212px;
+$card-height: 211.18px;
+$card-width:211.18px;
 $gutter-height: 38.5px;
 
 body {
@@ -268,27 +269,54 @@ section.category {
 }
  
 
-// @media(max-width:400px) {
-// 	p {
-// 		font-size: 1em;
-// 	}
+@media(max-width:980px) {
+  .category{
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-// 	.card {
-// 		width: 80%;
-// 		position: relative;
-// 		left: 10%;
-// 		margin-top: 5px;
-// 	}
+  .card {
 
-// 	.hide {
-// 		display: none;
-// 	}
+    &.story {
+      width: $card-width;
+    }
 
-// 	div.card:first-of-type{
-// 		margin-top: 5%;
+    &.story-major {
+      width: 2*$card-width + $gutter-height;
+    }
+    &.story-breaking{
+      width: 3*$card-width + 2*$gutter-height;
 
-// 	}
-// }
+      h1 {
+        font-size: 40px;
+      }
+    }
+
+
+  }
+ }
+
+@media(max-width:710px) {
+.card {
+
+  &.story {
+    width: $card-width;
+  }
+
+  &.story-major {
+    width: 2*$card-width + $gutter-height;
+  }
+  &.story-breaking{
+    width: 2*$card-width + $gutter-height;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+
+}
+}
 
 
 header {

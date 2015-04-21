@@ -247,7 +247,7 @@ p {
 
 .card {
   background-color: white;
-  height: 212px;
+  height: 211.18px;
   overflow: hidden;
   z-index: 2;
   border-style: solid;
@@ -297,12 +297,12 @@ p {
     left: 0;
     z-index: 0; }
   .card.story-major, .card.story-breaking {
-    height: 462.5px; }
+    height: 460.86px; }
     .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p, .card.story-major time, .card.story-breaking time {
       color: white; }
     .card.story-major .card-image, .card.story-breaking .card-image {
       top: 0;
-      height: 465.5px; }
+      height: 463.86px; }
     .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p {
       z-index: 2; }
     .card.story-major::after, .card.story-breaking::after {
@@ -324,13 +324,13 @@ p {
   .card.story-breaking h1 {
     font-size: 60px; }
   .card.story-preview {
-    height: 462.5px; }
+    height: 460.86px; }
     .card.story-preview .card-preview {
       color: #696565; }
     .card.story-preview time {
       color: #696565; }
   .card.story-photo {
-    height: 462.5px; }
+    height: 460.86px; }
     .card.story-photo .card-image {
       height: 50%;
       bottom: 0; }
@@ -351,7 +351,7 @@ p {
       content: "";
       position: absolute; }
   .card.story-preview.story-photo {
-    height: 462.5px; }
+    height: 460.86px; }
     .card.story-preview.story-photo .card-image {
       height: 50%;
       bottom: 0; }
@@ -359,7 +359,7 @@ p {
       color: #696565; }
   .card.story-opinion .card-image {
     top: 0;
-    height: 215px; }
+    height: 214.18px; }
   .card.story-opinion time {
     color: white; }
   .card.story-opinion::after {
@@ -383,6 +383,28 @@ section.category {
     font-style: italic;
     font-size: 2.75em; }
 
+@media (max-width: 980px) {
+  .category {
+    margin-left: auto;
+    margin-right: auto; }
+
+  .card.story {
+    width: 211.18px; }
+  .card.story-major, .card.story-breaking {
+    width: 460.86px; }
+  .card.story-breaking {
+    width: 710.54px; }
+    .card.story-breaking h1 {
+      font-size: 40px; } }
+@media (max-width: 710px) {
+  .card.story {
+    width: 211.18px; }
+  .card.story-major, .card.story-breaking {
+    width: 460.86px; }
+  .card.story-breaking {
+    width: 460.86px; }
+    .card.story-breaking h1 {
+      font-size: 20px; } }
 header {
   background-color: #ffffff; }
   header .header {
