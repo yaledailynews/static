@@ -205,7 +205,7 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, .card h1, header .navbar-link {
+body, .card h1, header .navbar-link, footer a {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
@@ -498,9 +498,7 @@ footer {
   text-align: center; }
   footer a {
     text-decoration: none;
-    font-weight: 600;
     font-size: 11px;
-    letter-spacing: 2px;
     color: white;
     line-height: 50px;
     text-transform: uppercase;
