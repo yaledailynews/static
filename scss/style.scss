@@ -2,7 +2,8 @@
 
 %face-sans {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 %face-serif {
@@ -26,7 +27,8 @@
   background: linear-gradient($args), no-repeat;
 }
 
-$card-height: 212px;
+$card-height: 211.18px;
+$card-width:211.18px;
 $gutter-height: 38.5px;
 
 body {
@@ -267,26 +269,58 @@ section.category {
 }
  
 
-@media(max-width:400px) {
-	p {
-		font-size: 1em;
-	}
+@media(max-width:980px) {
+  #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv{
+    width: 710px;
+    margin: 0 auto;
+  }
 
-	.card {
-		width: 80%;
-		position: relative;
-		left: 10%;
-		margin-top: 5px;
-	}
+  .card {
+      width: $card-width;
+    &.story {
+      width: $card-width;
+    }
 
-	.hide {
-		display: none;
-	}
+    &.story-major {
+      width: 2*$card-width + $gutter-height;
+    }
+    &.story-breaking{
+      width: 3*$card-width + 2*$gutter-height;
 
-	div.card:first-of-type{
-		margin-top: 5%;
+      h1 {
+        font-size: 40px;
+      }
+    }
 
-	}
+
+  }
+ }
+
+@media(max-width:710px) {
+
+#stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv{
+  width: 710px;
+  margin: 0 auto;
+}
+.card {
+
+  &.story {
+    width: $card-width;
+  }
+
+  &.story-major {
+    width: 2*$card-width + $gutter-height;
+  }
+  &.story-breaking{
+    width: 2*$card-width + $gutter-height;
+
+    h1 {
+      font-size: 20px;
+    }
+  }
+
+
+}
 }
 
 
@@ -433,7 +467,20 @@ img.card-image{
 }
 
 footer{
+  margin-top: 100px;
   height: 400px;
+  background: #C9C9C9;
+  text-align: center;
+  a{
+    text-decoration: none;
+    @extend %face-sans;
+    font-size: 11px;
+    color: white;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0px 10px 0px 10px;
+  }
+
 }
 
   .active {
