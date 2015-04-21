@@ -384,19 +384,25 @@ section.category {
     font-size: 2.75em; }
 
 @media (max-width: 980px) {
-  .category {
-    margin-left: auto;
-    margin-right: auto; }
+  #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
+    width: 710px;
+    margin: 0 auto; }
 
-  .card.story {
+  .card {
     width: 211.18px; }
-  .card.story-major, .card.story-breaking {
-    width: 460.86px; }
-  .card.story-breaking {
-    width: 710.54px; }
-    .card.story-breaking h1 {
-      font-size: 40px; } }
+    .card.story {
+      width: 211.18px; }
+    .card.story-major, .card.story-breaking {
+      width: 460.86px; }
+    .card.story-breaking {
+      width: 710.54px; }
+      .card.story-breaking h1 {
+        font-size: 40px; } }
 @media (max-width: 710px) {
+  #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
+    width: 710px;
+    margin: 0 auto; }
+
   .card.story {
     width: 211.18px; }
   .card.story-major, .card.story-breaking {
