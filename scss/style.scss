@@ -189,6 +189,28 @@ $culture-color: #1fea7c;
       @extend .nine.columns;
       font-size: 60px;
     }
+
+    .breaking{
+      top: 0;
+      right: 0;
+      display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+      position: absolute;
+      padding: 2em;
+      background-color: red;
+          h3{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1em;
+      color: white;
+    }
+        time{
+          top: 50px;
+          margin: 0;
+            
+            }
+    }
   }
 
   &.story-preview {
@@ -341,6 +363,7 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  
 
   .navbar-link {
     @extend %face-header;
@@ -364,6 +387,8 @@ header {
   .card{
   border-bottom: thick solid $university-color;
   }
+  
+    color:$university-color !important;
 }
 
 .opinion{
@@ -376,6 +401,9 @@ header {
   .card{
   border-bottom: thick solid $opinion-color;
  }
+  
+  color: $opinion-color !important;
+ 
 }
 .city{
   .category-jump{
@@ -387,6 +415,9 @@ header {
   .card{
   border-bottom: thick solid $city-color;
   }
+    
+  color: $city-color !important;
+ 
 }
 .scitech{
   .category-jump{
@@ -398,6 +429,9 @@ header {
     .card{
     border-bottom: thick solid $scitech-color;
     }
+     
+  color: $scitech-color !important;
+ 
 }
 
 .culture{
@@ -410,6 +444,9 @@ header {
     .card{
     border-bottom: thick solid $culture-color;
     }
+     
+  color: $culture-color !important;
+ 
 }
 
 .ytv{
@@ -422,6 +459,9 @@ header {
     .card{
     border-bottom: thick solid $ytv-color;
     }
+    
+  color: $ytv-color !important;
+ 
 }
 
 
@@ -435,6 +475,9 @@ header {
     .card{
     border-bottom: thick solid $magazine-color;
     }
+     
+  color: $magazine-color !important;
+ 
 }
 
 .weekend{
@@ -447,6 +490,9 @@ header {
     .card{
     border-bottom: thick solid $weekend-color;
     }
+      
+  color: $weekend-color !important;
+ 
 }
 
 .sports{
@@ -459,6 +505,9 @@ header {
 .card{
     border-bottom: thick solid $sports-color;
     }
+     
+  color: $sports-color !important;
+ 
 }
 
 img.card-image{
@@ -468,7 +517,7 @@ img.card-image{
 
 footer{
   margin-top: 100px;
-  height: 400px;
+  height: 50px;
   background: #C9C9C9;
   text-align: center;
   a{
@@ -483,9 +532,7 @@ footer{
 
 }
 
-  .active {
-    background-color: #307FB5;
-  }
+
 
 //1479F2 = blue
 //06F7b2 = green

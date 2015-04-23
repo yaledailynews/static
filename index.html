@@ -37,15 +37,15 @@
 <header id="site-header">
   <img src="./images/logo.png" class="header" id="header">
   <nav class="navigation" id="navigation">
-          <a id= "tag-university"class="navbar-link" href="#">University</a>
-          <a id= "tag-city"class="navbar-link" href="#">City</a>
-          <a id= "tag-sports"class="navbar-link" href="#">Sports</a>
-          <a id= "tag-scitech"class="navbar-link" href="#">Scitech</a>
-          <a id= "tag-culture"class="navbar-link" href="#">Culture</a>
-          <a id= "tag-opinion"class="navbar-link" href="#">Opinion</a>
-          <a id= "tag-ytv"class="navbar-link" href="#">Ytv</a>
-          <a id= "tag-weekend"class="navbar-link" href="#">Wknd</a>
-          <a id= "tag-magazine"class="navbar-link" href="#">Mag</a>
+          <a id= "tag-university"class="navbar-link " href="#">University</a>
+          <a id= "tag-city"class="navbar-link " href="#">City</a>
+          <a id= "tag-sports"class="navbar-link " href="#">Sports</a>
+          <a id= "tag-scitech"class="navbar-link " href="#">Scitech</a>
+          <a id= "tag-culture"class="navbar-link " href="#">Culture</a>
+          <a id= "tag-opinion"class="navbar-link " href="#">Opinion</a>
+          <a id= "tag-weekend"class="navbar-link " href="#">Wknd</a>
+          <a id= "tag-magazine"class="navbar-link " href="#">Mag</a>
+          <a id= "tag-ytv"class="navbar-link x" href="#">Ytv</a>
   </nav>
 </header>
   
@@ -56,8 +56,10 @@
         <h1>Lorum Ipsum Headline Salami Tenderloin Shoulder Tail T-bone Bresaola Ground Round Rounded</h1>
         <p class="byline">Christopher Wan, Annie Cook</p>
           <img class="card-image" src="images/chrisnaked.jpg">
-        <h3>Breaking</h3>
-        <time>Apr 5, 12:45 pm</time>
+          <div class="breaking">
+            <h3>Breaking</h3>
+            <time>Apr 5, 12:45 pm</time>
+          </div>
       </article></a>
       <a href="#"><article class="card story story-major">
         <h1>Lorum Ipsum Headline Salami Tenderloin Shoulder Tail T-bone Bresaola Ground Round Rounded</h1>
@@ -391,7 +393,7 @@
 
 
     <footer>
-      <a href="#">&#169; Yale Daily News 2015</a>
+      <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
       <a href="#">About Us</a>
       <a href="#">Contact</a>
       <a href="#">Advertise</a>
@@ -406,7 +408,7 @@
 
 <script>
 $(document).ready(function(){
-    $("#navigation").sticky({topSpacing:0});
+    $("#navigation").sticky({});
   });
 </script>
 
@@ -414,55 +416,40 @@ $(document).ready(function(){
   // init controller
   var controller = new ScrollMagic.Controller();
 
+  //find section height
   function getSectionHeight(section) {
-    return parseInt($(section).height());
+    return $(section).height();
   }
+
   // build scenes
-  var university = new ScrollMagic.Scene({triggerElement: "#university"})
-          .setClassToggle("#tag-university", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
+  function buildScenes(section, tag, css){
+      new ScrollMagic.Scene({triggerElement: section, duration: getSectionHeight(section)})
+          .setClassToggle(tag, css) // add class toggle
+          //.addIndicators() // add indicators (requires plugin)
           .addTo(controller);
-setTimeout(function(){university.duration(getSectionHeight('#university'))},500);
-  var opinion = new ScrollMagic.Scene({triggerElement: "#opinion"})
-          .setClassToggle("#tag-opinion", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-setTimeout(function(){opinion.duration(getSectionHeight('#opinion'))},500);
-  var city = new ScrollMagic.Scene({triggerElement: "#city"})
-          .setClassToggle("#tag-city", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-setTimeout(function(){city.duration(getSectionHeight('#city'))},500);
-  var scitech = new ScrollMagic.Scene({triggerElement: "#scitech"})
-          .setClassToggle("#tag-scitech", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-setTimeout(function(){scitech.duration(getSectionHeight('#scitech'))},500);
-  var culture = new ScrollMagic.Scene({triggerElement: "#culture"})
-          .setClassToggle("#tag-culture", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-setTimeout(function(){culture.duration(getSectionHeight('#culture'))},500);
-  var weekend = new ScrollMagic.Scene({triggerElement: "#weekend"})
-          .setClassToggle("#tag-weekend", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller); 
-setTimeout(function(){weekend.duration(getSectionHeight('#weekend'))},500);
-  var magazine = new ScrollMagic.Scene({triggerElement: "#magazine"})
-          .setClassToggle("#tag-magazine", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-setTimeout(function(){magazine.duration(getSectionHeight('#magazine'))},500);
-  var ytv = new ScrollMagic.Scene({triggerElement: "#ytv",})
-          .setClassToggle("#tag-ytv", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);     
-setTimeout(function(){ytv.duration(getSectionHeight('#ytv'))},500);
-  var sports = new ScrollMagic.Scene({triggerElement: "#sports",})
-          .setClassToggle("#tag-sports", "active") // add class toggle
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-setTimeout(function(){sports.duration(getSectionHeight('#sports'))},500);
+  }
+
+  // $(document).ready(function(){
+  //   buildScenes("#university", "#tag-university", "university");
+  //   buildScenes("#opinion", "#tag-opinion", "opinion");
+  //   buildScenes("#city", "#tag-city", "city");
+  //   buildScenes("#scitech", "#tag-scitech", "scitech");
+  //   buildScenes("#culture", "#tag-culture", "culture");
+  //   buildScenes("#weekend", "#tag-weekend", "weekend");
+  //   buildScenes("#magazine", "#tag-magazine", "magazine");
+  //   buildScenes("#ytv", "#tag-ytv", "ytv");
+  //   buildScenes("#sports", "#tag-sports", "sports");
+  // });
+
+  setTimeout(function(){buildScenes("#university", "#tag-university", "university")}, 500);
+  setTimeout(function(){buildScenes("#opinion", "#tag-opinion", "opinion")}, 500);
+  setTimeout(function(){buildScenes("#city", "#tag-city", "city")}, 500);
+  setTimeout(function(){buildScenes("#scitech", "#tag-scitech", "scitech")}, 500);
+  setTimeout(function(){buildScenes("#culture", "#tag-culture", "culture")}, 500);
+  setTimeout(function(){buildScenes("#weekend", "#tag-weekend", "weekend")}, 500);
+  setTimeout(function(){buildScenes("#magazine", "#tag-magazine", "magazine")}, 500);
+  setTimeout(function(){buildScenes("#ytv", "#tag-ytv", "ytv")}, 500);
+  setTimeout(function(){buildScenes("#sports", "#tag-sports", "sports")}, 500);
 </script>
 
 </body>

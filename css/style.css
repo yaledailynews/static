@@ -323,6 +323,25 @@ p {
     height: auto; }
   .card.story-breaking h1 {
     font-size: 60px; }
+  .card.story-breaking .breaking {
+    top: 0;
+    right: 0;
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-justify-content: space-around;
+    /* Safari 6.1+ */
+    display: flex;
+    position: absolute;
+    padding: 2em;
+    background-color: red; }
+    .card.story-breaking .breaking h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1em;
+      color: white; }
+    .card.story-breaking .breaking time {
+      top: 50px;
+      margin: 0; }
   .card.story-preview {
     height: 460.86px; }
     .card.story-preview .card-preview {
@@ -430,68 +449,86 @@ header {
     text-decoration: none;
     color: #938383; }
 
-.university .category-jump {
-  background-color: #7096ff; }
-.university .story .category {
-  color: #7096ff; }
-.university .card {
-  border-bottom: thick solid #7096ff; }
+.university {
+  color: #7096ff !important; }
+  .university .category-jump {
+    background-color: #7096ff; }
+  .university .story .category {
+    color: #7096ff; }
+  .university .card {
+    border-bottom: thick solid #7096ff; }
 
-.opinion .category-jump {
-  background-color: #b15ce1; }
-.opinion .story .category {
-  color: #b15ce1; }
-.opinion .card {
-  border-bottom: thick solid #b15ce1; }
+.opinion {
+  color: #b15ce1 !important; }
+  .opinion .category-jump {
+    background-color: #b15ce1; }
+  .opinion .story .category {
+    color: #b15ce1; }
+  .opinion .card {
+    border-bottom: thick solid #b15ce1; }
 
-.city .category-jump {
-  background-color: #a73848; }
-.city .story .category {
-  color: #a73848; }
-.city .card {
-  border-bottom: thick solid #a73848; }
+.city {
+  color: #a73848 !important; }
+  .city .category-jump {
+    background-color: #a73848; }
+  .city .story .category {
+    color: #a73848; }
+  .city .card {
+    border-bottom: thick solid #a73848; }
 
-.scitech .category-jump {
-  background-color: #f5e638; }
-.scitech .story .category {
-  color: #f5e638; }
-.scitech .card {
-  border-bottom: thick solid #f5e638; }
+.scitech {
+  color: #f5e638 !important; }
+  .scitech .category-jump {
+    background-color: #f5e638; }
+  .scitech .story .category {
+    color: #f5e638; }
+  .scitech .card {
+    border-bottom: thick solid #f5e638; }
 
-.culture .category-jump {
-  background-color: #1fea7c; }
-.culture .story .category {
-  color: #1fea7c; }
-.culture .card {
-  border-bottom: thick solid #1fea7c; }
+.culture {
+  color: #1fea7c !important; }
+  .culture .category-jump {
+    background-color: #1fea7c; }
+  .culture .story .category {
+    color: #1fea7c; }
+  .culture .card {
+    border-bottom: thick solid #1fea7c; }
 
-.ytv .category-jump {
-  background-color: #fe9e48; }
-.ytv .story .category {
-  color: #fe9e48; }
-.ytv .card {
-  border-bottom: thick solid #fe9e48; }
+.ytv {
+  color: #fe9e48 !important; }
+  .ytv .category-jump {
+    background-color: #fe9e48; }
+  .ytv .story .category {
+    color: #fe9e48; }
+  .ytv .card {
+    border-bottom: thick solid #fe9e48; }
 
-.magazine .category-jump {
-  background-color: #5740b2; }
-.magazine .story .category {
-  color: #5740b2; }
-.magazine .card {
-  border-bottom: thick solid #5740b2; }
+.magazine {
+  color: #5740b2 !important; }
+  .magazine .category-jump {
+    background-color: #5740b2; }
+  .magazine .story .category {
+    color: #5740b2; }
+  .magazine .card {
+    border-bottom: thick solid #5740b2; }
 
-.weekend .category-jump {
-  background-color: #3faac6; }
-.weekend .story .category {
-  color: #3faac6; }
-.weekend .card {
-  border-bottom: thick solid #3faac6; }
+.weekend {
+  color: #3faac6 !important; }
+  .weekend .category-jump {
+    background-color: #3faac6; }
+  .weekend .story .category {
+    color: #3faac6; }
+  .weekend .card {
+    border-bottom: thick solid #3faac6; }
 
-.sports .category-jump {
-  background-color: #483fc2; }
-.sports .story .category {
-  color: #483fc2; }
-.sports .card {
-  border-bottom: thick solid #483fc2; }
+.sports {
+  color: #483fc2 !important; }
+  .sports .category-jump {
+    background-color: #483fc2; }
+  .sports .story .category {
+    color: #483fc2; }
+  .sports .card {
+    border-bottom: thick solid #483fc2; }
 
 img.card-image {
   -webkit-filter: grayscale(100%);
@@ -499,7 +536,7 @@ img.card-image {
 
 footer {
   margin-top: 100px;
-  height: 400px;
+  height: 50px;
   background: #C9C9C9;
   text-align: center; }
   footer a {
@@ -509,6 +546,3 @@ footer {
     line-height: 50px;
     text-transform: uppercase;
     margin: 0px 10px 0px 10px; }
-
-.active {
-  background-color: #307FB5; }
