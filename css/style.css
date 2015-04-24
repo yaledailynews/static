@@ -341,7 +341,7 @@ p {
       color: white; }
     .card.story-breaking .breaking time {
       top: 50px;
-      margin: 0; }
+      margin-right: 30px !important; }
   .card.story-preview {
     height: 460.86px; }
     .card.story-preview .card-preview {
@@ -420,7 +420,7 @@ section.category {
         font-size: 40px; } }
 @media (max-width: 710px) {
   #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
-    width: 710px;
+    width: 480px;
     margin: 0 auto; }
 
   .card.story {

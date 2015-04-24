@@ -207,7 +207,7 @@ $culture-color: #1fea7c;
       }
       time{
         top: 50px;
-        margin: 0;
+        margin-right: 30px !important;
        }
     }
   }
@@ -321,7 +321,7 @@ section.category {
 @media(max-width:710px) {
 
 #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv{
-  width: 710px;
+  width: 480px;
   margin: 0 auto;
 }
 .card {
