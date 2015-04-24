@@ -425,21 +425,10 @@ $(document).ready(function(){
   function buildScenes(section, tag, css){
       new ScrollMagic.Scene({triggerElement: section, duration: getSectionHeight(section)})
           .setClassToggle(tag, css) // add class toggle
-          //.addIndicators() // add indicators (requires plugin)
+          .addIndicators() // add indicators (requires plugin)
           .addTo(controller);
   }
 
-  // $(document).ready(function(){
-  //   buildScenes("#university", "#tag-university", "university");
-  //   buildScenes("#opinion", "#tag-opinion", "opinion");
-  //   buildScenes("#city", "#tag-city", "city");
-  //   buildScenes("#scitech", "#tag-scitech", "scitech");
-  //   buildScenes("#culture", "#tag-culture", "culture");
-  //   buildScenes("#weekend", "#tag-weekend", "weekend");
-  //   buildScenes("#magazine", "#tag-magazine", "magazine");
-  //   buildScenes("#ytv", "#tag-ytv", "ytv");
-  //   buildScenes("#sports", "#tag-sports", "sports");
-  // });
 
   setTimeout(function(){buildScenes("#university", "#tag-university", "university")}, 500);
   setTimeout(function(){buildScenes("#opinion", "#tag-opinion", "opinion")}, 500);
