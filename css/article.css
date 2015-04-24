@@ -237,6 +237,7 @@ header {
     margin-bottom: 10px; }
   header .navigation {
     background-color: #ffffff;
+    box-shadow: 0 4px 2px -2px gray;
     text-align: center;
     z-index: 100;
     padding-top: 10px;
