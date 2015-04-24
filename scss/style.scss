@@ -194,22 +194,21 @@ $culture-color: #1fea7c;
       top: 0;
       right: 0;
       display: -webkit-flex; /* Safari */
-    -webkit-justify-content: space-around; /* Safari 6.1+ */
-    display: flex;
+      -webkit-justify-content: space-around; /* Safari 6.1+ */
+      display: flex;
       position: absolute;
       padding: 2em;
       background-color: red;
-          h3{
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1em;
-      color: white;
-    }
-        time{
-          top: 50px;
-          margin: 0;
-            
-            }
+      h3{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1em;
+        color: white;
+      }
+      time{
+        top: 50px;
+        margin: 0;
+       }
     }
   }
 
