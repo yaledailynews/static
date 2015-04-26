@@ -433,6 +433,20 @@ section.category {
     height: 211.18px; }
     .card.story-breaking h1 {
       font-size: 20px; } }
+@media (max-width: 480px) {
+  #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 3%; }
+
+  .card {
+    width: 211.18px; }
+    .card.story {
+      width: 211.18px; }
+    .card.story-breaking {
+      height: 211.18px; }
+      .card.story-breaking h1 {
+        font-size: 25px; } }
 header {
   background-color: #ffffff; }
   header .header {
