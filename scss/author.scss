@@ -5,6 +5,14 @@ $card-height: 211.18px;
 $card-width:211.18px;
 $gutter-height: 38.5px;
 
+@mixin bg-gradienter($args) {
+  background: -moz-linear-gradient($args), no-repeat;
+  background: -webkit-linear-gradient($args), no-repeat;
+  background: -o-linear-gradient($args), no-repeat;
+  background: -ms-linear-gradient($args), no-repeat;
+  background: linear-gradient($args), no-repeat;
+}
+
 %face-sans {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
@@ -33,7 +41,7 @@ $gutter-height: 38.5px;
   color: #696565;
   letter-spacing: .2em;
   font-weight: 600;
-
+  margin-left: 40px;
 }
 
 body {
@@ -92,24 +100,22 @@ body {
     a{
       text-decoration: none; 
     }
-
-
-
     .author-title{
       bottom: 60px;
-      margin-left: 40px;
       color: white;
       @extend %time-category-style;
     }
     .archive{
       bottom: 40px;
-      margin-left: 40px;
       color:#AFF7DD;
       @extend %time-category-style;
     }
     :not(.card-image) {
       z-index: 2;
     }
+  }
+
+  &.author-photo{
     .card-image {
       height: 100%;
       width: auto;
@@ -118,9 +124,19 @@ body {
       z-index: 0;      
       top:0;
       height: 2 * $card-height + $gutter-height + $card-border-width;
+    }
 
+    ::after {
+      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100% ));
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      content: "";
+      position: absolute;
     }
   }
-
-
 }
+
+
+

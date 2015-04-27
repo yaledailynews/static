@@ -211,7 +211,8 @@ a:focus {
   font-size: 1em;
   color: #696565;
   letter-spacing: .2em;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-left: 40px; }
 
 body {
   background-color: #f6f4f4;
@@ -254,21 +255,31 @@ body {
       text-decoration: none; }
     .card.author-card .author-title {
       bottom: 60px;
-      margin-left: 40px;
       color: white; }
     .card.author-card .archive {
       bottom: 40px;
-      margin-left: 40px;
       color: #AFF7DD; }
     .card.author-card :not(.card-image) {
       z-index: 2; }
-    .card.author-card .card-image {
-      height: 100%;
-      width: auto;
-      position: absolute;
-      left: 0;
-      z-index: 0;
-      top: 0;
-      height: 463.86px; }
+  .card.author-photo .card-image {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    top: 0;
+    height: 463.86px; }
+  .card.author-photo ::after {
+    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute; }
 
 /*# sourceMappingURL=author.css.map */
