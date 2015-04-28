@@ -15,7 +15,10 @@
 - Authors
 - Date
 - Preview text
-- main photo (as WP featured-image?) 
+- Photos
+ - 3:2 (landscape)
+ - 1:1 (square)
+ - optional 40:19 (Big Kahuna)
 - Category
  - Subcategory (at least for Sports and Opinion)
  
