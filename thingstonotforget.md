@@ -1,6 +1,7 @@
 # Things to Not Forget
 
 ## Homepage
+- tk
 
 ## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
@@ -24,5 +25,7 @@
  
 
 ## Article Page
+- tk
 
 ## Author Page
+- tk 
