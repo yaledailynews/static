@@ -3,6 +3,7 @@
 ## Homepage
 - Cross Campus megabox
 - Nav color highlighting
+- SASS logic for different category colors
 - Markup and styles Breaking cards
 - YTV
  - ?!??!?!?
