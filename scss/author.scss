@@ -127,7 +127,7 @@ body {
     }
 
     &::after {
-      @include bg-gradienter (( to right top, rgba(77,194,147, 0.8) 50%, rgba(0, 0, 0, 0) 100% ));
+      @include bg-gradienter (( to right top, rgba(77,194,147, 0.95) 30%, rgba(77,194,147, 0.2) 100% ));
       top: 0;
       left: 0;
       width:100%;
