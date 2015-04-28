@@ -17,8 +17,8 @@
 - Preview text
 - main photo (as WP featured-image?) 
 - Category
--- Subcategory (at least for Sports and Opinion)
-- 
+ - Subcategory (at least for Sports and Opinion)
+ 
 
 ## Article Page
 
