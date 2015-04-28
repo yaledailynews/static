@@ -50,8 +50,11 @@ p {
 }
 
 .container{
-	margin-top: 3%;
-	display: table;
+  &:first-of-type{
+    margin-top: 2%;
+  }
+  margin-top: 6%;
+  display: table;
 }
 
 .byline {
@@ -194,12 +197,15 @@ $culture-color: #1fea7c;
     .breaking{
       top: 0;
       right: 0;
-      display: -webkit-flex; /* Safari */
-      -webkit-justify-content: space-around; /* Safari 6.1+ */
-      display: flex;
+      width: 140px;
+      height: 66px;
+      padding: 20px;
+      // display: -webkit-flex; /* Safari */
+      // -webkit-justify-content: space-around; /* Safari 6.1+ */
+      // display: flex;
       position: absolute;
-      padding: 2em;
       background-color: red;
+      text-align: center;
       h3{
         text-transform: uppercase;
         font-weight: bold;
@@ -207,8 +213,9 @@ $culture-color: #1fea7c;
         color: white;
       }
       time{
-        top: 50px;
-        margin-right: 30px !important;
+        position: relative;
+        bottom: auto;
+        margin: 0;
        }
     }
   }
@@ -237,7 +244,7 @@ $culture-color: #1fea7c;
         color: white;
       }
     &::after {
-      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 60%, rgba(0,0,0,0) 100% ));
+      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, rgba(0,0,0,0) 100% ));
       top: 0;
       left: 0;
       width:100%;

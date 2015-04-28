@@ -235,8 +235,10 @@ p {
   font-size: 0.8em; }
 
 .container {
-  margin-top: 3%;
+  margin-top: 6%;
   display: table; }
+  .container:first-of-type {
+    margin-top: 2%; }
 
 .byline {
   text-transform: uppercase;
@@ -327,22 +329,21 @@ p {
   .card.story-breaking .breaking {
     top: 0;
     right: 0;
-    display: -webkit-flex;
-    /* Safari */
-    -webkit-justify-content: space-around;
-    /* Safari 6.1+ */
-    display: flex;
+    width: 140px;
+    height: 66px;
+    padding: 20px;
     position: absolute;
-    padding: 2em;
-    background-color: red; }
+    background-color: red;
+    text-align: center; }
     .card.story-breaking .breaking h3 {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1em;
       color: white; }
     .card.story-breaking .breaking time {
-      top: 50px;
-      margin-right: 30px !important; }
+      position: relative;
+      bottom: auto;
+      margin: 0; }
   .card.story-preview {
     height: 460.86px; }
     .card.story-preview .card-preview {
@@ -359,11 +360,11 @@ p {
     .card.story-photo time {
       color: white; }
     .card.story-photo::after {
-      background: -moz-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -webkit-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -o-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -ms-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+      background: -moz-linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, transparent 100%), no-repeat;
+      background: -webkit-linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, transparent 100%), no-repeat;
+      background: -o-linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, transparent 100%), no-repeat;
+      background: -ms-linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, transparent 100%), no-repeat;
+      background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, transparent 100%), no-repeat;
       top: 0;
       left: 0;
       width: 100%;
