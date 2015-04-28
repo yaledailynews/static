@@ -8,6 +8,12 @@
 - YTV
  - ?!??!?!?
 
+## Weekend
+- Merge with main WP multisite?
+
+## Magazine
+- Merge with main WP multisite?
+
 ## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
 - URL for new cross campus will be /xc
@@ -26,7 +32,7 @@
  - 1:1 (square)
  - optional 40:19 (Big Kahuna)
 - Category
- - Subcategory (at least for Sports and Opinion)
+ - Subcategory (at least for Sports, Opinion, and Weekend)
 - "Breaking" flag 
  
 
