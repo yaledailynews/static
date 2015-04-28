@@ -126,7 +126,7 @@ body {
       height: 2 * $card-height + $gutter-height + $card-border-width;
     }
 
-    ::after {
+    &::after {
       @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100% ));
       top: 0;
       left: 0;
