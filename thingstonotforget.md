@@ -1,5 +1,7 @@
 # Things to Not Forget
 
+## Homepage
+
 ## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
 - URL for new cross campus will be /xc
@@ -7,3 +9,17 @@
 - at header of old xc site, create language to steer to new content
 - consider redirecting old xc homepage to main ydn homepage
 
+## Article Metadata
+- Headline
+- Homepage Headline
+- Authors
+- Date
+- Preview text
+- main photo (as WP featured-image?) 
+- Category
+- - Subcategory (at least for Sports and Opinion)
+- 
+
+## Article Page
+
+## Author Page
