@@ -10,9 +10,11 @@
 
 ## Weekend
 - Merge with main WP multisite?
+- Account for cover image
 
 ## Magazine
 - Merge with main WP multisite?
+- Account for cover image
 
 ## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
