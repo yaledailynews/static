@@ -1,7 +1,11 @@
 # Things to Not Forget
 
 ## Homepage
-- tk
+- Cross Campus megabox
+- Nav color highlighting
+- Markup and styles Breaking cards
+- YTV
+ - ?!??!?!?
 
 ## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
@@ -22,6 +26,7 @@
  - optional 40:19 (Big Kahuna)
 - Category
  - Subcategory (at least for Sports and Opinion)
+- "Breaking" flag 
  
 
 ## Article Page
