@@ -240,7 +240,7 @@ $culture-color: #1fea7c;
         color: white;
       }
     &::after {
-      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 60%, rgba(0,0,0,0) 100% ));
+      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, rgba(0,0,0,0) 100% ));
       top: 0;
       left: 0;
       width:100%;
