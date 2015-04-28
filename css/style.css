@@ -205,12 +205,12 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, .card h1, header .navbar-link, footer a {
+body, header .navbar-link, footer a {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card.category-jump strong, section.category h2 {
+.card h1, .card.category-jump strong, section.category h2 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -224,8 +224,8 @@ body, .card h1, header .navbar-link, footer a {
 body {
   background-color: #f6f4f4; }
 
-.card h1, header .navbar-link {
-  letter-spacing: .05em;
+.card h1 {
+  letter-spacing: .025em;
   line-height: 1.2;
   font-weight: 600;
   color: #433f3f;
@@ -322,7 +322,8 @@ p {
     width: 100%;
     height: auto; }
   .card.story-breaking h1 {
-    font-size: 60px; }
+    font-size: 60px;
+    font-weight: 400; }
   .card.story-breaking .breaking {
     top: 0;
     right: 0;
@@ -450,21 +451,26 @@ section.category {
 header {
   background-color: #ffffff; }
   header .header {
-    width: 210px;
+    width: 400px;
     display: block;
     margin: 0 auto;
+    padding: 10px 0px 10px 10px;
     margin-bottom: 10px; }
   header .navigation {
     background-color: #ffffff;
-    box-shadow: 0 4px 2px -2px gray;
     text-align: center;
     z-index: 100;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; }
   header .navbar-link {
+    line-height: 1.2;
+    margin: 15px;
+    font-size: 14px;
+    letter-spacing: 1.75px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #938383; }
+    color: #bbb; }
 
 .university {
   color: #7096ff !important; }

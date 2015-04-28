@@ -37,8 +37,8 @@ body {
 }
 
 %face-header {
-  @extend %face-sans;
-	letter-spacing: .05em;
+  @extend %face-serif;
+	letter-spacing: .025em;
   line-height: 1.2;
   font-weight: 600;
   color: #433f3f;
@@ -188,6 +188,7 @@ $culture-color: #1fea7c;
     h1{
       @extend .nine.columns;
       font-size: 60px;
+      font-weight: 400;
     }
 
     .breaking{
@@ -378,27 +379,34 @@ section.category {
 header {
   background-color: #ffffff;
   .header {
-    width: 210px;
+    width: 400px;
     display: block;
     margin: 0 auto;
+    padding: 10px 0px 10px 10px;
     margin-bottom: 10px;
+
     }
 
   .navigation{ 
-    background-color: #ffffff;
-    box-shadow: 0 4px 2px -2px gray;
+    background-color: #ffffff;    
     text-align: center;
     z-index:100;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    
   }
   
 
   .navbar-link {
-    @extend %face-header;
+    @extend %face-sans;
+    line-height: 1.2;
+    margin: 15px;
+    font-size: 14px;
+    letter-spacing: 1.75px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #938383; 
+    color: #bbb; 
     }
 
   }
