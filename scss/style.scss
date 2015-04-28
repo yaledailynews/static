@@ -50,8 +50,11 @@ p {
 }
 
 .container{
-	margin-top: 3%;
-	display: table;
+  &:first-of-type{
+    margin-top: 2%;
+  }
+  margin-top: 6%;
+  display: table;
 }
 
 .byline {

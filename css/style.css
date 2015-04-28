@@ -235,8 +235,10 @@ p {
   font-size: 0.8em; }
 
 .container {
-  margin-top: 3%;
+  margin-top: 6%;
   display: table; }
+  .container:first-of-type {
+    margin-top: 2%; }
 
 .byline {
   text-transform: uppercase;
