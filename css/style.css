@@ -326,22 +326,21 @@ p {
   .card.story-breaking .breaking {
     top: 0;
     right: 0;
-    display: -webkit-flex;
-    /* Safari */
-    -webkit-justify-content: space-around;
-    /* Safari 6.1+ */
-    display: flex;
+    width: 140px;
+    height: 66px;
+    padding: 20px;
     position: absolute;
-    padding: 2em;
-    background-color: red; }
+    background-color: red;
+    text-align: center; }
     .card.story-breaking .breaking h3 {
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1em;
       color: white; }
     .card.story-breaking .breaking time {
-      top: 50px;
-      margin-right: 30px !important; }
+      position: relative;
+      bottom: auto;
+      margin: 0; }
   .card.story-preview {
     height: 460.86px; }
     .card.story-preview .card-preview {
