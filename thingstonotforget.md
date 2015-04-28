@@ -1,6 +1,9 @@
-Cross Campus
+# Things to Not Forget
+
+## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
 - URL for new cross campus will be /xc
 - at end of new xc archive provide link to old site
 - at header of old xc site, create language to steer to new content
 - consider redirecting old xc homepage to main ydn homepage
+
