@@ -14,7 +14,8 @@
 %time-category-style{
   text-transform: uppercase;
   position: absolute;
-  font-size: .8em;
+  letter-spacing: 0.1em;
+  font-size: .75em;
   color: #696565;
   margin-left: 15px;
 }
@@ -60,6 +61,7 @@ p {
 .byline {
   text-transform: uppercase;
   letter-spacing: 1.8;
+  line-height: 1.4;
   font-weight: 600; 
   color: #696565;
   margin-left: 15px;
@@ -68,15 +70,15 @@ p {
 
 $card-border-width: 3px;
 
-$university-color: #7096ff;
-$opinion-color: #b15ce1;
-$city-color: #a73848;
-$scitech-color: #f5e638;
-$sports-color:#483fc2;
+$university-color: #2882C8;
+$opinion-color: #cf383e;
+$city-color: #00beb4;
+$scitech-color: #ffdc00;
+$sports-color:#42d2ff;
 $ytv-color: #fe9e48;
-$weekend-color: #3faac6;
-$magazine-color: #5740b2;
-$culture-color: #1fea7c;
+$weekend-color: #ff050a;
+$magazine-color: #bef0b4;
+$culture-color: #d20a78;
 
 
 .card {
@@ -96,6 +98,10 @@ $culture-color: #1fea7c;
     font-size: 18px;
     color: white;
     line-height: 1.8em;
+    p {
+      margin-top: 120px;
+      line-height: 1.2;
+    }
     strong {
       font-style: italic;
       font-size: 35px;
@@ -121,17 +127,18 @@ $culture-color: #1fea7c;
       font-size: 0.8em;
       margin-top: 10px;
       margin-bottom: 10px;
-      letter-spacing: .05em;
+      letter-spacing: .075em;
     }
     .card-preview {
       line-height: 1.3em;
       letter-spacing: .02em;
+      font-weight: 300;
       margin-left: 15px;
       margin-right: 15px;
       z-index: 11;
     }
     time {
-      bottom: 35px;
+      bottom: 30px;
       color: #433f3f; 
       @extend %time-category-style;
     }
@@ -157,9 +164,15 @@ $culture-color: #1fea7c;
 
   &.story-major {
     height: 2 * $card-height + $gutter-height;
-    h1, p, time{
+    border-bottom: none;
+    h1, p, time {
       color: white;
     }
+
+    p.category {
+      color: #bbb;
+    }
+
     @extend .six.columns;
     .card-image {
       top:0;
@@ -170,7 +183,7 @@ $culture-color: #1fea7c;
       @extend .six.columns;
     }
     &::after {
-      @include bg-gradienter (( to right, rgba(20, 121, 242, 0.5) 0%, rgba(20, 121, 242, 0.5) 100% ));
+      @include bg-gradienter (( to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100% ));
       top: 0;
       left: 0;
       width:100%;
@@ -191,6 +204,7 @@ $culture-color: #1fea7c;
     h1{
       @extend .nine.columns;
       font-size: 60px;
+      padding-left: 15px;
       font-weight: 400;
     }
 
@@ -214,6 +228,7 @@ $culture-color: #1fea7c;
       }
       time{
         position: relative;
+        font-size: 0.675em;
         bottom: auto;
         margin: 0;
        }
@@ -243,8 +258,13 @@ $culture-color: #1fea7c;
     time {
         color: white;
       }
+
+    p.category {
+      color: #bbb;
+    }
+
     &::after {
-      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, rgba(0,0,0,0) 100% ));
+      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.96) 55%, rgba(255, 255, 255, 0.9) 60%, rgba(0,0,0,0.5) 90% ));
       top: 0;
       left: 0;
       width:100%;
@@ -253,6 +273,7 @@ $culture-color: #1fea7c;
       position: absolute;
     }  
   }
+
   &.story-preview.story-photo {
     height: 2 * $card-height + $gutter-height;
     .card-image{
@@ -265,6 +286,12 @@ $culture-color: #1fea7c;
   }
 
   &.story-opinion {
+    border-bottom: none;
+
+    h1 {
+      color: white;
+    }
+
     .card-image{
       top: 0;
       height: $card-height + $card-border-width;
@@ -272,8 +299,12 @@ $culture-color: #1fea7c;
     time {
         color: white;
       }
+
+       p.category {
+        color: #bbb;
+       }
     &::after {
-      @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100% ));
+      @include bg-gradienter (( to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100% ));
       top: 0;
       left: 0;
       width:100%;
@@ -291,6 +322,8 @@ section.category {
   h2 {
     @extend %face-serif;
     font-style: italic;
+    font-weight: 600;
+    color: #433f3f;
     font-size: 2.75em;
   }
   aside.category-jump {
@@ -385,6 +418,7 @@ section.category {
 
 header {
   background-color: #ffffff;
+  margin-bottom: -30px;
   .header {
     width: 400px;
     display: block;
@@ -555,8 +589,7 @@ header {
 }
 
 img.card-image{
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+
 }
 
 footer{
