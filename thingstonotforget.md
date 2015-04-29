@@ -1,5 +1,8 @@
 # Things to Not Forget
 
+## Wordpress
+- add database to git
+
 ## Homepage
 - Cross Campus megabox
 - Nav color highlighting
