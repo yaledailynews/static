@@ -358,11 +358,11 @@ p {
     .card.story-photo time {
       color: white; }
     .card.story-photo::after {
-      background: -moz-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -webkit-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -o-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: -ms-linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
-      background: linear-gradient(to bottom, white 60%, transparent 100%), no-repeat;
+      background: -moz-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: -webkit-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: -o-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: -ms-linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
+      background: linear-gradient(to bottom, white 60%, rgba(0, 0, 0, 0) 100%), no-repeat;
       top: 0;
       left: 0;
       width: 100%;
@@ -382,11 +382,11 @@ p {
   .card.story-opinion time {
     color: white; }
   .card.story-opinion::after {
-    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, transparent 100%), no-repeat;
+    background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 0%, rgba(0, 0, 0, 0) 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -446,7 +446,8 @@ header {
     text-align: center;
     z-index: 100;
     padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    width: 100%; }
   header .navbar-link {
     text-transform: uppercase;
     text-decoration: none;
@@ -549,5 +550,3 @@ footer {
     line-height: 50px;
     text-transform: uppercase;
     margin: 0px 10px 0px 10px; }
-
-/*# sourceMappingURL=style.css.map */
