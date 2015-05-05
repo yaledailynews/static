@@ -11,6 +11,13 @@
 - YTV
  - ?!??!?!?
 
+## Responsive
+- big kahuna -> full-bleed
+- 2x2 -> 2x1
+- 2x1 w/ image -> same
+- 2x1 w/o image -> 1x1
+- 1x1 -> headline list
+
 ## Weekend
 - Merge with main WP multisite?
 - Account for cover image
