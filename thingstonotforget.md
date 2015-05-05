@@ -15,6 +15,13 @@
 - Breaking flag (full-width and top right versions) 
 - ads?
 
+## Responsive
+- big kahuna -> full-bleed
+- 2x2 -> 2x1
+- 2x1 w/ image -> same
+- 2x1 w/o image -> 1x1
+- 1x1 -> headline list
+
 ## YTV
 - article page is the same as article w/ YouTube embed
 - ytv category page gets same template as mag and weekend
