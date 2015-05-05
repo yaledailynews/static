@@ -118,7 +118,7 @@ a:focus {
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .card.story-major, .card.story-breaking, .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p {
+  .six.columns, .card.story-major, .card.story-kahuna, .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p {
     width: 48%; }
 
   .seven.columns {
@@ -127,7 +127,7 @@ a:focus {
   .eight.columns {
     width: 65.3333333333%; }
 
-  .nine.columns, .card.story-breaking h1 {
+  .nine.columns, .card.story-kahuna h1 {
     width: 74.0%; }
 
   .ten.columns {
@@ -136,7 +136,7 @@ a:focus {
   .eleven.columns {
     width: 91.3333333333%; }
 
-  .twelve.columns, .card.story-breaking {
+  .twelve.columns, .card.story-kahuna {
     width: 100%;
     margin-left: 0; }
 
@@ -304,19 +304,19 @@ p {
     position: absolute;
     left: 0;
     z-index: 0; }
-  .card.story-major, .card.story-breaking {
+  .card.story-major, .card.story-kahuna {
     height: 460.86px;
     border-bottom: none; }
-    .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p, .card.story-major time, .card.story-breaking time {
+    .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p, .card.story-major time, .card.story-kahuna time {
       color: white; }
-    .card.story-major p.category, .card.story-breaking p.category {
+    .card.story-major p.category, .card.story-kahuna p.category {
       color: #bbb; }
-    .card.story-major .card-image, .card.story-breaking .card-image {
+    .card.story-major .card-image, .card.story-kahuna .card-image {
       top: 0;
       height: 463.86px; }
-    .card.story-major h1, .card.story-breaking h1, .card.story-major p, .card.story-breaking p {
+    .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p {
       z-index: 2; }
-    .card.story-major::after, .card.story-breaking::after {
+    .card.story-major::after, .card.story-kahuna::after {
       background: -moz-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
       background: -webkit-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
       background: -o-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
@@ -328,11 +328,11 @@ p {
       height: 100%;
       content: "";
       position: absolute; }
-  .card.story-breaking .card-image {
+  .card.story-kahuna .card-image {
     top: 0;
     width: 100%;
     height: auto; }
-  .card.story-breaking h1 {
+  .card.story-kahuna h1 {
     font-size: 60px;
     padding-left: 15px;
     font-weight: 400; }
@@ -435,11 +435,11 @@ section.category {
     width: 211.18px; }
     .card.story {
       width: 211.18px; }
-    .card.story-major, .card.story-breaking {
+    .card.story-major, .card.story-kahuna {
       width: 460.86px; }
-    .card.story-breaking {
+    .card.story-kahuna {
       width: 710.54px; }
-      .card.story-breaking h1 {
+      .card.story-kahuna h1 {
         font-size: 40px; } }
 @media (max-width: 710px) {
   #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
@@ -449,16 +449,15 @@ section.category {
 
   .card.story {
     width: 211.18px; }
-  .card.story-major, .card.story-breaking {
+  .card.story-major, .card.story-kahuna {
     width: 460.86px; }
-  .card.story-breaking {
-    width: 460.86px;
-    height: 211.18px; }
-    .card.story-breaking h1 {
+  .card.story-kahuna {
+    width: 100%; }
+    .card.story-kahuna h1 {
       font-size: 20px; } }
 @media (max-width: 480px) {
   #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
-    width: 320px;
+    width: 211.18px;
     margin: 0 auto;
     margin-top: 3%; }
 
@@ -466,9 +465,9 @@ section.category {
     width: 211.18px; }
     .card.story {
       width: 211.18px; }
-    .card.story-breaking {
+    .card.story-kahuna {
       height: 211.18px; }
-      .card.story-breaking h1 {
+      .card.story-kahuna h1 {
         font-size: 25px; } }
 header {
   background-color: #ffffff;
