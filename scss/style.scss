@@ -193,7 +193,7 @@ $culture-color: #d20a78;
     }
   }
 
-  &.story-breaking{
+  &.story-kahuna{
     @extend .twelve.columns;
     @extend .story-major;
     .card-image{
@@ -208,6 +208,10 @@ $culture-color: #d20a78;
       font-weight: 400;
     }
 
+
+  }
+
+  &.story-breaking{
     .breaking{
       top: 0;
       right: 0;
@@ -347,7 +351,7 @@ section.category {
     &.story-major {
       width: 2*$card-width + $gutter-height;
     }
-    &.story-breaking{
+    &.story-kahuna{
       width: 3*$card-width + 2*$gutter-height;
 
       h1 {
@@ -375,12 +379,16 @@ section.category {
     &.story-major {
       width: 2*$card-width + $gutter-height;
     }
-    &.story-breaking{
-      width: 2*$card-width + $gutter-height;
-      height: $card-height;
+    &.story-kahuna{
+      width: 100%;
+      //height: $card-height;
       h1 {
         font-size: 20px;
       }
+    }
+
+    .breaking {
+
     }
 
 
@@ -391,7 +399,7 @@ section.category {
 @media(max-width:480px) {
 
   #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv{
-    width: 320px;
+    width: $card-width;
     margin: 0 auto;
     margin-top: 3%;
   }
@@ -404,7 +412,7 @@ section.category {
     &.story-major {
       //width: 2*$card-width + $gutter-height;
     }
-    &.story-breaking{
+    &.story-kahuna{
      // width: 2*$card-width + $gutter-height;
       height: $card-height;
       h1 {
@@ -609,8 +617,3 @@ footer{
 
 }
 
-
-
-//1479F2 = blue
-//06F7b2 = green
-//100% opacity at bottom 50% opacity at top
