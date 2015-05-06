@@ -18,7 +18,7 @@
 - more efficient packery logic (rather than repeating for each section:
  - `data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }`
 - cover story image needs to be made inline
- ## Responsive
+- Responsive
  -  big kahuna -> full-bleed
  - 2x2 -> 2x1
  - 2x1 w/ image -> same
@@ -67,7 +67,6 @@
  
 
 ## Article Page
-- 2:1 image, full bleed at top 
 - change copy on Read This Next box 
 - brand RTN box with category colors 
 - author card in side bar 
@@ -83,3 +82,4 @@
 - 2x2 card (like on author page) to label section
 - article cards (same as home page)
 - endless scroll
+- weekend and magazine should get cover image
