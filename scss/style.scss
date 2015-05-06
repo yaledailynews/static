@@ -314,6 +314,80 @@ p {
     }
   }
 
+  &.cross-campus {
+    height: 2 * $card-height + $gutter-height;
+    overflow: scroll;
+    border-bottom: none;
+    h1, p, time {
+      color: #696565;
+    }
+
+    .xc-content {
+      height: (2 * $card-height) - 60px;
+      overflow: scroll;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+      text-transform: uppercase;
+      background-color: $university-color;
+      width: 100%;
+      margin: 0;
+      padding: 15px 0 15px 0;
+      letter-spacing: 0.15em;
+      margin-bottom: 25px;
+    }
+
+    time {
+      color: $university-color;
+      margin: 0;
+      position: none;
+      bottom: 0;
+      font-size: 0.8em;
+      padding-left: 7px;
+      font-weight: 600;
+    }
+
+    p.category {
+      color: #bbb;
+    }
+
+    p.card-preview, p.date {
+      width: 90%;
+      margin: 0 auto 20px auto;
+      font-size: 1em;
+    }
+
+    p.date {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: $university-color;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    .intro {
+      font-weight: 700;
+    }
+
+    @extend .six.columns;
+
+    h1, p {
+      z-index: 2;
+      @extend .six.columns;
+    }
+    &::after {
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      content: "";
+      position: absolute;
+    }
+  }
+
   &.story-opinion {
     border-bottom: none;
 

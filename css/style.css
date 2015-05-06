@@ -118,7 +118,7 @@ a:focus {
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .card.story-major, .card.story-kahuna, .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p {
+  .six.columns, .card.story-major, .card.story-kahuna, .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p, .card.cross-campus, .card.cross-campus h1, .card.cross-campus p {
     width: 48%; }
 
   .seven.columns {
@@ -410,6 +410,57 @@ p {
       background: -o-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
       background: -ms-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
       background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute; }
+  .card.cross-campus {
+    height: 460.86px;
+    overflow: scroll;
+    border-bottom: none; }
+    .card.cross-campus h1, .card.cross-campus p, .card.cross-campus time {
+      color: #696565; }
+    .card.cross-campus .xc-content {
+      height: 362.36px;
+      overflow: scroll; }
+    .card.cross-campus h1 {
+      text-align: center;
+      color: white;
+      font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+      text-transform: uppercase;
+      background-color: #2882C8;
+      width: 100%;
+      margin: 0;
+      padding: 15px 0 15px 0;
+      letter-spacing: 0.15em;
+      margin-bottom: 25px; }
+    .card.cross-campus time {
+      color: #2882C8;
+      margin: 0;
+      position: none;
+      bottom: 0;
+      font-size: 0.8em;
+      padding-left: 7px;
+      font-weight: 600; }
+    .card.cross-campus p.category {
+      color: #bbb; }
+    .card.cross-campus p.card-preview, .card.cross-campus p.date {
+      width: 90%;
+      margin: 0 auto 20px auto;
+      font-size: 1em; }
+    .card.cross-campus p.date {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #2882C8;
+      font-weight: 800;
+      margin-bottom: 15px; }
+    .card.cross-campus .intro {
+      font-weight: 700; }
+    .card.cross-campus h1, .card.cross-campus p {
+      z-index: 2; }
+    .card.cross-campus::after {
       top: 0;
       left: 0;
       width: 100%;
