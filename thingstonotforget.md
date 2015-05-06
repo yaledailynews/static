@@ -55,6 +55,7 @@
 - consider redirecting old xc homepage to main ydn homepage
 - persistent scroll bar 
 - white gradient at bottom
+- scroll bar scrolls over navigation bar 
 
 ## Article Metadata
 - Headline
