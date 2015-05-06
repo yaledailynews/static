@@ -6,6 +6,7 @@
 ## Site-wide
 - search box UI
 - highlighting for menu
+- Add small YDN logo to persistent nav?
 
 ## Homepage
 - Cross Campus megabox
