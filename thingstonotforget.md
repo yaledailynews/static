@@ -6,6 +6,7 @@
 ## Site-wide
 - search box UI
 - highlighting for menu
+- Add small YDN logo to persistent nav?
 
 ## Homepage
 - Cross Campus megabox
@@ -53,6 +54,9 @@
 - at end of new xc archive provide link to old site
 - at header of old xc site, create language to steer to new content
 - consider redirecting old xc homepage to main ydn homepage
+- persistent scroll bar 
+- white gradient at bottom
+- scroll bar scrolls over navigation bar 
 
 ## Article Metadata
 - Headline
