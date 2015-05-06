@@ -600,26 +600,6 @@ section.category {
   }
 }
 
-// packery
-
-body:after {
-  content: 'mobile';
-  display: block;
-  visibility: hidden;
-  height: 0;
-}
-
-/* widescreen */
-@media screen and ( min-width: 900px ) {
-  body:after { content: 'widescreen'; }
-}
-
-body:after {
-  content: ' ';
-  display: block;
-  clear: both;
-}
-
 /// REWRITE THESE COLOR THINGS TO USE A MIXIN!
 
 .university{

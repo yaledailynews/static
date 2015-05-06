@@ -542,49 +542,6 @@ $(document).ready(function(){
 
 </script>
 
-<script>
-  $( function() {
-
-    var $container = $('.js-packery');
-    // flag if packery is initialized
-    var isPackeryInit = false;
-    
-    function checkPackery() {
-      var breakpointName = getComputedStyle( document.body, ':after' ).content;
-      
-      if ( breakpointName === 'widescreen' && !isPackeryInit ) {
-        // init packery if widescreen
-        $container.packery();
-        isPackeryInit = true;
-      } else if ( breakpointName === 'mobile' && isPackeryInit ) {
-        // disable packery if default and already intialized
-        $container.packery('destroy');
-        isPackeryInit = false;
-      }
-    }  
-    
-    checkPackery();
-    // check this on resize, debounced
-    $(window).on('resize', debounce( checkPackery, 200 ) );
-    
-  });
-
-  function debounce( fn, threshold ) {
-    var timeout;
-    return function debounced() {
-      if ( timeout ) {
-        clearTimeout( timeout );
-      }
-      function delayed() {
-        fn();
-        timeout = null;
-      }
-      setTimeout( delayed, threshold || 100 );
-    }
-  }
-
-
-</script>
 
 </body>
 </html>
