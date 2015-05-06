@@ -426,6 +426,24 @@ section.category {
       }
     }
 
+    &.story-opinion {
+      height: auto;
+      width: 100%;
+      img {
+        visibility: hidden;
+
+      }
+      .category{
+        visibility: hidden;
+      }
+
+      h1{
+        color:#433f3f;
+      }
+    }
+    &.story-opinion::after {
+      background: #f6f4f4;
+    }
 
   }
 }
@@ -490,9 +508,7 @@ header {
   .story .category{
     color:$opinion-color;
   }
-  .card{
-  border-bottom: thick solid $opinion-color;
- }
+
   
   color: $opinion-color !important;
  
