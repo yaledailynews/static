@@ -3,6 +3,10 @@
 ## Wordpress
 - add database to git
 
+## Site-wide
+- search box UI
+- highlighting for menu
+
 ## Homepage
 - Cross Campus megabox
 - Nav color highlighting
@@ -21,6 +25,7 @@
 - 2x1 w/ image -> same
 - 2x1 w/o image -> 1x1
 - 1x1 -> headline list
+- mobile header (menu buttom + XC popout) 
 
 ## YTV
 - article page is the same as article w/ YouTube embed
@@ -64,6 +69,7 @@
 - change copy on Read This Next box 
 - brand RTN box with category colors 
 - author card in side bar 
+- responsive (side bar -> footer)
 - ads?
 
 ## Author Page
