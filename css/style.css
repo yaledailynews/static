@@ -379,16 +379,9 @@ p {
       height: 100%;
       content: "";
       position: absolute; }
-  .card.story-preview.story-photo {
-    height: 460.86px; }
-    .card.story-preview.story-photo .card-image {
-      height: 50%;
-      bottom: 0; }
-    .card.story-preview.story-photo .card-preview {
-      color: #696565; }
   .card.story-softcore {
-    width: 410px;
-    height: 205px; }
+    width: 460.86px;
+    height: 230.43px; }
     .card.story-softcore .card-image {
       width: 100%;
       height: 100%; }
