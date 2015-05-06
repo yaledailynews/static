@@ -30,6 +30,7 @@
 ## YTV
 - article page is the same as article w/ YouTube embed
 - ytv category page gets same template as mag and weekend
+- add play button to video cards
 
 ## Weekend
 - Merge with main WP multisite?
@@ -39,6 +40,7 @@
 ## Magazine
 - Merge with main WP multisite?
 - Account for cover image
+- change background color of section
 - build HTML & CSS
 - (same as Weekend) 
 
@@ -81,8 +83,3 @@
 - 2x2 card (like on author page) to label section
 - article cards (same as home page)
 - endless scroll
-
-## Code Review
-- make sure header calls and fonts are being used 
-- make doc explaining standard styles and colors
-- turn colors into variables
