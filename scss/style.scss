@@ -82,13 +82,11 @@ header#site-header {
     background-color: #ffffff;    
     text-align: center;
     z-index:100;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
     a {
       @extend %face-sans;
       line-height: 1.2;
-      margin: 15px;
+      padding: 15px;
       font-size: 14px;
       letter-spacing: 1.75px;
       text-transform: uppercase;
@@ -351,7 +349,7 @@ footer#site-footer{
     overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
     cursor: default;
-    height: 2 * $card-height + $gutter-height;
+    height: 2 * $card-height + $gutter-size;
     overflow: scroll;
     border-bottom: none;
     h1, p, time {
@@ -779,14 +777,15 @@ header#site-header {
     }
 
     #nav-search {
-      color: white;
+      color: #bbb;
       line-height: 1.2;
       padding: 15px;
       position: relative;
       display: inline-block;
-      background-color: $university-color;
+
 
       .search-box {
+        display: none;
         background-color: white;
         width: 300px;
         height: 50px;
@@ -795,8 +794,17 @@ header#site-header {
         top: 49px;
         border: 1px solid $university-color;
       }
-    }
 
+      &:hover {
+        cursor: pointer;
+        background-color: $university-color;
+        color: white;
+
+        .search-box {
+          display: block;
+        }
+      }
+    }
   }
 }
 
