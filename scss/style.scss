@@ -439,28 +439,46 @@ section.category {
 @media(max-width:480px) {
 
   #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv{
-    width: $card-width;
+    width: 90%;
     margin: 0 auto;
     margin-top: 3%;
   }
   .card {
-    width: $card-width;
-    &.story {
-      width: $card-width;
-    }
-
-    &.story-major {
-      //width: 2*$card-width + $gutter-height;
-    }
+    width: 100%;
     &.story-kahuna{
-     // width: 2*$card-width + $gutter-height;
+      width: 120%;
       height: $card-height;
       h1 {
         font-size: 25px;
       }
     }
+    &.story-major {
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      .card-image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &.story-opinion {
+      height: auto;
+      width: 100%;
+      img {
+        visibility: hidden;
 
+      }
+      .category{
+        visibility: hidden;
+      }
 
+      h1{
+        color:#433f3f;
+      }
+    }
+    &.story-opinion::after {
+      background: #f6f4f4;
+    }
   }
 }
 
@@ -524,9 +542,7 @@ header {
   .story .category{
     color:$opinion-color;
   }
-  .card{
-  border-bottom: thick solid $opinion-color;
- }
+
   
   color: $opinion-color !important;
  

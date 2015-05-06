@@ -3,13 +3,21 @@
 ## Wordpress
 - add database to git
 
+## Site-wide
+- search box UI
+- highlighting for menu
+
 ## Homepage
 - Cross Campus megabox
 - Nav color highlighting
 - SASS logic for different category colors
 - Markup and styles Breaking cards
-- YTV
- - ?!??!?!?
+- YTV 
+- Weekend
+- Magazine 
+- 2 x 1 landscape cards are using 2:1 landscape photos
+- Breaking flag (full-width and top right versions) 
+- ads?
 
 ## Responsive
 - big kahuna -> full-bleed
@@ -17,14 +25,23 @@
 - 2x1 w/ image -> same
 - 2x1 w/o image -> 1x1
 - 1x1 -> headline list
+- mobile header (menu buttom + XC popout) 
+
+## YTV
+- article page is the same as article w/ YouTube embed
+- ytv category page gets same template as mag and weekend
 
 ## Weekend
 - Merge with main WP multisite?
 - Account for cover image
+- build HTML & CSS
 
 ## Magazine
 - Merge with main WP multisite?
 - Account for cover image
+- build HTML & CSS
+- (same as Weekend) 
+
 
 ## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
@@ -40,16 +57,27 @@
 - Date
 - Preview text
 - Photos
- - 3:2 (landscape)
+ - 2:1 (landscape) for big kahuna, article, video, wknd, mag
  - 1:1 (square)
- - optional 40:19 (Big Kahuna)
 - Category
  - Subcategory (at least for Sports, Opinion, and Weekend)
 - "Breaking" flag 
  
 
 ## Article Page
-- tk
+- 2:1 image, full bleed at top 
+- change copy on Read This Next box 
+- brand RTN box with category colors 
+- author card in side bar 
+- responsive (side bar -> footer)
+- ads?
 
 ## Author Page
-- tk 
+- author card
+- article cards (same as home page)
+- endless scroll
+
+## Category Page
+- 2x2 card (like on author page) to label section
+- article cards (same as home page)
+- endless scroll
