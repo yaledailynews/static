@@ -12,8 +12,8 @@
 - Nav color highlighting
 - SASS logic for different category colors
 - Markup and styles Breaking cards
-- YTV 
-- Weekend
+- YTV - build mockup, no cover story
+- Weekend - build mockup, yes cover story
 - Magazine 
 - 2 x 1 landscape cards are using 2:1 landscape photos
 - Breaking flag (full-width and top right versions) 
@@ -30,6 +30,7 @@
 ## YTV
 - article page is the same as article w/ YouTube embed
 - ytv category page gets same template as mag and weekend
+- add play button to video cards
 
 ## Weekend
 - Merge with main WP multisite?
@@ -39,6 +40,7 @@
 ## Magazine
 - Merge with main WP multisite?
 - Account for cover image
+- change background color of section
 - build HTML & CSS
 - (same as Weekend) 
 
