@@ -457,12 +457,17 @@ section.category {
       font-size: 20px; } }
 @media (max-width: 480px) {
   #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 3%; }
 
   .card {
     width: 100%; }
+    .card.story-kahuna {
+      width: 120%;
+      height: 211.18px; }
+      .card.story-kahuna h1 {
+        font-size: 25px; }
     .card.story-major, .card.story-kahuna {
       width: 100%;
       height: 0;
@@ -470,10 +475,6 @@ section.category {
       .card.story-major .card-image, .card.story-kahuna .card-image {
         width: 100%;
         height: 100%; }
-    .card.story-kahuna {
-      height: 211.18px; }
-      .card.story-kahuna h1 {
-        font-size: 25px; }
     .card.story-opinion {
       height: auto;
       width: 100%; }
