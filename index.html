@@ -15,7 +15,7 @@
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/grid.css">
+  <link rel="stylesheet" href="scss/_grid.scss">
   <link rel="stylesheet" href="css/style.css"> 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -24,6 +24,8 @@
   <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
+
+
 
 </head>
 <body>
@@ -537,6 +539,51 @@ $(document).ready(function(){
   setTimeout(function(){buildScenes("#magazine", "#tag-magazine", "magazine")}, 500);
   setTimeout(function(){buildScenes("#ytv", "#tag-ytv", "ytv")}, 500);
   setTimeout(function(){buildScenes("#sports", "#tag-sports", "sports")}, 500);
+
+</script>
+
+<script>
+  $( function() {
+
+    var $container = $('.js-packery');
+    // flag if packery is initialized
+    var isPackeryInit = false;
+    
+    function checkPackery() {
+      var breakpointName = getComputedStyle( document.body, ':after' ).content;
+      
+      if ( breakpointName === 'widescreen' && !isPackeryInit ) {
+        // init packery if widescreen
+        $container.packery();
+        isPackeryInit = true;
+      } else if ( breakpointName === 'mobile' && isPackeryInit ) {
+        // disable packery if default and already intialized
+        $container.packery('destroy');
+        isPackeryInit = false;
+      }
+    }  
+    
+    checkPackery();
+    // check this on resize, debounced
+    $(window).on('resize', debounce( checkPackery, 200 ) );
+    
+  });
+
+  function debounce( fn, threshold ) {
+    var timeout;
+    return function debounced() {
+      if ( timeout ) {
+        clearTimeout( timeout );
+      }
+      function delayed() {
+        fn();
+        timeout = null;
+      }
+      setTimeout( delayed, threshold || 100 );
+    }
+  }
+
+
 </script>
 
 </body>

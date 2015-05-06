@@ -638,6 +638,21 @@ section.category {
         display: block;
         width: 100%;
         height: 100%; } }
+body:after {
+  content: 'mobile';
+  display: block;
+  visibility: hidden;
+  height: 0; }
+
+/* widescreen */
+@media screen and (min-width: 900px) {
+  body:after {
+    content: 'widescreen'; } }
+body:after {
+  content: ' ';
+  display: block;
+  clear: both; }
+
 .university {
   color: #2882C8 !important; }
   .university .category-jump {
