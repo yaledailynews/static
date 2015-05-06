@@ -324,6 +324,9 @@ $culture-color: #d20a78;
   }
 
   &.cross-campus {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+    cursor: default;
     height: 2 * $card-height + $gutter-height;
     overflow: scroll;
     border-bottom: none;
@@ -332,8 +335,28 @@ $culture-color: #d20a78;
     }
 
     .xc-content {
-      height: (2 * $card-height) - 60px;
+      height: (2 * $card-height) - 40px;
       overflow: scroll;
+      padding: 25px 25px 25px 25px;
+    }
+
+    #xc {
+      margin-left: 401px;
+      margin-top: -60px;
+      background-color: #2a9dea;
+      width: 60px;
+      height: 60px;
+      color: white;
+      font-size: 1.5em;
+      font-weight: 300;
+      font-style: italic;
+      font-family: 'Playfair Display', "Georgia", serif;
+    }
+
+    #xc p {
+      padding: 20px 20px 20px 20px;
+      color: white;
+      opacity: 0.9;
     }
 
     h1 {
@@ -346,8 +369,11 @@ $culture-color: #d20a78;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
-      margin-bottom: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,.23),
+              0 3px 10px rgba(0,0,0,.16);
     }
+
+
 
     time {
       color: $university-color;
@@ -355,7 +381,6 @@ $culture-color: #d20a78;
       position: none;
       bottom: 0;
       font-size: 0.8em;
-      padding-left: 7px;
       font-weight: 600;
     }
 
@@ -364,7 +389,7 @@ $culture-color: #d20a78;
     }
 
     p.card-preview, p.date {
-      width: 90%;
+      width: 100%;
       margin: 0 auto 20px auto;
       font-size: 1em;
     }
@@ -588,13 +613,12 @@ header#site-header {
     background-color: #ffffff;    
     text-align: center;
     z-index:100;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
     a {
       @extend %face-sans;
       line-height: 1.2;
-      margin: 15px;
+      padding: 15px;
+      display: inline-block;
       font-size: 14px;
       letter-spacing: 1.75px;
       text-transform: uppercase;
@@ -604,7 +628,40 @@ header#site-header {
         color: #333;
       }
     }
+
+    #nav-search {
+      color: white;
+      line-height: 1.2;
+      padding: 15px;
+      position: relative;
+      display: inline-block;
+      background-color: $university-color;
+
+      .search-box {
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        top: 49px;
+        border: 1px solid $university-color;
+      }
+    }
+
   }
+}
+
+
+form input {
+  background-color: rgb(246, 244, 244);
+  padding: 5px;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  border: none;
+  font-family: Avenir;
+  font-style: italic;
+  font-size: 0.9em;
+
 }
 
 .university{

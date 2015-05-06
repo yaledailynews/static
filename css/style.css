@@ -419,14 +419,33 @@ p {
       content: "";
       position: absolute; }
   .card.cross-campus {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    cursor: default;
     height: 460.86px;
     overflow: scroll;
     border-bottom: none; }
     .card.cross-campus h1, .card.cross-campus p, .card.cross-campus time {
       color: #696565; }
     .card.cross-campus .xc-content {
-      height: 362.36px;
-      overflow: scroll; }
+      height: 382.36px;
+      overflow: scroll;
+      padding: 25px 25px 25px 25px; }
+    .card.cross-campus #xc {
+      margin-left: 401px;
+      margin-top: -60px;
+      background-color: #2a9dea;
+      width: 60px;
+      height: 60px;
+      color: white;
+      font-size: 1.5em;
+      font-weight: 300;
+      font-style: italic;
+      font-family: 'Playfair Display', "Georgia", serif; }
+    .card.cross-campus #xc p {
+      padding: 20px 20px 20px 20px;
+      color: white;
+      opacity: 0.9; }
     .card.cross-campus h1 {
       text-align: center;
       color: white;
@@ -437,19 +456,18 @@ p {
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
-      margin-bottom: 25px; }
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
       color: #2882C8;
       margin: 0;
       position: none;
       bottom: 0;
       font-size: 0.8em;
-      padding-left: 7px;
       font-weight: 600; }
     .card.cross-campus p.category {
       color: #bbb; }
     .card.cross-campus p.card-preview, .card.cross-campus p.date {
-      width: 90%;
+      width: 100%;
       margin: 0 auto 20px auto;
       font-size: 1em; }
     .card.cross-campus p.date {
@@ -599,12 +617,11 @@ header#site-header {
     background-color: #ffffff;
     text-align: center;
     z-index: 100;
-    padding-top: 10px;
-    padding-bottom: 10px;
     border-bottom: 1px solid #ddd; }
     header#site-header nav#site-navigation a {
       line-height: 1.2;
-      margin: 15px;
+      padding: 15px;
+      display: inline-block;
       font-size: 14px;
       letter-spacing: 1.75px;
       text-transform: uppercase;
@@ -612,6 +629,31 @@ header#site-header {
       color: #bbb; }
       header#site-header nav#site-navigation a:hover {
         color: #333; }
+    header#site-header nav#site-navigation #nav-search {
+      color: white;
+      line-height: 1.2;
+      padding: 15px;
+      position: relative;
+      display: inline-block;
+      background-color: #2882C8; }
+      header#site-header nav#site-navigation #nav-search .search-box {
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        top: 49px;
+        border: 1px solid #2882C8; }
+
+form input {
+  background-color: #f6f4f4;
+  padding: 5px;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  border: none;
+  font-family: Avenir;
+  font-style: italic;
+  font-size: 0.9em; }
 
 .university {
   color: #2882C8 !important; }
