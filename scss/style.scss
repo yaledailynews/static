@@ -63,7 +63,7 @@ p {
 }
 
 header#site-header {
-  background-color: #ffffff;
+  background-color: white;
   margin-bottom: -30px;
   padding: 10px 0 0;
   a {
@@ -116,6 +116,9 @@ footer#site-footer{
     margin: 0px 10px 0px 10px;
   }
 }
+
+
+/// HOMEPAGE STUFF
 
 .container {
   &:first-of-type{
@@ -488,7 +491,120 @@ section.category {
     padding-top: 10px;
   }
 }
- 
+
+
+/// ARTICLE PAGE STUFF
+
+body.article-page {
+
+  h1{
+    @extend %face-serif;
+    letter-spacing: 1.2px;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .author{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1.8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .article-header {
+    margin-top: 75px;
+    h1{
+      font-size: 66.67px;
+      letter-spacing: 3px;
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 18.67px;
+      font-style: heavyweight;
+      letter-spacing: 2px;
+      margin-top: 45px;
+      margin-bottom: 40px;
+    }
+    @extend .nine.columns;
+  }
+
+  .article-text {
+    @extend .six.columns;
+    font-size: 21.33px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+    img {
+      margin-top: 20px;
+      max-width: 960px;
+    }
+  }
+
+
+  p {
+    margin-top: 20px;
+    font-weight: normal;
+  }
+
+  h3 {
+    @extend %face-serif;
+    font-size: 1em;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+
+  }
+
+  .card {
+    @extend .four.columns;
+    background-color: white;
+    overflow: hidden;
+    z-index: 2;
+    float:right;
+    border-top: thick solid black;
+    @extend %face-sans;
+    padding: 10px 15px 10px 15px;
+    font-weight: normal;
+    height: auto;
+    h2{
+      font-size: 22px;
+      margin-top: 10px;
+      @extend %face-serif;
+      font-style: italic;
+      font-weight: 600;
+    }
+    a{
+      text-decoration: none;
+      display: block;
+      margin: 10px 0px 10px 0px;
+      color: black;
+      font-size: 13px;
+    }
+  }
+
+  .bottom-bar{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:40px;
+    width:100%;
+    background:white;
+    padding: 10px 10px 10px 20px;
+    z-index: 3;
+    p{
+      display: inline;
+      &.byline{
+        font-style: italic;
+      }
+    }
+  }
+
+}
+
+/// RESPONSIVE STUFF
 
 @media(max-width:980px) {
   section.category {
@@ -599,6 +715,10 @@ section.category {
     }
   }
 }
+
+
+
+
 
 
 /// REWRITE THESE COLOR THINGS TO USE A MIXIN!

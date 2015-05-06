@@ -112,13 +112,13 @@ a:focus {
   .three.columns, .card {
     width: 22%; }
 
-  .four.columns {
+  .four.columns, body.article-page .card {
     width: 30.6666666667%; }
 
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .card.story-major, .card.story-kahuna, .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p, .card.cross-campus, .card.cross-campus h1, .card.cross-campus p {
+  .six.columns, .card.story-major, .card.story-kahuna, .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p, .card.cross-campus, .card.cross-campus h1, .card.cross-campus p, body.article-page .article-text {
     width: 48%; }
 
   .seven.columns {
@@ -127,7 +127,7 @@ a:focus {
   .eight.columns {
     width: 65.3333333333%; }
 
-  .nine.columns, .card.story-kahuna h1 {
+  .nine.columns, .card.story-kahuna h1, body.article-page .article-header {
     width: 74.0%; }
 
   .ten.columns {
@@ -205,12 +205,12 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, header#site-header nav#site-navigation a, footer#site-footer a {
+body, header#site-header nav#site-navigation a, footer#site-footer a, body.article-page .card {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card h1, .card.category-jump strong, section.category > h2, .cover-story h1 {
+.card h1, .card.category-jump strong, section.category > h2, .cover-story h1, body.article-page h1, body.article-page h3, body.article-page .card h2 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -236,7 +236,7 @@ p {
   font-size: 0.8em; }
 
 header#site-header {
-  background-color: #ffffff;
+  background-color: white;
   margin-bottom: -30px;
   padding: 10px 0 0; }
   header#site-header a {
@@ -559,6 +559,78 @@ section.category {
     color: #ddd; }
   .cover-story .byline {
     padding-top: 10px; }
+
+body.article-page h1 {
+  letter-spacing: 1.2px; }
+body.article-page .hero-image {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+body.article-page .author {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1.8px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+body.article-page .article-header {
+  margin-top: 75px; }
+  body.article-page .article-header h1 {
+    font-size: 66.67px;
+    letter-spacing: 3px; }
+  body.article-page .article-header p {
+    text-transform: uppercase;
+    font-size: 18.67px;
+    font-style: heavyweight;
+    letter-spacing: 2px;
+    margin-top: 45px;
+    margin-bottom: 40px; }
+body.article-page .article-text {
+  font-size: 21.33px;
+  line-height: 1.2em;
+  margin-bottom: 40px; }
+  body.article-page .article-text img {
+    margin-top: 20px;
+    max-width: 960px; }
+body.article-page p {
+  margin-top: 20px;
+  font-weight: normal; }
+body.article-page h3 {
+  font-size: 1em;
+  margin-top: 20px;
+  letter-spacing: 1.5px; }
+body.article-page .card {
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+  float: right;
+  border-top: thick solid black;
+  padding: 10px 15px 10px 15px;
+  font-weight: normal;
+  height: auto; }
+  body.article-page .card h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 600; }
+  body.article-page .card a {
+    text-decoration: none;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    color: black;
+    font-size: 13px; }
+body.article-page .bottom-bar {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  background: white;
+  padding: 10px 10px 10px 20px;
+  z-index: 3; }
+  body.article-page .bottom-bar p {
+    display: inline; }
+    body.article-page .bottom-bar p.byline {
+      font-style: italic; }
 
 @media (max-width: 980px) {
   section.category {
