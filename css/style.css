@@ -255,7 +255,7 @@ p {
   overflow: hidden;
   z-index: 2;
   border-style: solid;
-  border-bottom: thick solid #2882C8; }
+  border-bottom: 5px solid; }
   .card.category-jump {
     bottom: 0;
     padding: 15px;
@@ -510,7 +510,7 @@ header {
   .university .story .category {
     color: #2882C8; }
   .university .card {
-    border-bottom: thick solid #2882C8; }
+    border-bottom: 5px solid #2882C8; }
 
 .opinion {
   color: #cf383e !important; }
@@ -526,7 +526,7 @@ header {
   .city .story .category {
     color: #00beb4; }
   .city .card {
-    border-bottom: thick solid #00beb4; }
+    border-bottom: 5px solid #00beb4; }
 
 .scitech {
   color: #ffdc00 !important; }
@@ -535,7 +535,7 @@ header {
   .scitech .story .category {
     color: #ffdc00; }
   .scitech .card {
-    border-bottom: thick solid #ffdc00; }
+    border-bottom: 5px solid #ffdc00; }
 
 .culture {
   color: #d20a78 !important; }
@@ -544,7 +544,7 @@ header {
   .culture .story .category {
     color: #d20a78; }
   .culture .card {
-    border-bottom: thick solid #d20a78; }
+    border-bottom: 5px solid #d20a78; }
 
 .ytv {
   color: #fe9e48 !important; }
@@ -553,7 +553,7 @@ header {
   .ytv .story .category {
     color: #fe9e48; }
   .ytv .card {
-    border-bottom: thick solid #fe9e48; }
+    border-bottom: 5px solid #fe9e48; }
 
 .magazine {
   color: #bef0b4 !important; }
@@ -562,7 +562,7 @@ header {
   .magazine .story .category {
     color: #bef0b4; }
   .magazine .card {
-    border-bottom: thick solid #bef0b4; }
+    border-bottom: 5px solid #bef0b4; }
 
 .weekend {
   color: #ff050a !important; }
@@ -571,7 +571,7 @@ header {
   .weekend .story .category {
     color: #ff050a; }
   .weekend .card {
-    border-bottom: thick solid #ff050a; }
+    border-bottom: 5px solid #ff050a; }
 
 .sports {
   color: #42d2ff !important; }
@@ -580,7 +580,7 @@ header {
   .sports .story .category {
     color: #42d2ff; }
   .sports .card {
-    border-bottom: thick solid #42d2ff; }
+    border-bottom: 5px solid #42d2ff; }
 
 footer {
   margin-top: 100px;

@@ -88,7 +88,7 @@ $culture-color: #d20a78;
   overflow: hidden;
   z-index: 2;
   border-style: solid;
-  border-bottom: thick solid $university-color;
+  border-bottom: 5px solid;
 
   &.category-jump{
     bottom: 0;
@@ -496,7 +496,7 @@ header {
     color:$university-color;
   }
   .card{
-  border-bottom: thick solid $university-color;
+  border-bottom: 5px solid $university-color;
   }
   
     color:$university-color !important;
@@ -522,7 +522,7 @@ header {
     color:$city-color;
   }
   .card{
-  border-bottom: thick solid $city-color;
+  border-bottom: 5px solid $city-color;
   }
     
   color: $city-color !important;
@@ -536,7 +536,7 @@ header {
     color:$scitech-color;
   }
     .card{
-    border-bottom: thick solid $scitech-color;
+    border-bottom: 5px solid $scitech-color;
     }
      
   color: $scitech-color !important;
@@ -551,7 +551,7 @@ header {
     color:$culture-color;
   }
     .card{
-    border-bottom: thick solid $culture-color;
+    border-bottom: 5px solid $culture-color;
     }
      
   color: $culture-color !important;
@@ -566,7 +566,7 @@ header {
     color:$ytv-color;
   }
     .card{
-    border-bottom: thick solid $ytv-color;
+    border-bottom: 5px solid $ytv-color;
     }
     
   color: $ytv-color !important;
@@ -582,7 +582,7 @@ header {
     color:$magazine-color;
   }
     .card{
-    border-bottom: thick solid $magazine-color;
+    border-bottom: 5px solid $magazine-color;
     }
      
   color: $magazine-color !important;
@@ -597,7 +597,7 @@ header {
     color:$weekend-color;
   }
     .card{
-    border-bottom: thick solid $weekend-color;
+    border-bottom: 5px solid $weekend-color;
     }
       
   color: $weekend-color !important;
@@ -612,7 +612,7 @@ header {
     color:$sports-color;
   }
 .card{
-    border-bottom: thick solid $sports-color;
+    border-bottom: 5px solid $sports-color;
     }
      
   color: $sports-color !important;
