@@ -12,8 +12,8 @@
 - Nav color highlighting
 - SASS logic for different category colors
 - Markup and styles Breaking cards
-- YTV 
-- Weekend
+- YTV - build mockup, no cover story
+- Weekend - build mockup, yes cover story
 - Magazine 
 - 2 x 1 landscape cards are using 2:1 landscape photos
 - Breaking flag (full-width and top right versions) 
