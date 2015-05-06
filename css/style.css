@@ -210,7 +210,7 @@ body, header#site-header nav#site-navigation a, footer#site-footer a {
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card h1, .card.category-jump strong, section.category h2, .cover-story h1 {
+.card h1, .card.category-jump strong, section.category > h2, .cover-story h1 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -234,6 +234,51 @@ body {
 
 p {
   font-size: 0.8em; }
+
+header#site-header {
+  background-color: #ffffff;
+  margin-bottom: -30px;
+  padding: 10px 0 0; }
+  header#site-header a {
+    text-decoration: none; }
+  header#site-header h1.masthead-logo {
+    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
+    background-size: 390px 85px;
+    color: transparent;
+    width: 390px;
+    height: 85px;
+    display: block;
+    margin: 0 auto 10px; }
+  header#site-header nav#site-navigation {
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 100;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; }
+    header#site-header nav#site-navigation a {
+      line-height: 1.2;
+      margin: 15px;
+      font-size: 14px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #bbb; }
+      header#site-header nav#site-navigation a:hover {
+        color: #333; }
+
+footer#site-footer {
+  margin-top: 100px;
+  height: 50px;
+  background: #C9C9C9;
+  text-align: center; }
+  footer#site-footer a {
+    text-decoration: none;
+    font-size: 11px;
+    color: white;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0px 10px 0px 10px; }
 
 .container {
   margin-top: 6%;
@@ -488,14 +533,35 @@ section.category {
   clear: both;
   width: 100%;
   padding: 2em 0; }
-  section.category h2 {
+  section.category > h2 {
     font-style: italic;
     font-weight: 600;
     color: #433f3f;
     font-size: 2.75em; }
+  section.category.magazine > h2, section.category.weekend > h2 {
+    color: white;
+    top: 104px;
+    right: 0;
+    position: relative;
+    z-index: 2; }
+
+.cover-story {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, transparent 0%, black 100%), url("../images/lux.png") no-repeat;
+  background-size: cover;
+  padding-top: 190px; }
+  .cover-story h1 {
+    color: white;
+    font-size: 60px; }
+  .cover-story .byline, .cover-story .time {
+    margin: 0 auto;
+    color: #ddd; }
+  .cover-story .byline {
+    padding-top: 10px; }
 
 @media (max-width: 980px) {
-  #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
+  section.category {
     width: 710px;
     margin: 0 auto;
     margin-top: 3%; }
@@ -511,7 +577,7 @@ section.category {
       .card.story-kahuna h1 {
         font-size: 40px; } }
 @media (max-width: 710px) {
-  #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
+  section.category {
     width: 480px;
     margin: 0 auto;
     margin-top: 3%; }
@@ -525,7 +591,7 @@ section.category {
     .card.story-kahuna h1 {
       font-size: 20px; } }
 @media (max-width: 480px) {
-  #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv {
+  section.category {
     width: 90%;
     margin: 0 auto;
     margin-top: 3%; }
@@ -572,38 +638,6 @@ section.category {
         display: block;
         width: 100%;
         height: 100%; } }
-header#site-header {
-  background-color: #ffffff;
-  margin-bottom: -30px;
-  padding: 10px 0 0; }
-  header#site-header a {
-    text-decoration: none; }
-  header#site-header h1.masthead-logo {
-    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
-    background-size: 390px 85px;
-    color: transparent;
-    width: 390px;
-    height: 85px;
-    display: block;
-    margin: 0 auto 10px; }
-  header#site-header nav#site-navigation {
-    background-color: #ffffff;
-    text-align: center;
-    z-index: 100;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd; }
-    header#site-header nav#site-navigation a {
-      line-height: 1.2;
-      margin: 15px;
-      font-size: 14px;
-      letter-spacing: 1.75px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #bbb; }
-      header#site-header nav#site-navigation a:hover {
-        color: #333; }
-
 .university {
   color: #2882C8 !important; }
   .university .category-jump {
@@ -682,40 +716,5 @@ header#site-header {
     color: #42d2ff; }
   .sports .card {
     border-bottom: thick solid #42d2ff; }
-
-footer#site-footer {
-  margin-top: 100px;
-  height: 50px;
-  background: #C9C9C9;
-  text-align: center; }
-  footer#site-footer a {
-    text-decoration: none;
-    font-size: 11px;
-    color: white;
-    line-height: 50px;
-    text-transform: uppercase;
-    margin: 0px 10px 0px 10px; }
-
-section.magazine > h2, section.weekend > h2 {
-  color: white;
-  top: 104px;
-  right: 0;
-  position: relative;
-  z-index: 2; }
-
-.cover-story {
-  width: 100%;
-  height: 500px;
-  background: linear-gradient(to bottom, transparent 0%, black 100%), url("../images/lux.png") no-repeat;
-  background-size: cover;
-  padding-top: 190px; }
-  .cover-story h1 {
-    color: white;
-    font-size: 60px; }
-  .cover-story .byline, .cover-story .time {
-    margin: 0 auto;
-    color: #ddd; }
-  .cover-story .byline {
-    padding-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
