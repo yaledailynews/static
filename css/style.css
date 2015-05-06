@@ -510,9 +510,9 @@ section.category {
       height: auto;
       width: 100%; }
       .card.story-opinion img {
-        visibility: hidden; }
+        display: none; }
       .card.story-opinion .category {
-        visibility: hidden; }
+        display: none; }
       .card.story-opinion h1 {
         color: #433f3f; }
     .card.story-opinion::after {
