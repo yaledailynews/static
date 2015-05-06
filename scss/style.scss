@@ -88,7 +88,7 @@ $culture-color: #d20a78;
   overflow: hidden;
   z-index: 2;
   border-style: solid;
-  border-bottom: 5px solid;
+  border-bottom: thick solid $university-color;
 
   &.category-jump{
     bottom: 0;
@@ -383,8 +383,7 @@ section.category {
       width: 100%;
       //height: $card-height;
       h1 {
-        font-size: 30px;
-        margin-left: 140;
+        font-size: 20px;
       }
     }
 
@@ -400,64 +399,34 @@ section.category {
 @media(max-width:480px) {
 
   #stories, #university, #city, #sports, #scitech, #culture, #opinion, #weekend, #ytv{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 3%;
-
   }
   .card {
     width: 100%;
-    &.story {
+//    &.story {
+//     width: $card-width;
+//   } 
+
+    &.story-major {
       width: 100%;
-
-    }
-
-    &.story-major{
-      width: 100%;
-      .card-image{
-        width: 100%;
-        height: auto;
-      }
-
-    }
-
-    &.story-photo{
+      height: 0;
+      padding-bottom: 100%;
       .card-image {
         width: 100%;
         height: 100%;
       }
     }
-
-    &.story-preview {
-    }
-
-    &.story-major {
-
-    }
     &.story-kahuna{
-
+     // width: 2*$card-width + $gutter-height;
+      height: $card-height;
+      h1 {
+        font-size: 25px;
+      }
     }
 
-    &.story-opinion{
-      height: auto;
 
-      img{
-        visibility: hidden;
-      }
-      .category{
-        visibility: hidden;
-      }
-      h1{
-
-        color: #433f3f;
-      }
-      
-
-    }
-
-      &.story-opinion::after{
-        background: #f6f4f4;
-      }
   }
 }
 
@@ -508,7 +477,7 @@ header {
     color:$university-color;
   }
   .card{
-  border-bottom: 5px solid $university-color;
+  border-bottom: thick solid $university-color;
   }
   
     color:$university-color !important;
@@ -521,7 +490,9 @@ header {
   .story .category{
     color:$opinion-color;
   }
-
+  .card{
+  border-bottom: thick solid $opinion-color;
+ }
   
   color: $opinion-color !important;
  
@@ -534,7 +505,7 @@ header {
     color:$city-color;
   }
   .card{
-  border-bottom: 5px solid $city-color;
+  border-bottom: thick solid $city-color;
   }
     
   color: $city-color !important;
@@ -548,7 +519,7 @@ header {
     color:$scitech-color;
   }
     .card{
-    border-bottom: 5px solid $scitech-color;
+    border-bottom: thick solid $scitech-color;
     }
      
   color: $scitech-color !important;
@@ -563,7 +534,7 @@ header {
     color:$culture-color;
   }
     .card{
-    border-bottom: 5px solid $culture-color;
+    border-bottom: thick solid $culture-color;
     }
      
   color: $culture-color !important;
@@ -578,7 +549,7 @@ header {
     color:$ytv-color;
   }
     .card{
-    border-bottom: 5px solid $ytv-color;
+    border-bottom: thick solid $ytv-color;
     }
     
   color: $ytv-color !important;
@@ -594,7 +565,7 @@ header {
     color:$magazine-color;
   }
     .card{
-    border-bottom: 5px solid $magazine-color;
+    border-bottom: thick solid $magazine-color;
     }
      
   color: $magazine-color !important;
@@ -609,7 +580,7 @@ header {
     color:$weekend-color;
   }
     .card{
-    border-bottom: 5px solid $weekend-color;
+    border-bottom: thick solid $weekend-color;
     }
       
   color: $weekend-color !important;
@@ -624,7 +595,7 @@ header {
     color:$sports-color;
   }
 .card{
-    border-bottom: 5px solid $sports-color;
+    border-bottom: thick solid $sports-color;
     }
      
   color: $sports-color !important;
