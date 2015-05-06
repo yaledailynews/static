@@ -1,39 +1,67 @@
 /*
-Error: Invalid CSS after "...llbars-vertical": expected "{", was "; "
-        on line 352 of scss/style.scss
+Error: Undefined variable: "$gutter-height".
+        on line 354 of scss/style.scss
 
-347:     }
-348:   }
 349: 
 350:   &.cross-campus {
-351: <<<<<<< HEAD
-352:     overflow: -moz-scrollbars-vertical; 
-353:     overflow-y: scroll;
-354:     cursor: default;
-355:     height: 2 * $card-height + $gutter-height;
-356: =======
-357:     height: 2 * $card-height + $gutter-size;
+351:     overflow: -moz-scrollbars-vertical; 
+352:     overflow-y: scroll;
+353:     cursor: default;
+354:     height: 2 * $card-height + $gutter-height;
+355:     overflow: scroll;
+356:     border-bottom: none;
+357:     h1, p, time {
+358:       color: #696565;
+359:     }
 
 Backtrace:
-scss/style.scss:352
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:1165:in `expected'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:1101:in `expected'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:1096:in `tok!'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:641:in `block'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:661:in `block_child'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:650:in `block_contents'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:642:in `block'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:661:in `block_child'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:653:in `block_contents'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:642:in `block'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:635:in `ruleset'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:660:in `block_child'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:653:in `block_contents'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/scss/parser.rb:42:in `parse'
-/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/engine.rb:393:in `_to_tree'
+scss/style.scss:354
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/script/tree/operation.rb:73:in `_perform'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:79:in `block in with_base'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:79:in `with_base'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:79:in `block in with_base'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:79:in `with_base'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:430:in `map'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:79:in `block in with_base'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/stack.rb:79:in `with_base'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
 /Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/engine.rb:368:in `_render_with_sourcemap'
 /Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/engine.rb:285:in `render_with_sourcemap'
 /Users/aaronzlewis/.rvm/gems/ruby-2.1.1/gems/sass-3.4.11/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
@@ -52,4 +80,4 @@ scss/style.scss:352
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...llbars-vertical\": expected \"{\", was \"; \"\A         on line 352 of scss/style.scss\A \A 347:     }\A 348:   }\A 349: \A 350:   &.cross-campus {\A 351: <<<<<<< HEAD\A 352:     overflow: -moz-scrollbars-vertical; \A 353:     overflow-y: scroll;\A 354:     cursor: default;\A 355:     height: 2 * $card-height + $gutter-height;\A 356: =======\A 357:     height: 2 * $card-height + $gutter-size;"; }
+  content: "Error: Undefined variable: \"$gutter-height\".\A         on line 354 of scss/style.scss\A \A 349: \A 350:   &.cross-campus {\A 351:     overflow: -moz-scrollbars-vertical; \A 352:     overflow-y: scroll;\A 353:     cursor: default;\A 354:     height: 2 * $card-height + $gutter-height;\A 355:     overflow: scroll;\A 356:     border-bottom: none;\A 357:     h1, p, time {\A 358:       color: #696565;\A 359:     }"; }

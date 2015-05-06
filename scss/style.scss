@@ -348,14 +348,10 @@ footer#site-footer{
   }
 
   &.cross-campus {
-<<<<<<< HEAD
     overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
     cursor: default;
     height: 2 * $card-height + $gutter-height;
-=======
-    height: 2 * $card-height + $gutter-size;
->>>>>>> abf837275c99e8249fc63f8e6e0f17d568f2daf7
     overflow: scroll;
     border-bottom: none;
     h1, p, time {
@@ -745,7 +741,7 @@ body.article-page {
   }
 }
 
-<<<<<<< HEAD
+
 header#site-header {
   background-color: #ffffff;
   margin-bottom: -30px;
@@ -803,17 +799,10 @@ header#site-header {
 
   }
 }
-=======
-<<<<<<< HEAD
 
 
-
-
-
-=======
->>>>>>> 477652d6f0880215a6ea4f43ce475f12d4f6f1ba
 /// REWRITE THESE COLOR THINGS TO USE A MIXIN!
->>>>>>> abf837275c99e8249fc63f8e6e0f17d568f2daf7
+
 
 
 form input {
