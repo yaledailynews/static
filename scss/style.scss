@@ -445,13 +445,6 @@ section.category {
   }
   .card {
     width: 100%;
-    &.story-kahuna{
-      width: 120%;
-      height: $card-height;
-      h1 {
-        font-size: 25px;
-      }
-    }
     &.story-major {
       width: 100%;
       height: 0;
@@ -459,6 +452,14 @@ section.category {
       .card-image {
         width: 100%;
         height: 100%;
+      }
+    }
+    &.story-kahuna{
+      width: 120%;
+      left: -10%;
+      height: $card-height;
+      h1 {
+        font-size: 25px;
       }
     }
     &.story-opinion {
