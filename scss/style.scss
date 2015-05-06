@@ -124,10 +124,10 @@ $culture-color: #d20a78;
   &.story {
     .byline {
       text-transform: uppercase;
-      font-size: 0.7em;
+      font-size: 0.8em;
       margin-top: 10px;
       margin-bottom: 10px;
-      letter-spacing: .09em;
+      letter-spacing: .075em;
     }
     .card-preview {
       line-height: 1.3em;
@@ -287,46 +287,6 @@ $culture-color: #d20a78;
     }
   }
 
-  &.story-softcore {
-    width: 410px;
-    height: 205px;
-
-    .card-image {
-      width: 100%;
-      height: 100%;
-    }
-
-    h1 {
-      color: white;
-      width: 200px;
-    }
-
-    .byline {
-      color: #ccc;
-      font-weight: 100;
-    }
-
-    time {
-      color: white;
-      font-weight: 100;
-    }
-
-    p.category {
-      color: #eee;
-      font-weight: 400;
-    }
-
-    &::after {
-      @include bg-gradienter (( to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100% ));
-      top: 0;
-      left: 0;
-      width:100%;
-      height:100%;
-      content: "";
-      position: absolute;
-    }
-  }
-
   &.story-opinion {
     border-bottom: none;
 
@@ -443,11 +403,31 @@ section.category {
   }
   .card {
     width: 100%;
+    &.story-simple, &.story-opinion {
+      height: auto;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      &::after {
+        background: #f6f4f4;
+      }
+      img {
+        display: none;
+      }
+      .category{
+        display: none;
+      }
+      h1{
+        color:#433f3f;
+      }
+    }
     &.story-major {
       width: 100%;
       height: 0;
       padding-bottom: 100%;
+      background-color: white;
       .card-image {
+        display: block;
         width: 100%;
         height: 100%;
       }
@@ -456,70 +436,67 @@ section.category {
       width: 120%;
       left: -10%;
       height: $card-height;
+      background-color: white;
+      .card-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
       h1 {
         font-size: 25px;
       }
     }
-    &.story-opinion {
-      height: auto;
+    &.story-photo, &.story-preview {
       width: 100%;
-      img {
-        display:none;
-
+      background-color: white;
+      .card-image {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
-      .category{
-        display:none;
-      }
-
-      h1{
-        color:#433f3f;
-      }
-    }
-    &.story-opinion::after {
-      background: #f6f4f4;
     }
   }
 }
 
-header {
+header#site-header {
   background-color: #ffffff;
   margin-bottom: -30px;
-  .header {
-    width: 400px;
+  padding: 10px 0 0;
+  a {
+    text-decoration: none;
+  }
+  h1.masthead-logo { 
+    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
+    background-size: 390px 85px;
+    color: transparent;
+    width: 390px;
+    height: 85px;
     display: block;
-    margin: 0 auto;
-    padding: 10px 0px 10px 10px;
-    margin-bottom: 10px;
-
-    }
-
-  .navigation{ 
+    margin: 0 auto 10px;
+  }
+  nav#site-navigation { 
     background-color: #ffffff;    
     text-align: center;
     z-index:100;
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
-    
-  }
-  
-
-  .navbar-link {
-    @extend %face-sans;
-    line-height: 1.2;
-    margin: 15px;
-    font-size: 14px;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #bbb; 
+    a {
+      @extend %face-sans;
+      line-height: 1.2;
+      margin: 15px;
+      font-size: 14px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #bbb; 
+      &:hover {
+        color: #333;
+      }
     }
-
   }
+}
 
-
-
-//color section
 .university{
   .category-jump{
     background-color: $university-color;
@@ -651,13 +628,16 @@ header {
  
 }
 
- 
-footer{
+img.card-image{
+
+}
+
+footer#site-footer{
   margin-top: 100px;
   height: 50px;
   background: #C9C9C9;
   text-align: center;
-  a{
+  a {
     text-decoration: none;
     @extend %face-sans;
     font-size: 11px;
@@ -668,28 +648,3 @@ footer{
   }
 }
 
-.full-bleed {
-  width: 100%;
-  height: 500px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url('../images/lux.png') no-repeat;
-  background-size: cover;
-
-  h1 {
-    color: white;
-    font-size: 60px;
-    font-family: 'Playfair Display', "Georgia", serif;
-  }
-
-  h2.section-label {
-    color: white;
-    padding: 60px 0px 90px 0px;
-  }
-  .byline, .time {
-    margin: 0 auto;
-    color: #ddd;
-  }
-
-  .byline {
-    padding-top: 10px;
-  }
-}

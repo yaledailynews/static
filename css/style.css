@@ -205,7 +205,7 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, header .navbar-link, footer a {
+body, header#site-header nav#site-navigation a, footer#site-footer a {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
@@ -279,10 +279,10 @@ p {
     font-size: 20px; }
   .card.story .byline {
     text-transform: uppercase;
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-top: 10px;
     margin-bottom: 10px;
-    letter-spacing: .09em; }
+    letter-spacing: .075em; }
   .card.story .card-preview {
     line-height: 1.3em;
     letter-spacing: .02em;
@@ -391,36 +391,6 @@ p {
       bottom: 0; }
     .card.story-preview.story-photo .card-preview {
       color: #696565; }
-  .card.story-softcore {
-    width: 410px;
-    height: 205px; }
-    .card.story-softcore .card-image {
-      width: 100%;
-      height: 100%; }
-    .card.story-softcore h1 {
-      color: white;
-      width: 200px; }
-    .card.story-softcore .byline {
-      color: #ccc;
-      font-weight: 100; }
-    .card.story-softcore time {
-      color: white;
-      font-weight: 100; }
-    .card.story-softcore p.category {
-      color: #eee;
-      font-weight: 400; }
-    .card.story-softcore::after {
-      background: -moz-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: -o-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: -ms-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      content: "";
-      position: absolute; }
   .card.story-opinion {
     border-bottom: none; }
     .card.story-opinion h1 {
@@ -493,54 +463,77 @@ section.category {
 
   .card {
     width: 100%; }
+    .card.story-simple, .card.story-opinion {
+      height: auto;
+      width: 100%;
+      background-color: transparent;
+      border: none; }
+      .card.story-simple::after, .card.story-opinion::after {
+        background: #f6f4f4; }
+      .card.story-simple img, .card.story-opinion img {
+        display: none; }
+      .card.story-simple .category, .card.story-opinion .category {
+        display: none; }
+      .card.story-simple h1, .card.story-opinion h1 {
+        color: #433f3f; }
     .card.story-major, .card.story-kahuna {
       width: 100%;
       height: 0;
-      padding-bottom: 100%; }
+      padding-bottom: 100%;
+      background-color: white; }
       .card.story-major .card-image, .card.story-kahuna .card-image {
+        display: block;
         width: 100%;
         height: 100%; }
     .card.story-kahuna {
       width: 120%;
       left: -10%;
-      height: 211.18px; }
+      height: 211.18px;
+      background-color: white; }
+      .card.story-kahuna .card-image {
+        display: block;
+        width: 100%;
+        height: 100%; }
       .card.story-kahuna h1 {
         font-size: 25px; }
-    .card.story-opinion {
-      height: auto;
-      width: 100%; }
-      .card.story-opinion img {
-        display: none; }
-      .card.story-opinion .category {
-        display: none; }
-      .card.story-opinion h1 {
-        color: #433f3f; }
-    .card.story-opinion::after {
-      background: #f6f4f4; } }
-header {
+    .card.story-photo, .card.story-preview {
+      width: 100%;
+      background-color: white; }
+      .card.story-photo .card-image, .card.story-preview .card-image {
+        display: block;
+        width: 100%;
+        height: 100%; } }
+header#site-header {
   background-color: #ffffff;
-  margin-bottom: -30px; }
-  header .header {
-    width: 400px;
+  margin-bottom: -30px;
+  padding: 10px 0 0; }
+  header#site-header a {
+    text-decoration: none; }
+  header#site-header h1.masthead-logo {
+    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
+    background-size: 390px 85px;
+    color: transparent;
+    width: 390px;
+    height: 85px;
     display: block;
-    margin: 0 auto;
-    padding: 10px 0px 10px 10px;
-    margin-bottom: 10px; }
-  header .navigation {
+    margin: 0 auto 10px; }
+  header#site-header nav#site-navigation {
     background-color: #ffffff;
     text-align: center;
     z-index: 100;
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ddd; }
-  header .navbar-link {
-    line-height: 1.2;
-    margin: 15px;
-    font-size: 14px;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #bbb; }
+    header#site-header nav#site-navigation a {
+      line-height: 1.2;
+      margin: 15px;
+      font-size: 14px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #bbb; }
+      header#site-header nav#site-navigation a:hover {
+        color: #333; }
 
 .university {
   color: #2882C8 !important; }
@@ -621,35 +614,17 @@ header {
   .sports .card {
     border-bottom: thick solid #42d2ff; }
 
-footer {
+footer#site-footer {
   margin-top: 100px;
   height: 50px;
   background: #C9C9C9;
   text-align: center; }
-  footer a {
+  footer#site-footer a {
     text-decoration: none;
     font-size: 11px;
     color: white;
     line-height: 50px;
     text-transform: uppercase;
     margin: 0px 10px 0px 10px; }
-
-.full-bleed {
-  width: 100%;
-  height: 500px;
-  background: linear-gradient(to bottom, transparent 0%, black 100%), url("../images/lux.png") no-repeat;
-  background-size: cover; }
-  .full-bleed h1 {
-    color: white;
-    font-size: 60px;
-    font-family: 'Playfair Display', "Georgia", serif; }
-  .full-bleed h2.section-label {
-    color: white;
-    padding: 60px 0px 90px 0px; }
-  .full-bleed .byline, .full-bleed .time {
-    margin: 0 auto;
-    color: #ddd; }
-  .full-bleed .byline {
-    padding-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
