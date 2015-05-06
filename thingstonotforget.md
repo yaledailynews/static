@@ -81,3 +81,8 @@
 - 2x2 card (like on author page) to label section
 - article cards (same as home page)
 - endless scroll
+
+## Code Review
+- make sure header calls and fonts are being used 
+- make doc explaining standard styles and colors
+- turn colors into variables
