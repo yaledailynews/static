@@ -391,6 +391,36 @@ p {
       bottom: 0; }
     .card.story-preview.story-photo .card-preview {
       color: #696565; }
+  .card.story-softcore {
+    width: 410px;
+    height: 205px; }
+    .card.story-softcore .card-image {
+      width: 100%;
+      height: 100%; }
+    .card.story-softcore h1 {
+      color: white;
+      width: 200px; }
+    .card.story-softcore .byline {
+      color: #ccc;
+      font-weight: 100; }
+    .card.story-softcore time {
+      color: white;
+      font-weight: 100; }
+    .card.story-softcore p.category {
+      color: #eee;
+      font-weight: 400; }
+    .card.story-softcore::after {
+      background: -moz-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: -o-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: -ms-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute; }
   .card.story-opinion {
     border-bottom: none; }
     .card.story-opinion h1 {
@@ -626,5 +656,23 @@ footer#site-footer {
     line-height: 50px;
     text-transform: uppercase;
     margin: 0px 10px 0px 10px; }
+
+.full-bleed {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, transparent 0%, black 100%), url("../images/lux.png") no-repeat;
+  background-size: cover; }
+  .full-bleed h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Playfair Display', "Georgia", serif; }
+  .full-bleed h2.section-label {
+    color: white;
+    padding: 60px 0px 90px 0px; }
+  .full-bleed .byline, .full-bleed .time {
+    margin: 0 auto;
+    color: #ddd; }
+  .full-bleed .byline {
+    padding-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
