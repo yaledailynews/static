@@ -29,6 +29,7 @@
 - 2x1 w/o image -> 1x1
 - 1x1 -> headline list
 - mobile header (menu buttom + XC popout) 
+- remove packery on mobile at 480px breakpoint
 
 ## YTV
 - article page is the same as article w/ YouTube embed
