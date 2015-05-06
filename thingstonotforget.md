@@ -4,42 +4,50 @@
 - add database to git
 
 ## Site-wide
+- search box UI
+- highlighting for menu
 - Add small YDN logo to persistent nav?
-- color variables in sass
-- merge multiple sytlesheets
-- mobile header (menu buttom + XC popout)  
 
 ## Homepage
-- figure out bottom of Cross Campus megabox 
+- Cross Campus megabox
 - Nav color highlighting
 - SASS logic for different category colors
+- Markup and styles Breaking cards
+- YTV - build mockup, no cover story
+- Weekend - build mockup, yes cover story
+- Magazine 
+- 2 x 1 landscape cards are using 2:1 landscape photos
 - Breaking flag (full-width and top right versions) 
 - ads?
 - more efficient packery logic (rather than repeating for each section:
  - `data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }`
-- cover story image needs to be made inline
-- Responsive
- -  big kahuna -> full-bleed
- - 2x2 -> 2x1
- - 2x1 w/ image -> same
- - 2x1 w/o image -> 1x1
- - 1x1 -> headline list
- - remove packery on mobile at 480px breakpoint
-  - http://codepen.io/desandro/pen/kEjed
 
+## Responsive
+- big kahuna -> full-bleed
+- 2x2 -> 2x1
+- 2x1 w/ image -> same
+- 2x1 w/o image -> 1x1
+- 1x1 -> headline list
+- mobile header (menu buttom + XC popout) 
+- remove packery on mobile at 480px breakpoint
 
 ## YTV
 - article page is the same as article w/ YouTube embed
 - ytv category page gets same template as mag and weekend
-- add play button to video cards?
+- add play button to video cards
 
 ## Weekend
 - Merge with main WP multisite?
-- change background color of section?
+- Account for cover image
+- build HTML & CSS
 
 ## Magazine
 - Merge with main WP multisite?
-- change background color of section?
+- Account for cover image
+- change background color of section
+- build HTML & CSS
+- (same as Weekend) 
+
 
 ## Cross Campus
 - old cross campus stays on existing wordpress multisite installation, new cross campus becomes category of main YDN site
@@ -49,8 +57,7 @@
 - consider redirecting old xc homepage to main ydn homepage
 - persistent scroll bar 
 - white gradient at bottom
-- scroll bar scrolls over site navigation bar
-- mobile/responsive layout?
+- scroll bar scrolls over navigation bar 
 
 ## Article Metadata
 - Headline
@@ -59,7 +66,7 @@
 - Date
 - Preview text
 - Photos
- - 2:1 (landscape) for big kahuna, article, video, wknd, mag
+ - 2:1 (landscape) for big kahuna, article page full bleed, softcore (ytv, wknd , mag) cards and covers
  - 1:1 (square)
 - Category
  - Subcategory (at least for Sports, Opinion, and Weekend)
@@ -67,6 +74,7 @@
  
 
 ## Article Page
+- 2:1 image, full bleed at top 
 - change copy on Read This Next box 
 - brand RTN box with category colors 
 - author card in side bar 
@@ -82,4 +90,3 @@
 - 2x2 card (like on author page) to label section
 - article cards (same as home page)
 - endless scroll
-- weekend and magazine should get cover image
