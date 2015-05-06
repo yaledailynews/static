@@ -54,6 +54,7 @@
 - at header of old xc site, create language to steer to new content
 - consider redirecting old xc homepage to main ydn homepage
 - persistent scroll bar 
+- white gradient at bottom
 
 ## Article Metadata
 - Headline
