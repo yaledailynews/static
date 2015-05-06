@@ -205,7 +205,7 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, header .navbar-link, footer a {
+body, header#site-header nav#site-navigation a, footer#site-footer a {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
@@ -503,30 +503,37 @@ section.category {
         display: block;
         width: 100%;
         height: 100%; } }
-header {
+header#site-header {
   background-color: #ffffff;
-  margin-bottom: -30px; }
-  header .header {
-    width: 400px;
+  margin-bottom: -30px;
+  padding: 10px 0 0; }
+  header#site-header a {
+    text-decoration: none; }
+  header#site-header h1.masthead-logo {
+    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
+    background-size: 390px 85px;
+    color: transparent;
+    width: 390px;
+    height: 85px;
     display: block;
-    margin: 0 auto;
-    padding: 10px 0px 10px 10px;
-    margin-bottom: 10px; }
-  header .navigation {
+    margin: 0 auto 10px; }
+  header#site-header nav#site-navigation {
     background-color: #ffffff;
     text-align: center;
     z-index: 100;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd; }
-  header .navbar-link {
-    line-height: 1.2;
-    margin: 15px;
-    font-size: 14px;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #bbb; }
+    header#site-header nav#site-navigation a {
+      line-height: 1.2;
+      margin: 15px;
+      font-size: 14px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #bbb; }
+      header#site-header nav#site-navigation a:hover {
+        color: #333; }
 
 .university {
   color: #2882C8 !important; }
@@ -607,12 +614,12 @@ header {
   .sports .card {
     border-bottom: thick solid #42d2ff; }
 
-footer {
+footer#site-footer {
   margin-top: 100px;
   height: 50px;
   background: #C9C9C9;
   text-align: center; }
-  footer a {
+  footer#site-footer a {
     text-decoration: none;
     font-size: 11px;
     color: white;

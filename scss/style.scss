@@ -460,45 +460,45 @@ section.category {
   }
 }
 
-header {
+header#site-header {
   background-color: #ffffff;
   margin-bottom: -30px;
-  .header {
-    width: 400px;
+  padding: 10px 0 0;
+  a {
+    text-decoration: none;
+  }
+  h1.masthead-logo { 
+    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
+    background-size: 390px 85px;
+    color: transparent;
+    width: 390px;
+    height: 85px;
     display: block;
-    margin: 0 auto;
-    padding: 10px 0px 10px 10px;
-    margin-bottom: 10px;
-
-    }
-
-  .navigation{ 
+    margin: 0 auto 10px;
+  }
+  nav#site-navigation { 
     background-color: #ffffff;    
     text-align: center;
     z-index:100;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
-    
-  }
-  
-
-  .navbar-link {
-    @extend %face-sans;
-    line-height: 1.2;
-    margin: 15px;
-    font-size: 14px;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #bbb; 
+    a {
+      @extend %face-sans;
+      line-height: 1.2;
+      margin: 15px;
+      font-size: 14px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #bbb; 
+      &:hover {
+        color: #333;
+      }
     }
-
   }
+}
 
-
-
-//color section
 .university{
   .category-jump{
     background-color: $university-color;
@@ -634,12 +634,12 @@ img.card-image{
 
 }
 
-footer{
+footer#site-footer{
   margin-top: 100px;
   height: 50px;
   background: #C9C9C9;
   text-align: center;
-  a{
+  a {
     text-decoration: none;
     @extend %face-sans;
     font-size: 11px;
@@ -648,6 +648,5 @@ footer{
     text-transform: uppercase;
     margin: 0px 10px 0px 10px;
   }
-
 }
 

@@ -28,26 +28,20 @@
 </head>
 <body>
 
- 
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--   <div style="position:fixed; background:#ffffff; top:0; height: 58px; width:100%;  box-shadow: 0 4px 2px -2px gray; z-index: 1"></div> -->
-
 <header id="site-header">
-  <img src="./images/branding/YDN_Nameplate_Big.gif" class="header" id="header">
-  <nav class="navigation" id="navigation">
-          <a id= "tag-top"class="navbar-link " href="#">Top</a>
-          <a id= "tag-university"class="navbar-link " href="#">University</a>
-          <a id= "tag-city"class="navbar-link " href="#">City</a>
-          <a id= "tag-sports"class="navbar-link " href="#">Sports</a>
-          <a id= "tag-scitech"class="navbar-link " href="#">Scitech</a>
-          <a id= "tag-culture"class="navbar-link " href="#">Culture</a>
-          <a id= "tag-opinion"class="navbar-link " href="#">Opinion</a>
-          <a id= "tag-weekend"class="navbar-link " href="#">Wknd</a>
-          <a id= "tag-magazine"class="navbar-link " href="#">Mag</a>
-          <a id= "tag-ytv"class="navbar-link x" href="#">Ytv</a>
-          <a id= "tag-search"class="navbar-link x" href="#">Search</a>
+  <a href="/"><h1 class="masthead-logo">Yale Daily News</h1></a>
+  <nav id="site-navigation">
+    <a id="tag-top" href="#">Top</a>
+    <a id="tag-university" href="#">University</a>
+    <a id="tag-city" href="#">City</a>
+    <a id="tag-sports" href="#">Sports</a>
+    <a id="tag-scitech" href="#">Scitech</a>
+    <a id="tag-culture" href="#">Culture</a>
+    <a id="tag-opinion" href="#">Opinion</a>
+    <a id="tag-weekend" href="#">Wknd</a>
+    <a id="tag-magazine" href="#">Mag</a>
+    <a id="tag-ytv" href="#">Ytv</a>
+    <a id="tag-search" href="#">Search</a>
   </nav>
 </header>
   
@@ -61,6 +55,7 @@
             <time>Apr 5, 12:45 pm</time>
           </div>
       </article></a>
+
       <a href="#"><article class="card story story-major">
         <h1>2020 — Chronicling Ivy League recruitment: The summer months</h1>
         <p class="byline">Christopher Wan, Annie Cook</p>
@@ -69,6 +64,7 @@
         <time>Apr 5, 12:45 pm</time>
         <p class="category">University</p>
       </article></a>
+
       <a href="#"><article class="card story story-major story-breaking">
         <h1>2020 — Chronicling Ivy League recruitment: The summer months</h1>
         <p class="byline">Christopher Wan, Annie Cook</p>
@@ -382,12 +378,8 @@
         <p class="category">Magazine</p>
       </article></a>
 
-<<<<<<< HEAD
-      <a href="#"><article class="card story story-simple">
-=======
       <a href="#"><article class="card story story-softcore">
         <img class="card-image" src="images/mayday.jpg">
->>>>>>> origin/master
         <h1>Chris Wan selected as most beautiful man on camps</h1>
         <time>Apr 11, 4:23 pm</time>
         <p class="category">Magazine</p>
@@ -409,9 +401,7 @@
       </aside></a>
     </section><!-- /YTV -->
 
-
-
-    <footer>
+    <footer id="site-footer">
       <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
       <a href="#">About Us</a>
       <a href="#">Contact</a>
@@ -427,7 +417,7 @@
 
 <script>
 $(document).ready(function(){
-    $("#navigation").sticky({});
+    $("#site-navigation").sticky({});
   });
 </script>
 
