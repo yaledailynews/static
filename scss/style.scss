@@ -405,11 +405,31 @@ section.category {
   }
   .card {
     width: 100%;
+    &.story-simple, &.story-opinion {
+      height: auto;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      &::after {
+        background: #f6f4f4;
+      }
+      img {
+        display: none;
+      }
+      .category{
+        display: none;
+      }
+      h1{
+        color:#433f3f;
+      }
+    }
     &.story-major {
       width: 100%;
       height: 0;
       padding-bottom: 100%;
+      background-color: white;
       .card-image {
+        display: block;
         width: 100%;
         height: 100%;
       }
@@ -418,27 +438,24 @@ section.category {
       width: 120%;
       left: -10%;
       height: $card-height;
+      background-color: white;
+      .card-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
       h1 {
         font-size: 25px;
       }
     }
-    &.story-opinion {
-      height: auto;
+    &.story-photo, &.story-preview {
       width: 100%;
-      img {
-        visibility: hidden;
-
+      background-color: white;
+      .card-image {
+        display: block;
+        width: 100%;
+        height: 100%;
       }
-      .category{
-        visibility: hidden;
-      }
-
-      h1{
-        color:#433f3f;
-      }
-    }
-    &.story-opinion::after {
-      background: #f6f4f4;
     }
   }
 }
