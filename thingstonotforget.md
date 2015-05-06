@@ -53,6 +53,7 @@
 - at end of new xc archive provide link to old site
 - at header of old xc site, create language to steer to new content
 - consider redirecting old xc homepage to main ydn homepage
+- persistent scroll bar 
 
 ## Article Metadata
 - Headline
