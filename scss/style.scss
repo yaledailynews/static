@@ -439,13 +439,25 @@ section.category {
     }
 
     &.story-opinion{
+      height: auto;
+
       img{
         visibility: hidden;
       }
-      height: auto;
+      .category{
+        visibility: hidden;
+      }
+      h1{
+
+        color: #433f3f;
+      }
+      
+
     }
 
-
+      &.story-opinion::after{
+        background: #f6f4f4;
+      }
   }
 }
 

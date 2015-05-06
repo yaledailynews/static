@@ -477,7 +477,13 @@ section.category {
     .card.story-opinion {
       height: auto; }
       .card.story-opinion img {
-        visibility: hidden; } }
+        visibility: hidden; }
+      .card.story-opinion .category {
+        visibility: hidden; }
+      .card.story-opinion h1 {
+        color: #433f3f; }
+    .card.story-opinion::after {
+      background: #f6f4f4; } }
 header {
   background-color: #ffffff;
   margin-bottom: -30px; }
