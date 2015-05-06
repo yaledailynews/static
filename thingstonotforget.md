@@ -18,6 +18,8 @@
 - 2 x 1 landscape cards are using 2:1 landscape photos
 - Breaking flag (full-width and top right versions) 
 - ads?
+- more efficient packery logic (rather than repeating for each section:
+ - `data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }`
 
 ## Responsive
 - big kahuna -> full-bleed
