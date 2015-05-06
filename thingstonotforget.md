@@ -6,6 +6,7 @@
 ## Site-wide
 - search box UI
 - highlighting for menu
+- Add small YDN logo to persistent nav?
 
 ## Homepage
 - Cross Campus megabox
@@ -28,6 +29,7 @@
 - 2x1 w/o image -> 1x1
 - 1x1 -> headline list
 - mobile header (menu buttom + XC popout) 
+- remove packery on mobile at 480px breakpoint
 
 ## YTV
 - article page is the same as article w/ YouTube embed
@@ -53,6 +55,9 @@
 - at end of new xc archive provide link to old site
 - at header of old xc site, create language to steer to new content
 - consider redirecting old xc homepage to main ydn homepage
+- persistent scroll bar 
+- white gradient at bottom
+- scroll bar scrolls over navigation bar 
 
 ## Article Metadata
 - Headline

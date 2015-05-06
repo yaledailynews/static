@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-
   <meta charset="utf-8">
   <title>Static Homepage</title>
 
@@ -15,10 +14,15 @@
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
+<<<<<<< HEAD
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css"> 
+=======
+  <link rel="stylesheet" href="scss/_grid.scss">
+  <link rel="stylesheet" href="css/style.css"> 
+>>>>>>> abf837275c99e8249fc63f8e6e0f17d568f2daf7
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
@@ -26,6 +30,8 @@
   <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
+
+
 
 </head>
 <body>
@@ -42,6 +48,7 @@
     <a id="tag-opinion" href="#">Opinion</a>
     <a id="tag-weekend" href="#">Wknd</a>
     <a id="tag-magazine" href="#">Mag</a>
+<<<<<<< HEAD
     <a id="tag-ytv" href="#">Ytv</a>
     <div id="nav-search">
       <i class="fa fa-search"></i>
@@ -50,12 +57,17 @@
        </form>
      </div>
     
+=======
+    <a id="tag-ytv" href="#">YTV</a>
+    <a id="tag-search" href="#">Search</a>
+>>>>>>> abf837275c99e8249fc63f8e6e0f17d568f2daf7
   </nav>
 
 </header>
   
 
-    <section id="stories" class="js-packery container category front-page" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="front-page" class="js-packery container category front-page" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+
       <a href="#"><article class="card story story-breaking story-kahuna">
         <h1>Harrassment at SAE and its fallout</h1>
           <img class="card-image" src="images/sae.jpg">
@@ -185,7 +197,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>University</strong>
+        More from <strong>University</strong>
       </aside></a>
     </section><!-- /university -->
 
@@ -224,7 +236,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>City</strong>
+        More from <strong>City</strong>
       </aside></a>
     </section><!-- /city -->
 
@@ -260,7 +272,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>Sports</strong>
+        More from <strong>Sports</strong>
       </aside></a>
     </section><!-- /sports -->
 
@@ -301,7 +313,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>Scitech</strong>
+        More from <strong>Scitech</strong>
       </aside></a>
     </section><!-- /scitech -->
 
@@ -337,7 +349,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>Culture</strong> 
+        More from <strong>Culture</strong> 
       </aside></a>
     </section><!-- /culture -->
 
@@ -365,7 +377,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>Opinion</strong> 
+        More from <strong>Opinion</strong> 
       </aside></a>
     </section><!-- /opinion -->
 
@@ -415,7 +427,7 @@
 
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>Weekend</strong> 
+        More from <strong>Weekend</strong> 
       </aside></a>
     </section><!-- /weekend -->
 
@@ -458,7 +470,7 @@
         </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more <strong>Magazine</strong>
+        More from <strong>Magazine</strong>
       </aside></a>
     </div>
     </section><!-- /magazine -->
@@ -498,7 +510,7 @@
         </article></a>
 
       <a href="#"><aside class="card category-jump">
-        Read more<strong>YTV</strong>
+        More from <strong>YTV</strong>
       </aside></a>
     </section><!-- /YTV -->
 
@@ -549,7 +561,9 @@ $(document).ready(function(){
   setTimeout(function(){buildScenes("#magazine", "#tag-magazine", "magazine")}, 500);
   setTimeout(function(){buildScenes("#ytv", "#tag-ytv", "ytv")}, 500);
   setTimeout(function(){buildScenes("#sports", "#tag-sports", "sports")}, 500);
+
 </script>
+
 
 </body>
 </html>
