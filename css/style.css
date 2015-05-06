@@ -210,7 +210,7 @@ body, header#site-header nav#site-navigation a, footer#site-footer a {
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card h1, .card.category-jump strong, section.category h2 {
+.card h1, .card.category-jump strong, section.category h2, .cover-story h1 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -222,15 +222,15 @@ body, header#site-header nav#site-navigation a, footer#site-footer a {
   color: #696565;
   margin-left: 15px; }
 
-body {
-  background-color: #f6f4f4; }
-
 .card h1 {
   letter-spacing: .025em;
   line-height: 1.2;
   font-weight: 600;
   color: #433f3f;
   margin: 15px; }
+
+body {
+  background-color: #f6f4f4; }
 
 p {
   font-size: 0.8em; }
@@ -254,8 +254,7 @@ p {
   height: 211.18px;
   overflow: hidden;
   z-index: 2;
-  border-style: solid;
-  border-bottom: thick solid #2882C8; }
+  border-bottom: 5px solid; }
   .card.category-jump {
     bottom: 0;
     padding: 135px 15px 15px;
@@ -285,8 +284,7 @@ p {
     letter-spacing: .02em;
     font-weight: 300;
     margin-left: 15px;
-    margin-right: 15px;
-    z-index: 11; }
+    margin-right: 15px; }
   .card.story time {
     bottom: 30px;
     color: #433f3f; }
@@ -720,8 +718,7 @@ section.magazine > h2, section.weekend > h2 {
   padding-top: 190px; }
   .cover-story h1 {
     color: white;
-    font-size: 60px;
-    font-family: 'Playfair Display', "Georgia", serif; }
+    font-size: 60px; }
   .cover-story .byline, .cover-story .time {
     margin: 0 auto;
     color: #ddd; }

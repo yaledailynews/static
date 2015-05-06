@@ -20,6 +20,15 @@
   margin-left: 15px;
 }
 
+%face-header {
+  @extend %face-serif;
+  letter-spacing: .025em;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #433f3f;
+  margin: 15px;
+}
+
 @mixin bg-gradienter($args) {
   background: -moz-linear-gradient($args), no-repeat;
   background: -webkit-linear-gradient($args), no-repeat;
@@ -29,28 +38,31 @@
 }
 
 $card-height: 211.18px;
-$card-width:211.18px;
+$card-width: 211.18px;
 $gutter-height: 38.5px;
+
+$card-border-width: 3px;
+$university-color: #2882C8;
+$opinion-color: #cf383e;
+$city-color: #00beb4;
+$scitech-color: #ffdc00;
+$sports-color:#42d2ff;
+$ytv-color: #fe9e48;
+$weekend-color: #ff050a;
+$magazine-color: #bef0b4;
+$culture-color: #d20a78;
+
 
 body {
 	background-color: #f6f4f4;
   @extend %face-sans;
 }
 
-%face-header {
-  @extend %face-serif;
-	letter-spacing: .025em;
-  line-height: 1.2;
-  font-weight: 600;
-  color: #433f3f;
-  margin: 15px;
-}
-
 p {
 	font-size: 0.8em;
 }
 
-.container{
+.container {
   &:first-of-type{
     margin-top: 2%;
   }
@@ -67,28 +79,13 @@ p {
   margin-left: 15px;
 }
 
-
-$card-border-width: 3px;
-
-$university-color: #2882C8;
-$opinion-color: #cf383e;
-$city-color: #00beb4;
-$scitech-color: #ffdc00;
-$sports-color:#42d2ff;
-$ytv-color: #fe9e48;
-$weekend-color: #ff050a;
-$magazine-color: #bef0b4;
-$culture-color: #d20a78;
-
-
 .card {
   @extend .three.columns;
 	background-color: white;
 	height: $card-height;
   overflow: hidden;
   z-index: 2;
-  border-style: solid;
-  border-bottom: thick solid $university-color;
+  border-bottom: 5px solid;
 
   &.category-jump{
     bottom: 0;
@@ -110,9 +107,6 @@ $culture-color: #d20a78;
     }
   }
 
-    //  headline - playfair bold 20pt, line spacing 20px, 
-    //  author - avenir, font style heavy, text size 10px, letter spacing - 2px
-    //  preview - avenir medium, 12 pt (preview box is font style avenir black, 800, letter space 2px, see university = 50% capacity-->
   h1 {
     @extend %face-header;
     font-size: 20px;
@@ -131,7 +125,6 @@ $culture-color: #d20a78;
       font-weight: 300;
       margin-left: 15px;
       margin-right: 15px;
-      z-index: 11;
     }
     time {
       bottom: 30px;
@@ -150,10 +143,8 @@ $culture-color: #d20a78;
       height: 100%;
       width: auto;
       position: absolute;
-      //top: 0;
       left: 0;
       z-index: 0;
-
     }
   }
 
@@ -758,13 +749,13 @@ footer#site-footer{
   }
 }
 
-  section.magazine > h2, section.weekend > h2 {
-    color: white;
-    top: 104px;
-    right: 0;
-    position: relative;
-    z-index: 2;
-  }
+section.magazine > h2, section.weekend > h2 {
+  color: white;
+  top: 104px;
+  right: 0;
+  position: relative;
+  z-index: 2;
+}
 
 .cover-story {
   width: 100%;
@@ -772,17 +763,15 @@ footer#site-footer{
   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url('../images/lux.png') no-repeat;
   background-size: cover;
   padding-top: 190px;
-
   h1 {
     color: white;
     font-size: 60px;
-    font-family: 'Playfair Display', "Georgia", serif;
+    @extend %face-serif;
   }
   .byline, .time {
     margin: 0 auto;
     color: #ddd;
   }
-
   .byline {
     padding-top: 10px;
   }
