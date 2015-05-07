@@ -2,77 +2,66 @@
 <html lang="en">
 <head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Even Artichokes Have Doubts</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title>Article Page</title>
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+ <![endif]-->
+
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/article.css"> 
+  <link rel="stylesheet" href="css/style.css"> 
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
   <script src="./js/ScrollMagic.min.js"></script>
   <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
-  <script>
-  $(document).ready(function() {
-  	var width = $(window).width();
-  	$('.hero-image').css('width', width);
-  });
-  </script>
 
 </head>
 
-<body>
+<body class="article-page">
 
 <header id="site-header">
-  <img src="./images/logo.png" class="header" id="header">
-  <nav class="navigation" id="navigation">
-          <a class="navbar-link" href="#">University</a>
-          <a class="navbar-link" href="#">Opinion</a>
-          <a class="navbar-link" href="#">City</a>
-          <a class="navbar-link" href="#">Sports</a>
-          <a class="navbar-link" href="#">Scitech</a>
-          <a class="navbar-link" href="#">Culture</a>
-          <a class="navbar-link" href="#">Ytv</a>
-          <a class="navbar-link" href="#">Wknd</a>
-          <a class="navbar-link" href="#">Mag</a>
+  <a href="/"><h1 class="masthead-logo">Yale Daily News</h1></a>
+  <nav id="site-navigation">
+    <a id="tag-top" href="#">Top</a>
+    <a id="tag-university" href="#">University</a>
+    <a id="tag-city" href="#">City</a>
+    <a id="tag-sports" href="#">Sports</a>
+    <a id="tag-scitech" href="#">Scitech</a>
+    <a id="tag-culture" href="#">Culture</a>
+    <a id="tag-opinion" href="#">Opinion</a>
+    <a id="tag-weekend" href="#">Wknd</a>
+    <a id="tag-magazine" href="#">Mag</a>
+    <a id="tag-ytv" href="#">YTV</a>
+    <a id="tag-search" href="#">Search</a>
   </nav>
 </header>
+  
 
 	<article>
-		<img class="hero-image" src="images/wall-street.jpg" />
-		<div class="content container">
+
+		<img class="hero-image" src="images/wall-street-hero.jpg" />
+		
+		<div class="container">
+
 			<div class="article-header">
 				<h1>Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</h1>
 				<p class="byline">By Marina Keegan &middot; <date>September 30, 2011</date> &middot; <time> 10:10pm</time></p>
 				<section class="card read-next">
-				<h2>Read this next</h2>
-				<a href="#">Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</a>
-				<a href="#">Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</a>
-				<a href="#">Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</a>
-			</section>
+					<h2>More from University</h2>
+					<a href="#">Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</a>
+					<a href="#">Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</a>
+					<a href="#">Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</a>
+				</section>
 			</div>
-
-
 
 			<section class="article-text">
 				<p>If this year is anything like the last 10, around 25 percent of employed Yale graduates will enter the consulting or finance industry. This is a big deal. This is a huge deal. This is so many people! This is one-fourth of our people! Regardless of what you think or with whom you’re interviewing, we ought to be pausing for a second to ask why.</p>
@@ -93,7 +82,7 @@
 
 				<p>One senior I spoke with (whom we’ll refer to as Shloe Carbib for the sake of Google anonymity) has known what she’s wanted since freshman year. When asked what she hopes to do with her life, Shloe responded immediately: “Oh you know, I want to write and direct films or be an indie music celebrity.” Ironies of expression aside, there was a sincerity to her avowal. “I want to devote my life to the things that I love. I want to create something lasting that I’m really proud of.”</p>
 
-				<img class="article-body-img" src="images/goldman.jpg" />
+				<img src="images/goldman.jpg" />
 
 				<p>At Yale, she’s worked hard in pursuit of these goals — directing theatrical productions, playing in a band and collaborating on the 2012 Class Day Video. Yet on Monday evening at 8 p.m., she found herself at a top-tier consulting firm event at the Study — meeting and greeting in anticipation of her interview the next morning.</p>
 
@@ -109,7 +98,7 @@
 
 				<p>“I got a personal email and went to their event because I couldn’t believe that they were interested in me and I wanted to find out why,” she said. But when she got there, she wasn’t sure why she came in the first place. “I looked around and felt that I not only didn’t belong with the group of people but that I didn’t believe in what the organization stands for or does,” she said. “There’s definitely a compulsion element to it. You feel like so many people are doing it and talking about it all the time like it’s interesting, so you start to wonder if maybe it really is.”</p>
 
-				<img class="article-body-img" src="images/goldman.jpg" />
+				<img src="images/goldman.jpg" />
 
 				<p>Mark Sonnenblick ’12 wonders if it might be. A musician, writer and improvisational comedian at Yale, Mark is looking (among other things) into a job at a hedge fund next year. “I want a job that will dynamically engage me,” he said. “But I guess the bottom line is that I want a job in general and I don’t really know how to get a job. This is easy to apply for and would make me a lot of money.” Ultimately, he hopes to work writing music and theater, but understands that’s not exactly a field with an application form.</p>
 
@@ -149,7 +138,7 @@
 
 				<p>Kevin Hicks ’89, former dean of Berkeley College thinks it’s a load of crap.</p>
 
-				<img class="article-body-img" src="images/goldman.jpg" />
+				<img src="images/goldman.jpg" />
 
 				<p>“As for the argument that consulting provides an extraordinary skill set with which one can eventually change the world, I just don’t buy it,” he said. “Everyone knows what the skill set is for most entry-level consultants: PowerPoint and Excel.” He sees a huge problem with the idea that consulting and finance are good ways to prepare oneself for a career elsewhere.</p>
 
@@ -189,7 +178,7 @@
 
 				<p>Inevitably, some of the students I spoke with aren’t interested in the industry at all. “I can never say for an individual person because I don’t know their financial circumstances,” Alexandra Brodsky ’12 said, “but 25 percent is a lot of talent that could do a hell of a lot for the world elsewhere. I think that we have to be aware of that when we make these choices.” Brodsky, the co-coordinator of Dwight Hall, spends a lot of her time at Yale surrounded by non-profit management. For her, the argument that working in the private sector is the best way to prepare oneself for this line of work is faulty.</p>
 
-				<img class="article-body-img" src="images/goldman.jpg" />
+				<img src="images/goldman.jpg" />
 
 				<p>“I think the best way to get the skills to work for a non profit is to work for a non profit,” she said. “The answer people give about skills acquisition is very convenient.”</p>
 
@@ -229,7 +218,7 @@
 
 				<p>What it boils down to is that we could be doing other things. Sure, working at Bain or McKinsey or J.P. Morgan might be one way to gain skills to help us get hired elsewhere, but it’s obviously not the only option. There’s a lot of cool shit we could all be doing — and I don’t need to enumerate the clichés.</p>
 
-				<img class="article-body-img" src="images/goldman.jpg" />
+				<img src="images/goldman.jpg" />
 
 				<p>Obviously, some people need to make money. They have school loans to pay off and families to support. For those of us with an actual need to make money quickly, these industries might make a lot of sense. In fact, I think that working hard to earn a decent amount of money can be quite noble. I’m still struggling with the fact that due to my own (selfish) desire to be a writer, my children probably won’t have the same opportunities I had growing up. For most students, however, I genuinely don’t think it’s about the money. It’s a factor, sure. But it just feels like a factor.</p>
 
@@ -243,14 +232,25 @@
 
 				<p>I want to watch Shloe’s movies and I want to see Mark’s musicals and I want to volunteer with Joe’s non-profit and eat at Annie’s restaurant and send my kids to schools Jeff’s reformed and I’m JUST SCARED about this industry that’s taking all my friends and telling them this is the best way for them to be spending their time. Any of their time. Maybe I’m ignorant and idealistic but I just feel like that can’t possibly be true. I feel like we know that. I feel like we can do something really cool to this world. And I fear — at 23, 24, 25 — we might forget.</p>
 			</section>
-		</div>
+		</div><!-- /container -->
+
 		<div class="bottom-bar">
 			<p> UNIVERSITY | Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</p> 
 			<p class="byline"> by Christopher Wan </p>
 		</div>
+	
 	</article>
 
-
+  <footer id="site-footer">
+    <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+    <a href="#">Advertise</a>
+    <a href="#">Archives</a>
+    <a href="#">Subscribe</a>
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+  </footer>
 
 <script>
 $(document).ready(function(){
@@ -258,6 +258,43 @@ $(document).ready(function(){
   });
 </script>
 
-</body>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+<script>
+$(document).ready(function(){
+    $("#site-navigation").sticky({});
+  });
+</script>
+
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+
+  //find section height
+  function getSectionHeight(section) {
+    return $(section).height();
+  }
+
+  // build scenes
+  function buildScenes(section, tag, css){
+      new ScrollMagic.Scene({triggerElement: section, duration: getSectionHeight(section)})
+          .setClassToggle(tag, css) // add class toggle
+          .addIndicators() // add indicators (requires plugin)
+          .addTo(controller);
+  }
+
+  setTimeout(function(){buildScenes("#university", "#tag-university", "university")}, 500);
+  setTimeout(function(){buildScenes("#opinion", "#tag-opinion", "opinion")}, 500);
+  setTimeout(function(){buildScenes("#city", "#tag-city", "city")}, 500);
+  setTimeout(function(){buildScenes("#scitech", "#tag-scitech", "scitech")}, 500);
+  setTimeout(function(){buildScenes("#culture", "#tag-culture", "culture")}, 500);
+  setTimeout(function(){buildScenes("#weekend", "#tag-weekend", "weekend")}, 500);
+  setTimeout(function(){buildScenes("#magazine", "#tag-magazine", "magazine")}, 500);
+  setTimeout(function(){buildScenes("#ytv", "#tag-ytv", "ytv")}, 500);
+  setTimeout(function(){buildScenes("#sports", "#tag-sports", "sports")}, 500);
+</script>
+
+
+</body>
 </html>

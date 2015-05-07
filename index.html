@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-
   <meta charset="utf-8">
   <title>Static Homepage</title>
 
@@ -16,7 +15,9 @@
   <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/grid.css">
-  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css"> 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
@@ -25,35 +26,38 @@
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
 
+
+
 </head>
 <body>
 
- 
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--   <div style="position:fixed; background:#ffffff; top:0; height: 58px; width:100%;  box-shadow: 0 4px 2px -2px gray; z-index: 1"></div> -->
-
 <header id="site-header">
-  <img src="./images/branding/YDN_Nameplate_Big.gif" class="header" id="header">
-  <nav class="navigation" id="navigation">
-          <a id= "tag-top"class="navbar-link " href="#">Top</a>
-          <a id= "tag-university"class="navbar-link " href="#">University</a>
-          <a id= "tag-city"class="navbar-link " href="#">City</a>
-          <a id= "tag-sports"class="navbar-link " href="#">Sports</a>
-          <a id= "tag-scitech"class="navbar-link " href="#">Scitech</a>
-          <a id= "tag-culture"class="navbar-link " href="#">Culture</a>
-          <a id= "tag-opinion"class="navbar-link " href="#">Opinion</a>
-          <a id= "tag-weekend"class="navbar-link " href="#">Wknd</a>
-          <a id= "tag-magazine"class="navbar-link " href="#">Mag</a>
-          <a id= "tag-ytv"class="navbar-link x" href="#">Ytv</a>
-          <a id= "tag-search"class="navbar-link x" href="#">Search</a>
+  <a href="/"><h1 class="masthead-logo">Yale Daily News</h1></a>
+  <nav id="site-navigation">
+    <a id="tag-top" href="#">Top</a>
+    <a id="tag-university" href="#">University</a>
+    <a id="tag-city" href="#">City</a>
+    <a id="tag-sports" href="#">Sports</a>
+    <a id="tag-scitech" href="#">Scitech</a>
+    <a id="tag-culture" href="#">Culture</a>
+    <a id="tag-opinion" href="#">Opinion</a>
+    <a id="tag-weekend" href="#">Wknd</a>
+    <a id="tag-magazine" href="#">Mag</a>
+    <a id="tag-ytv" href="#">YTV</a>
+    <div id="nav-search">
+      <i class="fa fa-search"></i>
+       <form class="search-box">
+          <input type="text" placeholder="Search articles and authors">
+       </form>
+     </div>
   </nav>
+
 </header>
   
 
-    <section id="stories" class="js-packery container category front-page" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
-      <a href="#"><article class="card story story-breaking">
+    <section id="front-page" class="js-packery container category front-page" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+
+      <a href="#"><article class="card story story-breaking story-kahuna">
         <h1>Harrassment at SAE and its fallout</h1>
           <img class="card-image" src="images/sae.jpg">
           <div class="breaking">
@@ -61,6 +65,33 @@
             <time>Apr 5, 12:45 pm</time>
           </div>
       </article></a>
+
+      <a href="#"><article class="card story cross-campus">
+        <h1>Cross Campus</h1>
+
+        <div id="xc">
+          <p>xc</p>
+        </div>
+
+        <div class="xc-content">
+          <p class="date">May 6, 2015</p>
+          <p class="card-preview"><span class="intro">This is the end. With this issue, the News concludes production for the academic year.</span> Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+
+          <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+
+          <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+
+          <p class="date">May 5, 2015</p>
+
+          <p class="card-preview"><span class="intro">This is the end.</span> With this issue, the News concludes production for the academic year. Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+
+          <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+
+          <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+        </div>
+
+      </article></a>
+
       <a href="#"><article class="card story story-major">
         <h1>2020 — Chronicling Ivy League recruitment: The summer months</h1>
         <p class="byline">Christopher Wan, Annie Cook</p>
@@ -69,9 +100,21 @@
         <time>Apr 5, 12:45 pm</time>
         <p class="category">University</p>
       </article></a>
-      <a href="#"><article class="card story story-photo">
+
+      <a href="#"><article class="card story story-major story-breaking">
+        <h1>2020 — Chronicling Ivy League recruitment: The summer months</h1>
+        <p class="byline">Christopher Wan, Annie Cook</p>
+          <img class="card-image" src="images/chrisnaked.jpg">
+        <p class="card-preview">Bacon ipsum dolor amet salami tenderloin shoulder tail t-bone bresaola ground round tongue boudin chuck kevin cupim flank brisket andouille. Porchetta fatback leberkas flank shank shoulder tenderloin.</p>
+        <div class="breaking">
+            <h3>Breaking</h3>
+            <time>Apr 5, 12:45 pm</time>
+        </div>
+      </article></a>
+      <a href="#"><article class="card story story-preview story-photo">
         <h1>Title IX Steering Committee promises changes following YCC</h1>
         <p class="byline">VIVIAN WANG</p>
+        <p class="card-preview">Last night, the Native American Law Students Association brought to campus a genre-defying work that tackled a variety of urgent but under-addressed national issues.</p>
         <img class="card-image" src="images/harkness.jpg">
         <time class="published-time">Apr 5, 12:45 pm</time>
         <p class="category">Sports</p>
@@ -83,7 +126,7 @@
         <time>Apr 5, 12:45 pm</time>
         <p class="category">Arts</p>
       </article></a>
-      <a href="#"><article class="card story">
+      <a href="#"><article class="card story story-simple">
         <h1>More students take courses at SOM, University wide</h1>
         <time>Apr 5, 12:45 pm</time>
         <p class="category">Arts</p>
@@ -101,7 +144,7 @@
         <time>Apr 5, 12:45 pm</time>
         <p class="category">Arts</p>
       </article></a>
-      <a href="#"><article class="card story">
+      <a href="#"><article class="card story story-simple">
         <h1>With rediscovery of dinosaur species, Peabody renames skeleton</h1>
         <time>Apr 11, 4:23 pm</time>
         <p class="category">Scitech</p>
@@ -129,21 +172,21 @@
         <p class="category">University</p>
       </article></a>
 
-      <a href="#"><article class="card story">
+      <a href="#"><article class="card story story-simple">
         <h1>More students take courses at SOM, University wide</h1>
         <time>Apr 19, 9:49 pm</time>
         <p class="category">University</p>
       </article></a>
 
 
-      <a href="#"><article class="card story">
+      <a href="#"><article class="card story story-simple">
         <h1>McDougal Center to relocate during HGS renovations</h1>
         <time>Apr 3, 11:39 am</time>
         <p class="category">University</p>
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>University</strong></p>
+        More from <strong>University</strong>
       </aside></a>
     </section><!-- /university -->
 
@@ -152,7 +195,7 @@
 
       <h2>City</h2>
 
-      <a href="#"><article class="card story">
+      <a href="#"><article class="card story story-simple">
         <h1>More students take courses at SOM, University wide</h1>
         <time>Apr 19, 9:49 pm</time>
         <p class="category">City</p>
@@ -175,14 +218,14 @@
         <p class="category">City</p>
       </article></a>
 
-      <a href="#"><article class="card story">
+      <a href="#"><article class="card story story-simple">
         <h1>More students take courses at SOM, University wide</h1>
         <time>Apr 12, 5:56 pm</time>
         <p class="category">City</p>
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>City</strong></p>
+        More from <strong>City</strong>
       </aside></a>
     </section><!-- /city -->
 
@@ -218,7 +261,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>SPORTS</strong></p> 
+        More from <strong>Sports</strong>
       </aside></a>
     </section><!-- /sports -->
 
@@ -235,7 +278,7 @@
         <p class="category">Scitech</p>
       </article></a>
 
-      <a href="#"><article class="card story">
+      <a href="#"><article class="card story story-simple">
         <h1>With rediscovery of dinosaur species, Peabody renames skeleton</h1>
         <time>Apr 11, 4:23 pm</time>
         <p class="category">Scitech</p>
@@ -259,7 +302,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>SCITECH</strong></p>
+        More from <strong>Scitech</strong>
       </aside></a>
     </section><!-- /scitech -->
 
@@ -267,7 +310,7 @@
     <section id="culture" class="js-packery container category culture" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
 
       <h2>Culture</h2>
-      <a href="#"><article class="card story story-photo">
+      <a href="#"><article class="card story story-preview story-photo">
         <h1>Admins Meet YCC Halfway On Mental Health Proposals</h1>
         <p class="byline">Christopher van der Wan</p>
         <img class="card-image" src="images/chris.jpg">
@@ -276,7 +319,7 @@
         <p class="category">Culture</p>
       </article></a>
 
-      <a href="#"><article class="card story story-photo">
+      <a href="#"><article class="card story story-preview story-photo">
         <h1>Q&A: The Paternal Brain</h1>
         <p class="byline">Christopher van der Wan</p>
         <img class="card-image" src="images/chris.jpg">
@@ -295,7 +338,7 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>CULTURE</strong></p> 
+        More from <strong>Culture</strong> 
       </aside></a>
     </section><!-- /culture -->
 
@@ -323,76 +366,144 @@
       </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>Opinion</strong></p> 
+        More from <strong>Opinion</strong> 
       </aside></a>
     </section><!-- /opinion -->
 
+    
 
 
-    <section id="weekend" class="js-packery container category weekend" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
 
-      <h2>Weekend</h2>
+    <section id="weekend" class="weekend category">
+      <h2 class="container">Weekend</h2>
+      <article class="cover-story">
+        <h1 class="container">Let there be Lux</h1>
+        <p class="byline container">Jason Das | Mar 6, 2015</p>
+      </article>
 
-      some stories here
+
+
+      <div class="js-packery container" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>     
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>OCS same-day appointments serve job seekers </h1>        
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>NACC dean search underway</h1>          
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>Ivy Noodle to reopen under new name</h1>          
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>Chris Wan selected as most beautiful man on camps</h1>
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>WEEKEND</strong></p> 
+        More from <strong>Weekend</strong> 
       </aside></a>
     </section><!-- /weekend -->
 
-    <section id="magazine" class="js-packery container category magazine" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
-      <h2>Magazine</h2>
-      <a href="#"><article class="card story story-photo">
-        <h1>OCS same-day appointments serve job seekers</h1>
-        <p class="byline">Christopher van der Wan</p>
-        <img class="card-image" src="images/chris.jpg">
-        <p class="card-preview">For the second year in a row, the Office of Career Strategy is offering same-day appointments for seniors who have yet to secure post-graduation plans.</p>
-        <time>Apr 11, 4:23 pm</time>
-        <p class="category">Magazine</p>
-      </article></a>
+ 
+    <section id="magazine" class="magazine category">
+      <h2 class="container">Magazine</h2>
+      <article class="cover-story">
+        <h1 class="container">Let there be Lux</h1>
+        <p class="byline container">Jason Das | Mar 6, 2015</p>
+      </article>
 
-      <a href="#"><article class="card story story-photo">
-        <h1>NACC dean search underway</h1>
-        <p class="byline">Christopher van der Wan</p>
-        <img class="card-image" src="images/chris.jpg">
-        <p class="card-preview">Across the board, students expressed satisfaction with how the house has been run thus far and hoped that the new dean would bring a similar level of support and involvement to the NACC.</p>
-        <time>Apr 11, 4:23 pm</time>
-        <p class="category">Magazine</p>
-      </article></a>
+      <div class="js-packery container" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
 
-      <a href="#"><article class="card story story-preview story-photo">
-        <h1>Ivy Noodle to reopen under new name</h1>
-        <p class="byline">Christopher van der Wan</p>
-        <img class="card-image" src="images/chris.jpg">
-        <p class="card-preview">After much confusion and speculation among students surrounding Ivy Noodle’s future, owner Coreen Guo confirmed Wednesday that the restaurant will re-open next month under the name Ivy Wok.</p>
-        <time>Apr 11, 4:23 pm</time>
-        <p class="category">Magazine</p>
-      </article></a>
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>OCS same-day appointments serve job seekers </h1>        
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
 
-      <a href="#"><article class="card story">
-        <h1>Chris Wan selected as most beautiful man on camps</h1>
-        <time>Apr 11, 4:23 pm</time>
-        <p class="category">Magazine</p>
-      </article></a>
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>NACC dean search underway</h1>          
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>Ivy Noodle to reopen under new name</h1>          
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>Chris Wan selected as most beautiful man on camps</h1>
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>MAGAZINE</strong></p>
+        More from <strong>Magazine</strong>
       </aside></a>
+    </div>
     </section><!-- /magazine -->
 
-   <section id="ytv" class="js-packery container category ytv" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
-      <h2>YTV</h2>
 
-      some stories here
+    <section id="ytv" class="ytv category">
+      <h2 class="container">YTV</h2>
+
+      <div class="js-packery container" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+      
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>OCS same-day appointments serve job seekers </h1>        
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>NACC dean search underway</h1>          
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>Ivy Noodle to reopen under new name</h1>          
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
+
+        <a href="#"><article class="card story story-softcore">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>Chris Wan selected as most beautiful man on camps</h1>
+          <time>Apr 11, 4:23 pm</time>
+          <p class="category">Magazine</p>
+        </article></a>
 
       <a href="#"><aside class="card category-jump">
-        <p>read more<strong>YTV</strong></p>
+        More from <strong>YTV</strong>
       </aside></a>
     </section><!-- /YTV -->
 
-
-
-    <footer>
+    <footer id="site-footer">
       <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
       <a href="#">About Us</a>
       <a href="#">Contact</a>
@@ -408,8 +519,12 @@
 
 <script>
 $(document).ready(function(){
+<<<<<<< HEAD
     $("#navigation").sticky({getWidthFrom: '.wrapper',
     responsiveWidth: true});
+=======
+    $("#site-navigation").sticky({});
+>>>>>>> 99a0bd31f146c59d9c0b732b36688328d28939f0
   });
 </script>
 
@@ -440,7 +555,9 @@ $(document).ready(function(){
   setTimeout(function(){buildScenes("#magazine", "#tag-magazine", "magazine")}, 500);
   setTimeout(function(){buildScenes("#ytv", "#tag-ytv", "ytv")}, 500);
   setTimeout(function(){buildScenes("#sports", "#tag-sports", "sports")}, 500);
+
 </script>
+
 
 </body>
 </html>
