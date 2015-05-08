@@ -845,6 +845,9 @@ form input {
   .story .category {
     color:$opinion-color;
   }
+  .card{
+    border-bottom: thick solid $opinion-color;
+  }
   color: $opinion-color !important;
 }
 
