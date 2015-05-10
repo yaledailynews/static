@@ -54,12 +54,12 @@ $culture-color: #d20a78;
 
 
 body {
-	background-color: #f6f4f4;
+  background-color: #f6f4f4;
   @extend %face-sans;
 }
 
 p {
-	font-size: 0.8em;
+  font-size: 0.8em;
 }
 
 header#site-header {
@@ -137,8 +137,8 @@ footer#site-footer{
 
 .card {
   @extend .three.columns;
-	background-color: white;
-	height: $card-height;
+  background-color: white;
+  height: $card-height;
   overflow: hidden;
   z-index: 2;
   border-bottom: 5px solid;
@@ -347,10 +347,10 @@ footer#site-footer{
 
   &.cross-campus {
     overflow: -moz-scrollbars-vertical; 
-    overflow-y: scroll;
+    //overflow-y: scroll;
     cursor: default;
     height: 2 * $card-height + $gutter-size;
-    overflow: scroll;
+    // overflow: scroll;
     border-bottom: none;
     h1, p, time {
       color: #696565;
@@ -358,7 +358,7 @@ footer#site-footer{
 
     .xc-content {
       height: (2 * $card-height) - 40px;
-      overflow: scroll;
+      overflow-y: scroll;
       padding: 25px 25px 25px 25px;
     }
 
@@ -400,7 +400,7 @@ footer#site-footer{
     time {
       color: $university-color;
       margin: 0;
-      position: none;
+      position: inherit;
       bottom: 0;
       font-size: 0.8em;
       font-weight: 600;

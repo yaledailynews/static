@@ -454,16 +454,14 @@ footer#site-footer {
       position: absolute; }
   .card.cross-campus {
     overflow: -moz-scrollbars-vertical;
-    overflow-y: scroll;
     cursor: default;
     height: 460.86px;
-    overflow: scroll;
     border-bottom: none; }
     .card.cross-campus h1, .card.cross-campus p, .card.cross-campus time {
       color: #696565; }
     .card.cross-campus .xc-content {
       height: 382.36px;
-      overflow: scroll;
+      overflow-y: scroll;
       padding: 25px 25px 25px 25px; }
     .card.cross-campus #xc {
       margin-left: 401px;
@@ -494,7 +492,7 @@ footer#site-footer {
     .card.cross-campus time {
       color: #2882c8;
       margin: 0;
-      position: none;
+      position: inherit;
       bottom: 0;
       font-size: 0.8em;
       font-weight: 600; }
