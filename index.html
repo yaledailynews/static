@@ -534,9 +534,9 @@ $(document).ready(function(){
 
   // build scenes
   function buildScenes(section, tag, css){
-      new ScrollMagic.Scene({triggerElement: section, duration: getSectionHeight(section)})
+      new ScrollMagic.Scene({triggerElement: section, duration: getSectionHeight(section), triggerHook: .1})
           .setClassToggle(tag, css) // add class toggle
-          .addIndicators() // add indicators (requires plugin)
+          //.addIndicators() // add indicators (requires plugin)
           .addTo(controller);
   }
 
