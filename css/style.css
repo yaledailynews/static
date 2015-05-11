@@ -399,6 +399,11 @@ footer#site-footer {
       color: #696565; }
     .card.story-preview time {
       color: #696565; }
+    .card.story-preview .breaking {
+      width: 100%;
+      position: relative; }
+      .card.story-preview .breaking time {
+        color: white; }
   .card.story-photo {
     height: 460.86px; }
     .card.story-photo .card-image {
