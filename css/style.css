@@ -229,6 +229,26 @@ body, header#site-header nav#site-navigation a, footer#site-footer a, body.artic
   color: #433f3f;
   margin: 15px; }
 
+.card.story-breaking .breaking {
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 66px;
+  padding: 20px;
+  position: absolute;
+  background-color: red;
+  text-align: center; }
+  .card.story-breaking .breaking h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: white; }
+  .card.story-breaking .breaking time {
+    position: relative;
+    font-size: 0.675em;
+    bottom: auto;
+    margin: 0; }
+
 body {
   background-color: #f6f4f4; }
 
@@ -267,13 +287,13 @@ header#site-header {
 
 footer#site-footer {
   margin-top: 100px;
-  height: 50px;
   background: #C9C9C9;
   text-align: center; }
   footer#site-footer a {
     text-decoration: none;
     font-size: 11px;
     color: white;
+    padding: 17.5px 0px;
     line-height: 50px;
     text-transform: uppercase;
     margin: 0px 10px 0px 10px; }
@@ -374,25 +394,6 @@ footer#site-footer {
     font-size: 60px;
     padding-left: 15px;
     font-weight: 400; }
-  .card.story-breaking .breaking {
-    top: 0;
-    right: 0;
-    width: 140px;
-    height: 66px;
-    padding: 20px;
-    position: absolute;
-    background-color: red;
-    text-align: center; }
-    .card.story-breaking .breaking h3 {
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1em;
-      color: white; }
-    .card.story-breaking .breaking time {
-      position: relative;
-      font-size: 0.675em;
-      bottom: auto;
-      margin: 0; }
   .card.story-preview {
     height: 460.86px; }
     .card.story-preview .card-preview {
@@ -711,6 +712,25 @@ body.article-page .bottom-bar {
         display: block;
         width: 100%;
         height: 100%; }
+    .card.story-breaking .breaking {
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 66px;
+      padding: 20px;
+      position: relative;
+      background-color: red;
+      text-align: center; }
+      .card.story-breaking .breaking h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1em;
+        color: white; }
+      .card.story-breaking .breaking time {
+        position: relative;
+        font-size: 0.675em;
+        bottom: auto;
+        margin: 0; }
     .card.story-kahuna {
       width: 120%;
       left: -10%;
