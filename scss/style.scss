@@ -31,25 +31,25 @@
 
 %breaking{
   top: 0;
-      right: 0;
-      width: 140px;
-      height: 66px;
-      padding: 20px;
-      position: absolute;
-      background-color: red;
-      text-align: center;
-      h3{
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1em;
-        color: white;
-      }
-      time{
-        position: relative;
-        font-size: 0.675em;
-        bottom: auto;
-        margin: 0;
-       }
+  right: 0;
+  width: 140px;
+  height: 66px;
+  padding: 20px;
+  position: absolute;
+  background-color: red;
+  text-align: center;
+  h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    color: white;
+  }
+  time{
+    position: relative;
+    font-size: 0.675em;
+    bottom: auto;
+    margin: 0;
+   }
 
 }
 
@@ -610,11 +610,12 @@ body.article-page {
       @extend %face-serif;
       font-style: italic;
       font-weight: 600;
+      line-height: 1.2;
     }
     a{
       text-decoration: none;
       display: block;
-      margin: 10px 0px 10px 0px;
+      margin: 20px 0px;
       color: black;
       font-size: 13px;
     }
