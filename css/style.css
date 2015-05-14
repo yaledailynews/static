@@ -353,7 +353,7 @@ footer#site-footer {
     color: #433f3f; }
   .card.story .category {
     bottom: 15px;
-    color: #2882C8; }
+    color: #2882c8; }
   .card.story :not(.card-image) {
     z-index: 2; }
   .card.story .card-image {
@@ -466,7 +466,7 @@ footer#site-footer {
     .card.cross-campus h1, .card.cross-campus p, .card.cross-campus time {
       color: #696565; }
     .card.cross-campus .xc-content {
-      height: 382.36px;
+      height: 407.36px;
       overflow-y: scroll;
       padding: 25px 25px 25px 25px; }
     .card.cross-campus #xc {
@@ -489,14 +489,14 @@ footer#site-footer {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882C8;
+      background-color: #2882c8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882C8;
+      color: #2882c8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -511,7 +511,7 @@ footer#site-footer {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882C8;
+      color: #2882c8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -568,7 +568,7 @@ section.category {
 .cover-story {
   width: 100%;
   height: 500px;
-  background: linear-gradient(to bottom, transparent 0%, black 100%), url("../images/lux.png") no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%), url("../images/lux.png") no-repeat;
   background-size: cover;
   padding-top: 190px; }
   .cover-story h1 {
@@ -623,8 +623,8 @@ body.article-page .card {
   overflow: hidden;
   z-index: 2;
   float: right;
-  border-top: 5px solid #2882C8;
-  border-bottom: 5px solid #2882C8;
+  border-top: 5px solid #2882c8;
+  border-bottom: 5px solid #2882c8;
   padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto; }
@@ -795,10 +795,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882C8; }
+        border: 1px solid #2882c8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882C8;
+        background-color: #2882c8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -814,13 +814,13 @@ form input {
   font-size: 0.9em; }
 
 .university {
-  color: #2882C8 !important; }
+  color: #2882c8 !important; }
   .university .category-jump {
-    background-color: #2882C8; }
+    background-color: #2882c8; }
   .university .story .category {
-    color: #2882C8; }
+    color: #2882c8; }
   .university .card {
-    border-bottom: thick solid #2882C8; }
+    border-bottom: thick solid #2882c8; }
 
 .opinion {
   color: #cf383e !important; }
@@ -893,5 +893,3 @@ form input {
     color: #42d2ff; }
   .sports .card {
     border-bottom: thick solid #42d2ff; }
-
-/*# sourceMappingURL=style.css.map */
