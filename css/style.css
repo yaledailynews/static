@@ -623,7 +623,8 @@ body.article-page .card {
   overflow: hidden;
   z-index: 2;
   float: right;
-  border-top: thick solid black;
+  border-top: 5px solid #2882C8;
+  border-bottom: 5px solid #2882C8;
   padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto; }

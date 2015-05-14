@@ -599,7 +599,8 @@ body.article-page {
     overflow: hidden;
     z-index: 2;
     float:right;
-    border-top: thick solid black;
+    border-top: 5px solid $university-color;
+    border-bottom: 5px solid $university-color;
     @extend %face-sans;
     padding: 10px 15px 10px 15px;
     font-weight: normal;
