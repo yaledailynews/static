@@ -226,6 +226,8 @@ body {
   .card.author-card {
     height: 460.86px;
     width: 460.86px;
+    border-bottom: none;
+    top: 32px;
     background-color: #4DC293; }
     .card.author-card h1 {
       font-family: 'Playfair Display', serif;
@@ -253,6 +255,8 @@ body {
       text-align: center; }
     .card.author-card a {
       text-decoration: none; }
+    .card.author-card .author-twitter {
+      display: block; }
     .card.author-card .author-title {
       bottom: 60px;
       color: white; }
@@ -281,5 +285,3 @@ body {
     height: 100%;
     content: "";
     position: absolute; }
-
-/*# sourceMappingURL=author.css.map */
