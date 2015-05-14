@@ -336,6 +336,9 @@ footer#site-footer {
       color: white; }
   .card h1 {
     font-size: 20px; }
+  .card.author-card {
+    height: 460.86px;
+    width: 460.86px; }
   .card.story .byline {
     text-transform: uppercase;
     font-size: 0.8em;

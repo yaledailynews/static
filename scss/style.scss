@@ -191,6 +191,12 @@ footer#site-footer{
     @extend %face-header;
     font-size: 20px;
   }
+
+  &.author-card {
+    height: 2 * $card-height + $gutter-size;
+    width: 2 * $card-height + $gutter-size;
+  }
+
   &.story {
     .byline {
       text-transform: uppercase;
@@ -256,6 +262,7 @@ footer#site-footer{
       position: absolute;
     }
   }
+  
 
   &.story-kahuna{
     @extend .twelve.columns;
