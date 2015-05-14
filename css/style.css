@@ -689,7 +689,7 @@ body.article-page .bottom-bar {
     text-align: center; }
   .card.author-card a {
     text-decoration: none; }
-  .card.author-card .author-twitter {
+  .card.author-card .author-twitter, .card.author-card .author-email {
     display: block; }
   .card.author-card .author-title {
     bottom: 60px;
