@@ -55,7 +55,7 @@
   </nav>
 </header>
 
-<section id="author" class="js-packery container category" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null}'>
+<section id="author" class="js-packery container category dynamicContent" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null}'>
 
 <!--       <div><article class="card author-card">
           <h1>Aaron Z.<br>Lewis</h1>
@@ -131,7 +131,8 @@
         <time class="published-time">Apr 5, 12:45 pm</time>
         <p class="category">Sports</p>
       </article></a>
-
+        
+        <div id="fakecontent">
             <a href="#"><article class="card story story-preview story-photo">
         <h1>Title IX Steering Committee promises changes following YCC</h1>
         <p class="byline">VIVIAN WANG</p>
@@ -140,8 +141,27 @@
         <time class="published-time">Apr 5, 12:45 pm</time>
         <p class="category">Sports</p>
       </article></a>
-
+    </div>
+      
     </section>
+
+<div class="packery">
+  <div class="item w4"></div>
+  <div class="item h4"></div>
+  <div class="item w2"></div>
+  <div class="item"></div>
+  <div class="item h2"></div>
+</div>
+
+<div id="fool" class="packery">
+  <div class="item w4"></div>
+  <div class="item h4"></div>
+  <div class="item w2"></div>
+  <div class="item"></div>
+  <div class="item h2"></div>
+</div>
+
+<button id="append" class="button">Append items</button>
 
     <footer id="site-footer">
       <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
@@ -154,6 +174,8 @@
       <a href="#">Twitter</a>
     </footer>
 
+
+
 </body>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -163,6 +185,42 @@
 $(document).ready(function(){
     $("#site-navigation").sticky({topSpacing: 0 });
   });
+</script>
+
+<script type="text/javascript">
+
+  var container = document.querySelector('#author');
+  var pckry = Packery.data( container );
+
+$( function() {
+
+  var $container = $('.packery').packery();
+
+  $('#append').on( 'click', function() {
+    // create new item elements
+    var elems = [];
+    for ( var i = 0; i < 3; i++ ) {
+      var elem = getItemElement();
+      elems.push( elem );
+    }
+    // append elements to container
+    $container.append( elems );
+    // add and lay out newly appended elements
+    $container.packery( 'appended', elems );
+  });
+
+});
+
+// create random item element
+function getItemElement() {
+  var elem = document.createElement('div');
+  var wRand = Math.random();
+  var hRand = Math.random();
+  var widthClass = wRand > 0.85 ? 'w4' : wRand > 0.7 ? 'w2' : '';
+  var heightClass = hRand > 0.85 ? 'h4' : hRand > 0.7 ? 'h2' : '';
+  elem.className = 'item ' + widthClass + ' ' + heightClass;
+  return elem;
+}
 </script>
 
 </html>
