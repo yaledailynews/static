@@ -29,19 +29,25 @@
 <body class="article-page">
 
 <header id="site-header">
-  <a href="/"><h1 class="masthead-logo">Yale Daily News</h1></a>
+  <a href="# "><h1 class="masthead-logo">Yale Daily News</h1></a>
   <nav id="site-navigation">
     <a id="tag-top" href="#">Top</a>
     <a id="tag-university" href="#">University</a>
     <a id="tag-city" href="#">City</a>
     <a id="tag-sports" href="#">Sports</a>
     <a id="tag-scitech" href="#">Scitech</a>
+    <a id="small-logo" href="#"><img src= "./images/branding/blue Y no background.png"></a>
     <a id="tag-culture" href="#">Culture</a>
     <a id="tag-opinion" href="#">Opinion</a>
     <a id="tag-weekend" href="#">Wknd</a>
     <a id="tag-magazine" href="#">Mag</a>
     <a id="tag-ytv" href="#">YTV</a>
-    <a id="tag-search" href="#">Search</a>
+    <div id="nav-search">
+      <i class="fa fa-search"></i>
+       <form class="search-box">
+          <input type="text" placeholder="Search articles and authors">
+       </form>
+     </div>
   </nav>
 </header>
   
@@ -259,6 +265,8 @@
 <script>
 $(document).ready(function(){
     $("#site-navigation").sticky({});
+    $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
+    $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
   });
 </script>
 
