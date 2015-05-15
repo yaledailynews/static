@@ -1,31 +1,32 @@
 # Things to Not Forget
 
+## Social
+- are we making twitter/facebook/etc cards?
+- any social buttons in header?
+- should we ask isaac?
+
+
+## Ads?
+- do we know what these have ot look like?
+- is there anyting we have to change in our design to accomoadate these
+- what happens to adds on mobile?
+
 ## Wordpress
 - add database to git
 
-## Site-wide
-- Add small YDN logo to persistent nav?
-- color variables in sass
-- merge multiple sytlesheets
-- mobile header (menu buttom + XC popout)  
 
 ## Homepage
-- figure out bottom of Cross Campus megabox 
-- Nav color highlighting
 - SASS logic for different category colors
-- Breaking flag (full-width and top right versions) 
 - ads?
 - more efficient packery logic (rather than repeating for each section:
  - `data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }`
-- cover story image needs to be made inline
 - Responsive
  -  big kahuna -> full-bleed
  - 2x2 -> 2x1
  - 2x1 w/ image -> same
  - 2x1 w/o image -> 1x1
  - 1x1 -> headline list
- - remove packery on mobile at 480px breakpoint
-  - http://codepen.io/desandro/pen/kEjed
+
 
 
 ## YTV
@@ -67,10 +68,6 @@
  
 
 ## Article Page
-- change copy on Read This Next box 
-- brand RTN box with category colors 
-- author card in side bar 
-- responsive (side bar -> footer)
 - ads?
 
 ## Author Page
