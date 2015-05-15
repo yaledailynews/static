@@ -145,21 +145,7 @@
       
     </section>
 
-<div class="packery">
-  <div class="item w4"></div>
-  <div class="item h4"></div>
-  <div class="item w2"></div>
-  <div class="item"></div>
-  <div class="item h2"></div>
-</div>
 
-<div id="fool" class="packery">
-  <div class="item w4"></div>
-  <div class="item h4"></div>
-  <div class="item w2"></div>
-  <div class="item"></div>
-  <div class="item h2"></div>
-</div>
 
 <button id="append" class="button">Append items</button>
 
@@ -174,7 +160,13 @@
       <a href="#">Twitter</a>
     </footer>
 
-
+<!-- <section class="packerz container category dynamicContent">
+  <div class="item w4"></div>
+  <div class="item h4"></div>
+  <div class="item w2"></div>
+  <div class="item"></div>
+  <div class="item h2"></div>
+</section> -->
 
 </body>
 <!-- End Document
@@ -189,18 +181,20 @@ $(document).ready(function(){
 
 <script type="text/javascript">
 
-  var container = document.querySelector('#author');
-  var pckry = Packery.data( container );
 
 $( function() {
 
-  var $container = $('.packery').packery();
+  var $container = $('.packerz').packery({columnWidth: 150,
+    itemSelector: '.card',
+    gutter: 20,
+    isFitWidth: true
+  });
 
   $('#append').on( 'click', function() {
     // create new item elements
     var elems = [];
     for ( var i = 0; i < 3; i++ ) {
-      var elem = getItemElement();
+      var elem = $("#fakecontent").clone();
       elems.push( elem );
     }
     // append elements to container
@@ -211,16 +205,6 @@ $( function() {
 
 });
 
-// create random item element
-function getItemElement() {
-  var elem = document.createElement('div');
-  var wRand = Math.random();
-  var hRand = Math.random();
-  var widthClass = wRand > 0.85 ? 'w4' : wRand > 0.7 ? 'w2' : '';
-  var heightClass = hRand > 0.85 ? 'h4' : hRand > 0.7 ? 'h2' : '';
-  elem.className = 'item ' + widthClass + ' ' + heightClass;
-  return elem;
-}
 </script>
 
 </html>

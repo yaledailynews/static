@@ -847,6 +847,13 @@ header#site-header {
       color: #bbb; }
       header#site-header nav#site-navigation a:hover {
         color: #333; }
+    header#site-header nav#site-navigation a#small-logo {
+      display: none;
+      vertical-align: middle;
+      padding: 0; }
+      header#site-header nav#site-navigation a#small-logo img {
+        height: 35px;
+        width: auto; }
     header#site-header nav#site-navigation #nav-search {
       color: #bbb;
       line-height: 1.2;

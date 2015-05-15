@@ -823,6 +823,15 @@ header#site-header {
         color: #333;
       }
     }
+  a#small-logo{
+      display: none;
+      vertical-align: middle;
+      padding:0;
+      img{
+        height: 35px;
+        width: auto;
+      }
+    }
 
     #nav-search {
       color: #bbb;
