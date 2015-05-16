@@ -21,7 +21,7 @@
 
   <link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
   <script src="./js/ScrollMagic.min.js"></script>
   <script src="./js/TweenMax.min.js"></script>
@@ -148,7 +148,7 @@
 
 
 
-<button id="append">Click</button>
+<h1 id="append">Loading</h1>
 
     <footer id="site-footer">
       <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
@@ -160,14 +160,6 @@
       <a href="#">Facebook</a>
       <a href="#">Twitter</a>
     </footer>
-
-<!-- <section class="packerz container category dynamicContent">
-  <div class="item w4"></div>
-  <div class="item h4"></div>
-  <div class="item w2"></div>
-  <div class="item"></div>
-  <div class="item h2"></div>
-</section> -->
 
 </body>
 <!-- End Document
@@ -185,35 +177,80 @@ $(document).ready(function(){
 <script>
 
 
-$( function () {
+$(function () {
 
-  var container = $('#author').packery({
+  var $container = $('#author').packery({
     itemSelector: '.card',
     gutter: 38.5,
     containerStyle: null,
   });
 
-    $('#append').on( 'click', function() {
+
+
+    // $('#append').on( 'click', function() {
+    //   // create new item elements
+    //   var elems = [];
+    //   for ( var i = 0; i < 3; i++ ) {
+    //     u = $(".poop").clone();
+    //     var elem = u[0];
+    //     // var elem = getItemElement();
+    //     elems.push( elem );
+    //   }
+    //   // append elements to container
+    //   $container.append( elems );
+    //   // add and lay out newly appended elements
+    //   $container.packery( 'appended', elems );
+    //   $container.packery('reloadItems');
+    // });
+
+//   function getItemElement() {
+//   u = $(".poop").clone();
+//   elem = u[0];
+//   return elem;
+// }
+
+////
+
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    var scene = new ScrollMagic.Scene({triggerElement: "#append", triggerHook: "onEnter"})
+          .addTo(controller)
+          .on("enter", function (e) {
+            if (!$("#append").hasClass("active") && !$("#append").hasClass("done")) {
+              $("#append").addClass("active");
+              if (console){
+                console.log("loading new items");
+              }
+              // simulate ajax call to add content using the function below
+              setTimeout(appendItems, 1000, 9);
+                // "loading" done -> revert to normal state
+                scene.update(); // make sure the scene gets the new start position
+                $("#append").removeClass("active");
+            }
+          });
+
+          // pseudo function to add new content. In real life it would be done through an ajax request.
+function appendItems(num) {
       // create new item elements
       var elems = [];
-      for ( var i = 0; i < 3; i++ ) {
-        var elem = getItemElement();
+      for ( var i = 0; i < num; i++ ) {
+        u = $(".poop").clone();
+        var elem = u[0];
+        // var elem = getItemElement();
         elems.push( elem );
       }
       // append elements to container
-      container.append( elems );
+      $container.append( elems );
       // add and lay out newly appended elements
-      container.packery( 'appended', elems );
-      container.packery('reloadItems');
-    });
-
-  function getItemElement() {
-  u = $(".poop").clone();
-  u = u[0];
-  return u;
-}
+      $container.packery( 'appended', elems );
+      $container.packery('reloadItems');
+    }
 });
 
+
 </script>
+
+
 
 </html>

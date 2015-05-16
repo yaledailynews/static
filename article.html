@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css"> 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
   <script src="./js/ScrollMagic.min.js"></script>
   <script src="./js/TweenMax.min.js"></script>
@@ -61,7 +61,7 @@
 			<div class="article-header">
 				<h1>Class purus sociis nonummy posuere purus donec massad neque nostra volutpat fusce ultric</h1>
 				<p class="byline">By Marina Keegan &middot; <date>September 30, 2011</date> &middot; <time> 10:10pm</time></p>
-				<section class="card read-next">
+				<section id = "read-next" class="card read-next">
 					<h2>More from University</h2>
 					<a href="#">Donation will transform Commons into “world-class campus center” by 2020</a>
 					<a href="#">Holloway announces comprehensive reforms of withdrawal and readmission policies</a>
@@ -270,13 +270,10 @@ $(document).ready(function(){
   });
 </script>
 
-<script type="text/javascript">
-	// init controller
-  var controller = new ScrollMagic.Controller();
-</script>
 
 <script>
-
+	// init controller
+  var controller = new ScrollMagic.Controller();
 
   $(function () { // wait for document ready
 				// build scene
