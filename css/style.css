@@ -568,6 +568,9 @@ section.category {
     position: relative;
     z-index: 2; }
 
+a.linker {
+  display: block; }
+
 .cover-story {
   width: 100%;
   height: 500px;

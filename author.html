@@ -56,7 +56,7 @@
   </nav>
 </header>
 
-<section id="author" class="js-packery container category dynamicContent" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null}'>
+<section id="author" class="container category" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null}'>
 
 <!--       <div><article class="card author-card">
           <h1>Aaron Z.<br>Lewis</h1>
@@ -115,7 +115,7 @@
         <p class="category">Sports</p>
       </article></a>
 
-            <a href="#"><article class="card story story-preview story-photo">
+<!--             <a href="#"><article class="card story story-preview story-photo">
         <h1>Title IX Steering Committee promises changes following YCC</h1>
         <p class="byline">VIVIAN WANG</p>
         <p class="card-preview">Last night, the Native American Law Students Association brought to campus a genre-defying work that tackled a variety of urgent but under-addressed national issues.</p>
@@ -131,10 +131,10 @@
         <img class="card-image" src="images/harkness.jpg">
         <time class="published-time">Apr 5, 12:45 pm</time>
         <p class="category">Sports</p>
-      </article></a>
+      </article></a> -->
         
-        <div id="fakecontent">
-            <a href="#"><article class="card story story-preview story-photo">
+      
+            <a class="linker" href="#"><article class="card story story-preview story-photo">
         <h1>Title IX Steering Committee promises changes following YCC</h1>
         <p class="byline">VIVIAN WANG</p>
         <p class="card-preview">Last night, the Native American Law Students Association brought to campus a genre-defying work that tackled a variety of urgent but under-addressed national issues.</p>
@@ -142,13 +142,13 @@
         <time class="published-time">Apr 5, 12:45 pm</time>
         <p class="category">Sports</p>
       </article></a>
-    </div>
+    
       
     </section>
 
 
 
-<button id="append" class="button">Append items</button>
+<button id="append">Click</button>
 
     <footer id="site-footer">
       <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
@@ -182,30 +182,36 @@ $(document).ready(function(){
   });
 </script>
 
-<script type="text/javascript">
+<script>
 
 
-$( function() {
+$( function () {
 
-  var $container = $('.packerz').packery({columnWidth: 150,
+  var container = $('#author').packery({
     itemSelector: '.card',
-    gutter: 20,
-    isFitWidth: true
+    gutter: 38.5,
+    containerStyle: null,
   });
 
-  $('#append').on( 'click', function() {
-    // create new item elements
-    var elems = [];
-    for ( var i = 0; i < 3; i++ ) {
-      var elem = $("#fakecontent").clone();
-      elems.push( elem );
-    }
-    // append elements to container
-    $container.append( elems );
-    // add and lay out newly appended elements
-    $container.packery( 'appended', elems );
-  });
+    $('#append').on( 'click', function() {
+      // create new item elements
+      var elems = [];
+      for ( var i = 0; i < 3; i++ ) {
+        var elem = getItemElement();
+        elems.push( elem );
+      }
+      // append elements to container
+      container.append( elems );
+      // add and lay out newly appended elements
+      container.packery( 'appended', elems );
+      container.packery('reloadItems');
+    });
 
+  function getItemElement() {
+  u = $(".linker").clone();
+  u = u[0];
+  return u;
+}
 });
 
 </script>
