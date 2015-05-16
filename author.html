@@ -134,7 +134,7 @@
       </article></a>
         
       
-            <a class="link-wrap" href="#"><article class="card story story-preview story-photo">
+            <a class="link-wrap poop" href="#"><article class="card story story-preview story-photo">
         <h1>Title IX Steering Committee promises changes following YCC</h1>
         <p class="byline">VIVIAN WANG</p>
         <p class="card-preview">Last night, the Native American Law Students Association brought to campus a genre-defying work that tackled a variety of urgent but under-addressed national issues.</p>
@@ -175,11 +175,11 @@
 
 
 <script>
-// $(document).ready(function(){
-//     $("#site-navigation").sticky({topSpacing: 0 });
-//     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
-//     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
-//   });
+$(document).ready(function(){
+    $("#site-navigation").sticky({topSpacing: 0 });
+    $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
+    $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+  });
 </script>
 
 <script>
@@ -208,7 +208,7 @@ $( function () {
     });
 
   function getItemElement() {
-  u = $(".link-wrap").clone();
+  u = $(".poop").clone();
   u = u[0];
   return u;
 }
