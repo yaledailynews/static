@@ -512,7 +512,7 @@ section.category {
   } 
 }
 
-a.linker{
+a.link-wrap{
   display: block;
 }
 
@@ -544,6 +544,10 @@ body.article-page {
   h1{
     @extend %face-serif;
     letter-spacing: 1.2px;
+  }
+  
+  .scrollmagic-pin-spacer{
+    float: right;
   }
 
   .hero-image {

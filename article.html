@@ -270,6 +270,24 @@ $(document).ready(function(){
   });
 </script>
 
+<script type="text/javascript">
+	// init controller
+  var controller = new ScrollMagic.Controller();
+</script>
+
+<script>
+
+
+  $(function () { // wait for document ready
+				// build scene
+				var scene = new ScrollMagic.Scene({triggerElement: ".read-next", triggerHook: .3})
+								.setPin(".read-next")
+								//.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+								.addTo(controller);
+			});
+
+</script>
+
 
 
 </body>

@@ -568,7 +568,7 @@ section.category {
     position: relative;
     z-index: 2; }
 
-a.linker {
+a.link-wrap {
   display: block; }
 
 .cover-story {
@@ -588,6 +588,8 @@ a.linker {
 
 body.article-page h1 {
   letter-spacing: 1.2px; }
+body.article-page .scrollmagic-pin-spacer {
+  float: right; }
 body.article-page .hero-image {
   width: 100%;
   max-width: 100%;
