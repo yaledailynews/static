@@ -526,6 +526,12 @@ $(document).ready(function(){
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
   });
+  
+
+  
+  if($(window).width() < 480) {
+    $('.js-packery').packery();
+  };
 </script>
 
 <script>
