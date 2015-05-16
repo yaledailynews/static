@@ -264,7 +264,7 @@
 
 <script>
 $(document).ready(function(){
-    $("#site-navigation").sticky({});
+    $("#site-navigation").sticky({topSpacing: 0});
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
   });

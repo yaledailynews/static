@@ -462,7 +462,6 @@ footer#site-footer {
       content: "";
       position: absolute; }
   .card.cross-campus {
-    overflow: -moz-scrollbars-vertical;
     cursor: default;
     height: 460.86px;
     border-bottom: none; }
@@ -476,6 +475,7 @@ footer#site-footer {
       margin-left: 401px;
       margin-top: -60px;
       background-color: #2a9dea;
+      overflow: hidden;
       width: 60px;
       height: 60px;
       color: white;
