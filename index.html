@@ -55,7 +55,7 @@
 </header>
   
 
-    <section id="front-page" class="js-packery container category front-page" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="front-page" class=" container category front-page" >
 
       <a class="link-wrap" href="#"><article class="card story story-breaking story-kahuna">
         <div class="breaking">
@@ -155,7 +155,7 @@
     </section><!-- /front-page -->
 
 
-    <section id="university" class="js-packery container category university" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="university" class=" container category university" >
       <h2>University</h2>
 
       <a class="link-wrap" href="#"><article class="card story story-photo story-preview">
@@ -194,7 +194,7 @@
     </section><!-- /university -->
 
 
-    <section id="city" class="js-packery container category city" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="city" class=" container category city" >
 
       <h2>City</h2>
 
@@ -233,7 +233,7 @@
     </section><!-- /city -->
 
 
-    <section id="sports" class="js-packery container category sports" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="sports" class=" container category sports" >
       <h2>Sports</h2>
       <a class="link-wrap" href="#"><article class="card story story-preview story-photo">
         <h1>OCS same-day appointments serve job seekers</h1>
@@ -269,7 +269,7 @@
     </section><!-- /sports -->
 
 
-    <section id="scitech" class="js-packery container category scitech" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="scitech" class=" container category scitech" >
 
       <h2>Scitech</h2>
       <a class="link-wrap" href="#"><article class="card story story-preview story-photo">
@@ -310,7 +310,7 @@
     </section><!-- /scitech -->
 
 
-    <section id="culture" class="js-packery container category culture" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+    <section id="culture" class=" container category culture" >
 
       <h2>Culture</h2>
       <a class="link-wrap" href="#"><article class="card story story-preview story-photo">
@@ -346,7 +346,7 @@
     </section><!-- /culture -->
 
 
-   <section id="opinion" class="js-packery container category opinion" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+   <section id="opinion" class=" container category opinion" >
       <h2>Opinion</h2>
 
       <a class="link-wrap" href="#"><article class="card story story-opinion">
@@ -386,7 +386,7 @@
 
 
 
-      <div class="js-packery container" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>     
+      <div id="packery-weekend" class=" container" >     
 
         <a class="link-wrap" href="#"><article class="card story story-softcore">
           <img class="card-image" src="images/mayday.jpg">
@@ -431,7 +431,7 @@
         <p class="byline container">Jason Das | Mar 6, 2015</p>
       </article>
 
-      <div class="js-packery container" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+      <div id="packery-magazine"class= "container" >
 
         <a class="link-wrap" href="#"><article class="card story story-softcore">
           <img class="card-image" src="images/mayday.jpg">
@@ -471,7 +471,7 @@
     <section id="ytv" class="ytv category">
       <h2 class="container">YTV</h2>
 
-      <div class="js-packery container" data-packery-options='{ "itemSelector": ".card", "gutter": 38.5, "containerStyle": null }'>
+      <div id="packery-ytv" class=" container" >
       
         <a class="link-wrap" href="#"><article class="card story story-softcore">
           <img class="card-image" src="images/mayday.jpg">
@@ -521,6 +521,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script>
+//navbar
 $(document).ready(function(){
     $("#site-navigation").sticky({topSpacing: 0 });
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
@@ -529,6 +530,7 @@ $(document).ready(function(){
 </script>
 
 <script>
+  //navbar highlighting
   // init controller
   var controller = new ScrollMagic.Controller();
 
@@ -555,9 +557,35 @@ $(document).ready(function(){
   setTimeout(function(){buildScenes("#magazine", "#tag-magazine", "magazine")}, 500);
   setTimeout(function(){buildScenes("#ytv", "#tag-ytv", "ytv")}, 500);
   setTimeout(function(){buildScenes("#sports", "#tag-sports", "sports")}, 500);
-
 </script>
 
+<script>
+  //packery
+  $(function () {
+
+    function packerize(section) { 
+      $(section).packery({
+        itemSelector: '.card',
+        gutter: 38.5,
+        containerStyle: null,})
+    }
+
+    var front-page = packerize('#front-page');
+    var university = packerize('#university');
+    var opinion = packerize('#opinion');
+    var city = packerize('#city');
+    var scitech = packerize('#scitech');
+    var culture = packerize('#culture');
+    var packery-weekend = packerize('#packery-weekend');
+    var packery-magazine = packerize('#packery-magazine');
+    var packery-ytv = packerize('#packery-ytv');
+    var sports = packerize('#sports');
+
+  
+
+
+  });
+</script>
 
 </body>
 </html>
