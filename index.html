@@ -597,15 +597,17 @@ $(document).ready(function(){
   //resize function for breaking at 480
     $(window).resize(function(){
         if (windowWatcher > 480){
-            if ( $(window).width() <= 480 ){
-                destroyPackery($sections);
+            if ( $(window).width() < 480 ){
+                setTimeout(function(){destroyPackery($sections)}, 500);
                 windowWatcher = $( window ).width();
+                console.log('destroy')
             }
         }
         else{
             if ( $(window).width() > 480 ){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
+                console.log('create')
             }
         }
     });
