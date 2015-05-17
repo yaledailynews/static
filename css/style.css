@@ -604,7 +604,8 @@ body.article-page .article-header {
   margin-top: 75px; }
   body.article-page .article-header h1 {
     font-size: 66.67px;
-    letter-spacing: 3px; }
+    letter-spacing: 1px;
+    font-weight: 800; }
   body.article-page .article-header p {
     text-transform: uppercase;
     font-size: 18.67px;
@@ -612,6 +613,9 @@ body.article-page .article-header {
     letter-spacing: 2px;
     margin-top: 45px;
     margin-bottom: 40px; }
+  body.article-page .article-header .byline {
+    margin-left: 0;
+    font-size: 0.9em; }
 body.article-page .article-text {
   font-size: 21.33px;
   line-height: 1.2em;
@@ -626,14 +630,15 @@ body.article-page p {
 body.article-page h3 {
   font-size: 1em;
   margin-top: 20px;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1px;
+  font-weight: 600; }
 body.article-page .card {
   background-color: white;
   overflow: hidden;
   z-index: -2;
   float: right;
   border-top: 5px solid #2882C8;
-  border-bottom: 5px solid #2882C8;
+  border-bottom: none;
   padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto; }
@@ -653,6 +658,7 @@ body.article-page .card {
     letter-spacing: 0; }
 body.article-page .bottom-bar {
   position: fixed;
+  border-top: 1px solid #ddd;
   left: 0px;
   bottom: 0px;
   height: 40px;
@@ -661,9 +667,13 @@ body.article-page .bottom-bar {
   padding: 10px 10px 10px 20px;
   z-index: 3; }
   body.article-page .bottom-bar p {
-    display: inline; }
+    display: inline;
+    letter-spacing: 0.025em; }
     body.article-page .bottom-bar p.byline {
-      font-style: italic; }
+      text-transform: none;
+      margin: 0; }
+    body.article-page .bottom-bar p span {
+      font-weight: 800; }
 
 .card.author-card {
   height: 460.86px;

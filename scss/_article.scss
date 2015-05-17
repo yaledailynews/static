@@ -1,5 +1,6 @@
 body.article-page {
 
+
   h1{
     @extend %face-serif;
     letter-spacing: 1.2px;
@@ -27,7 +28,8 @@ body.article-page {
     margin-top: 75px;
     h1{
       font-size: 66.67px;
-      letter-spacing: 3px;
+      letter-spacing: 1px;
+      font-weight: 800;
     }
     p {
       text-transform: uppercase;
@@ -36,6 +38,11 @@ body.article-page {
       letter-spacing: 2px;
       margin-top: 45px;
       margin-bottom: 40px;
+    }
+
+    .byline {
+      margin-left: 0;
+      font-size: 0.9em;
     }
     @extend .nine.columns;
   }
@@ -62,7 +69,8 @@ body.article-page {
     @extend %face-serif;
     font-size: 1em;
     margin-top: 20px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    font-weight: 600;
 
   }
 
@@ -73,7 +81,7 @@ body.article-page {
     z-index: -2;
     float:right;
     border-top: 5px solid $university-color;
-    border-bottom: 5px solid $university-color;
+    border-bottom: none;
     @extend %face-sans;
     padding: 10px 15px 10px 15px;
     font-weight: normal;
@@ -99,6 +107,7 @@ body.article-page {
 
   .bottom-bar{
     position:fixed;
+    border-top: 1px solid #ddd;
     left:0px;
     bottom:0px;
     height:40px;
@@ -108,8 +117,13 @@ body.article-page {
     z-index: 3;
     p{
       display: inline;
+      letter-spacing: 0.025em;
       &.byline{
-        font-style: italic;
+        text-transform: none;
+        margin: 0;      
+      }
+      span {
+        font-weight: 800;
       }
     }
   }
