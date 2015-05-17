@@ -598,13 +598,13 @@ $(document).ready(function(){
     $(window).resize(function(){
         if (windowWatcher > 480){
             if ( $(window).width() < 480 ){
-                setTimeout(function(){destroyPackery($sections)}, 500);
+                setTimeout(function(){destroyPackery($sections)}, 250);
                 windowWatcher = $( window ).width();
                 console.log('destroy')
             }
         }
         else{
-            if ( $(window).width() > 480 ){
+            if ( $(window).width() >= 480 ){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
                 console.log('create')
