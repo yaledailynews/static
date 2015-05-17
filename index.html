@@ -521,7 +521,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script>
-//navbar
+//fixednavbar
 $(document).ready(function(){
     $("#site-navigation").sticky({topSpacing: 0 });
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
@@ -531,6 +531,7 @@ $(document).ready(function(){
 
 <script>
   //navbar highlighting
+
   // init controller
   var controller = new ScrollMagic.Controller();
 
@@ -569,7 +570,7 @@ $(document).ready(function(){
     $sections = ["#front-page", "#university", "#opinion", "#city", "#scitech", "#culture", "#packery-weekend", "#packery-magazine", "#packery-ytv", "#sports"];
 
 
-    //functions
+    //functions for creating and destroying
     function setUpPackery(sections){
       for (i = 0; i < (sections.length) ; i++) { 
         $(sections[i]).packery({
@@ -598,23 +599,17 @@ $(document).ready(function(){
     $(window).resize(function(){
         if (windowWatcher > 480){
             if ( $(window).width() < 480 ){
-                setTimeout(function(){destroyPackery($sections)}, 250);
+                setTimeout(function(){destroyPackery($sections)}, 500);
                 windowWatcher = $( window ).width();
-                console.log('destroy')
             }
         }
         else{
             if ( $(window).width() >= 480 ){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
-                console.log('create')
             }
         }
     });
-
-
-
-
   });
 </script>
 
