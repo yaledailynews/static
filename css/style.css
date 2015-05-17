@@ -630,7 +630,7 @@ body.article-page h3 {
 body.article-page .card {
   background-color: white;
   overflow: hidden;
-  z-index: 2;
+  z-index: -2;
   float: right;
   border-top: 5px solid #2882C8;
   border-bottom: 5px solid #2882C8;

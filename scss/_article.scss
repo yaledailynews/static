@@ -70,7 +70,7 @@ body.article-page {
     @extend .four.columns;
     background-color: white;
     overflow: hidden;
-    z-index: 2;
+    z-index: -2;
     float:right;
     border-top: 5px solid $university-color;
     border-bottom: 5px solid $university-color;
