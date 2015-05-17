@@ -42,7 +42,9 @@ body.article-page {
 
     .byline {
       margin-left: 0;
-      font-size: 0.9em;
+      font-size: 0.8em;
+      letter-spacing: 0.1em;
+      font-weight: 600;
     }
     @extend .nine.columns;
   }
