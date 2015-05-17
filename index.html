@@ -560,28 +560,57 @@ $(document).ready(function(){
 </script>
 
 <script>
-  //packery
+  //packery setup and handles breaking at 480
+
+
+
   $(function () {
 
-    function packerize(section) { 
-      $(section).packery({
+    $sections = ["#front-page", "#university", "#opinion", "#city", "#scitech", "#culture", "#packery-weekend", "#packery-magazine", "#packery-ytv", "#sports"];
+
+
+    //functions
+    function setUpPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery({
         itemSelector: '.card',
         gutter: 38.5,
-        containerStyle: null,})
+        containerStyle: null});
+      }
     }
 
-    var front-page = packerize('#front-page');
-    var university = packerize('#university');
-    var opinion = packerize('#opinion');
-    var city = packerize('#city');
-    var scitech = packerize('#scitech');
-    var culture = packerize('#culture');
-    var packery-weekend = packerize('#packery-weekend');
-    var packery-magazine = packerize('#packery-magazine');
-    var packery-ytv = packerize('#packery-ytv');
-    var sports = packerize('#sports');
+    function destroyPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery('destroy');
+      }
+    }
+    //
 
-  
+    //onLoad
+    var windowWatcher = $( window ).width();
+
+    if($(window).width() > 480) {
+       setUpPackery($sections);
+    };
+    //
+
+  //resize function for breaking at 480
+    $(window).resize(function(){
+        if (windowWatcher > 480){
+            if ( $(window).width() <= 480 ){
+                destroyPackery($sections);
+                windowWatcher = $( window ).width();
+            }
+        }
+        else{
+            if ( $(window).width() > 480 ){
+                setUpPackery($sections);
+                windowWatcher = $( window ).width();
+            }
+        }
+    });
+
+
 
 
   });
