@@ -623,7 +623,6 @@ $(document).ready(function(){
               waitForFinalEvent(function(){
                 destroyPackery($sections);
                 windowWatcher = $( window ).width();
-                console.log('destroy');
                 }, 1000, "Destroy");  
             }
         }
@@ -632,8 +631,7 @@ $(document).ready(function(){
               waitForFinalEvent(function(){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
-                console.log('create');
-                }, 1000, "Create");
+                }, 500, "Create");
             }
         }
     });
