@@ -591,7 +591,21 @@ $(document).ready(function(){
       for (i = 0; i < (sections.length) ; i++) { 
         $(sections[i]).packery('destroy');
       }
-    }
+    } 
+
+    //make packery fire only once after window resize is complete
+    var waitForFinalEvent = (function () {
+      var timers = {};
+      return function (callback, ms, uniqueId) {
+      if (!uniqueId) {
+        uniqueId = "Don't call this twice without a uniqueId";
+      }
+      if (timers[uniqueId]) {
+        clearTimeout (timers[uniqueId]);
+      }
+      timers[uniqueId] = setTimeout(callback, ms);
+      };
+    })();
     //
 
     //onLoad
@@ -606,14 +620,20 @@ $(document).ready(function(){
     $(window).resize(function(){
         if (windowWatcher > 480){
             if ( $(window).width() < 480 ){
-                setTimeout(function(){destroyPackery($sections)}, 500);
+              waitForFinalEvent(function(){
+                destroyPackery($sections);
                 windowWatcher = $( window ).width();
+                console.log('destroy');
+                }, 1000, "Destroy");  
             }
         }
         else{
             if ( $(window).width() >= 480 ){
+              waitForFinalEvent(function(){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
+                console.log('create');
+                }, 1000, "Create");
             }
         }
     });
