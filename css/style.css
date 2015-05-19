@@ -112,13 +112,13 @@ a:focus {
   .three.columns, .card {
     width: 22%; }
 
-  .four.columns, body.article-page .card {
+  .four.columns {
     width: 30.6666666667%; }
 
   .five.columns {
     width: 39.3333333333%; }
 
-  .six.columns, .card.story-major, .card.story-kahuna, .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p, .card.cross-campus, .card.cross-campus h1, .card.cross-campus p, body.article-page .article-text {
+  .six.columns, .card.story-major, .card.story-kahuna, .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p, .card.cross-campus, .card.cross-campus h1, .card.cross-campus p {
     width: 48%; }
 
   .seven.columns {
@@ -127,7 +127,7 @@ a:focus {
   .eight.columns {
     width: 65.3333333333%; }
 
-  .nine.columns, .card.story-kahuna h1, body.article-page .article-header {
+  .nine.columns, .card.story-kahuna h1 {
     width: 74.0%; }
 
   .ten.columns {
@@ -205,12 +205,12 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, header#site-header nav#site-navigation a, footer#site-footer a, body.article-page .card {
+body, header#site-header nav#site-navigation a, footer#site-footer a {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card h1, .cover-story h1, .card.category-jump strong, section.category > h2, body.article-page h1, body.article-page h3, body.article-page .card h2 {
+.card h1, .card.category-jump strong, section.category > h2, .cover-story h1, body.article-page h1 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -276,7 +276,7 @@ header#site-header {
     border-bottom: 1px solid #ddd; }
     header#site-header nav#site-navigation a {
       line-height: 1.2;
-      padding: 15px;
+      padding: 10px;
       font-size: 14px;
       letter-spacing: 1.75px;
       text-transform: uppercase;
@@ -311,23 +311,6 @@ footer#site-footer {
   font-weight: 600;
   color: #696565;
   margin-left: 15px; }
-
-.cover-story {
-  height: 500px;
-  overflow: hidden; }
-  .cover-story img {
-    width: 100%;
-    background-size: cover;
-    z-index: -1; }
-  .cover-story h1 {
-    color: white;
-    font-size: 60px;
-    margin-top: -725px !important; }
-  .cover-story .byline, .cover-story .time {
-    margin: 0 auto;
-    color: #ddd; }
-  .cover-story .byline {
-    padding-top: 10px; }
 
 .card {
   background-color: white;
@@ -578,9 +561,6 @@ section.category {
     font-weight: 600;
     color: #433f3f;
     font-size: 2.75em; }
-  section.category.magazine .section-wrap {
-    padding: 10px 0 50px 0;
-    background-color: black; }
   section.category.magazine > h2, section.category.weekend > h2 {
     color: white;
     top: 104px;
@@ -591,78 +571,40 @@ section.category {
 a.link-wrap {
   display: block; }
 
+.cover-story {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, transparent 0%, black 100%), url("../images/lux.png") no-repeat;
+  background-size: cover;
+  padding-top: 190px; }
+  .cover-story h1 {
+    color: white;
+    font-size: 60px; }
+  .cover-story .byline, .cover-story .time {
+    margin: 0 auto;
+    color: #ddd; }
+  .cover-story .byline {
+    padding-top: 10px; }
+
+body.article-page .box {
+  width: 80%;
+  margin-left: 10%; }
 body.article-page h1 {
   letter-spacing: 1.2px; }
 body.article-page .scrollmagic-pin-spacer {
-  float: right; }
+  float: right;
+  width: 30%; }
 body.article-page .hero-image {
   width: 100%;
   max-width: 100%;
   height: auto; }
-body.article-page .author {
+body.article-page .byline {
   text-transform: uppercase;
   font-size: 0.8em;
   letter-spacing: 1.8px;
   margin-top: 10px;
-  margin-bottom: 10px; }
-body.article-page .article-header {
-  margin-top: 75px; }
-  body.article-page .article-header h1 {
-    font-size: 66.67px;
-    letter-spacing: 1px;
-    font-weight: 800; }
-  body.article-page .article-header p {
-    text-transform: uppercase;
-    font-size: 18.67px;
-    font-style: heavyweight;
-    letter-spacing: 2px;
-    margin-top: 45px;
-    margin-bottom: 40px; }
-  body.article-page .article-header .byline {
-    margin-left: 0;
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
-    font-weight: 600; }
-body.article-page .article-text {
-  font-size: 21.33px;
-  line-height: 1.2em;
-  margin-bottom: 40px; }
-  body.article-page .article-text img {
-    margin-top: 20px;
-    max-width: 960px; }
-body.article-page p {
-  margin-top: 20px;
-  font-weight: normal;
-  letter-spacing: 0.01em; }
-body.article-page h3 {
-  font-size: 1em;
-  margin-top: 20px;
-  letter-spacing: 1px;
-  font-weight: 600; }
-body.article-page .card {
-  background-color: white;
-  overflow: hidden;
-  z-index: -2;
-  float: right;
-  border-top: 5px solid #2882C8;
-  border-bottom: none;
-  padding: 10px 15px 10px 15px;
-  font-weight: normal;
-  height: auto; }
-  body.article-page .card h2 {
-    font-size: 22px;
-    margin-top: 10px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0.025em; }
-  body.article-page .card a {
-    text-decoration: none;
-    display: block;
-    margin: 20px 0px;
-    color: black;
-    font-size: 13px;
-    letter-spacing: 0; }
+  margin-bottom: 10px;
+  margin-left: 0; }
 body.article-page .bottom-bar {
   position: fixed;
   border-top: 1px solid #ddd;
@@ -681,6 +623,11 @@ body.article-page .bottom-bar {
       margin: 0; }
     body.article-page .bottom-bar p span {
       font-weight: 800; }
+body.article-page .article-header {
+  margin-top: 75px;
+  width: 75%; }
+body.article-page .article-text {
+  width: 60%; }
 
 .card.author-card {
   height: 460.86px;
@@ -842,28 +789,6 @@ body.article-page .bottom-bar {
         display: block;
         width: 100%;
         height: 100%; } }
-.cover-story {
-  height: 600px;
-  overflow: hidden;
-  background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat; }
-  .cover-story img {
-    width: 100%;
-    background-size: cover;
-    z-index: -1; }
-  .cover-story h1 {
-    color: white;
-    font-size: 60px;
-    margin-top: -725px !important; }
-  .cover-story .byline, .cover-story .time {
-    margin: 0 auto;
-    color: #ddd; }
-  .cover-story .byline {
-    padding-top: 10px; }
-
 header#site-header {
   background-color: #ffffff;
   margin-bottom: -30px;

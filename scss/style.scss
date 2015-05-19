@@ -110,7 +110,7 @@ header#site-header {
     a {
       @extend %face-sans;
       line-height: 1.2;
-      padding: 15px;
+      padding: 10px;
       font-size: 14px;
       letter-spacing: 1.75px;
       text-transform: uppercase;
@@ -143,7 +143,6 @@ footer#site-footer{
 /// HOMEPAGE STUFF
 
 .container {
-
   &:first-of-type{
     margin-top: 2%;
   }
@@ -158,32 +157,6 @@ footer#site-footer{
   font-weight: 600; 
   color: #696565;
   margin-left: 15px;
-}
-
-.cover-story {
-  height: 500px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    background-size: cover;  
-    z-index: -1;
-  }
-
-  h1 {
-    color: white;
-    font-size: 60px;
-    margin-top: -725px !important;
-    @extend %face-serif;
-  }
-
-  .byline, .time {
-    margin: 0 auto;
-    color: #ddd;
-  }
-  .byline {
-    padding-top: 10px;
-  }
 }
 
 .card {
@@ -528,13 +501,6 @@ section.category {
   }
   aside.category-jump {
   }
-
-  &.magazine {
-    .section-wrap {
-      padding: 10px 0 50px 0;
-       background-color: black;
-    }
-  }
   &.magazine, &.weekend {
     & > h2 {
       color: white;
@@ -550,12 +516,145 @@ a.link-wrap{
   display: block;
 }
 
+.cover-story {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%), url('../images/lux.png') no-repeat;
+  background-size: cover;
+  padding-top: 190px;
+  h1 {
+    color: white;
+    font-size: 60px;
+    @extend %face-serif;
+  }
+  .byline, .time {
+    margin: 0 auto;
+    color: #ddd;
+  }
+  .byline {
+    padding-top: 10px;
+  }
+}
+
 
 /// ARTICLE PAGE STUFF
-
 @import "article";
+// body.article-page {
 
-/// AUTHOR PAGE STUFF
+//   h1{
+//     @extend %face-serif;
+//     letter-spacing: 1.2px;
+//   }
+  
+//   .scrollmagic-pin-spacer{
+//     float: right;
+//   }
+
+//   .hero-image {
+//     width: 100%;
+//     max-width: 100%;
+//     height: auto;
+//   }
+
+//   .author{
+//     text-transform: uppercase;
+//     font-size: 0.8em;
+//     letter-spacing: 1.8px;
+//     margin-top: 10px;
+//     margin-bottom: 10px;
+//   }
+
+//   .article-header {
+//     margin-top: 75px;
+//     h1{
+//       font-size: 66.67px;
+//       letter-spacing: 3px;
+//     }
+//     p {
+//       text-transform: uppercase;
+//       font-size: 18.67px;
+//       font-style: heavyweight;
+//       letter-spacing: 2px;
+//       margin-top: 45px;
+//       margin-bottom: 40px;
+//     }
+//     @extend .nine.columns;
+//   }
+
+//   .article-text {
+//     @extend .six.columns;
+//     font-size: 21.33px;
+//     line-height: 1.2em;
+//     margin-bottom: 40px;
+//     img {
+//       margin-top: 20px;
+//       max-width: 960px;
+//     }
+//   }
+
+
+//   p {
+//     margin-top: 20px;
+//     font-weight: normal;
+//   }
+
+//   h3 {
+//     @extend %face-serif;
+//     font-size: 1em;
+//     margin-top: 20px;
+//     letter-spacing: 1.5px;
+
+//   }
+
+//   .card {
+//     @extend .four.columns;
+//     background-color: white;
+//     overflow: hidden;
+//     z-index: 2;
+//     float:right;
+//     border-top: 5px solid $university-color;
+//     border-bottom: 5px solid $university-color;
+//     @extend %face-sans;
+//     padding: 10px 15px 10px 15px;
+//     font-weight: normal;
+//     height: auto;
+//     h2{
+//       font-size: 22px;
+//       margin-top: 10px;
+//       @extend %face-serif;
+//       font-style: italic;
+//       font-weight: 600;
+//       line-height: 1.2;
+//     }
+//     a{
+//       text-decoration: none;
+//       display: block;
+//       margin: 20px 0px;
+//       color: black;
+//       font-size: 13px;
+//     }
+//   }
+
+//   .bottom-bar{
+//     position:fixed;
+//     left:0px;
+//     bottom:0px;
+//     height:40px;
+//     width:100%;
+//     background:white;
+//     padding: 10px 10px 10px 20px;
+//     z-index: 3;
+//     p{
+//       display: inline;
+//       &.byline{
+//         font-style: italic;
+//       }
+//     }
+//   }
+
+// }
+
+ /// AUTHOR PAGE STUFF
 
 @import "author";
 
@@ -695,35 +794,6 @@ a.link-wrap{
     }
   }
 }
-
-.cover-story {
-  height: 600px;
-  overflow: hidden;
-  @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100% ));
-
-
-  img {
-    width: 100%;
-    background-size: cover;  
-    z-index: -1;
-  }
-
-  h1 {
-    color: white;
-    font-size: 60px;
-    margin-top: -725px !important;
-    @extend %face-serif;
-  }
-
-  .byline, .time {
-    margin: 0 auto;
-    color: #ddd;
-  }
-  .byline {
-    padding-top: 10px;
-  }
-}
-
 
 
 header#site-header {
@@ -909,7 +979,6 @@ form input {
     border-bottom: thick solid $magazine-color;
   }
   color: $magazine-color !important;
-
 }
 
 .weekend{
@@ -937,6 +1006,5 @@ form input {
   }
   color: $sports-color !important;
 }
-
 
 
