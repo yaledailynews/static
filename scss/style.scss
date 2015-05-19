@@ -1,5 +1,9 @@
 @import "html5-reset", "grid";
 
+$dove-gray: #696565;
+$dark-gray: #433f3f;
+$wild-sand: #f6f4f4;
+
 %face-sans {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
@@ -16,7 +20,7 @@
   position: absolute;
   letter-spacing: 0.1em;
   font-size: .75em;
-  color: #696565;
+  color: $dove-gray;
   margin-left: 15px;
 }
 
@@ -25,7 +29,7 @@
   letter-spacing: .025em;
   line-height: 1.2;
   font-weight: 600;
-  color: #433f3f;
+  color: $dark-gray;
   margin: 15px;
 }
 
@@ -78,7 +82,7 @@ $culture-color: #d20a78;
 
 
 body {
-  background-color: #f6f4f4;
+  background-color: $wild-sand;
   @extend %face-sans;
 }
 
@@ -135,7 +139,7 @@ header#site-header {
     margin: 0 auto 10px;
   }
   nav#site-navigation { 
-    background-color: #ffffff;    
+    background-color: white;    
     text-align: center;
     z-index:100;
     border-bottom: 1px solid #ddd;
@@ -195,7 +199,7 @@ footer#site-footer{
   letter-spacing: 1.8;
   line-height: 1.4;
   font-weight: 600; 
-  color: #696565;
+  color: $dove-gray;
   margin-left: 15px;
 }
 
@@ -254,7 +258,7 @@ footer#site-footer{
     }
     time {
       bottom: 30px;
-      color: #433f3f; 
+      color: $dark-gray; 
       @extend %time-category-style;
     }
     .category{
@@ -329,10 +333,10 @@ footer#site-footer{
   &.story-preview {
     height: 2 * $card-height + $gutter-size;
     .card-preview{
-      color:#696565;
+      color:$dove-gray;
     }
     time {
-      color: #696565;
+      color: $dove-gray;
     }
     .breaking{
       width:100%;
@@ -351,7 +355,7 @@ footer#site-footer{
       bottom: 0;
     }
     .card-preview{
-      color:#696565;
+      color:$dove-gray;
     }
     time {
         color: white;
@@ -409,7 +413,7 @@ footer#site-footer{
     height: 2 * $card-height + $gutter-size;
     border-bottom: none;
     h1, p, time {
-      color: #696565;
+      color: $dove-gray;
     }
 
     .xc-content {
@@ -536,7 +540,7 @@ section.category {
     @extend %face-serif;
     font-style: italic;
     font-weight: 600;
-    color: #433f3f;
+    color: $dark-gray;
     font-size: 2.75em;
   }
   aside.category-jump {
@@ -677,7 +681,7 @@ a.link-wrap{
       background-color: transparent;
       border: none;
       &::after {
-        background: #f6f4f4;
+        background: $wild-sand;
       }
       img {
         display: none;
@@ -686,7 +690,7 @@ a.link-wrap{
         display: none;
       }
       h1{
-        color:#433f3f;
+        color:$dark-gray;
       }
     }
     &.story-major {
@@ -728,7 +732,7 @@ a.link-wrap{
 
 
 header#site-header {
-  background-color: #ffffff;
+  background-color: white;
   margin-bottom: -30px;
   padding: 10px 0 0;
   a {
@@ -744,7 +748,7 @@ header#site-header {
     margin: 0 auto 10px;
   }
   nav#site-navigation { 
-    background-color: #ffffff;    
+    background-color: white;    
     text-align: center;
     z-index:100;
     border-bottom: 1px solid #ddd;

@@ -298,7 +298,7 @@ header#site-header {
     display: block;
     margin: 0 auto 10px; }
   header#site-header nav#site-navigation {
-    background-color: #ffffff;
+    background-color: white;
     text-align: center;
     z-index: 100;
     border-bottom: 1px solid #ddd; }
@@ -391,7 +391,7 @@ footer#site-footer {
     color: #433f3f; }
   .card.story .category {
     bottom: 15px;
-    color: #2882c8; }
+    color: #2882C8; }
   .card.story :not(.card-image) {
     z-index: 2; }
   .card.story .card-image {
@@ -527,14 +527,14 @@ footer#site-footer {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882c8;
+      background-color: #2882C8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882c8;
+      color: #2882C8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -549,7 +549,7 @@ footer#site-footer {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882c8;
+      color: #2882C8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -673,7 +673,6 @@ body.article-page .article-text {
   body.article-page .article-text h3 {
     font-size: 1em;
     margin-top: 20px;
-<<<<<<< HEAD
     letter-spacing: 1px;
     font-weight: 600; }
   body.article-page .article-text p {
@@ -689,42 +688,6 @@ body.article-page .article-text {
   @media (max-width: 550px) {
     body.article-page .article-text {
       font-size: 14px; } }
-=======
-    max-width: 960px; }
-body.article-page p {
-  margin-top: 20px;
-  font-weight: normal;
-  letter-spacing: 0.01em; }
-body.article-page h3 {
-  font-size: 1em;
-  margin-top: 20px;
-  letter-spacing: 1px;
-  font-weight: 600; }
-body.article-page .card {
-  background-color: white;
-  overflow: hidden;
-  z-index: -2;
-  float: right;
-  border-top: 5px solid #2882c8;
-  border-bottom: none;
-  padding: 10px 15px 10px 15px;
-  font-weight: normal;
-  height: auto; }
-  body.article-page .card h2 {
-    font-size: 22px;
-    margin-top: 10px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0.025em; }
-  body.article-page .card a {
-    text-decoration: none;
-    display: block;
-    margin: 20px 0px;
-    color: black;
-    font-size: 13px;
-    letter-spacing: 0; }
->>>>>>> master
 body.article-page .bottom-bar {
   position: fixed;
   border-top: 1px solid #ddd;
@@ -913,7 +876,7 @@ body.article-page .bottom-bar {
         width: 100%;
         height: 100%; } }
 header#site-header {
-  background-color: #ffffff;
+  background-color: white;
   margin-bottom: -30px;
   padding: 10px 0 0; }
   header#site-header a {
@@ -927,7 +890,7 @@ header#site-header {
     display: block;
     margin: 0 auto 10px; }
   header#site-header nav#site-navigation {
-    background-color: #ffffff;
+    background-color: white;
     text-align: center;
     z-index: 100;
     border-bottom: 1px solid #ddd; }
@@ -963,10 +926,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882c8; }
+        border: 1px solid #2882C8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882c8;
+        background-color: #2882C8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -982,13 +945,13 @@ form input {
   font-size: 0.9em; }
 
 .university {
-  color: #2882c8 !important; }
+  color: #2882C8 !important; }
   .university .category-jump {
-    background-color: #2882c8; }
+    background-color: #2882C8; }
   .university .story .category {
-    color: #2882c8; }
+    color: #2882C8; }
   .university .card {
-    border-bottom: thick solid #2882c8; }
+    border-bottom: thick solid #2882C8; }
 
 .opinion {
   color: #cf383e !important; }
@@ -1061,3 +1024,5 @@ form input {
     color: #42d2ff; }
   .sports .card {
     border-bottom: thick solid #42d2ff; }
+
+/*# sourceMappingURL=style.css.map */
