@@ -272,6 +272,8 @@ p {
     margin-right: auto;
     margin-top: -35px; }
   #mobile-header #mobile-section-header {
+    text-decoration: none;
+    color: black;
     display: inline-block;
     height: 52px;
     width: 15%;
@@ -852,7 +854,7 @@ body.article-page .bottom-bar {
       bottom: auto;
       margin: 0; } }
 @media (max-width: 480px) {
-  #site-header {
+  #site-header, .cross-campus {
     display: none; }
 
   #mobile-header {
