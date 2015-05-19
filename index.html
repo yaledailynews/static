@@ -531,8 +531,21 @@
 //fixednavbar
 $(document).ready(function(){
     $("#site-navigation").sticky({topSpacing: 0 });
-    $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
-    $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+      if($(window).width() > 480) {
+        $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
+        $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+      } 
+    $(window).resize(function(){
+      if($(window).width() > 480) {
+        $('#small-logo').css('display', 'inline-block')
+        $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
+        $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+      } 
+      else{
+        $('#small-logo').css('display', 'none')
+        $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'none'); });
+      }
+    });
   });
 </script>
 
@@ -572,7 +585,7 @@ $(document).ready(function(){
 
 
 
-  $(function () {
+  $(function() {
 
     $sections = ["#front-page", "#university", "#opinion", "#city", "#scitech", "#culture", "#packery-weekend", "#packery-magazine", "#packery-ytv", "#sports"];
 
