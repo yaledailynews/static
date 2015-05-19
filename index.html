@@ -25,6 +25,7 @@
   <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
+  <script src="./js/bigSlide.js"></script>
 
 
 
@@ -53,6 +54,32 @@
      </div>
   </nav>
 </header>
+
+<header id="mobile-header">
+  <a href="#" class="menu-link">&#9776;</a>
+  <nav id="mobile-navigation">
+    <!-- <a id="close">&#10006;</a> EDITING THIS OUT FOR THE TIME BEING BECAUSE IT'S WEIRD TAKE A LOOK-->
+    <a id="tag-top" href="#">Top</a>
+    <a id="tag-university" href="#">University</a>
+    <a id="tag-city" href="#">City</a>
+    <a id="tag-sports" href="#">Sports</a>
+    <a id="tag-scitech" href="#">Scitech</a>
+    <a id="tag-culture" href="#">Culture</a>
+    <a id="tag-opinion" href="#">Opinion</a>
+    <a id="tag-weekend" href="#">Wknd</a>
+    <a id="tag-magazine" href="#">Mag</a>
+    <a id="tag-ytv" href="#">YTV</a>
+    <a id="nav-search" href="#">Search</a>
+    <!-- <div id="nav-search">
+      <i class="fa fa-search"></i>
+       <form class="search-box">
+          <input type="text" placeholder="Search articles and authors">
+       </form>
+     </div> EDITING THIS OUT BECAUSE CLICKING IN THE FORM CLOSES THE MENU-->
+  </nav>
+</header>
+
+
   
 
     <section id="front-page" class=" container category front-page" >
@@ -533,6 +560,7 @@ $(document).ready(function(){
     $("#site-navigation").sticky({topSpacing: 0 });
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+    $('.menu-link').bigSlide();
   });
 </script>
 
