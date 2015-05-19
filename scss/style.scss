@@ -91,7 +91,16 @@ p {
 }
 
 #mobile-header{
+  height: 50px;
+  background-color: #363636;
+  padding: 10px;
   display: none;
+}
+
+
+.menu-link{
+    color:white;
+    text-decoration: none;
 }
 
 #mobile-navigation{
