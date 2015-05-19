@@ -656,10 +656,8 @@ $(document).ready(function(){
         }
         else{
             if ( $(window).width() >= 480 ){
-              waitForFinalEvent(function(){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
-                }, 500, "Create");
             }
         }
     });
