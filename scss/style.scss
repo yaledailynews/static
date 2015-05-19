@@ -93,18 +93,40 @@ p {
 #mobile-header{
   height: 50px;
   background-color: #363636;
-  padding: 10px;
+  padding: 10px 0px 10px 10px;
   display: none;
   position: fixed;
   z-index: 3;
   width: 100%;
   top: 0;
+  box-shadow: 0 3px 10px rgba(0,0,0,.23),
+              0 3px 10px rgba(0,0,0,.16);
+  img{
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -35px;
+  }
+  #mobile-section-header{
+    @extend %face-serif;
+    display: inline-block;
+    height: 52px;
+    width: 15%;
+    margin-top: -50px;
+    float: right;
+    background-color: #808080;
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+  }
 }
 
 
 .menu-link{
     color:white;
     text-decoration: none;
+    display: inline-block;
 }
 
 #mobile-navigation{
