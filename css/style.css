@@ -316,7 +316,8 @@ header#site-header {
 footer#site-footer {
   margin-top: 100px;
   background: #C9C9C9;
-  text-align: center; }
+  text-align: center;
+  z-index: 5; }
   footer#site-footer a {
     text-decoration: none;
     font-size: 11px;
@@ -401,7 +402,7 @@ footer#site-footer {
     color: #433f3f; }
   .card.story .category {
     bottom: 15px;
-    color: #2882C8; }
+    color: #2882c8; }
   .card.story :not(.card-image) {
     z-index: 2; }
   .card.story .card-image {
@@ -537,14 +538,14 @@ footer#site-footer {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882C8;
+      background-color: #2882c8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882C8;
+      color: #2882c8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -559,7 +560,7 @@ footer#site-footer {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882C8;
+      color: #2882c8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -672,7 +673,7 @@ body.article-page .card {
   overflow: hidden;
   z-index: -2;
   float: right;
-  border-top: 5px solid #2882C8;
+  border-top: 5px solid #2882c8;
   border-bottom: none;
   padding: 10px 15px 10px 15px;
   font-weight: normal;
@@ -802,7 +803,26 @@ body.article-page .bottom-bar {
   .card.story-kahuna {
     width: 100%; }
     .card.story-kahuna h1 {
-      font-size: 20px; } }
+      font-size: 20px; }
+  .card.story-breaking .breaking {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 66px;
+    padding: 20px;
+    position: relative;
+    background-color: red;
+    text-align: center; }
+    .card.story-breaking .breaking h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1em;
+      color: white; }
+    .card.story-breaking .breaking time {
+      position: relative;
+      font-size: 0.675em;
+      bottom: auto;
+      margin: 0; } }
 @media (max-width: 480px) {
   #site-header {
     display: none; }
@@ -838,25 +858,6 @@ body.article-page .bottom-bar {
         display: block;
         width: 100%;
         height: 100%; }
-    .card.story-breaking .breaking {
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 66px;
-      padding: 20px;
-      position: relative;
-      background-color: red;
-      text-align: center; }
-      .card.story-breaking .breaking h3 {
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 1em;
-        color: white; }
-      .card.story-breaking .breaking time {
-        position: relative;
-        font-size: 0.675em;
-        bottom: auto;
-        margin: 0; }
     .card.story-kahuna {
       width: 120%;
       left: -10%;
@@ -948,10 +949,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882C8; }
+        border: 1px solid #2882c8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882C8;
+        background-color: #2882c8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -967,13 +968,13 @@ form input {
   font-size: 0.9em; }
 
 .university {
-  color: #2882C8 !important; }
+  color: #2882c8 !important; }
   .university .category-jump {
-    background-color: #2882C8; }
+    background-color: #2882c8; }
   .university .story .category {
-    color: #2882C8; }
+    color: #2882c8; }
   .university .card {
-    border-bottom: thick solid #2882C8; }
+    border-bottom: thick solid #2882c8; }
 
 .opinion {
   color: #cf383e !important; }
@@ -1046,5 +1047,3 @@ form input {
     color: #42d2ff; }
   .sports .card {
     border-bottom: thick solid #42d2ff; }
-
-/*# sourceMappingURL=style.css.map */

@@ -159,6 +159,7 @@ footer#site-footer{
   margin-top: 100px;
   background: #C9C9C9;
   text-align: center;
+  z-index: 5;
   a {
     text-decoration: none;
     @extend %face-sans;
@@ -637,6 +638,30 @@ a.link-wrap{
         font-size: 20px;
       }
     }
+    &.story-breaking{
+  .breaking{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 66px;
+    padding: 20px;
+    position: relative;
+    background-color: red;
+    text-align: center;
+    h3{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1em;
+      color: white;
+    }
+    time{
+      position: relative;
+      font-size: 0.675em;
+      bottom: auto;
+      margin: 0;
+     }
+    }
+  }
   }
 }
 
@@ -683,30 +708,6 @@ a.link-wrap{
         height: 100%;
       }
     }
-    &.story-breaking{
-      .breaking{
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 66px;
-        padding: 20px;
-        position: relative;
-        background-color: red;
-        text-align: center;
-        h3{
-          text-transform: uppercase;
-          font-weight: bold;
-          font-size: 1em;
-          color: white;
-        }
-        time{
-          position: relative;
-          font-size: 0.675em;
-          bottom: auto;
-          margin: 0;
-         }
-        }
-      }
     &.story-kahuna{
       width: 120%;
       left: -10%;
