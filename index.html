@@ -26,6 +26,7 @@
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
   <script src="./js/bigSlide.js"></script>
+  <script src="./js/bigSlideXC.js"></script>
 
 
 
@@ -58,7 +59,7 @@
 <header id="mobile-header">
   <a href="#" class="menu-link fa fa-bars fa-2x"></a>
   <img src = "./images/branding/YDN Nameplate Big white.gif">
-  <a href="#" id="mobile-section-header">xc</a>
+  <a href="#" id="mobile-xc">xc</a>
   <nav id="mobile-navigation">
     <!-- <a id="close">&#10006;</a> EDITING THIS OUT FOR THE TIME BEING BECAUSE IT'S WEIRD TAKE A LOOK-->
     <a id="tag-top" href="#">Top</a>
@@ -79,6 +80,28 @@
        </form>
      </div> EDITING THIS OUT BECAUSE CLICKING IN THE FORM CLOSES THE MENU-->
   </nav>
+  <div class="card story cross-campus xc-content-mobile">
+    <div id="xc">
+          <p>xc</p>
+        </div>
+
+        <div class="xc-content">
+          <p class="date">May 6, 2015</p>
+          <p class="card-preview"><span class="intro">This is the end. With this issue, the News concludes production for the academic year.</span> Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+
+          <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+
+          <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+
+          <p class="date">May 5, 2015</p>
+
+          <p class="card-preview"><span class="intro">This is the end.</span> With this issue, the News concludes production for the academic year. Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+
+          <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+
+          <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+        </div>
+  </div>
 
 </header>
 
@@ -96,7 +119,7 @@
           <img class="card-image" src="images/sae.jpg">
       </article></a>
 
-      <div class="link-wrap" href="#"><article class="card story cross-campus">
+      <div class="link-wrap" id = "xc-web" href="#"><article class="card story cross-campus">
         <h1>Cross Campus</h1>
 
         <div id="xc">
@@ -564,6 +587,7 @@ $(document).ready(function(){
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
     $('.menu-link').bigSlide();
+    $('#mobile-xc').bigSlideXC();
   });
 </script>
 

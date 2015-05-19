@@ -101,6 +101,7 @@ p {
   top: 0;
   box-shadow: 0 3px 10px rgba(0,0,0,.23),
               0 3px 10px rgba(0,0,0,.16);
+  border-bottom: 1px solid white;
   img{
     height: 40px;
     display: block;
@@ -108,22 +109,23 @@ p {
     margin-right: auto;
     margin-top: -35px;
   }
-  #mobile-section-header{
+  #mobile-xc{
     @extend %face-serif;
     text-decoration: none;
     color: black;
     display: inline-block;
+    vertical-align: bottom;
+    padding-top: 8px;
     height: 52px;
     width: 15%;
     margin-top: -50px;
     float: right;
     background-color: #808080;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic;
   }
 }
-
 
 .menu-link{
     color:white;
@@ -135,7 +137,7 @@ p {
   height: 100%;
   background-color:#E8E8E8;
   opacity: 0.9;
-  z-index: 99;
+  z-index: 4;
   left: -15.625em; /*left or right and the width of your navigation panel*/
   width: 15.625em; /*should match the above value*/
   a{
@@ -700,7 +702,7 @@ a.link-wrap{
 
 
 @media(max-width:480px) {
-  #site-header, .cross-campus{
+  #site-header, #xc-web{
     display: none;
   }
   #mobile-header{
@@ -762,6 +764,20 @@ a.link-wrap{
         display: block;
         width: 100%;
         height: 100%;
+      }
+    }
+    &.cross-campus{
+      .xc-content{
+        height: 100%;
+      }
+      #xc{
+        margin: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        p{
+          margin-top: -5px;
+        }
       }
     }
   }

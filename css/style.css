@@ -210,7 +210,7 @@ body, header#site-header nav#site-navigation a, footer#site-footer a {
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card h1, #mobile-header #mobile-section-header, .card.category-jump strong, section.category > h2, .cover-story h1, body.article-page h1, body.article-page .article-text h3 {
+.card h1, #mobile-header #mobile-xc, .card.category-jump strong, section.category > h2, .cover-story h1, body.article-page h1, body.article-page .article-text h3 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -264,24 +264,27 @@ p {
   z-index: 3;
   width: 100%;
   top: 0;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+  border-bottom: 1px solid white; }
   #mobile-header img {
     height: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -35px; }
-  #mobile-header #mobile-section-header {
+  #mobile-header #mobile-xc {
     text-decoration: none;
     color: black;
     display: inline-block;
+    vertical-align: bottom;
+    padding-top: 8px;
     height: 52px;
     width: 15%;
     margin-top: -50px;
     float: right;
     background-color: #808080;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-style: italic; }
 
 .menu-link {
@@ -293,7 +296,7 @@ p {
   height: 100%;
   background-color: #E8E8E8;
   opacity: 0.9;
-  z-index: 99;
+  z-index: 4;
   left: -15.625em;
   /*left or right and the width of your navigation panel*/
   width: 15.625em;
@@ -854,7 +857,7 @@ body.article-page .bottom-bar {
       bottom: auto;
       margin: 0; } }
 @media (max-width: 480px) {
-  #site-header, .cross-campus {
+  #site-header, #xc-web {
     display: none; }
 
   #mobile-header {
@@ -905,7 +908,16 @@ body.article-page .bottom-bar {
       .card.story-photo .card-image, .card.story-preview .card-image {
         display: block;
         width: 100%;
-        height: 100%; } }
+        height: 100%; }
+    .card.cross-campus .xc-content {
+      height: 100%; }
+    .card.cross-campus #xc {
+      margin: 0 0 0 0;
+      width: 100%;
+      text-align: center;
+      height: 50px; }
+      .card.cross-campus #xc p {
+        margin-top: -5px; } }
 header#site-header {
   background-color: white;
   margin-bottom: -30px;
