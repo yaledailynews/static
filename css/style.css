@@ -909,15 +909,17 @@ body.article-page .bottom-bar {
         display: block;
         width: 100%;
         height: 100%; }
-    .card.cross-campus .xc-content {
-      height: 100%; }
-    .card.cross-campus #xc {
-      margin: 0 0 0 0;
-      width: 100%;
-      text-align: center;
-      height: 50px; }
-      .card.cross-campus #xc p {
-        margin-top: -5px; } }
+    .card.cross-campus {
+      opacity: 0.9; }
+      .card.cross-campus .xc-content {
+        height: 100%; }
+      .card.cross-campus #xc {
+        margin: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+        height: 50px; }
+        .card.cross-campus #xc p {
+          margin-top: -5px; } }
 header#site-header {
   background-color: white;
   margin-bottom: -30px;
