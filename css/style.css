@@ -425,7 +425,7 @@ footer#site-footer {
     color: #433f3f; }
   .card.story .category {
     bottom: 15px;
-    color: #2882c8; }
+    color: #2882C8; }
   .card.story :not(.card-image) {
     z-index: 2; }
   .card.story .card-image {
@@ -561,14 +561,14 @@ footer#site-footer {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882c8;
+      background-color: #2882C8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882c8;
+      color: #2882C8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -583,7 +583,7 @@ footer#site-footer {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882c8;
+      color: #2882C8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -643,7 +643,7 @@ a.link-wrap {
 .cover-story {
   width: 100%;
   height: 500px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%), url("../images/lux.png") no-repeat;
+  background: linear-gradient(to bottom, transparent 0%, black 100%), url("../images/lux.png") no-repeat;
   background-size: cover;
   padding-top: 190px; }
   .cover-story h1 {
@@ -665,7 +665,7 @@ body.article-page .more-from-top, body.article-page .more-from-bottom {
   padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto;
-  border-top: 5px solid #2882c8;
+  border-top: 5px solid #2882C8;
   overflow: hidden;
   background-color: white;
   overflow: hidden; }
@@ -906,8 +906,6 @@ body.article-page .bottom-bar {
   section.category {
     width: 90%;
     margin: 0 auto; }
-    section.category a {
-      text-decoration: none; }
 
   .card {
     width: 100%; }
@@ -950,36 +948,16 @@ body.article-page .bottom-bar {
       .card.story-photo .card-image, .card.story-preview .card-image {
         display: block;
         width: 100%;
-<<<<<<< HEAD
-        height: 100%; } }
-.cover-story {
-  height: 600px;
-  overflow: hidden;
-  background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.96) 100%), no-repeat; }
-  .cover-story img {
-    width: 100%;
-    background-size: cover;
-    z-index: -1; }
-  .cover-story h1 {
-    color: white;
-    font-size: 60px;
-    margin-top: -47% !important; }
-  .cover-story .byline, .cover-story .time {
-    margin: 0 auto;
-    color: #ddd; }
-  .cover-story .byline {
-    padding-top: 10px; }
-
-=======
         height: 100%; }
     .card.cross-campus {
-      opacity: 0.9; }
+      padding-bottom: 15px; }
       .card.cross-campus .xc-content {
         height: 100%; }
+      .card.cross-campus #xc-close-button {
+        display: inline;
+        float: right;
+        margin-top: -40px;
+        margin-right: 5px; }
       .card.cross-campus #xc {
         margin: 0 0 0 0;
         width: 100%;
@@ -987,7 +965,6 @@ body.article-page .bottom-bar {
         height: 50px; }
         .card.cross-campus #xc p {
           margin-top: -5px; } }
->>>>>>> 7660697372b9c682de74258a844a32f05bd6700e
 header#site-header {
   background-color: white;
   margin-bottom: -30px;
@@ -1039,10 +1016,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882c8; }
+        border: 1px solid #2882C8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882c8;
+        background-color: #2882C8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -1058,13 +1035,13 @@ form input {
   font-size: 0.9em; }
 
 .university {
-  color: #2882c8 !important; }
+  color: #2882C8 !important; }
   .university .category-jump {
-    background-color: #2882c8; }
+    background-color: #2882C8; }
   .university .story .category {
-    color: #2882c8; }
+    color: #2882C8; }
   .university .card {
-    border-bottom: thick solid #2882c8; }
+    border-bottom: thick solid #2882C8; }
 
 .opinion {
   color: #cf383e !important; }
@@ -1137,3 +1114,5 @@ form input {
     color: #42d2ff; }
   .sports .card {
     border-bottom: thick solid #42d2ff; }
+
+/*# sourceMappingURL=style.css.map */
