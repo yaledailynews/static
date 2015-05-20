@@ -972,6 +972,9 @@ body.article-page .bottom-bar {
       background: white; }
     .card.story-opinion h1 {
       color: #433f3f; }
+    .card.category-jump {
+      padding: 15px;
+      height: auto; }
     .card.cross-campus {
       opacity: 0.9; }
       .card.cross-campus .xc-content {
