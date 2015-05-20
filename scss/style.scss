@@ -711,6 +711,9 @@ a.link-wrap{
   section.category {
     width: 90%;
     margin: 0 auto;
+    a{
+    text-decoration: none;
+    }
   }
   .card {
     width: 100%;
