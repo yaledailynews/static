@@ -728,10 +728,15 @@ a.link-wrap{
   section.category {
     width: 90%;
     margin: 0 auto;
-    padding: 0 15px;
+    &:not(.front-page){
+      padding: 5px 0;
+    }
+    &.front-page {
+      padding-bottom: 15px;
+    }
     h2 {
-      padding-bottom: 10px;
       font-size: 30px;
+      padding-bottom:10px;
     }
   }
   .card {
@@ -741,6 +746,19 @@ a.link-wrap{
       }
     }
     width: 100%;
+    // &.story-simple, &.story-opinion {
+    //   height: auto;
+    //   width: 100%;
+    //   img {
+    //     display: none;
+    //   }
+    //   .category{
+    //     display: none;
+    //   }
+    //   h1{
+    //     color:$dark-gray;
+    //   }
+    // }
     &.story-major {
       width: 100%;
       height: 0;
