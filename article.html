@@ -23,6 +23,7 @@
   <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
+  <script src="./js/bigSlide.js"></script>
 
 </head>
 
@@ -56,12 +57,12 @@
 
 		<img class="hero-image" src="images/wall-street-hero.jpg" />
 		
-		<div class="container">
+		<div class="box">
 
 			<div class="article-header">
 				<h1>Even artichokes have doubts</h1>
 				<p class="byline">By Marina Keegan &middot; <date>September 30, 2011</date> &middot; <time> 10:10pm ET</time></p>
-				<section id = "read-next" class="card read-next">
+				<section id = "more-from-top" class="card more-from-top">
 					<h2>More from University</h2>
 					<a href="#">Donation will transform Commons into “world-class campus center” by 2020</a>
 					<a href="#">Holloway announces comprehensive reforms of withdrawal and readmission policies</a>
@@ -238,6 +239,13 @@
 
 				<p>I want to watch Shloe’s movies and I want to see Mark’s musicals and I want to volunteer with Joe’s non-profit and eat at Annie’s restaurant and send my kids to schools Jeff’s reformed and I’m JUST SCARED about this industry that’s taking all my friends and telling them this is the best way for them to be spending their time. Any of their time. Maybe I’m ignorant and idealistic but I just feel like that can’t possibly be true. I feel like we know that. I feel like we can do something really cool to this world. And I fear — at 23, 24, 25 — we might forget.</p>
 			</section>
+
+			<section id = "more-from-bottom" class="card more-from-bottom">
+				<h2>More from University</h2>
+				<a href="#">Donation will transform Commons into “world-class campus center” by 2020</a>
+				<a href="#">Holloway announces comprehensive reforms of withdrawal and readmission policies</a>
+				<a href="#">Yale may change standardized testing requirements</a>
+			</section>
 		</div><!-- /container -->
 
 		<div class="bottom-bar">
@@ -263,25 +271,27 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script>
+//fixednavbar
 $(document).ready(function(){
-    $("#site-navigation").sticky({topSpacing: 0});
+    $("#site-navigation").sticky({topSpacing: 0 });
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+    $('.menu-link').bigSlide();
   });
 </script>
 
 
 <script>
 	// init controller
-  var controller = new ScrollMagic.Controller();
+  // var controller = new ScrollMagic.Controller();
 
-  $(function () { // wait for document ready
-				// build scene
-				var scene = new ScrollMagic.Scene({triggerElement: ".read-next", triggerHook: .3})
-								.setPin(".read-next")
-								//.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-								.addTo(controller);
-			});
+  // $(function () { // wait for document ready
+		// 		// build scene
+		// 		var scene = new ScrollMagic.Scene({triggerElement: ".read-next", triggerHook: .3})
+		// 						.setPin(".read-next")
+		// 						//.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+		// 						.addTo(controller);
+		// 	});
 
 </script>
 

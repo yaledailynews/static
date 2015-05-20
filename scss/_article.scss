@@ -1,102 +1,34 @@
-body.article-page {
 
+body.article-page {
+  .box {
+    width:80%;
+    margin-left: 10%;
+  }
 
   h1{
     @extend %face-serif;
     letter-spacing: 1.2px;
   }
   
-  .scrollmagic-pin-spacer{
-    float: right;
-  }
-
-  .hero-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .author{
-    text-transform: uppercase;
-    font-size: 0.8em;
-    letter-spacing: 1.8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .article-header {
-    margin-top: 75px;
-    h1{
-      font-size: 66.67px;
-      letter-spacing: 1px;
-      font-weight: 800;
-    }
-    p {
-      text-transform: uppercase;
-      font-size: 18.67px;
-      font-style: heavyweight;
-      letter-spacing: 2px;
-      margin-top: 45px;
-      margin-bottom: 40px;
-    }
-
-    .byline {
-      margin-left: 0;
-      font-size: 0.8em;
-      letter-spacing: 0.1em;
-      font-weight: 600;
-    }
-    @extend .nine.columns;
-  }
-
-  .article-text {
-    @extend .six.columns;
-    font-size: 21.33px;
-    line-height: 1.2em;
-    margin-bottom: 40px;
-    img {
-      margin-top: 20px;
-      max-width: 960px;
-    }
-  }
-
-
-  p {
-    margin-top: 20px;
-    font-weight: normal;
-    letter-spacing: 0.01em;
-  }
-
-  h3 {
-    @extend %face-serif;
-    font-size: 1em;
-    margin-top: 20px;
-    letter-spacing: 1px;
-    font-weight: 600;
-
-  }
-
-  .card {
-    @extend .four.columns;
-    background-color: white;
-    overflow: hidden;
-    z-index: -2;
-    float:right;
-    border-top: 5px solid $university-color;
+  %more-from {
     border-bottom: none;
     @extend %face-sans;
     padding: 10px 15px 10px 15px;
     font-weight: normal;
     height: auto;
+    border-top: 5px solid $university-color;
+    overflow: hidden;
+    background-color: white;
+    overflow: hidden;
     h2{
-      font-size: 22px;
-      margin-top: 10px;
-      @extend %face-serif;
-      font-style: italic;
-      font-weight: 600;
-      line-height: 1.2;
-      letter-spacing: 0.025em;
-    }
+        font-size: 22px;
+        margin-top: 10px;
+        @extend %face-serif;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0.025em;
+      }
     a{
       text-decoration: none;
       display: block;
@@ -107,17 +39,124 @@ body.article-page {
     }
   }
 
+  .more-from-top {
+    @extend %more-from;
+    width: 25%;
+    float:right;
+    margin-top: 100px;
+    @media(max-width: 980px){
+      display: none;
+    }
+  }
+
+  .more-from-bottom {
+    @media(min-width: 980px){
+      display: none;
+    }
+    @extend %more-from;
+    width: 60%;
+  }
+
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+
+  .byline{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1.8px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .article-header {
+    margin-top: 75px;
+    width: 90%;
+
+    h1{
+      width: 75%;
+      font-size: 66.67px;
+      letter-spacing: 1px;
+      font-weight: 800;
+    }
+
+    @media(max-width: 980px){
+      width: 100%;
+      margin-top: 50px;
+      h1{
+        font-size: 50px;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+    }
+    @media(max-width: 550px){
+      margin-top: 20px;
+      h1{
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 700;
+      }
+      .byline {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .article-text {
+    width: 60%;
+    font-size: 21.33px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+    img {
+      margin: 20px 0 0 0;
+      max-width: 166.5%;
+    }
+    h3 {
+      @extend %face-serif;
+      font-size: 1em;
+      margin-top: 20px;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    p {
+      margin-top: 20px;
+      letter-spacing: 0.01em;
+      font-weight: normal;
+    }
+    @media(max-width:980px){
+      width: 90%;
+      img {
+        max-width: 110%;
+      }
+    }
+
+    @media(max-width: 780px){
+      width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+    @media(max-width: 550px){
+      font-size: 14px;
+    }
+  }
+
   .bottom-bar{
     position:fixed;
     border-top: 1px solid #ddd;
     left:0px;
     bottom:0px;
-    height:40px;
     width:100%;
     background:white;
     padding: 10px 10px 10px 20px;
     z-index: 3;
     p{
+      padding-top: 11px;
+      padding-bottom: 11px;
       display: inline;
       letter-spacing: 0.025em;
       &.byline{
@@ -128,6 +167,52 @@ body.article-page {
         font-weight: 800;
       }
     }
+    @media(max-width: 550px){
+      p{
+        font-size: 10px;
+      }
+    }
   }
 
+  // .scrollmagic-pin-spacer{
+  //   float: right;
+  // }
+
 }
+
+
+//CHECK TO SEE IF WE WANT THIS CARD MOVING
+
+
+//   .card {
+//     width: 25%;
+//     background-color: white;
+//     overflow: hidden;
+//     z-index: -2;
+//     float:right;
+//     border-top: 5px solid $university-color;
+//     border-bottom: none;
+//     @extend %face-sans;
+//     padding: 10px 15px 10px 15px;
+//     font-weight: normal;
+//     height: auto;
+//     h2{
+//       font-size: 22px;
+//       margin-top: 10px;
+//       @extend %face-serif;
+//       font-style: italic;
+//       font-weight: 600;
+//       line-height: 1.2;
+//       letter-spacing: 0.025em;
+//     }
+//     a{
+//       text-decoration: none;
+//       display: block;
+//       margin: 20px 0px;
+//       color: black;
+//       font-size: 13px;
+//       letter-spacing: 0;
+//     }
+//   }
+
+

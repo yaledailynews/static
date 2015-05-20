@@ -27,6 +27,7 @@
   <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
+  <script src="./js/bigSlide.js"></script>
 
 </head>
 
@@ -167,10 +168,12 @@
 
 
 <script>
+//fixednavbar
 $(document).ready(function(){
     $("#site-navigation").sticky({topSpacing: 0 });
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+    $('.menu-link').bigSlide();
   });
 </script>
 
