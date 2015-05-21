@@ -1041,7 +1041,7 @@ body.article-page .bottom-bar {
       .card.category-jump strong::after {
         content: " →"; }
     .card .card-preview {
-      font-size: 1em; }
+      font-size: 0.9em; }
     .card.story {
       border-bottom: 1px solid #2882C8 !important; }
       .card.story h1 {
@@ -1077,7 +1077,8 @@ body.article-page .bottom-bar {
       padding-bottom: 100%;
       background-color: white; }
       .card.story-major h1, .card.story-kahuna h1, .card.story-opinion h1 {
-        font-size: 24px; }
+        font-size: 24px;
+        font-weight: 600; }
       .card.story-major .card-image, .card.story-kahuna .card-image, .card.story-opinion .card-image {
         display: block;
         width: 100%;
@@ -1091,9 +1092,8 @@ body.article-page .bottom-bar {
         width: 100%;
         height: 100%; }
       .card.story-kahuna h1 {
-        font-size: 40px;
-        font-weight: 600;
-        letter-spacing: 0.04em; }
+        margin-left: 0px;
+        font-size: 24px; }
     .card.story-photo, .card.story-preview, .card.story-mag, .card.story-weekend {
       width: 100%;
       background-color: white;

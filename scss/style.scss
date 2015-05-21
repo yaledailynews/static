@@ -943,7 +943,7 @@ section.weekend {
     }
 
     .card-preview {
-      font-size: 1em;
+      font-size: 0.9em;
     }
 
     &.story {
@@ -1001,6 +1001,7 @@ section.weekend {
 
       h1 {
         font-size: 24px;
+        font-weight: 600;
       }
       .card-image {
         display: block;
@@ -1021,11 +1022,12 @@ section.weekend {
         width: 100%;
         height: 100%;
       }
+
       h1 {
-        font-size: 40px;
-        font-weight: 600;
-        letter-spacing: 0.04em;
+        margin-left: 0px;
+        font-size: 24px;
       }
+   
     }
 
 
@@ -1034,6 +1036,7 @@ section.weekend {
       background-color: white;
       height: auto;
       padding-bottom: 20px;
+
       h1{
         color:$dark-gray;
       }
