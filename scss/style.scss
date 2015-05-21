@@ -789,9 +789,16 @@ section.weekend {
   #mobile-header{
     display: block;
   }
+
   section.category {
     width: 90%;
     margin: 0 auto;
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 25px;
+      margin-top: -50px;
+    }
   }
 
   section.front-page {
@@ -812,7 +819,6 @@ section.weekend {
   .story-softcore-cover {
     h1 {
       font-size: 2.5em;
-
     }
 
     .byline {
@@ -826,11 +832,28 @@ section.weekend {
   .card {
     margin-bottom: 25px;
     width: 100%;
-    &.story-simple, &.story-opinion {
+
+    &.story {
+      border-bottom: 1px solid $university-color !important;
+
+      h1 {
+        margin-bottom: 7px;
+      }
+    }
+
+
+    &.story > time {
+      position: initial;
+      color: #aaa;
+      font-weight: 600;
+      font-size: 0.75em;
+    }
+
+    &.story-simple {
       height: auto;
       width: 100%;
-      background-color: transparent;
-      border: none;
+      background-color: white;
+      padding-bottom: 17.5px;
       &::after {
         background: $wild-sand;
       }
@@ -844,7 +867,7 @@ section.weekend {
         color:$dark-gray;
       }
     }
-    &.story-major {
+    &.story-major, &.story-opinion {
       width: 100%;
       height: 0;
       padding-bottom: 100%;
@@ -855,6 +878,8 @@ section.weekend {
         height: 100%;
       }
     }
+
+
     &.story-kahuna{
       width: 100%;
       height: $card-height;
@@ -871,11 +896,37 @@ section.weekend {
     &.story-photo, &.story-preview {
       width: 100%;
       background-color: white;
+      height: auto;
+      padding-bottom: 20px;
+
+      .category { 
+        display: none;
+      }
+
       .card-image {
-        display: block;
-        width: 100%;
+        width: 50%;
+        left: 200px;
         height: 100%;
       }
+
+      .card-preview, .byline {
+        display: none;
+      }
+
+    }
+
+    &.story-photo {
+
+      &::after {
+
+      @include bg-gradienter (( to right, rgba(255, 255, 255, 1) 65%, rgba(255, 255, 255, 0.5) 100% ));
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      content: "";
+      position: absolute;
+    }
     }
     &.cross-campus{
       padding-bottom: 15px;
@@ -899,6 +950,8 @@ section.weekend {
       }
     }
   }
+
+  
 }
 
 
