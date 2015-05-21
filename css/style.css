@@ -680,6 +680,8 @@ section.magazine {
   margin-top: 30px;
   margin-bottom: -135px; }
 
+section.magazine .story-weekend .byline, section.magazine .story-mag .byline, section.weekend .story-weekend .byline, section.weekend .story-mag .byline {
+  display: none; }
 section.magazine h2, section.weekend h2 {
   color: white;
   margin-bottom: -100px;

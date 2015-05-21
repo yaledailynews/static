@@ -672,6 +672,12 @@ section.ytv {
   }
 
 section.magazine, section.weekend {
+
+  .story-weekend, .story-mag {
+    .byline {
+    display: none;
+    }
+  }
   h2 {
     color: white;
     margin-bottom: -100px;
