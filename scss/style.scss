@@ -706,7 +706,7 @@ section.weekend {
     letter-spacing: .05em;
     @extend %face-serif;
   }
-  
+
 
   .byline {
     color: white;
@@ -917,8 +917,7 @@ section.weekend {
 
     &.category-jump {
       padding: 15px 10px 10px 10px;
-      height: auto;
-      font-style: italic;
+      height: auto; 
 
 
       strong {
@@ -1021,11 +1020,16 @@ section.weekend {
         letter-spacing: 0.04em;
       }
     }
-    &.story-photo, &.story-preview {
+
+
+    &.story-photo, &.story-preview, &.story-mag, &.story-weekend {
       width: 100%;
       background-color: white;
       height: auto;
       padding-bottom: 20px;
+      h1{
+        color:$dark-gray;
+      }
 
       .category { 
         display: none;
@@ -1042,8 +1046,14 @@ section.weekend {
       }
 
     }
+     &.story-mag, &.story-weekend {
+      padding-bottom: 0;
+      .byline {
+        display: inline;
+      }
+    }
 
-    &.story-photo {
+    &.story-photo, &.story-mag, &.story-weekend {
 
       &::after {
 

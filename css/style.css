@@ -1027,8 +1027,7 @@ body.article-page .bottom-bar {
       opacity: 0.7; }
     .card.category-jump {
       padding: 15px 10px 10px 10px;
-      height: auto;
-      font-style: italic; }
+      height: auto; }
       .card.category-jump strong {
         font-family: 'Avenir';
         text-transform: uppercase;
@@ -1092,20 +1091,26 @@ body.article-page .bottom-bar {
         font-size: 40px;
         font-weight: 600;
         letter-spacing: 0.04em; }
-    .card.story-photo, .card.story-preview {
+    .card.story-photo, .card.story-preview, .card.story-mag, .card.story-weekend {
       width: 100%;
       background-color: white;
       height: auto;
       padding-bottom: 20px; }
-      .card.story-photo .category, .card.story-preview .category {
+      .card.story-photo h1, .card.story-preview h1, .card.story-mag h1, .card.story-weekend h1 {
+        color: #433f3f; }
+      .card.story-photo .category, .card.story-preview .category, .card.story-mag .category, .card.story-weekend .category {
         display: none; }
-      .card.story-photo .card-image, .card.story-preview .card-image {
+      .card.story-photo .card-image, .card.story-preview .card-image, .card.story-mag .card-image, .card.story-weekend .card-image {
         width: 50%;
         left: 200px;
         height: 100%; }
-      .card.story-photo .card-preview, .card.story-photo .byline, .card.story-preview .card-preview, .card.story-preview .byline {
+      .card.story-photo .card-preview, .card.story-photo .byline, .card.story-preview .card-preview, .card.story-preview .byline, .card.story-mag .card-preview, .card.story-mag .byline, .card.story-weekend .card-preview, .card.story-weekend .byline {
         display: none; }
-    .card.story-photo::after {
+    .card.story-mag, .card.story-weekend {
+      padding-bottom: 0; }
+      .card.story-mag .byline, .card.story-weekend .byline {
+        display: inline; }
+    .card.story-photo::after, .card.story-mag::after, .card.story-weekend::after {
       background: -moz-linear-gradient(to right, white 65%, rgba(255, 255, 255, 0.5) 100%), no-repeat;
       background: -webkit-linear-gradient(to right, white 65%, rgba(255, 255, 255, 0.5) 100%), no-repeat;
       background: -o-linear-gradient(to right, white 65%, rgba(255, 255, 255, 0.5) 100%), no-repeat;
