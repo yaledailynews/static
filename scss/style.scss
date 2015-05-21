@@ -796,8 +796,7 @@ section.weekend {
 
     h2 {
       font-size: 2em;
-      margin-bottom: 25px;
-      margin-top: -50px;
+      margin: -50px 0px 25px 15px;
     }
   }
 
@@ -832,6 +831,37 @@ section.weekend {
   .card {
     margin-bottom: 25px;
     width: 100%;
+
+    .byline {
+      opacity: 0.7;
+    }
+
+    &.category-jump {
+      padding: 15px 10px 10px 10px;
+      height: auto;
+      font-style: italic;
+
+      strong {
+        font-family: 'Avenir';
+        text-transform: uppercase;
+        display: inline;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 0;
+      }
+
+      strong::after {
+        content: " →";
+      }
+
+    }
+
+    .card-preview {
+      font-size: 1em;
+      letter-spacing: 0.02em !important;
+
+
+    }
 
     &.story {
       border-bottom: 1px solid $university-color !important;
@@ -872,6 +902,10 @@ section.weekend {
       height: 0;
       padding-bottom: 100%;
       background-color: white;
+
+      h1 {
+        font-size: 24px;
+      }
       .card-image {
         display: block;
         width: 100%;
@@ -890,7 +924,9 @@ section.weekend {
         height: 100%;
       }
       h1 {
-        font-size: 25px;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
       }
     }
     &.story-photo, &.story-preview {

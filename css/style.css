@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a, html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -953,8 +954,7 @@ body.article-page .bottom-bar {
     margin: 0 auto; }
     section.category h2 {
       font-size: 2em;
-      margin-bottom: 25px;
-      margin-top: -50px; }
+      margin: -50px 0px 25px 15px; }
 
   section.front-page {
     margin-top: 40px; }
@@ -973,6 +973,24 @@ body.article-page .bottom-bar {
   .card {
     margin-bottom: 25px;
     width: 100%; }
+    .card .byline {
+      opacity: 0.7; }
+    .card.category-jump {
+      padding: 15px 10px 10px 10px;
+      height: auto;
+      font-style: italic; }
+      .card.category-jump strong {
+        font-family: 'Avenir';
+        text-transform: uppercase;
+        display: inline;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 0; }
+      .card.category-jump strong::after {
+        content: " →"; }
+    .card .card-preview {
+      font-size: 1em;
+      letter-spacing: 0.02em !important; }
     .card.story {
       border-bottom: 1px solid #2882C8 !important; }
       .card.story h1 {
@@ -1000,6 +1018,8 @@ body.article-page .bottom-bar {
       height: 0;
       padding-bottom: 100%;
       background-color: white; }
+      .card.story-major h1, .card.story-kahuna h1, .card.story-opinion h1 {
+        font-size: 24px; }
       .card.story-major .card-image, .card.story-kahuna .card-image, .card.story-opinion .card-image {
         display: block;
         width: 100%;
@@ -1013,7 +1033,9 @@ body.article-page .bottom-bar {
         width: 100%;
         height: 100%; }
       .card.story-kahuna h1 {
-        font-size: 25px; }
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.04em; }
     .card.story-photo, .card.story-preview {
       width: 100%;
       background-color: white;
