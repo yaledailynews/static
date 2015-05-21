@@ -945,8 +945,6 @@ body.article-page .bottom-bar {
   section.category {
     width: 90%;
     margin: 0 auto; }
-    section.category a {
-      text-decoration: none; }
 
   section.magazine, section.weekend {
     width: 100%; }
@@ -996,7 +994,23 @@ body.article-page .bottom-bar {
       .card.story-photo .card-image, .card.story-preview .card-image {
         display: block;
         width: 100%;
-        height: 100%; } }
+        height: 100%; }
+    .card.cross-campus {
+      padding-bottom: 15px; }
+      .card.cross-campus .xc-content {
+        height: 100%; }
+      .card.cross-campus #xc-close-button {
+        display: inline;
+        float: right;
+        margin-top: -40px;
+        margin-right: 5px; }
+      .card.cross-campus #xc {
+        margin: 0 0 0 0;
+        width: 100%;
+        text-align: center;
+        height: 50px; }
+        .card.cross-campus #xc p {
+          margin-top: -5px; } }
 header#site-header {
   background-color: white;
   margin-bottom: -100px;
