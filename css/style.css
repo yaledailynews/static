@@ -949,6 +949,9 @@ body.article-page .bottom-bar {
   section.magazine, section.weekend {
     width: 100%; }
 
+  section.weekend .story-softcore-cover {
+    margin-bottom: auto; }
+
   .story-softcore-cover h1 {
     font-size: 2.5em; }
   .story-softcore-cover .byline {
