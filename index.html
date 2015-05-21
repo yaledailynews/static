@@ -41,8 +41,8 @@
     <a id="tag-university" href="#">University</a>
     <a id="tag-city" href="#">City</a>
     <a id="tag-sports" href="#">Sports</a>
-    <a id="tag-scitech" href="#">Scitech</a>
     <a id="small-logo" href="#"><img src= "./images/branding/blue Y no background.png"></a>
+    <a id="tag-scitech" href="#">Scitech</a>
     <a id="tag-culture" href="#">Culture</a>
     <a id="tag-ytv" href="#">YTV</a>    
     <a id="tag-weekend" href="#">Wknd</a>
@@ -723,8 +723,10 @@ $(document).ready(function(){
         }
         else{
             if ( $(window).width() >= 480 ){
+              waitForFinalEvent(function(){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
+              }, 1000, "Destroy");
             }
         }
     });
