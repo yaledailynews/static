@@ -220,7 +220,6 @@ body, header#site-header nav#site-navigation a, footer#site-footer a, body.artic
   position: absolute;
   letter-spacing: 0.1em;
   font-size: .75em;
-  color: #696565;
   margin-left: 15px; }
 
 .card h1 {
@@ -385,7 +384,10 @@ footer#site-footer {
   height: 211.18px;
   overflow: hidden;
   z-index: 2;
-  border-bottom: 5px solid; }
+  border-bottom: 5px solid;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
+  .card:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
   .card.category-jump {
     bottom: 0;
     padding: 135px 15px 15px;
@@ -415,7 +417,7 @@ footer#site-footer {
     letter-spacing: .075em; }
   .card.story .card-preview {
     line-height: 1.3em;
-    letter-spacing: .02em;
+    letter-spacing: .03em;
     font-weight: 300;
     margin-left: 15px;
     margin-right: 15px; }
@@ -423,8 +425,7 @@ footer#site-footer {
     bottom: 30px;
     color: #433f3f; }
   .card.story .category {
-    bottom: 15px;
-    color: #2882C8; }
+    bottom: 15px; }
   .card.story :not(.card-image) {
     z-index: 2; }
   .card.story .card-image {
@@ -436,6 +437,9 @@ footer#site-footer {
   .card.story-major, .card.story-kahuna {
     height: 460.86px;
     border-bottom: none; }
+    .card.story-major .card-preview, .card.story-kahuna .card-preview {
+      line-height: 1.4em;
+      letter-spacing: 0.05em; }
     .card.story-major h1, .card.story-kahuna h1, .card.story-major p, .card.story-kahuna p, .card.story-major time, .card.story-kahuna time {
       color: white; }
     .card.story-major p.category, .card.story-kahuna p.category {
@@ -512,17 +516,15 @@ footer#site-footer {
       color: #ccc;
       font-weight: 100; }
     .card.story-softcore time {
-      color: white;
-      font-weight: 100; }
+      color: white; }
     .card.story-softcore p.category {
-      color: #eee;
-      font-weight: 400; }
+      color: #bbb; }
     .card.story-softcore::after {
-      background: -moz-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: -o-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: -ms-linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: -moz-linear-gradient(to right, rgba(25, 25, 25, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: -webkit-linear-gradient(to right, rgba(25, 25, 25, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: -o-linear-gradient(to right, rgba(25, 25, 25, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: -ms-linear-gradient(to right, rgba(25, 25, 25, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
+      background: linear-gradient(to right, rgba(25, 25, 25, 0.8) 0%, rgba(250, 250, 250, 0) 100%), no-repeat;
       top: 0;
       left: 0;
       width: 100%;
@@ -619,9 +621,29 @@ footer#site-footer {
       height: 100%;
       content: "";
       position: absolute; }
+  .card.story-weekend, .card.story-mag {
+    border-bottom: none; }
+    .card.story-weekend h1, .card.story-mag h1 {
+      color: white; }
+    .card.story-weekend .card-image, .card.story-mag .card-image {
+      top: 0;
+      height: 214.18px; }
+    .card.story-weekend time, .card.story-mag time {
+      color: white; }
+    .card.story-weekend p.category, .card.story-mag p.category {
+      color: #bbb; }
+    .card.story-weekend::after, .card.story-mag::after {
+      background-color: rgba(25, 25, 25, 0.6);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute; }
 
 section.category {
   padding: 2em 0;
+  margin-top: 125px;
   clear: both;
   width: 100%; }
   section.category > h2 {
@@ -631,29 +653,42 @@ section.category {
     font-size: 3em;
     letter-spacing: 0.025em; }
 
-section.opinion {
-  margin-bottom: 75px; }
-
 a.link-wrap {
   display: block; }
 
 section.front-page {
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin-bottom: -50px; }
 
 section.ytv {
-  margin-top: 70px; }
+  margin-top: 125px; }
   section.ytv .container {
     margin-top: 0; }
   section.ytv h2 {
     margin-bottom: 30px; }
+  section.ytv .category-jump {
+    width: 100%;
+    padding: 10px 15px 15px 15px;
+    height: 50px; }
+    section.ytv .category-jump strong {
+      margin-left: 5px;
+      display: inline;
+      font-size: 24px;
+      padding: 0; }
+
+section.magazine {
+  margin-top: 30px;
+  margin-bottom: -135px; }
 
 section.magazine h2, section.weekend h2 {
   color: white;
   margin-bottom: -100px;
   z-index: 1; }
 
-section.weekend .story-softcore-cover {
-  margin-bottom: -40px; }
+section.weekend {
+  margin-top: 25px; }
+  section.weekend .story-softcore-cover {
+    margin-bottom: -40px; }
 
 .story-softcore-cover {
   overflow: hidden;
@@ -673,11 +708,11 @@ section.weekend .story-softcore-cover {
     margin-left: auto;
     margin-top: 20px; }
   .story-softcore-cover::after {
-    background: -moz-linear-gradient(to bottom, transparent 0%, black 100%), no-repeat;
-    background: -webkit-linear-gradient(to bottom, transparent 0%, black 100%), no-repeat;
-    background: -o-linear-gradient(to bottom, transparent 0%, black 100%), no-repeat;
-    background: -ms-linear-gradient(to bottom, transparent 0%, black 100%), no-repeat;
-    background: linear-gradient(to bottom, transparent 0%, black 100%), no-repeat;
+    background: -moz-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
+    background: -webkit-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
+    background: -o-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
+    background: -ms-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
+    background: linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -687,7 +722,7 @@ section.weekend .story-softcore-cover {
 
 .section-wrap {
   padding: 5px 0 50px 0;
-  background-color: black; }
+  background-color: #191919; }
 
 body.article-page .box {
   width: 80%;
@@ -959,11 +994,26 @@ body.article-page .bottom-bar {
   section.front-page {
     margin-top: 40px; }
 
-  section.magazine, section.weekend {
+  section.ytv {
+    margin-top: -50px;
+    margin-bottom: 50px; }
+    section.ytv > h2 {
+      margin-left: 35px; }
+
+  section.magazine, section.weekend, section.ytv {
     width: 100%; }
 
-  section.weekend .story-softcore-cover {
-    margin-bottom: auto; }
+  section.magazine {
+    margin-bottom: -60px; }
+    section.magazine > h2 {
+      margin-left: 35px; }
+
+  section.weekend {
+    margin-bottom: 50px; }
+    section.weekend > h2 {
+      margin-left: 30px; }
+    section.weekend .story-softcore-cover {
+      margin-bottom: auto; }
 
   .story-softcore-cover h1 {
     font-size: 2.5em; }
@@ -989,8 +1039,7 @@ body.article-page .bottom-bar {
       .card.category-jump strong::after {
         content: " →"; }
     .card .card-preview {
-      font-size: 1em;
-      letter-spacing: 0.02em !important; }
+      font-size: 1em; }
     .card.story {
       border-bottom: 1px solid #2882C8 !important; }
       .card.story h1 {
@@ -1013,6 +1062,13 @@ body.article-page .bottom-bar {
         display: none; }
       .card.story-simple h1 {
         color: #433f3f; }
+    .card.story-softcore {
+      width: 100%;
+      height: 203px;
+      background-color: white; }
+      .card.story-softcore .card-image {
+        display: block;
+        width: 100%; }
     .card.story-major, .card.story-kahuna, .card.story-opinion {
       width: 100%;
       height: 0;
@@ -1076,7 +1132,10 @@ body.article-page .bottom-bar {
         text-align: center;
         height: 50px; }
         .card.cross-campus #xc p {
-          margin-top: -5px; } }
+          margin-top: -5px; }
+
+  .story-softcore-cover {
+    margin-top: -100px; } }
 header#site-header {
   background-color: white;
   padding: 10px 0 0; }
@@ -1160,62 +1219,60 @@ form input {
     background-color: #cf383e; }
   .opinion .story .category {
     color: #cf383e; }
-  .opinion .card {
-    border-bottom: thick solid #cf383e; }
 
 .city {
-  color: #00beb4 !important; }
+  color: #00be64 !important; }
   .city .category-jump {
-    background-color: #00beb4; }
+    background-color: #00be64; }
   .city .story .category {
-    color: #00beb4; }
+    color: #00be64; }
   .city .card {
-    border-bottom: thick solid #00beb4; }
+    border-bottom: thick solid #00be64; }
 
 .scitech {
-  color: #ffdc00 !important; }
+  color: #f7ca18 !important; }
   .scitech .category-jump {
-    background-color: #ffdc00; }
+    background-color: #f7ca18; }
   .scitech .story .category {
-    color: #ffdc00; }
+    color: #f7ca18; }
   .scitech .card {
-    border-bottom: thick solid #ffdc00; }
+    border-bottom: thick solid #f7ca18; }
 
 .culture {
   color: #d20a78 !important; }
   .culture .category-jump {
     background-color: #d20a78; }
   .culture .story .category {
-    color: #d20a78; }
+    color: #d20a78 !important; }
   .culture .card {
     border-bottom: thick solid #d20a78; }
 
 .ytv {
-  color: #fe9e48 !important; }
+  color: #c89664 !important; }
   .ytv .category-jump {
-    background-color: #fe9e48; }
+    background-color: #c89664; }
   .ytv .story .category {
-    color: #fe9e48; }
+    color: #c89664; }
   .ytv .card {
-    border-bottom: thick solid #fe9e48; }
+    border-bottom: thick solid #c89664; }
 
 .magazine {
-  color: #bef0b4 !important; }
+  color: #00b4b4 !important; }
   .magazine .category-jump {
-    background-color: #bef0b4; }
+    background-color: #00b4b4; }
   .magazine .story .category {
-    color: #bef0b4; }
+    color: #00b4b4; }
   .magazine .card {
-    border-bottom: thick solid #bef0b4; }
+    border-bottom: thick solid #00b4b4; }
 
 .weekend {
-  color: #ff050a !important; }
+  color: #fe9e48 !important; }
   .weekend .category-jump {
-    background-color: #ff050a; }
+    background-color: #fe9e48; }
   .weekend .story .category {
-    color: #ff050a; }
+    color: #fe9e48; }
   .weekend .card {
-    border-bottom: thick solid #ff050a; }
+    border-bottom: thick solid #fe9e48; }
 
 .sports {
   color: #42d2ff !important; }
