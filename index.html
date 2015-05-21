@@ -713,22 +713,20 @@ $(document).ready(function(){
 
   //resize function for breaking at 480
     $(window).resize(function(){
+      waitForFinalEvent(function(){
         if (windowWatcher > 480){
             if ( $(window).width() < 480 ){
-              waitForFinalEvent(function(){
                 destroyPackery($sections);
                 windowWatcher = $( window ).width();
-                }, 1000, "Destroy");  
             }
         }
         else{
             if ( $(window).width() >= 480 ){
-              waitForFinalEvent(function(){
                 setUpPackery($sections);
                 windowWatcher = $( window ).width();
-              }, 1000, "Destroy");
             }
         }
+        }, 1000, "Break");  
     });
   });
 </script>
