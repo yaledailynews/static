@@ -261,7 +261,7 @@ p {
   padding: 10px 0px 10px 10px;
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 6;
   width: 100%;
   top: 0;
   border-bottom: 1px solid #ddd; }
@@ -562,14 +562,14 @@ footer#site-footer {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882C8;
+      background-color: #2882c8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882C8;
+      color: #2882c8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -584,7 +584,7 @@ footer#site-footer {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882C8;
+      color: #2882c8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -710,11 +710,11 @@ section.weekend {
     margin-left: auto;
     margin-top: 20px; }
   .story-softcore-cover::after {
-    background: -moz-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: -webkit-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: -o-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: -ms-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: -ms-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -736,7 +736,7 @@ body.article-page .more-from-top, body.article-page .more-from-bottom {
   padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto;
-  border-top: 5px solid #2882C8;
+  border-top: 5px solid #2882c8;
   overflow: hidden;
   background-color: white;
   overflow: hidden; }
@@ -1043,7 +1043,7 @@ body.article-page .bottom-bar {
     .card .card-preview {
       font-size: 0.9em; }
     .card.story {
-      border-bottom: 1px solid #2882C8 !important; }
+      border-bottom: 1px solid; }
       .card.story h1 {
         margin-bottom: 7px; }
     .card.story > time {
@@ -1194,10 +1194,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882C8; }
+        border: 1px solid #2882c8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882C8;
+        background-color: #2882c8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -1213,13 +1213,13 @@ form input {
   font-size: 0.9em; }
 
 .university {
-  color: #2882C8 !important; }
+  color: #2882c8 !important; }
   .university .category-jump {
-    background-color: #2882C8; }
+    background-color: #2882c8; }
   .university .story .category {
-    color: #2882C8; }
+    color: #2882c8; }
   .university .card {
-    border-bottom: thick solid #2882C8; }
+    border-bottom: thick solid #2882c8; }
 
 .opinion {
   color: #cf383e !important; }
@@ -1290,5 +1290,3 @@ form input {
     color: #42d2ff; }
   .sports .card {
     border-bottom: thick solid #42d2ff; }
-
-/*# sourceMappingURL=style.css.map */

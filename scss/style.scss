@@ -96,7 +96,7 @@ p {
   padding: 10px 0px 10px 10px;
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 6;
   width: 100%;
   top: 0;
   border-bottom: 1px solid #ddd;
@@ -947,7 +947,7 @@ section.weekend {
     }
 
     &.story {
-      border-bottom: 1px solid $university-color !important;
+      border-bottom: 1px solid;
 
       h1 {
         margin-bottom: 7px;
