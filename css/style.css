@@ -1047,7 +1047,8 @@ body.article-page .bottom-bar {
       .card.story h1 {
         margin-bottom: 7px; }
     .card.story > time {
-      position: initial;
+      position: relative;
+      bottom: 0px;
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em; }
@@ -1113,6 +1114,8 @@ body.article-page .bottom-bar {
       padding-bottom: 0; }
       .card.story-mag .byline, .card.story-weekend .byline {
         display: inline; }
+      .card.story-mag time, .card.story-weekend time {
+        bottom: 6px; }
     .card.story-photo::after, .card.story-mag::after, .card.story-weekend::after {
       background: -moz-linear-gradient(to right, white 65%, rgba(255, 255, 255, 0.5) 100%), no-repeat;
       background: -webkit-linear-gradient(to right, white 65%, rgba(255, 255, 255, 0.5) 100%), no-repeat;

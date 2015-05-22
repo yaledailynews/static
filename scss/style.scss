@@ -956,11 +956,13 @@ section.weekend {
 
 
     &.story > time {
-      position: initial;
+      position: relative;
+      bottom: 0px;
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em;
     }
+
 
     &.story-simple {
       height: auto;
@@ -1060,6 +1062,10 @@ section.weekend {
       padding-bottom: 0;
       .byline {
         display: inline;
+      }
+
+      time{
+        bottom: 6px;
       }
     }
 
