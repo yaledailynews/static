@@ -1043,7 +1043,7 @@ body.article-page .bottom-bar {
     .card .card-preview {
       font-size: 0.9em; }
     .card.story {
-      border-bottom: 1px solid; }
+      border-width: 1px !important; }
       .card.story h1 {
         margin-bottom: 7px; }
     .card.story > time {

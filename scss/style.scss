@@ -947,7 +947,7 @@ section.weekend {
     }
 
     &.story {
-      border-bottom: 1px solid;
+      border-width: 1px !important;
 
       h1 {
         margin-bottom: 7px;
