@@ -257,7 +257,7 @@ p {
 
 #mobile-header {
   height: 50px;
-  background-color: #363636;
+  background-color: #2882C8;
   padding: 10px 0px 10px 10px;
   display: none;
   position: fixed;
@@ -281,13 +281,13 @@ p {
     width: 15%;
     margin-top: -68px;
     float: right;
-    background-color: #808080;
+    background-color: #2a9dea;
     text-align: center;
     font-size: 25px;
     font-style: italic;
     font-weight: 400;
     letter-spacing: 0;
-    color: white; }
+    color: rgba(255, 255, 255, 0.8); }
 
 .menu-link {
   color: white;
@@ -296,7 +296,7 @@ p {
 
 #mobile-navigation {
   height: 100%;
-  background-color: #E8E8E8;
+  background-color: white;
   opacity: 0.975;
   z-index: 4;
   left: -15.625em;
@@ -791,8 +791,12 @@ header#site-header {
           display: block; }
 
 body.article-page .box {
-  width: 80%;
+  width: 75%;
   margin-left: 10%; }
+  @media (max-width: 480px) {
+    body.article-page .box {
+      width: 90%;
+      margin: 0 auto; } }
 body.article-page .wrapper {
   margin-bottom: 300px; }
 body.article-page .video-container {
@@ -949,7 +953,7 @@ body.article-page .article-text {
         max-width: 100%; } }
   @media (max-width: 550px) {
     body.article-page .article-text {
-      font-size: 14px; } }
+      font-size: 18px; } }
 body.article-page .bottom-bar {
   position: fixed;
   border-top: 1px solid #ddd;
@@ -1153,6 +1157,9 @@ footer#site-footer {
 
   #mobile-xc {
     display: inline-block !important; }
+
+  .cross-campus {
+    display: none; }
 
   section.category {
     width: 90%;

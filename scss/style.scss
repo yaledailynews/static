@@ -92,7 +92,7 @@ p {
 #mobile-header{
 
   height: 50px;
-  background-color: #363636;
+  background-color: $university-color;
   padding: 10px 0px 10px 10px;
   display: none;
   position: fixed;
@@ -118,13 +118,14 @@ p {
     width: 15%;
     margin-top: -68px;
     float: right;
-    background-color: #808080;
+    background-color: #2a9dea;
     text-align: center;
     font-size: 25px;
     font-style: italic;
     font-weight: 400;
     letter-spacing: 0;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
+
   }
 }
 
@@ -136,7 +137,7 @@ p {
 
 #mobile-navigation{
   height: 100%;
-  background-color:#E8E8E8;
+  background-color:white;
   opacity: 0.975;
   z-index: 4;
   left: -15.625em; /*left or right and the width of your navigation panel*/
@@ -961,7 +962,11 @@ header#site-header {
     display: inline-block !important;
   } 
 
-  
+  .cross-campus {
+    display: none;
+  }
+
+   
 
   section.category {
     width: 90%;
