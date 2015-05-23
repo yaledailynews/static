@@ -1104,6 +1104,7 @@ body.article-page .bottom-bar {
 @media (max-width: 710px) {
   section.category {
     margin: 0 auto;
+    width: 710px;
     margin-top: 3%; }
 
   section.magazine, section.weekend {
