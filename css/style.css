@@ -899,9 +899,10 @@ body.article-page .bottom-bar {
   bottom: 0px;
   width: 100%;
   background: white;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 0;
   z-index: 3; }
   body.article-page .bottom-bar p {
+    margin-left: 10%;
     padding-top: 11px;
     padding-bottom: 11px;
     display: inline;
