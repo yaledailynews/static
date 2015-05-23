@@ -628,6 +628,7 @@ section.category {
   margin-top: 125px;
 
   clear: both;
+  width: 100%;
   & > h2 {
     @extend %face-serif;
     font-style: italic;
@@ -977,6 +978,7 @@ header#site-header {
   section.category {
 
     margin: 0 auto;
+    width: 90%;
 
     h2 {
       font-size: 2em;
