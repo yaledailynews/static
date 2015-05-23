@@ -27,8 +27,13 @@
 
 body.article-page {
   .box {
-    width:80%;
+    width:75%;
     margin-left: 10%;
+
+    @media (max-width: 480px) {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   .wrapper {
@@ -221,7 +226,7 @@ body.article-page {
       }
     }
     @media(max-width: 550px){
-      font-size: 14px;
+      font-size: 18px;
     }
   }
 

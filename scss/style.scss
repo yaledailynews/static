@@ -92,7 +92,7 @@ p {
 #mobile-header{
 
   height: 50px;
-  background-color: #363636;
+  background-color: $university-color;
   padding: 10px 0px 10px 10px;
   display: none;
   position: fixed;
@@ -118,13 +118,14 @@ p {
     width: 15%;
     margin-top: -68px;
     float: right;
-    background-color: #808080;
+    background-color: #2a9dea;
     text-align: center;
     font-size: 25px;
     font-style: italic;
     font-weight: 400;
     letter-spacing: 0;
-    color: white;
+    color: rgba(255, 255, 255, 0.8);
+
   }
 }
 
@@ -136,7 +137,7 @@ p {
 
 #mobile-navigation{
   height: 100%;
-  background-color:#E8E8E8;
+  background-color:white;
   opacity: 0.975;
   z-index: 4;
   left: -15.625em; /*left or right and the width of your navigation panel*/
@@ -740,6 +741,82 @@ section.weekend {
   background-color: #191919;
 }
 
+header#site-header {
+  background-color: white;
+  padding: 10px 0 0;
+  a {
+    text-decoration: none;
+  }
+  h1.masthead-logo { 
+    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
+    background-size: 390px 85px;
+    color: transparent;
+    width: 390px;
+    height: 85px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  nav#site-navigation { 
+    background-color: white;   
+    text-align: center;
+    z-index:100;
+    border-bottom: 1px solid #ddd;
+    a {
+      @extend %face-sans;
+      line-height: 1.2;
+      padding: 15px;
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #bbb; 
+      &:hover {
+        color: #333;
+      }
+    }
+  a#small-logo{
+      display: none;
+      vertical-align: middle;
+      padding:0;
+      img{
+        height: 35px;
+        width: auto;
+      }
+    }
+
+    #nav-search {
+      color: #bbb;
+      line-height: 1.2;
+      padding: 15px;
+      position: relative;
+      display: inline-block;
+
+
+      .search-box {
+        display: none;
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        top: 49px;
+        border: 1px solid $university-color;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $university-color;
+        color: white;
+
+        .search-box {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
 /// ARTICLE PAGE STUFF
 @import "article";
 
@@ -751,6 +828,13 @@ section.weekend {
 /// RESPONSIVE STUFF
 
 @media(max-width:980px) {
+
+  nav#site-navigation {
+    a {
+      font-size: 12px !important;
+      padding: 10px !important;
+    }
+  }
 
 
 
@@ -781,6 +865,19 @@ section.weekend {
     }
   }
 
+}
+
+@media(max-width: 810px) {
+  nav#site-navigation {
+    a {
+      font-size: 11px !important;
+      padding: 5px !important;
+
+    }
+  }
+  #small-logo {
+    display: none !important;
+  }
 }
 
 @media(max-width:710px) {
@@ -840,6 +937,20 @@ section.weekend {
   }
 }
 
+@media(max-width: 710px) {
+#site-header {
+    display: none;
+  }
+  #mobile-header{
+    display: block;
+  }
+
+  #mobile-xc {
+    display: none !important;
+  }
+}
+
+
 
 @media(max-width:480px) {
 
@@ -847,14 +958,15 @@ section.weekend {
     text-decoration: none;
   }
 
-  
+  #mobile-xc {
+    display: inline-block !important;
+  } 
 
-  #site-header, #xc-web{
+  .cross-campus {
     display: none;
   }
-  #mobile-header{
-    display: block;
-  }
+
+   
 
   section.category {
     width: 90%;
@@ -1117,81 +1229,7 @@ section.weekend {
 }
 
 
-header#site-header {
-  background-color: white;
-  padding: 10px 0 0;
-  a {
-    text-decoration: none;
-  }
-  h1.masthead-logo { 
-    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
-    background-size: 390px 85px;
-    color: transparent;
-    width: 390px;
-    height: 85px;
-    display: block;
-    margin: 0 auto 10px;
-  }
-  nav#site-navigation { 
-    background-color: white;   
-    text-align: center;
-    z-index:100;
-    border-bottom: 1px solid #ddd;
-    a {
-      @extend %face-sans;
-      line-height: 1.2;
-      padding: 15px;
-      display: inline-block;
-      font-size: 14px;
-      letter-spacing: 1.75px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #bbb; 
-      &:hover {
-        color: #333;
-      }
-    }
-  a#small-logo{
-      display: none;
-      vertical-align: middle;
-      padding:0;
-      img{
-        height: 35px;
-        width: auto;
-      }
-    }
 
-    #nav-search {
-      color: #bbb;
-      line-height: 1.2;
-      padding: 15px;
-      position: relative;
-      display: inline-block;
-
-
-      .search-box {
-        display: none;
-        background-color: white;
-        width: 300px;
-        height: 50px;
-        position: absolute;
-        right: 0px;
-        top: 49px;
-        border: 1px solid $university-color;
-      }
-
-      &:hover {
-        cursor: pointer;
-        background-color: $university-color;
-        color: white;
-
-        .search-box {
-          display: block;
-        }
-      }
-    }
-  }
-}
 
 
 /// REWRITE THESE COLOR THINGS TO USE A MIXIN!
