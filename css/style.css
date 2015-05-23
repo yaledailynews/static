@@ -732,6 +732,64 @@ section.weekend {
   padding: 5px 0 50px 0;
   background-color: #191919; }
 
+header#site-header {
+  background-color: white;
+  padding: 10px 0 0; }
+  header#site-header a {
+    text-decoration: none; }
+  header#site-header h1.masthead-logo {
+    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
+    background-size: 390px 85px;
+    color: transparent;
+    width: 390px;
+    height: 85px;
+    display: block;
+    margin: 0 auto 10px; }
+  header#site-header nav#site-navigation {
+    background-color: white;
+    text-align: center;
+    z-index: 100;
+    border-bottom: 1px solid #ddd; }
+    header#site-header nav#site-navigation a {
+      line-height: 1.2;
+      padding: 15px;
+      display: inline-block;
+      font-size: 14px;
+      letter-spacing: 1.75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #bbb; }
+      header#site-header nav#site-navigation a:hover {
+        color: #333; }
+    header#site-header nav#site-navigation a#small-logo {
+      display: none;
+      vertical-align: middle;
+      padding: 0; }
+      header#site-header nav#site-navigation a#small-logo img {
+        height: 35px;
+        width: auto; }
+    header#site-header nav#site-navigation #nav-search {
+      color: #bbb;
+      line-height: 1.2;
+      padding: 15px;
+      position: relative;
+      display: inline-block; }
+      header#site-header nav#site-navigation #nav-search .search-box {
+        display: none;
+        background-color: white;
+        width: 300px;
+        height: 50px;
+        position: absolute;
+        right: 0px;
+        top: 49px;
+        border: 1px solid #2882C8; }
+      header#site-header nav#site-navigation #nav-search:hover {
+        cursor: pointer;
+        background-color: #2882C8;
+        color: white; }
+        header#site-header nav#site-navigation #nav-search:hover .search-box {
+          display: block; }
+
 body.article-page .box {
   width: 80%;
   margin-left: 10%; }
@@ -1012,6 +1070,10 @@ footer#site-footer {
   position: absolute; }
 
 @media (max-width: 980px) {
+  nav#site-navigation a {
+    font-size: 12px !important;
+    padding: 10px !important; }
+
   section.category {
     width: 710px;
     margin: 0 auto;
@@ -1030,6 +1092,13 @@ footer#site-footer {
       width: 710.54px; }
       .card.story-kahuna h1 {
         font-size: 40px; } }
+@media (max-width: 810px) {
+  nav#site-navigation a {
+    font-size: 11px !important;
+    padding: 5px !important; }
+
+  #small-logo {
+    display: none !important; } }
 @media (max-width: 710px) {
   section.category {
     width: 480px;
@@ -1069,15 +1138,21 @@ footer#site-footer {
 
   section.magazine, section.weekend {
     width: 100%; } }
-@media (max-width: 480px) {
-  a {
-    text-decoration: none; }
-
-  #site-header, #xc-web {
+@media (max-width: 710px) {
+  #site-header {
     display: none; }
 
   #mobile-header {
     display: block; }
+
+  #mobile-xc {
+    display: none !important; } }
+@media (max-width: 480px) {
+  a {
+    text-decoration: none; }
+
+  #mobile-xc {
+    display: inline-block !important; }
 
   section.category {
     width: 90%;
@@ -1240,64 +1315,6 @@ footer#site-footer {
 
   .story-softcore-cover {
     margin-top: -100px; } }
-header#site-header {
-  background-color: white;
-  padding: 10px 0 0; }
-  header#site-header a {
-    text-decoration: none; }
-  header#site-header h1.masthead-logo {
-    background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
-    background-size: 390px 85px;
-    color: transparent;
-    width: 390px;
-    height: 85px;
-    display: block;
-    margin: 0 auto 10px; }
-  header#site-header nav#site-navigation {
-    background-color: white;
-    text-align: center;
-    z-index: 100;
-    border-bottom: 1px solid #ddd; }
-    header#site-header nav#site-navigation a {
-      line-height: 1.2;
-      padding: 15px;
-      display: inline-block;
-      font-size: 14px;
-      letter-spacing: 1.75px;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: #bbb; }
-      header#site-header nav#site-navigation a:hover {
-        color: #333; }
-    header#site-header nav#site-navigation a#small-logo {
-      display: none;
-      vertical-align: middle;
-      padding: 0; }
-      header#site-header nav#site-navigation a#small-logo img {
-        height: 35px;
-        width: auto; }
-    header#site-header nav#site-navigation #nav-search {
-      color: #bbb;
-      line-height: 1.2;
-      padding: 15px;
-      position: relative;
-      display: inline-block; }
-      header#site-header nav#site-navigation #nav-search .search-box {
-        display: none;
-        background-color: white;
-        width: 300px;
-        height: 50px;
-        position: absolute;
-        right: 0px;
-        top: 49px;
-        border: 1px solid #2882C8; }
-      header#site-header nav#site-navigation #nav-search:hover {
-        cursor: pointer;
-        background-color: #2882C8;
-        color: white; }
-        header#site-header nav#site-navigation #nav-search:hover .search-box {
-          display: block; }
-
 form input {
   background-color: #f6f4f4;
   padding: 5px;
