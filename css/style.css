@@ -314,7 +314,7 @@ p {
     letter-spacing: 1px;
     font-weight: 500; }
     #mobile-navigation a.fa-times {
-      padding: 1em 1em 0.9em 1em; }
+      padding: 1em; }
   #mobile-navigation a:hover {
     color: white;
     background-color: #003F87;
@@ -1301,14 +1301,6 @@ body.article-page .bottom-bar {
       position: absolute; }
     .card.cross-campus {
       padding-bottom: 15px; }
-      .card.cross-campus::after {
-        background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), no-repeat;
-        background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), no-repeat;
-        background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), no-repeat;
-        background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), no-repeat;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%), no-repeat;
-        height: 0px;
-        top: 0; }
       .card.cross-campus .xc-content {
         height: 100%; }
       .card.cross-campus #xc-close-button {
