@@ -144,6 +144,7 @@ p {
   width: 15.625em; /*should match the above value*/
   #nav-close-button{
 
+
   }
   a{
     color: #191919;
@@ -202,8 +203,8 @@ header#site-header {
 }
 
 footer#site-footer{
+  background: #1f1f1f;
   margin-top: 100px;
-  background: #C9C9C9;
   text-align: center;
   z-index: 5;
   a {
@@ -621,7 +622,6 @@ section.category {
   margin-top: 125px;
 
   clear: both;
-  width: 100%;
   & > h2 {
     @extend %face-serif;
     font-style: italic;
@@ -839,7 +839,6 @@ header#site-header {
 
 
   section.category {
-    width: 710px;
     margin: 0 auto;
     margin-top: 3%;
   }
@@ -884,7 +883,6 @@ header#site-header {
 
   
   section.category {
-    width: 480px;
     margin: 0 auto;
     margin-top: 3%;
   }
@@ -969,7 +967,7 @@ header#site-header {
    
 
   section.category {
-    width: 90%;
+
     margin: 0 auto;
 
     h2 {
@@ -1063,7 +1061,7 @@ header#site-header {
     }
 
     &.story {
-      border-width: 1px !important;
+      border-width: 2px !important;
 
       h1 {
         margin-bottom: 7px;
@@ -1101,7 +1099,7 @@ header#site-header {
 
     &.story-softcore {
         width: 100%;
-        height: 203px;
+        height: auto;
         background-color: white;
 
         .card-image {
