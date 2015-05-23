@@ -704,7 +704,7 @@ $(document).ready(function(){
     //
 
     //onLoad
-    var windowWatcher = $( window ).width();
+    var windowWatcher = $(window).width();
 
     if($(window).width() > 480) {
        setUpPackery($sections);
@@ -717,13 +717,13 @@ $(document).ready(function(){
         if (windowWatcher > 480){
             if ( $(window).width() < 480 ){
                 destroyPackery($sections);
-                windowWatcher = $( window ).width();
+                windowWatcher = $(window).width();
             }
         }
         else{
             if ( $(window).width() >= 480 ){
                 setUpPackery($sections);
-                windowWatcher = $( window ).width();
+                windowWatcher = $(window).width();
             }
         }
         }, 1000, "Break");  

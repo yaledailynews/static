@@ -61,7 +61,6 @@ body.article-page {
     margin: 1%;
     width: 18%;
     height: 220px;
-    float: left;
     @include grid;
 
     h2 {
@@ -80,6 +79,10 @@ body.article-page {
       max-width: 100%;
       height: auto;
     }
+  }
+
+  .clear-floats{
+    clear: both;
   }
 
   h1{
@@ -251,10 +254,7 @@ body.article-page {
       }
     }
   }
-
-  // .scrollmagic-pin-spacer{
-  //   float: right;
-  // }
+  
 
 }
 
