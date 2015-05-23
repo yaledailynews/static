@@ -1079,7 +1079,8 @@ body.article-page .bottom-bar {
 
   section.category {
     margin: 0 auto;
-    margin-top: 3%; }
+    margin-top: 3%;
+    width: 710px; }
 
   section.magazine, section.weekend {
     width: 100%; }
@@ -1104,7 +1105,7 @@ body.article-page .bottom-bar {
 @media (max-width: 710px) {
   section.category {
     margin: 0 auto;
-    width: 710px;
+    width: 480px;
     margin-top: 3%; }
 
   section.magazine, section.weekend {
