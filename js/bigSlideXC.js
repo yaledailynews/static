@@ -31,9 +31,27 @@
       'activeBtn': 'active',
       'easyClose': true,
       'beforeOpen': function () {},
-      'afterOpen': function() {},
+      'afterOpen': function() {
+        var docHeight = $(document).height();
+
+       $("body").append("<div id='overlay'></div>");
+
+       $("#overlay")
+          .height(docHeight)
+          .css({
+             'opacity' : 0.4,
+             'position': 'fixed',
+             'top': 0,
+             'left': 0,
+             'background-color': 'black',
+             'width': '100%',
+             'z-index': 3
+          });
+      },
       'beforeClose': function() {},
-      'afterClose': function() {}
+      'afterClose': function() {
+        $("#overlay").remove();
+      }
     }, options);
 
     // store the menu's state in the model
