@@ -239,6 +239,7 @@ body.article-page {
     background:white;
     padding: 10px 10px 10px 0;
     z-index: 3;
+    display: none;
     p{
       margin-left: 10%;
       padding-top: 11px;
@@ -258,6 +259,10 @@ body.article-page {
         font-size: 10px;
       }
     }
+  }
+
+  .unhide{
+    display: block;
   }
   
 

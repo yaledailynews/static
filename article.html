@@ -323,6 +323,7 @@
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
+
 <script>
 //fixednavbar
 $(document).ready(function(){
@@ -334,18 +335,18 @@ $(document).ready(function(){
   });
 </script>
 
-
 <script>
-	// init controller
-  // var controller = new ScrollMagic.Controller();
+  //bottom bar apears after headline
+  // init controller
+  var controller = new ScrollMagic.Controller();
 
-  // $(function () { // wait for document ready
-		// 		// build scene
-		// 		var scene = new ScrollMagic.Scene({triggerElement: ".read-next", triggerHook: .3})
-		// 						.setPin(".read-next")
-		// 						//.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-		// 						.addTo(controller);
-		// 	});
+  $(function () { // wait for document ready
+        // build scene
+        var scene = new ScrollMagic.Scene({triggerElement: ".article-text", triggerHook: 0})
+                .setClassToggle('.bottom-bar', 'unhide')
+                //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
+                .addTo(controller);
+      });
 
 </script>
 

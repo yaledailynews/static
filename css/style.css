@@ -257,7 +257,7 @@ p {
 
 #mobile-header {
   height: 50px;
-  background-color: #2882C8;
+  background-color: #2882c8;
   padding: 25px 0px 10px 10px;
   display: none;
   position: fixed;
@@ -350,7 +350,7 @@ header#site-header {
         color: #333; }
 
 footer#site-footer {
-  background: #1f1f1f;
+  background: #C9C9C9;
   margin-top: 100px;
   text-align: center;
   z-index: 5; }
@@ -432,7 +432,7 @@ footer#site-footer {
     z-index: 2; }
   .card.story .card-image {
     height: 100%;
-    width: auto;
+    width: 100%;
     position: absolute;
     left: 0;
     z-index: 0; }
@@ -577,14 +577,14 @@ footer#site-footer {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882C8;
+      background-color: #2882c8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882C8;
+      color: #2882c8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -599,7 +599,7 @@ footer#site-footer {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882C8;
+      color: #2882c8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -717,11 +717,11 @@ section.weekend {
     margin-left: auto;
     margin-top: 20px; }
   .story-softcore-cover::after {
-    background: -moz-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: -webkit-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: -o-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: -ms-linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
-    background: linear-gradient(to bottom, transparent 0%, #191919 100%), no-repeat;
+    background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: -o-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: -ms-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #191919 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -783,10 +783,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882C8; }
+        border: 1px solid #2882c8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882C8;
+        background-color: #2882c8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -860,7 +860,7 @@ body.article-page .more-from-top, body.article-page .more-from-bottom {
   padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto;
-  border-top: 5px solid #2882C8;
+  border-top: 5px solid #2882c8;
   overflow: hidden;
   background-color: white;
   overflow: hidden; }
@@ -964,7 +964,8 @@ body.article-page .bottom-bar {
   width: 100%;
   background: white;
   padding: 10px 10px 10px 0;
-  z-index: 3; }
+  z-index: 3;
+  display: none; }
   body.article-page .bottom-bar p {
     margin-left: 10%;
     padding-top: 11px;
@@ -979,6 +980,8 @@ body.article-page .bottom-bar {
   @media (max-width: 550px) {
     body.article-page .bottom-bar p {
       font-size: 10px; } }
+body.article-page .unhide {
+  display: block; }
 
 /* Media Queries - This is the responsive grid. */
 @media (max-width: 1366px) {
@@ -1337,13 +1340,13 @@ form input {
   font-size: 0.9em; }
 
 .university {
-  color: #2882C8 !important; }
+  color: #2882c8 !important; }
   .university .category-jump {
-    background-color: #2882C8; }
+    background-color: #2882c8; }
   .university .story .category {
-    color: #2882C8; }
+    color: #2882c8; }
   .university .card {
-    border-bottom: thick solid #2882C8; }
+    border-bottom: thick solid #2882c8; }
 
 .opinion {
   color: #cf383e !important; }
@@ -1414,5 +1417,3 @@ form input {
     color: #42d2ff; }
   .sports .card {
     border-bottom: thick solid #42d2ff; }
-
-/*# sourceMappingURL=style.css.map */
