@@ -679,11 +679,11 @@ footer#site-footer {
     .card.story-opinion p.category {
       color: #bbb; }
     .card.story-opinion::after {
-      background: -moz-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
-      background: -webkit-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
-      background: -o-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
-      background: -ms-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
-      background: linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100%), no-repeat;
+      background: -moz-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(222, 118, 122, 0.75) 100%), no-repeat;
+      background: -webkit-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(222, 118, 122, 0.75) 100%), no-repeat;
+      background: -o-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(222, 118, 122, 0.75) 100%), no-repeat;
+      background: -ms-linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(222, 118, 122, 0.75) 100%), no-repeat;
+      background: linear-gradient(to top right, rgba(0, 0, 0, 0.75) 0%, rgba(222, 118, 122, 0.75) 100%), no-repeat;
       top: 0;
       left: 0;
       width: 100%;

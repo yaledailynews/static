@@ -653,7 +653,7 @@ footer#site-footer{
       color: #bbb;
     }
     &::after {
-      @include bg-gradienter (( to top right, rgba(0, 0, 0, 0.75) 0%, rgba(40, 130, 200, 0.75) 100% ));
+      @include bg-gradienter (( to top right, rgba(0, 0, 0, 0.75) 0%, rgba(222, 118, 122, 0.75) 100% ));
       top: 0;
       left: 0;
       width:100%;
