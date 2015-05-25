@@ -593,8 +593,7 @@ footer#site-footer{
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
-      box-shadow: 0 3px 10px rgba(0,0,0,.23),
-              0 3px 10px rgba(0,0,0,.16);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16);
     }
 
 
@@ -1207,14 +1206,6 @@ section.category {
   section.magazine {
     margin-bottom: -60px;
 
-    & > h2, h1, .byline {
-      margin-left: 7%;
-    }
-
-    .story-softcore-cover {
-      height: 260px;
-    }
-
     .subtitle {
       display: none;
     }
@@ -1258,16 +1249,27 @@ section.category {
 
     margin-bottom: 50px;
     & > h2 {    
-
-      margin-left: 30px;
+      margin-left: 7%;
     }
     .story-softcore-cover {
       margin-bottom: auto;
     }
   }
 
+  section.magazine, section.weekend {
+    h2 {
+      margin-left: 7%;
+    }
+  }
+
   .story-softcore-cover {
+
     height: 260px !important;
+
+     h1, .byline {
+      margin-left: 7%;
+    }
+
     h1 {
       font-size: 2em;
       margin-top: -150px;

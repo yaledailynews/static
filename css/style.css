@@ -643,7 +643,7 @@ footer#site-footer {
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
       color: #2882C8;
       margin: 0;
@@ -1327,10 +1327,6 @@ body.article-page .unhide {
 
   section.magazine {
     margin-bottom: -60px; }
-    section.magazine > h2, section.magazine h1, section.magazine .byline {
-      margin-left: 7%; }
-    section.magazine .story-softcore-cover {
-      height: 260px; }
     section.magazine .subtitle {
       display: none; }
 
@@ -1353,12 +1349,17 @@ body.article-page .unhide {
     margin-top: 50px;
     margin-bottom: 50px; }
     section.weekend > h2 {
-      margin-left: 30px; }
+      margin-left: 7%; }
     section.weekend .story-softcore-cover {
       margin-bottom: auto; }
 
+  section.magazine h2, section.weekend h2 {
+    margin-left: 7%; }
+
   .story-softcore-cover {
     height: 260px !important; }
+    .story-softcore-cover h1, .story-softcore-cover .byline {
+      margin-left: 7%; }
     .story-softcore-cover h1 {
       font-size: 2em;
       margin-top: -150px; }
