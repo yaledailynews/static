@@ -521,14 +521,16 @@ footer#site-footer {
       height: 100%;
       content: "";
       position: absolute; }
-  .card.story-kahuna .card-image {
-    top: 0;
-    width: 100%;
-    height: auto; }
-  .card.story-kahuna h1 {
-    font-size: 60px;
-    padding-left: 15px;
-    font-weight: 400; }
+  .card.story-kahuna {
+    border-bottom: none !important; }
+    .card.story-kahuna .card-image {
+      top: 0;
+      width: 100%;
+      height: auto; }
+    .card.story-kahuna h1 {
+      font-size: 60px;
+      padding-left: 15px;
+      font-weight: 400; }
   .card.story-preview {
     height: 460.86px; }
     .card.story-preview .card-preview {
@@ -1356,7 +1358,7 @@ body.article-page .unhide {
       margin-bottom: auto; }
 
   .story-softcore-cover {
-    height: 260px; }
+    height: 260px !important; }
     .story-softcore-cover h1 {
       font-size: 2em;
       margin-top: -150px; }
@@ -1440,8 +1442,7 @@ body.article-page .unhide {
       .card.story-photo .category, .card.story-preview .category, .card.story-mag .category, .card.story-weekend .category {
         display: none; }
       .card.story-photo .card-image, .card.story-preview .card-image, .card.story-mag .card-image, .card.story-weekend .card-image {
-        width: auto;
-        left: 200px;
+        left: 250px;
         height: 100%; }
       .card.story-photo .card-preview, .card.story-photo .byline, .card.story-preview .card-preview, .card.story-preview .byline, .card.story-mag .card-preview, .card.story-mag .byline, .card.story-weekend .card-preview, .card.story-weekend .byline {
         display: none; }

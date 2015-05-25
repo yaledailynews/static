@@ -439,6 +439,7 @@ footer#site-footer{
   &.story-kahuna{
     @extend .twelve.columns;
     @extend .story-major;
+    border-bottom: none !important;
     .card-image{
       top:0;
       width: 100%;
@@ -758,6 +759,7 @@ a.link-wrap{
 }
 
 section.front-page {
+
   margin-top: 25px;
 
 }
@@ -990,6 +992,7 @@ header#site-header {
       width: 2*$card-width + $gutter-size;
     }
     &.story-kahuna{
+
       width: 3*$card-width + 2*$gutter-size;
       h1 {
         font-size: 40px;
@@ -1263,7 +1266,7 @@ section.category {
   }
 
   .story-softcore-cover {
-    height: 260px;
+    height: 260px !important;
     h1 {
       font-size: 2em;
       margin-top: -150px;
@@ -1402,10 +1405,10 @@ section.category {
         display: none;
       }
 
-      .card-image {
-        width: auto;
-        left: 200px;
+      .card-image {     
+        left: 250px;
         height: 100%;
+
       }
 
       .card-preview, .byline {
