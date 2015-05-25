@@ -1568,4 +1568,31 @@ form input {
 .sports .card {
   border-bottom: thick solid #42d2ff; }
 
+.university-color {
+  color: #2882C8 !important; }
+
+.opinion-color {
+  color: #cf383e !important; }
+
+.city-color {
+  color: #00be64 !important; }
+
+.scitech-color {
+  color: #f7ca18 !important; }
+
+.culture-color {
+  color: #d20a78 !important; }
+
+.ytv-color {
+  color: #c89664 !important; }
+
+.magazine-color {
+  color: #00b4b4 !important; }
+
+.weekend-color {
+  color: #fe9e48 !important; }
+
+.sports-color {
+  color: #42d2ff !important; }
+
 /*# sourceMappingURL=style.css.map */
