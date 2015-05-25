@@ -351,6 +351,7 @@ header#site-header {
         color: #333; }
 
 footer#site-footer {
+  background: #C9C9C9;
   text-align: center;
   z-index: 5; }
   footer#site-footer a {
@@ -807,7 +808,6 @@ section#weekend {
     margin-left: 17%;
     margin-top: 20px; }
   .story-softcore-cover::after {
-
     background: -moz-linear-gradient(to bottom, rgba(25, 25, 25, 0.3) 0%, #191919 100%), no-repeat;
     background: -webkit-linear-gradient(to bottom, rgba(25, 25, 25, 0.3) 0%, #191919 100%), no-repeat;
     background: -o-linear-gradient(to bottom, rgba(25, 25, 25, 0.3) 0%, #191919 100%), no-repeat;
