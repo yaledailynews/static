@@ -115,7 +115,7 @@
 
       <div class="article-header">
         <h1>YTV: Your Yale, Your Week, Your News</h1>
-        <p class="byline">By Marina Keegan &middot; <date>September 30, 2011</date> &middot; <time> 10:10pm ET</time></p>
+        <p id="bottom-bar-signal" class="byline">By Marina Keegan &middot; <date>September 30, 2011</date> &middot; <time> 10:10pm ET</time></p>
       </div>
 
 
@@ -126,8 +126,10 @@
 
       <article class="video-gallery">
         <figure>
-          <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE">
-          <img class="videoThumb" src="images/volleyball.jpg"></a>
+          <a class="poop" href="https://www.youtube.com/embed/nNewxcGl3BE?autoplay=1">
+         <img class="videoThumb" src="images/volleyball.jpg">
+          <div class="arrow-right"> </div>
+         </a>
         </figure>
         <h2 class="videoTitle">WKND Take 2: Bench Convos with Prospective Yalies</h2>
       </article>
@@ -135,7 +137,9 @@
       <article class="video-gallery">
         <figure>
           <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE">
-          <img class="videoThumb" src="images/thegame.jpg"></a>
+          <img class="videoThumb" src="images/thegame.jpg">
+          <div class="arrow-right"> </div>
+          </a>
         </figure>
         <h2 class="videoTitle">Baby Bulldogs take on Yale Bazaar</h2>
       </article>
@@ -143,7 +147,9 @@
       <article class="video-gallery">
         <figure>
           <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE">
-          <img class="videoThumb" src="images/minute.jpg"></a>
+          <img class="videoThumb" src="images/minute.jpg">
+          <div class="arrow-right"> </div>
+        </a>
         </figure>
         <h2 class="videoTitle">YCC crowns Mr. Yale</h2>
       </article>
@@ -151,7 +157,9 @@
       <article class="video-gallery">
         <figure>
           <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE">
-          <img class="videoThumb" src="images/colbert.jpg"></a>
+          <img class="videoThumb" src="images/colbert.jpg">
+          <div class="arrow-right"> </div>
+        </a>
         </figure>
         <h2 class="videoTitle">Everybody has a Story with Stephen Colbert</h2>
       </article>
@@ -159,7 +167,9 @@
       <article class="video-gallery">
         <figure>
           <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE">
-          <img class="videoThumb" src="images/ivy.jpg"></a>
+          <img class="videoThumb" src="images/ivy.jpg">
+          <div class="arrow-right"> </div>
+        </a>
         </figure>
         <h2 class="videoTitle">How to get into Yale</h2>
       </article>
@@ -211,7 +221,7 @@ $(document).ready(function(){
 
   $(function () { // wait for document ready
         // build scene
-        var scene = new ScrollMagic.Scene({triggerElement: ".video-container", triggerHook: 0})
+        var scene = new ScrollMagic.Scene({triggerElement: "#bottom-bar-signal", triggerHook: 0.1})
                 .setClassToggle('.bottom-bar', 'unhide')
                 //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                 .addTo(controller);

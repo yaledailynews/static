@@ -114,7 +114,7 @@
 
 			<div class="article-header">
 				<h1>Even artichokes have doubts</h1>
-				<p class="byline">By Marina Keegan &middot; <date>September 30, 2011</date> &middot; <time> 10:10pm ET</time></p>
+				<p id="bottom-bar-signal" class="byline">By Marina Keegan &middot; <date>September 30, 2011</date> &middot; <time> 10:10pm ET</time></p>
 				<section id = "more-from-top" class="card more-from-top">
 					<h2>More from University</h2>
 					<a href="#">Donation will transform Commons into “world-class campus center” by 2020</a>
@@ -342,7 +342,7 @@ $(document).ready(function(){
 
   $(function () { // wait for document ready
         // build scene
-        var scene = new ScrollMagic.Scene({triggerElement: ".article-text", triggerHook: 0})
+        var scene = new ScrollMagic.Scene({triggerElement: "#bottom-bar-signal", triggerHook: .1})
                 .setClassToggle('.bottom-bar', 'unhide')
                 //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                 .addTo(controller);
