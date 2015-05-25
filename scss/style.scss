@@ -321,7 +321,8 @@ footer#site-footer{
 
   &.story-major {
     height: 2 * $card-height + $gutter-size;
-    border-bottom: none;
+    border-bottom: none !important;
+
 
     .card-preview {
       line-height: 1.4em;

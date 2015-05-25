@@ -424,7 +424,7 @@ footer#site-footer {
     z-index: 0; }
   .card.story-major, .card.story-kahuna {
     height: 460.86px;
-    border-bottom: none; }
+    border-bottom: none !important; }
     .card.story-major .card-preview, .card.story-kahuna .card-preview {
       line-height: 1.4em;
       letter-spacing: 0.05em; }
