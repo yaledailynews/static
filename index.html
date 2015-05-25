@@ -856,6 +856,9 @@ $(document).ready(function(){
                 destroyPackery($sections);
                 windowWatcher = $(window).width();
             }
+            else{
+                $("#front-page").packery('layout');
+            }
         }
         else{
             if ( $(window).width() >= 480 ){
