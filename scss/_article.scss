@@ -243,7 +243,7 @@ body.article-page {
     }
     .card-image{
       position: absolute;
-      left: -40%;
+      left: -42%;
       top: 0;
       width: auto;
       height: $card-height + $card-border-width;
@@ -256,7 +256,8 @@ body.article-page {
       color: #bbb;
     }
     &::after {
-      background-color: rgba(25, 25, 25, 0.6);
+    background-color: rgba(25, 25, 25, 0.6);
+    
       
       top: 0;
       left: 0;
@@ -268,7 +269,14 @@ body.article-page {
     .byline {
       display: none;
     }
-  
+    
+    &:hover:after{
+      background-image: url("../images/play_button.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .95;
+    }
+
   }
 }
 

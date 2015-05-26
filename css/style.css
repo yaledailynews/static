@@ -1049,7 +1049,7 @@ body.article-page .unhide {
     position: absolute; }
   .card.story-ytv .card-image {
     position: absolute;
-    left: -40%;
+    left: -42%;
     top: 0;
     width: auto;
     height: 214.18px; }
@@ -1068,6 +1068,11 @@ body.article-page .unhide {
     position: absolute; }
   .card.story-ytv .byline {
     display: none; }
+  .card.story-ytv:hover:after {
+    background-image: url("../images/play_button.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: .95; }
 
 .card.author-card {
   height: 460.86px;
