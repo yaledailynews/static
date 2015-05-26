@@ -747,7 +747,7 @@ $(document).ready(function(){
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top - 55
+          scrollTop: target.offset().top - 53
         }, 1000);
         return false;
       }
@@ -813,6 +813,11 @@ $(document).ready(function(){
       }
     } 
 
+    function layoutPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery('layout');
+      }
+    } 
     //make packery fire only once after window resize is complete
     var waitForFinalEvent = (function () {
       var timers = {};
@@ -845,7 +850,7 @@ $(document).ready(function(){
                 windowWatcher = $(window).width();
             }
             else{
-                $("#front-page").packery('layout');
+              layoutPackery($sections);
             }
         }
         else{
