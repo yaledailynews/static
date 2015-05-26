@@ -949,7 +949,6 @@ body.article-page .video-gallery {
     padding-bottom: 60%; }
   body.article-page .video-gallery .arrow-right {
     margin: 0 auto;
-    opacity: 0;
     top: -77px;
     width: 0;
     height: 0;
@@ -970,8 +969,6 @@ body.article-page .video-gallery {
     /* Opera */
     transform: scale(1.009);
     opacity: .75; }
-  body.article-page .video-gallery figure:hover .arrow-right {
-    opacity: 1; }
   body.article-page .video-gallery img {
     max-width: 100%;
     height: auto; }

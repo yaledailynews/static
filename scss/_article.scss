@@ -83,7 +83,6 @@ body.article-page {
 
     .arrow-right{
       margin: 0 auto;
-      opacity: 0;
       top: -77px;
       width: 0; 
       height: 0; 
@@ -106,9 +105,6 @@ body.article-page {
          transform:scale(1.009);
          opacity: .75;
        }
-      .arrow-right{
-        opacity: 1;
-      }
     }
 
     img {
