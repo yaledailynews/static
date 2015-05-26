@@ -25,6 +25,7 @@
   <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
+  <script src="./js/jquery.smooth-scroll.min.js"></script>
   <script src="./js/bigSlide.js"></script>
   <script src="./js/bigSlideXC.js"></script>
 
@@ -63,17 +64,17 @@
   <nav id="mobile-navigation">
     <!-- <a id="close">&#10006;</a> EDITING THIS OUT FOR THE TIME BEING BECAUSE IT'S WEIRD TAKE A LOOK-->
     <a class = "fa fa-times fa-lg" id="nav-close-button"></a>
-    <a id="tag-top" href="#">Top</a>
-    <a id="tag-opinion" href="#">Opinion</a>
-    <a id="tag-university" href="#">University</a>
-    <a id="tag-city" href="#">City</a>
-    <a id="tag-sports" href="#">Sports</a>
-    <a id="tag-scitech" href="#">Scitech</a>
-    <a id="tag-culture" href="#">Culture</a>
-    <a id="tag-ytv" href="#">YTV</a>    
-    <a id="tag-weekend" href="#">Wknd</a>
-    <a id="tag-magazine" href="#">Mag</a>    
-    <a id="nav-search" href="#">Search</a>
+    <a id="tag-top" href="#front-page">Top</a>
+    <a id="tag-opinion" href="#opinion">Opinion</a>
+    <a id="tag-university" href="#university">University</a>
+    <a id="tag-city" href="#city">City</a>
+    <a id="tag-sports" href="#sports">Sports</a>
+    <a id="tag-scitech" href="#scitech">Scitech</a>
+    <a id="tag-culture" href="#culture">Culture</a>
+    <a id="tag-ytv" href="#ytv">YTV</a>    
+    <a id="tag-weekend" href="#weekend-category">Wknd</a>
+    <a id="tag-magazine" href="#magazine-category">Mag</a>    
+    <a id="nav-search" class= "fa fa-search" href="#"></a>
     <!-- <div id="nav-search">
       <i class="fa fa-search"></i>
        <form class="search-box">
@@ -740,20 +741,10 @@ $(document).ready(function(){
 
 <script>
   //smoothscroll
-  $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - 53
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
+  $('#site-navigation a').smoothScroll({exclude: ['#tag-weekend','#tag-magazine'], offset: -53});
+  $('#mobile-navigation a').smoothScroll({offset: -76});
+  $('#tag-weekend').smoothScroll({offset: 18});
+  $('#tag-magazine').smoothScroll({offset: 18});
 </script>
 
 <script>
