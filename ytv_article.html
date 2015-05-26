@@ -105,8 +105,6 @@
 
 </header>
   
-
-  <div class="wrapper">
   
 
   <article>
@@ -123,7 +121,36 @@
       <section class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nNewxcGl3BE" frameborder="0" allowfullscreen></iframe>
       </section>
+      
+      <section id="ytv" class="container ytv category">
+        
+        <a class="link-wrap" href="#"><article class="card story story-ytv ytv">
+          <img class="card-image" src="images/mayday.jpg">
+          <h1>OCS same-day appointments serve job seekers </h1>        
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
 
+
+        <a class="link-wrap" href="#"><article class="card story story-ytv ytv">
+          <img class="card-image" src="images/colbert.jpg">
+          <h1>Everybody has a story with Stephen Colbert</h1>          
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
+
+        <a class="link-wrap" href="#"><article class="card story story-ytv ytv">
+          <img class="card-image" src="images/fossil-free.jpg">
+          <h1>Fossil Free Yale's Fight to Divest</h1>          
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
+
+        <a class="link-wrap" href="#"><article class="card story story-ytv ytv">
+          <img class="card-image" src="images/debate.jpg">
+          <h1>YCC Presidential Debate 2015</h1>
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
+
+      </section>
+<!--
       <article class="video-gallery">
         <figure>
           <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE?autoplay=1">
@@ -178,7 +205,7 @@
    </article>
   <div class="clear-floats"></div>
 
-  </div>
+-->
 
     <div class="bottom-bar">
       <p><span>UNIVERSITY</span>&nbsp;&nbsp;|&nbsp;&nbsp;Even artichokes have doubts</p> 
@@ -229,7 +256,82 @@ $(document).ready(function(){
 
 </script>
 
+<script>
+  //packery setup and handles breaking at 480
 
+
+
+  $(function() {
+
+    $sections = ["#ytv"];
+
+
+    //functions for creating and destroying
+    function setUpPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery({
+        itemSelector: '.card',
+        gutter: 38.5,
+        containerStyle: null});
+      }
+    }
+
+    function destroyPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery('destroy');
+      }
+    } 
+
+    function layoutPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery('layout');
+      }
+    } 
+    //make packery fire only once after window resize is complete
+    var waitForFinalEvent = (function () {
+      var timers = {};
+      return function (callback, ms, uniqueId) {
+      if (!uniqueId) {
+        uniqueId = "Don't call this twice without a uniqueId";
+      }
+      if (timers[uniqueId]) {
+        clearTimeout (timers[uniqueId]);
+      }
+      timers[uniqueId] = setTimeout(callback, ms);
+      };
+    })();
+    //
+
+    //onLoad
+    var windowWatcher = $(window).width();
+
+    if($(window).width() > 480) {
+       setUpPackery($sections);
+    };
+    //
+
+  //resize function for breaking at 480
+    $(window).resize(function(){
+      waitForFinalEvent(function(){
+        if (windowWatcher > 480){
+            if ( $(window).width() < 480 ){
+                destroyPackery($sections);
+                windowWatcher = $(window).width();
+            }
+            else{
+              layoutPackery($sections);
+            }
+        }
+        else{
+            if ( $(window).width() >= 480 ){
+                setUpPackery($sections);
+                windowWatcher = $(window).width();
+            }
+        }
+        }, 1000, "Break");  
+    });
+  });
+</script>
 
 </body>
 </html>

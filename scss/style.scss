@@ -744,6 +744,9 @@ footer#site-footer{
 section.category {
   clear: both;
   width: 100%;
+  a{
+    text-decoration: none;
+  }
   & > h2 {
     @extend %face-serif;
     font-style: italic;
