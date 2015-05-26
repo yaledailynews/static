@@ -1527,70 +1527,72 @@ form input {
 
 .university .category {
   color: #2882c8; }
-.university .card {
-  border-bottom: thick solid #2882c8; }
 .university .category-jump {
   background-color: #2882c8;
-  color: white !important; }
+  color: white; }
+.university.card {
+  border-bottom: thick solid #2882c8; }
 
 .opinion .story .category {
   color: #cf383e; }
 .opinion .category-jump {
   background-color: #cf383e;
-  color: white !important; }
+  color: white; }
 
 .city .category {
   color: #00be64; }
-.city .card {
-  border-bottom: thick solid #00be64; }
 .city .category-jump {
   background-color: #00be64;
-  color: white !important; }
+  color: white; }
+.city.card {
+  border-bottom: thick solid #00be64; }
 
 .scitech .category {
   color: #f7ca18; }
 .scitech .category-jump {
   background-color: #f7ca18;
-  color: white !important; }
-.scitech .card {
+  color: white; }
+.scitech.card {
   border-bottom: thick solid #f7ca18; }
 
 .culture .category {
-  color: #d20a78 !important; }
+  color: #d20a78; }
 .culture .category-jump {
   background-color: #d20a78;
-  color: white !important; }
-.culture .card {
-  border-bottom: thick solid #d20a78 !important; }
+  color: white; }
+.culture.card {
+  border-bottom: thick solid #d20a78; }
 
 .ytv .category {
   color: #c89664; }
 .ytv .category-jump {
   background-color: #c89664;
-  color: white !important; }
-.ytv .card {
+  color: white; }
+.ytv.card {
   border-bottom: thick solid #c89664; }
 
 .magazine .category {
   color: #00b4b4; }
 .magazine .category-jump {
   background-color: #00b4b4;
-  color: white !important; }
+  color: white; }
+.magazine.card {
+  border-bottom: thick solid #00b4b4; }
 
 .weekend .category {
   color: #fe9e48; }
 .weekend .category-jump {
   background-color: #fe9e48;
-  color: white !important; }
-.weekend .card {
+  color: white; }
+.weekend.card {
   border-bottom: thick solid #fe9e48; }
 
 .sports .category {
   color: #42d2ff; }
 .sports .category-jump {
   background-color: #42d2ff;
-  color: white !important; }
-.sports .card {
+  color: white; }
+.sports.card {
   border-bottom: thick solid #42d2ff; }
 
 .university-color {
