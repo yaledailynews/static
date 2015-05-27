@@ -257,7 +257,7 @@ p {
 
 #mobile-header {
   height: 50px;
-  background-color: #2882c8;
+  background-color: #2882C8;
   padding: 25px 0px 10px 10px;
   display: none;
   position: fixed;
@@ -638,14 +638,14 @@ footer#site-footer {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882c8;
+      background-color: #2882C8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882c8;
+      color: #2882C8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -660,7 +660,7 @@ footer#site-footer {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882c8;
+      color: #2882C8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -722,7 +722,7 @@ footer#site-footer {
   .category-jump.opinion {
     background-color: #cf383e; }
   .category-jump.university {
-    background-color: #2882c8; }
+    background-color: #2882C8; }
   .category-jump.city {
     background-color: #00be64; }
   .category-jump.sports {
@@ -881,10 +881,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882c8; }
+        border: 1px solid #2882C8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882c8;
+        background-color: #2882C8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -981,7 +981,7 @@ body.article-page .more-from-top, body.article-page .more-from-bottom {
   padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto;
-  border-top: 5px solid #2882c8;
+  border-top: 5px solid #2882C8;
   overflow: hidden;
   background-color: white;
   overflow: hidden; }
@@ -1354,7 +1354,7 @@ body.article-page .unhide {
       display: none; }
 
   section.university .card {
-    border-bottom: 2px solid #2882c8; }
+    border-bottom: 2px solid #2882C8; }
 
   section.city .card {
     border-bottom: 2px solid #00be64; }
@@ -1526,11 +1526,11 @@ form input {
   font-size: 0.9em; }
 
 .university .category {
-  color: #2882c8; }
+  color: #2882C8; }
 .university .card {
-  border-bottom: thick solid #2882c8; }
+  border-bottom: thick solid #2882C8; }
 .university .category-jump {
-  background-color: #2882c8;
+  background-color: #2882C8;
   color: white !important; }
 
 .opinion .story .category {
@@ -1594,7 +1594,7 @@ form input {
   border-bottom: thick solid #42d2ff; }
 
 .university-color {
-  color: #2882c8 !important; }
+  color: #2882C8 !important; }
 
 .opinion-color {
   color: #cf383e !important; }
@@ -1619,3 +1619,5 @@ form input {
 
 .sports-color {
   color: #42d2ff !important; }
+
+/*# sourceMappingURL=style.css.map */
