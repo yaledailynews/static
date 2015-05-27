@@ -110,14 +110,14 @@
 
   <section id="front-page" class=" container category front-page" >
 
-<!--     <a class="link-wrap" href="#"><article class="card story story-breaking story-kahuna university">
+    <a class="link-wrap" href="#"><article class="card story story-breaking story-kahuna university">
       <div class="breaking">
           <h3>Breaking</h3>
           <time>Apr 5, 12:45 pm</time>
       </div>
       <h1>Harrassment at SAE and its fallout</h1>
         <img class="card-image" src="images/sae.jpg">
-    </article></a> -->
+    </article></a>
 
     <div class="link-wrap" id = "xc-web" href="#"><article class="card story cross-campus">
       <h1>Cross Campus</h1>
@@ -852,48 +852,49 @@
       });
     });
   </script>
-  <script>
-  //how do i get it to update?
-    var kahuna_code = "<a class=\"link-wrap\" href=\"#\"><article class=\"card story story-breaking story-kahuna university\"> <div class=\"breaking\"><h3>Breaking</h3><time>Apr 5, 12:45 pm</time></div><h1>Harrassment at SAE and its fallout</h1><img id=\"kahuna_image\" class=\"card-image\" src=\"images/sae.jpg\"></article></a>";
+   <script>
+  // //how do i get it to update?
+  //   var kahuna_code = "<a class=\"link-wrap\" href=\"#\"><article class=\"card story story breaking story-kahuna university\"> <div class=\"breaking\"><h3>Breaking</h3><time>Apr 5, 12:45 pm</time></div><h1>Harrassment at SAE and its fallout</h1><img id=\"kahuna_image\" class=\"card-image\" src=\"images/sae.jpg\"></article></a>";
 
-    if($(window).width() < 710) {
-      $("#front-page").before(kahuna_code);
-    } else {
-     $("#front-page").prepend(kahuna_code);
-    }
+  //   if($(window).width() < 710) {
+  //     $("#front-page").before(kahuna_code);
+  //   } else {
+  //    $("#front-page").prepend(kahuna_code);
+  //   }
 
-    $( window ).resize(function() { 
-      $(".story-kahuna").remove();   
-      if($(window).width() < 710) {
-        $("#front-page").before(kahuna_code);
-      } else {
-       $("#front-page").prepend(kahuna_code);
-      }
-    });
-  </script>
-  <script>
-    $("img#kahuna_image").load(function(){
-      var height = $(this).height();
-      console.log(height);
-      if($(window).width() < 710) {
-        $(".card.university.story-kahuna").css("padding-bottom", "0");
-        $(".card.university.story-kahuna").css("height", height + "px");
-      }
+  //   $( window ).resize(function() { 
+  //     $(".story-kahuna").remove();   
+  //     if($(window).width() < 710) {
+  //       $("#front-page").before(kahuna_code);
+  //     } else {
+  //      $("#front-page").prepend(kahuna_code);
+  //     }
+  //   });
+  // </script>
+  // <script>
+  //   $("img#kahuna_image").load(function(){
+  //     var height = $(this).height();
+  //     console.log(height);
+  //     if($(window).width() < 710) {
+  //       $(".card.university.story-kahuna").css("padding-bottom", "0");
+  //       $(".card.university.story-kahuna").css("height", height + "px");
+  //     }
 
-    });
+  //   });
 
-    $( window ).resize(function() { 
-      $("img#kahuna_image").load(function(){
-        var height = $(this).height();
-        console.log(height);
-        if($(window).width() < 710) {
-          $(".card.university.story-kahuna").css("padding-bottom", "0");
-          $(".card.university.story-kahuna").css("height", height + "px");
-        }
-      });
-    });
+  //   $( window ).resize(function() { 
+  //     $("img#kahuna_image").load(function(){
+  //       var height = $(this).height();
+  //       console.log(height);
+  //       if($(window).width() < 710) {
+  //         $(".card.university.story-kahuna").css("padding-bottom", "0");
+  //         $(".card.university.story-kahuna").css("height", height + "px");
+  //       }
+  //     });
+  //   });
 
-  </script>
+  // </script>
+
 
 </body>
 </html>
