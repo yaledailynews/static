@@ -1347,6 +1347,8 @@ body.article-page .unhide {
   section.front-page {
     margin-top: 70px;
     margin-bottom: 50px; }
+    section.front-page .story-opinion {
+      display: none; }
 
   section.magazine, section.weekend {
     width: 100%; }
@@ -1355,6 +1357,11 @@ body.article-page .unhide {
     margin-bottom: -60px; }
     section.magazine .subtitle {
       display: none; }
+
+  section.opinion {
+    padding-bottom: 40px; }
+    section.opinion .category {
+      line-height: 1.2; }
 
   section.university .card {
     border-bottom: 2px solid #2882C8; }
@@ -1396,6 +1403,9 @@ body.article-page .unhide {
   section#weekend {
     padding-bottom: 25px; }
 
+  section#opinion .link-wrap {
+    display: inline; }
+
   .card {
     margin-bottom: 25px;
     width: 100%;
@@ -1430,8 +1440,7 @@ body.article-page .unhide {
         font-weight: bold;
         font-size: 0.8em;
         color: white;
-        display: inline-block;
-        margin-right: 5px; }
+        display: inline-block; }
         .card.story-breaking .breaking h3:after {
           content: "  |"; }
       .card.story-breaking .breaking time {
@@ -1472,6 +1481,16 @@ body.article-page .unhide {
         display: block;
         width: 100%;
         height: 100%; }
+    .card.story-opinion {
+      width: 48%;
+      padding-bottom: 48%;
+      display: inline-block;
+      margin-right: 4px;
+      margin-bottom: 3px; }
+      .card.story-opinion h1 {
+        font-size: 19px; }
+      .card.story-opinion .card-image {
+        display: inline-block; }
     .card.story-kahuna {
       width: 100%;
       margin-bottom: -45px;
@@ -1483,6 +1502,8 @@ body.article-page .unhide {
       .card.story-kahuna h1 {
         margin-left: 0px;
         font-size: 24px; }
+      .card.story-kahuna h3 {
+        margin-right: 5px; }
     .card.story-photo, .card.story-preview, .card.story-mag, .card.story-weekend {
       width: 100%;
       background-color: white;

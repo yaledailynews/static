@@ -1308,6 +1308,10 @@ section.category {
   section.front-page {
     margin-top: 70px;
     margin-bottom: 50px;
+
+    .story-opinion {
+      display: none;
+    }
   }
 
   section.magazine, section.weekend {
@@ -1322,6 +1326,14 @@ section.category {
     }
 
 
+  }
+
+  section.opinion {
+    padding-bottom: 40px;
+
+    .category {
+      line-height: 1.2;
+    }
   }
 
   section.university {
@@ -1398,6 +1410,12 @@ section.category {
     padding-bottom: 25px;
   }
 
+  section#opinion {
+    .link-wrap {
+      display: inline
+    }
+  }
+
   
 
   .card {
@@ -1422,6 +1440,8 @@ section.category {
         margin-bottom: 7px;
       }
     }
+
+
 
 
     &.story > time {
@@ -1452,7 +1472,7 @@ section.category {
       font-size: 0.8em;
       color: white;
       display: inline-block;
-      margin-right: 5px;
+
 
       &:after {
         content: "  |";
@@ -1519,6 +1539,25 @@ section.category {
 
     }
 
+    &.story-opinion {
+      width: 48%;
+      padding-bottom: 48%;
+      display: inline-block;
+      margin-right: 4px;
+      margin-bottom: 3px;
+
+      h1 {
+        font-size: 19px;
+      }
+
+      .card-image {
+        display: inline-block;
+      }
+
+
+  
+    }
+
 
     &.story-kahuna{
       width: 100%;
@@ -1534,6 +1573,10 @@ section.category {
       h1 {
         margin-left: 0px;
         font-size: 24px;
+      }
+
+      h3 {
+        margin-right: 5px;
       }
    
     }
