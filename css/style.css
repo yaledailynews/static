@@ -206,12 +206,12 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, #mobile-header #mobile-xc, header#site-header nav#site-navigation a, footer#site-footer a, .card.cross-campus #xc, body.article-page .more-from-top, body.article-page .more-from-bottom {
+body, #mobile-header #mobile-xc, header#site-header nav#site-navigation a, footer#site-footer a, .card.cross-campus #xc, body.article-page .more-from-top, body.article-page .more-from-bottom, body.article-page .more-from-top h2, body.article-page .more-from-bottom h2 {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card h1, section.category > h2, .story-softcore-cover h1, body.article-page h1, body.article-page .more-from-top h2, body.article-page .more-from-bottom h2, body.article-page .article-text h3 {
+.card h1, section.category > h2, .story-softcore-cover h1, body.article-page h1, body.article-page .article-text h3 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -985,31 +985,43 @@ body.article-page h1 {
   letter-spacing: 1.2px; }
 body.article-page .more-from-top, body.article-page .more-from-bottom {
   border-bottom: none;
-  padding: 10px 15px 10px 15px;
   font-weight: normal;
   height: auto;
-  border-top: 5px solid #2882C8;
   overflow: hidden;
-  background-color: white;
-  overflow: hidden; }
+  background-color: white; }
+  body.article-page .more-from-top .most-read, body.article-page .more-from-bottom .most-read {
+    padding: 0 20px; }
   body.article-page .more-from-top h2, body.article-page .more-from-bottom h2 {
-    font-size: 22px;
-    margin-top: 10px;
-    font-style: italic;
-    font-weight: 600;
-    line-height: 1.2;
-    letter-spacing: 0.025em; }
+    background-color: #2882C8;
+    font-size: 19px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    letter-spacing: 0.075em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9); }
   body.article-page .more-from-top a, body.article-page .more-from-bottom a {
     text-decoration: none;
+    border-bottom: 1px solid #eee;
     display: block;
     margin: 20px 0px;
-    color: black;
-    font-size: 13px;
-    letter-spacing: 0; }
+    color: #191919;
+    letter-spacing: 0.01em;
+    line-height: 1.2em;
+    padding-bottom: 15px;
+    transition: all 0.25s ease; }
+  body.article-page .more-from-top a:hover, body.article-page .more-from-bottom a:hover {
+    color: #2882C8;
+    transition: all 0.25s ease; }
+  body.article-page .more-from-top a:last-child, body.article-page .more-from-bottom a:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+body.article-page .card {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }
 body.article-page .more-from-top {
-  width: 25%;
+  width: 250px;
   float: right;
-  margin-top: 100px; }
+  margin-top: 70%; }
   @media (max-width: 980px) {
     body.article-page .more-from-top {
       display: none; } }
@@ -1021,18 +1033,41 @@ body.article-page .more-from-bottom {
 body.article-page .hero-image {
   width: 100%;
   max-width: 100%;
-  height: auto;
+  height: 500px;
+  overflow: hidden;
   z-index: 1; }
+  body.article-page .hero-image:after {
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute; }
 body.article-page .byline {
   text-transform: uppercase;
   font-size: 0.8em;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.5px;
   margin-top: 20px;
-  margin-left: 0; }
+  margin-left: 0;
+  z-index: 2; }
+  body.article-page .byline a {
+    color: #2882C8;
+    text-decoration: none; }
+  body.article-page .byline date, body.article-page .byline time {
+    color: #aaa; }
+  body.article-page .byline a:after {
+    content: "|";
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ccc; }
 body.article-page .article-header {
-  margin-top: 75px;
-  width: 90%; }
+  width: 90%;
+  margin-bottom: 100px; }
   body.article-page .article-header h1 {
+    margin-top: -225px;
+    color: white;
+    z-index: 2;
     width: 75%;
     font-size: 66.67px;
     letter-spacing: 1px;
@@ -1058,7 +1093,8 @@ body.article-page .article-text {
   width: 60%;
   font-size: 21.33px;
   line-height: 1.2em;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  margin-right: 100px; }
   body.article-page .article-text img {
     margin: 20px 0 0 0;
     max-width: 166.5%; }
