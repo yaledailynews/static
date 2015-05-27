@@ -876,19 +876,6 @@ a.link-wrap{
   display: block;
 }
 
-section.front-page {
-  p.category {
-    display: block;
-  } 
-
-  time {
-    bottom: 30px !important;
-  }
-
-  margin-top: 25px;
-
-}
-
 section.opinion, section.university, section.city, 
 section.sports, section.culture, 
 section.scitech, section.ytv {
@@ -1153,6 +1140,19 @@ header#site-header {
 
 .section-wrap {
   padding-top: 50px;
+}
+
+section.front-page {
+  p.category {
+    display: block;
+  } 
+
+  time {
+    bottom: 30px !important;
+  }
+
+  margin-top: 25px;
+
 }
 
 }
@@ -1464,7 +1464,7 @@ section.category {
 
     &.story > time {
       position: relative;
-      bottom: 0px;
+      bottom: 0px !important;
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em;
@@ -1493,13 +1493,15 @@ section.category {
 
 
       &:after {
-        content: "  |";
+        content: "  ·";
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.75);
       }
     }
     time{
       position: relative;
       font-size: 0.8em;
-      bottom: auto;
+      bottom: auto !important;
       margin: 0;
       display: inline-block;
      }

@@ -816,13 +816,6 @@ section.category {
 a.link-wrap {
   display: block; }
 
-section.front-page {
-  margin-top: 25px; }
-  section.front-page p.category {
-    display: block; }
-  section.front-page time {
-    bottom: 30px !important; }
-
 section.opinion, section.university, section.city,
 section.sports, section.culture,
 section.scitech, section.ytv {
@@ -1284,7 +1277,14 @@ body.article-page .unhide {
       display: none; }
 
   .section-wrap {
-    padding-top: 50px; } }
+    padding-top: 50px; }
+
+  section.front-page {
+    margin-top: 25px; }
+    section.front-page p.category {
+      display: block; }
+    section.front-page time {
+      bottom: 30px !important; } }
 @media (max-width: 870px) {
   #small-logo {
     display: none !important; } }
@@ -1467,7 +1467,7 @@ body.article-page .unhide {
         margin-bottom: 7px; }
     .card.story > time {
       position: relative;
-      bottom: 0px;
+      bottom: 0px !important;
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em; }
@@ -1489,11 +1489,13 @@ body.article-page .unhide {
         color: white;
         display: inline-block; }
         .card.story-breaking .breaking h3:after {
-          content: "  |"; }
+          content: "  ·";
+          font-weight: 800;
+          color: rgba(255, 255, 255, 0.75); }
       .card.story-breaking .breaking time {
         position: relative;
         font-size: 0.8em;
-        bottom: auto;
+        bottom: auto !important;
         margin: 0;
         display: inline-block; }
     .card.story-simple {
