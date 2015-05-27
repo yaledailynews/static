@@ -1072,8 +1072,9 @@ body.article-page .unhide {
   .fancybox .card.story-ytv:hover:after {
     background-image: url("../images/play_button.svg");
     background-position: center;
-    background-repeat: no-repeat;
-    opacity: .95; }
+    background-repeat: no-repeat; }
+  .fancybox .card.story-ytv:hover h1 {
+    opacity: .5; }
 
 .card.author-card {
   height: 460.86px;

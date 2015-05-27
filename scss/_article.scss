@@ -275,10 +275,14 @@ body.article-page {
     }
     
     &:hover:after{
-      background-image: url("../images/play_button.svg");
+    background-image: url("../images/play_button.svg");
     background-position: center;
     background-repeat: no-repeat;
-    opacity: .95;
+    }
+    &:hover{
+          h1{
+      opacity: .5;
+    }
     }
 
   }
