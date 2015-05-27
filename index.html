@@ -84,40 +84,40 @@
     </nav>
     <div class="card story cross-campus xc-content-mobile">
       <div id="xc">
-            <p>xc</p>
-            <i class = "fa fa-times fa-1x" id="xc-close-button"></i>
-          </div>
+        <p>xc</p>
+        <i class = "fa fa-times fa-1x" id="xc-close-button"></i>
+      </div>
 
-          <div class="xc-content">
-            <p class="date">May 6, 2015</p>
-            <p class="card-preview"><span class="intro">This is the end. With this issue, the News concludes production for the academic year.</span> Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+      <div class="xc-content">
+        <p class="date">May 6, 2015</p>
+        <p class="card-preview"><span class="intro">This is the end. With this issue, the News concludes production for the academic year.</span> Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
 
-            <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+        <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
 
-            <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+        <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
 
-            <p class="date">May 5, 2015</p>
+        <p class="date">May 5, 2015</p>
 
-            <p class="card-preview"><span class="intro">This is the end.</span> With this issue, the News concludes production for the academic year. Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+        <p class="card-preview"><span class="intro">This is the end.</span> With this issue, the News concludes production for the academic year. Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
 
-            <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+        <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
 
-            <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
-          </div>
+        <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+      </div>
     </div>
 
   </header>
 
   <section id="front-page" class=" container category front-page" >
 
-    <a class="link-wrap" href="#"><article class="card story story-breaking story-kahuna university">
+<!--     <a class="link-wrap" href="#"><article class="card story story-breaking story-kahuna university">
       <div class="breaking">
           <h3>Breaking</h3>
           <time>Apr 5, 12:45 pm</time>
       </div>
       <h1>Harrassment at SAE and its fallout</h1>
         <img class="card-image" src="images/sae.jpg">
-    </article></a>
+    </article></a> -->
 
     <div class="link-wrap" id = "xc-web" href="#"><article class="card story cross-campus">
       <h1>Cross Campus</h1>
@@ -850,6 +850,48 @@
           }, 1000, "Break");  
       });
     });
+  </script>
+  <script>
+  //how do i get it to update?
+    var kahuna_code = "<a class=\"link-wrap\" href=\"#\"><article class=\"card story story breaking story-kahuna university\"> <div class=\"breaking\"><h3>Breaking</h3><time>Apr 5, 12:45 pm</time></div><h1>Harrassment at SAE and its fallout</h1><img id=\"kahuna_image\" class=\"card-image\" src=\"images/sae.jpg\"></article></a>";
+
+    if($(window).width() < 710) {
+      $("#front-page").before(kahuna_code);
+    } else {
+     $("#front-page").prepend(kahuna_code);
+    }
+
+    $( window ).resize(function() { 
+      $(".story-kahuna").remove();   
+      if($(window).width() < 710) {
+        $("#front-page").before(kahuna_code);
+      } else {
+       $("#front-page").prepend(kahuna_code);
+      }
+    });
+  </script>
+  <script>
+    $("img#kahuna_image").load(function(){
+      var height = $(this).height();
+      console.log(height);
+      if($(window).width() < 710) {
+        $(".card.university.story-kahuna").css("padding-bottom", "0");
+        $(".card.university.story-kahuna").css("height", height + "px");
+      }
+
+    });
+
+    $( window ).resize(function() { 
+      $("img#kahuna_image").load(function(){
+        var height = $(this).height();
+        console.log(height);
+        if($(window).width() < 710) {
+          $(".card.university.story-kahuna").css("padding-bottom", "0");
+          $(".card.university.story-kahuna").css("height", height + "px");
+        }
+      });
+    });
+
   </script>
 
 </body>
