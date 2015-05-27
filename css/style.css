@@ -1042,23 +1042,24 @@ body.article-page .bottom-bar {
 body.article-page .unhide {
   display: block; }
 
-.card.story-ytv {
+.fancybox .card.story-ytv {
   position: relative; }
-  .card.story-ytv h1 {
+  .fancybox .card.story-ytv h1 {
     color: white;
     position: absolute; }
-  .card.story-ytv .card-image {
+  .fancybox .card.story-ytv .card-image {
     position: absolute;
     left: -42%;
     top: 0;
     width: auto;
     height: 214.18px; }
-  .card.story-ytv time {
+  .fancybox .card.story-ytv time {
     color: white;
+    position: absolute;
     bottom: 15px; }
-  .card.story-ytv p.category {
+  .fancybox .card.story-ytv p.category {
     color: #bbb; }
-  .card.story-ytv::after {
+  .fancybox .card.story-ytv::after {
     background-color: rgba(25, 25, 25, 0.6);
     top: 0;
     left: 0;
@@ -1066,9 +1067,9 @@ body.article-page .unhide {
     height: 100%;
     content: "";
     position: absolute; }
-  .card.story-ytv .byline {
+  .fancybox .card.story-ytv .byline {
     display: none; }
-  .card.story-ytv:hover:after {
+  .fancybox .card.story-ytv:hover:after {
     background-image: url("../images/play_button.svg");
     background-position: center;
     background-repeat: no-repeat;

@@ -234,9 +234,12 @@ body.article-page {
 
 }
 
+.fancybox{
+  // display: inline !important;
 .card{
   &.story-ytv{
     position: relative;
+    // display: inline-block;
     h1 {
       color: white;
       position: absolute;
@@ -250,6 +253,7 @@ body.article-page {
     }
     time{
       color:white;
+      position: absolute;
       bottom: 15px;
     }
     p.category {
@@ -278,6 +282,7 @@ body.article-page {
     }
 
   }
+}
 }
 
 

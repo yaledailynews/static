@@ -17,15 +17,16 @@
 
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="./fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
   <script src="./js/ScrollMagic.min.js"></script>
-  <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
   <script src="./js/bigSlide.js"></script>
   <script src="./js/bigSlideXC.js"></script>
+  <script src="./fancybox/jquery.fancybox.pack.js"></script>
 
 </head>
 
@@ -124,32 +125,33 @@
       
       <section id="ytv" class="container ytv category">
         
-        <a class="link-wrap" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ytv">
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ">
           <img class="card-image" src="images/volleyball.jpg">
           <h1>WKND Take 2: Bench Convos with Prospective Yalies </h1>        
           <time>Apr 11, 4:23 pm</time>
         </article></a>
 
 
-        <a class="link-wrap" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ytv">
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ">
           <img class="card-image" src="images/colbert.jpg">
           <h1>Everybody has a story with Stephen Colbert</h1>          
           <time>Apr 11, 4:23 pm</time>
         </article></a>
 
-        <a class="link-wrap" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ytv">
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ">
           <img class="card-image" src="images/thegame.jpg">
           <h1>Baby Bulldogs take on Yale Bazaar</h1>          
           <time>Apr 11, 4:23 pm</time>
         </article></a>
 
-        <a class="link-wrap" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ytv">
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE"><article class="card story story-ytv ">
           <img class="card-image" src="images/minute.jpg">
           <h1>YCC crowns Mr. Yale</h1>
           <time>Apr 11, 4:23 pm</time>
         </article></a>
 
       </section>
+
 <!--
       <article class="video-gallery">
         <figure>
@@ -240,7 +242,11 @@ $(document).ready(function(){
   });
 </script>
 
-
+<script>
+    $(document).ready(function() {
+        $('.link-wrap').fancybox();
+    });
+</script>
 
 <script>
   //bottom bar appears after headline
@@ -333,6 +339,7 @@ $(document).ready(function(){
     });
   });
 </script>
+
 
 </body>
 </html>
