@@ -218,7 +218,7 @@ body, #mobile-header #mobile-xc, header#site-header nav#site-navigation a, foote
 .card.story time, .card.story .category, .card.author-card .author-title, .card.author-card .archive {
   text-transform: uppercase;
   position: absolute;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075em;
   font-size: .75em;
   margin-left: 15px; }
 
@@ -313,7 +313,7 @@ p {
     display: block;
     padding: 1.2em 1.2em 1.2em 1em;
     outline: none;
-    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.05);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -434,6 +434,9 @@ footer#site-footer {
   margin-top: 2%;
   display: table; }
 
+p.category {
+  display: none; }
+
 .byline {
   text-transform: uppercase;
   letter-spacing: 1.8;
@@ -469,8 +472,9 @@ footer#site-footer {
     margin-left: 15px;
     margin-right: 15px; }
   .card.story time {
-    bottom: 30px;
-    color: #433f3f; }
+    bottom: 15px;
+    color: #aaa;
+    font-weight: 300; }
   .card.story .category {
     bottom: 15px; }
   .card.story :not(.card-image) {
@@ -814,6 +818,10 @@ a.link-wrap {
 
 section.front-page {
   margin-top: 25px; }
+  section.front-page p.category {
+    display: block; }
+  section.front-page time {
+    bottom: 30px !important; }
 
 section.opinion, section.university, section.city,
 section.sports, section.culture,
@@ -821,6 +829,9 @@ section.scitech, section.ytv {
   padding-bottom: 125px;
   padding-top: 25px;
   border-bottom: 1px solid #ddd; }
+
+section.opinion p.category {
+  display: inline; }
 
 section.magazine, section.weekend {
   padding-top: 100px; }

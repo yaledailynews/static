@@ -18,7 +18,7 @@ $wild-sand: #f6f4f4;
 %time-category-style{
   text-transform: uppercase;
   position: absolute;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075em;
   font-size: .75em;
   margin-left: 15px;
 }
@@ -156,7 +156,7 @@ p {
     display: block;
     padding: 1.2em 1.2em 1.2em 1em;
     outline: none;
-    box-shadow: inset 0 -1px rgba(0,0,0,0.1);
+    box-shadow: inset 0 -1px rgba(0,0,0,0.05);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -352,6 +352,10 @@ footer#site-footer{
   display: table;
 }
 
+p.category {
+  display: none;
+}
+
 .byline {
   text-transform: uppercase;
   letter-spacing: 1.8;
@@ -405,8 +409,9 @@ footer#site-footer{
       margin-right: 15px;
     }
     time {
-      bottom: 30px;
-      color: $dark-gray; 
+      bottom: 15px;
+      color: #aaa;
+      font-weight: 300; 
       @extend %time-category-style;
     }
     .category{
@@ -872,6 +877,13 @@ a.link-wrap{
 }
 
 section.front-page {
+  p.category {
+    display: block;
+  } 
+
+  time {
+    bottom: 30px !important;
+  }
 
   margin-top: 25px;
 
@@ -883,6 +895,12 @@ section.scitech, section.ytv {
   padding-bottom: 125px;
   padding-top: 25px;
   border-bottom: 1px solid #ddd;
+}
+
+section.opinion {
+  p.category {
+    display: inline;
+  }
 }
 
 
