@@ -354,6 +354,8 @@ footer#site-footer{
         content: "";
         position: absolute;
       }
+
+      
     }
 
     &.city {
@@ -744,6 +746,9 @@ footer#site-footer{
 section.category {
   clear: both;
   width: 100%;
+  a{
+    text-decoration: none;
+  }
   & > h2 {
     @extend %face-serif;
     font-style: italic;
@@ -1052,9 +1057,6 @@ header#site-header {
 
 @media(max-width:710px) {
 
-
-
-  
   section.category {
     margin: 0 auto;
     width: 460px;
@@ -1078,9 +1080,10 @@ header#site-header {
     }
     &.story-kahuna{
       width: 100%;
+      height: auto;
+      margin-top: 50px;
       h1 {
         font-size: 2.5em;
-        
       }
     }
     &.story-breaking{
@@ -1379,12 +1382,12 @@ section.category {
 
     &.story-kahuna{
       width: 100%;
-      height: $card-height;
+
       background-color: white;
       .card-image {
         display: block;
         width: 100%;
-        height: 100%;
+        height: auto;
       }
 
       h1 {
@@ -1509,12 +1512,12 @@ form input {
   .category {
     color:$university-color;
   }
-  .card{
-    border-bottom: thick solid $university-color;
-  }
   .category-jump {
     background-color: $university-color;
-    color: white !important;
+    color: white;
+  }
+  &.card{
+    border-bottom: thick solid $university-color;
   }
 }
 
@@ -1525,7 +1528,7 @@ form input {
   }
   .category-jump {
     background-color: $opinion-color;
-    color: white !important;
+    color: white;
   }
 }
 
@@ -1533,13 +1536,13 @@ form input {
 
   .category {
     color:$city-color;
-  }
-  .card {
-    border-bottom: thick solid $city-color;
   }   
    .category-jump {
     background-color: $city-color;
-    color: white !important;
+    color: white;
+  }
+    &.card{
+  border-bottom: thick solid $city-color;
   }
 }
 
@@ -1550,9 +1553,9 @@ form input {
   }
   .category-jump {
     background-color: $scitech-color;
-    color: white !important;
+    color: white;
   }
-  .card {
+  &.card{
     border-bottom: thick solid $scitech-color;
   }
 }
@@ -1560,14 +1563,14 @@ form input {
 .culture{
   
   .category {
-    color:$culture-color !important;
+    color:$culture-color;
   }
   .category-jump {
     background-color: $culture-color;
-    color: white !important;
+    color: white;
   } 
-  .card {
-    border-bottom: thick solid $culture-color !important;
+  &.card{
+    border-bottom: thick solid $culture-color;
   }
 }
 
@@ -1578,12 +1581,11 @@ form input {
   }
     .category-jump {
     background-color: $ytv-color;
-    color: white !important;
+    color: white;
   }
-  .card {
+  &.card{
     border-bottom: thick solid $ytv-color;
-  }
-}
+  }}
 
 .magazine{
   .category {
@@ -1591,7 +1593,10 @@ form input {
   }
    .category-jump {
     background-color: $magazine-color;
-    color: white !important;
+    color: white;
+  }
+    &.card{
+    border-bottom: thick solid $magazine-color;
   }
 }
 
@@ -1601,9 +1606,9 @@ form input {
   }
   .category-jump {
     background-color: $weekend-color;
-    color: white !important;
+    color: white;
   }
-  .card, {
+    &.card{
     border-bottom: thick solid $weekend-color;
   }
 }
@@ -1614,9 +1619,9 @@ form input {
   }
     .category-jump {
     background-color: $sports-color;
-    color: white !important;
+    color: white;
   }
-  .card {
+  &.card{
     border-bottom: thick solid $sports-color;
   }
 }

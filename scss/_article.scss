@@ -36,9 +36,6 @@ body.article-page {
     }
   }
 
-  .wrapper {
-    margin-bottom: 300px;
-  }
 
   .video-container {
     position: relative;
@@ -58,65 +55,6 @@ body.article-page {
     }
   }
 
-  .video-gallery {
-    overflow: hidden;
-    background: #fff;
-    padding-bottom: 20px;
-    border-bottom: thick solid $ytv-color;
-    margin: 1%;
-    width: 18%;
-    height: 220px;
-    @include grid;
-
-    h2 {
-      padding: 0 15px;
-      margin-top: 10px;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
-      font-weight: 600;
-    }
-
-    figure {
-      height: 0;
-      padding-bottom: 60%;
-    }
-
-    .arrow-right{
-      margin: 0 auto;
-      top: -77px;
-      width: 0; 
-      height: 0; 
-      border-top: 15px solid transparent;
-      border-bottom: 15px solid transparent; 
-      border-left: 20px solid white;
-      @media(max-width: 710px){
-          top: -58px;
-      }
-        
-      }
-    
-
-    figure:hover{
-      img {
-        -webkit-transform:scale(1.009); /* Safari and Chrome */
-        -moz-transform:scale(1.009); /* Firefox */
-        -ms-transform:scale(1.009); /* IE 9 */
-        -o-transform:scale(1.009); /* Opera */
-         transform:scale(1.009);
-         opacity: .75;
-       }
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-
-    }
-  }
-
-  .clear-floats{
-    clear: both;
-  }
 
   h1{
     @extend %face-serif;
@@ -296,40 +234,61 @@ body.article-page {
 
 }
 
+.fancybox{
+  // display: inline !important;
+.card{
+  &.story-ytv{
+    position: relative;
+    // display: inline-block;
+    h1 {
+      color: white;
+      position: absolute;
+    }
+    .card-image{
+      position: absolute;
+      left: -42%;
+      top: 0;
+      width: auto;
+      height: $card-height + $card-border-width;
+    }
+    time{
+      color:white;
+      position: absolute;
+      bottom: 15px;
+    }
+    p.category {
+      color: #bbb;
+    }
+    &::after {
+    background-color: rgba(25, 25, 25, 0.6);
+    
+      
+      top: 0;
+      left: 0;
+      width:100%;
+      height:100%;
+      content: "";
+      position: absolute;
+    }
+    .byline {
+      display: none;
+    }
+    
+    &:hover:after{
+    background-image: url("../images/play_button.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    &:hover{
+          h1{
+      opacity: .5;
+    }
+    }
 
-/* Media Queries - This is the responsive grid. */
-  @media (max-width: 1366px) {
-    .video-gallery {
-      width: 23%; /* Thumbnails 4 across */
-    }
   }
-  @media (max-width: 1024px) {
-    .video-gallery {
-      width: 31.333%; /* Thumbnails 3 across */
-    }
-  }
-  @media (max-width: 600px) {
-    .video-gallery {
-      width: 48%; /* Thumbnails 2 across */
-    }
-  }
-  @media (max-width: 360px) {
-    .video-gallery {
-      display: block;
-      width: 96%; /* Single column view. */
-      margin: 2%; /* The smaller the screen, the smaller the percentage actually is. */
-      float: none;
-    }
-  }
+}
+}
 
-  /* These are my preferred rollover styles. */
-  .video-gallery img {
-    width: 100%;
-    opacity: 1;
-  }
-  .video-gallery img:hover, .video-gallery img:active, .video-gallery img:focus, {
-    opacity: 0.75;
-  }
 
 
 //CHECK TO SEE IF WE WANT THIS CARD MOVING

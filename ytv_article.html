@@ -17,15 +17,16 @@
 
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="./fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
   <script src="./js/ScrollMagic.min.js"></script>
-  <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
   <script src="./js/bigSlide.js"></script>
   <script src="./js/bigSlideXC.js"></script>
+  <script src="./fancybox/jquery.fancybox.pack.js"></script>
 
 </head>
 
@@ -105,8 +106,6 @@
 
 </header>
   
-
-  <div class="wrapper">
   
 
   <article>
@@ -123,7 +122,37 @@
       <section class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/nNewxcGl3BE" frameborder="0" allowfullscreen></iframe>
       </section>
+      
+      <section id="ytv" class="container ytv category">
+        
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-ytv ">
+          <img class="card-image" src="images/volleyball.jpg">
+          <h1>WKND Take 2: Bench Convos with Prospective Yalies </h1>        
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
 
+
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/fTGhP6yk1-I?rel=0&autoplay=1"><article class="card story story-ytv ">
+          <img class="card-image" src="images/colbert.jpg">
+          <h1>Everybody has a story with Stephen Colbert</h1>          
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
+
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/b3ikR1K7Lbg?rel=0&autoplay=1"><article class="card story story-ytv ">
+          <img class="card-image" src="images/thegame.jpg">
+          <h1>Baby Bulldogs take on Yale Bazaar</h1>          
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
+
+        <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/0c8hhu2AnCk?rel=0&autoplay=1"><article class="card story story-ytv ">
+          <img class="card-image" src="images/minute.jpg">
+          <h1>YCC crowns Mr. Yale</h1>
+          <time>Apr 11, 4:23 pm</time>
+        </article></a>
+
+      </section>
+
+<!--
       <article class="video-gallery">
         <figure>
           <a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/nNewxcGl3BE?autoplay=1">
@@ -178,7 +207,7 @@
    </article>
   <div class="clear-floats"></div>
 
-  </div>
+-->
 
     <div class="bottom-bar">
       <p><span>UNIVERSITY</span>&nbsp;&nbsp;|&nbsp;&nbsp;Even artichokes have doubts</p> 
@@ -213,6 +242,11 @@ $(document).ready(function(){
   });
 </script>
 
+<script>
+    $(document).ready(function() {
+        $('.link-wrap').fancybox();
+    });
+</script>
 
 <script>
   //bottom bar appears after headline
@@ -229,6 +263,82 @@ $(document).ready(function(){
 
 </script>
 
+<script>
+  //packery setup and handles breaking at 480
+
+
+
+  $(function() {
+
+    $sections = ["#ytv"];
+
+
+    //functions for creating and destroying
+    function setUpPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery({
+        itemSelector: '.card',
+        gutter: 38.5,
+        containerStyle: null});
+      }
+    }
+
+    function destroyPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery('destroy');
+      }
+    } 
+
+    function layoutPackery(sections){
+      for (i = 0; i < (sections.length) ; i++) { 
+        $(sections[i]).packery('layout');
+      }
+    } 
+    //make packery fire only once after window resize is complete
+    var waitForFinalEvent = (function () {
+      var timers = {};
+      return function (callback, ms, uniqueId) {
+      if (!uniqueId) {
+        uniqueId = "Don't call this twice without a uniqueId";
+      }
+      if (timers[uniqueId]) {
+        clearTimeout (timers[uniqueId]);
+      }
+      timers[uniqueId] = setTimeout(callback, ms);
+      };
+    })();
+    //
+
+    //onLoad
+    var windowWatcher = $(window).width();
+
+    if($(window).width() > 480) {
+       setUpPackery($sections);
+    };
+    //
+
+  //resize function for breaking at 480
+    $(window).resize(function(){
+      waitForFinalEvent(function(){
+        if (windowWatcher > 480){
+            if ( $(window).width() < 480 ){
+                destroyPackery($sections);
+                windowWatcher = $(window).width();
+            }
+            else{
+              layoutPackery($sections);
+            }
+        }
+        else{
+            if ( $(window).width() >= 480 ){
+                setUpPackery($sections);
+                windowWatcher = $(window).width();
+            }
+        }
+        }, 1000, "Break");  
+    });
+  });
+</script>
 
 
 </body>
