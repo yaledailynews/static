@@ -206,12 +206,12 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, header#site-header nav#site-navigation a, footer#site-footer a, body.article-page .more-from-top, body.article-page .more-from-bottom {
+body, #mobile-header #mobile-xc, header#site-header nav#site-navigation a, footer#site-footer a, .card.cross-campus #xc, body.article-page .more-from-top, body.article-page .more-from-bottom {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
 
-.card h1, #mobile-header #mobile-xc, section.category > h2, .story-softcore-cover h1, body.article-page h1, body.article-page .more-from-top h2, body.article-page .more-from-bottom h2, body.article-page .article-text h3 {
+.card h1, section.category > h2, .story-softcore-cover h1, body.article-page h1, body.article-page .more-from-top h2, body.article-page .more-from-bottom h2, body.article-page .article-text h3 {
   font-family: 'Playfair Display', "Georgia", serif;
   font-weight: 400; }
 
@@ -276,7 +276,7 @@ p {
     color: black;
     display: inline-block;
     vertical-align: bottom;
-    padding-top: 16px;
+    padding-top: 17px;
     height: 52px;
     width: 15%;
     margin-top: -68px;
@@ -287,13 +287,15 @@ p {
     font-style: italic;
     font-weight: 400;
     letter-spacing: 0;
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8);
+    border-left: 3px solid #2882C8; }
   #mobile-header .menu-link {
     position: absolute;
     color: white;
     margin-top: -7px;
     margin-left: 11px;
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
 
 #mobile-navigation {
   height: 100%;
@@ -303,23 +305,79 @@ p {
   left: -15.625em;
   /*left or right and the width of your navigation panel*/
   width: 15.625em;
-  /*should match the above value*/ }
+  /*should match the above value*/
+  border-right: 3px solid #2882C8; }
   #mobile-navigation a {
-    color: #191919;
+    color: #aaa;
     text-decoration: none;
     display: block;
-    padding: 1.2em 1.2em 1.2em 1.2em;
+    padding: 1.2em 1.2em 1.2em 1em;
     outline: none;
-    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500; }
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    transition: border-left 0.25s ease;
+    font-weight: 600; }
     #mobile-navigation a.fa-times {
-      padding: 1em; }
-  #mobile-navigation a:hover {
-    color: white;
-    background-color: #003F87;
-    transition: background-color 1s ease, color 0.5s ease; }
+      padding: 0.8em; }
+    #mobile-navigation a:hover {
+      transition: border-left 0.25s ease; }
+  #mobile-navigation #nav-close-button:hover {
+    background-color: white;
+    color: #191919;
+    cursor: pointer; }
+  #mobile-navigation #tag-top {
+    border-left: 5px solid #2882C8; }
+    #mobile-navigation #tag-top:hover {
+      background-color: white;
+      color: #191919;
+      border-left: 10px solid #2882C8; }
+  #mobile-navigation #tag-opinion {
+    border-left: 5px solid #cf383e; }
+    #mobile-navigation #tag-opinion:hover {
+      border-left: 10px solid #cf383e;
+      color: #cf383e; }
+  #mobile-navigation #tag-university {
+    border-left: 5px solid #2882C8; }
+    #mobile-navigation #tag-university:hover {
+      border-left: 10px solid #2882C8;
+      color: #2882C8; }
+  #mobile-navigation #tag-city {
+    border-left: 5px solid #00be64; }
+    #mobile-navigation #tag-city:hover {
+      border-left: 10px solid #00be64;
+      color: #00be64; }
+  #mobile-navigation #tag-sports {
+    border-left: 5px solid #42d2ff; }
+    #mobile-navigation #tag-sports:hover {
+      border-left: 10px solid #42d2ff;
+      color: #42d2ff; }
+  #mobile-navigation #tag-scitech {
+    border-left: 5px solid #f7ca18; }
+    #mobile-navigation #tag-scitech:hover {
+      border-left: 10px solid #f7ca18;
+      color: #f7ca18; }
+  #mobile-navigation #tag-culture {
+    border-left: 5px solid #d20a78; }
+    #mobile-navigation #tag-culture:hover {
+      border-left: 10px solid #d20a78;
+      color: #d20a78; }
+  #mobile-navigation #tag-ytv {
+    border-left: 5px solid #c89664; }
+    #mobile-navigation #tag-ytv:hover {
+      border-left: 10px solid #c89664;
+      color: #c89664; }
+  #mobile-navigation #tag-weekend {
+    border-left: 5px solid #fe9e48; }
+    #mobile-navigation #tag-weekend:hover {
+      border-left: 10px solid #fe9e48;
+      color: #fe9e48; }
+  #mobile-navigation #tag-magazine {
+    border-left: 5px solid #00b4b4; }
+    #mobile-navigation #tag-magazine:hover {
+      border-left: 10px solid #00b4b4;
+      color: #00b4b4; }
 
 header#site-header {
   background-color: white;
@@ -624,11 +682,11 @@ footer#site-footer {
       overflow: hidden;
       width: 60px;
       height: 60px;
+      letter-spacing: 0;
       color: white;
-      font-size: 1.5em;
-      font-weight: 300;
-      font-style: italic;
-      font-family: 'Playfair Display', "Georgia", serif; }
+      font-size: 1.7em;
+      font-weight: 600;
+      font-style: italic; }
     .card.cross-campus #xc p {
       padding: 20px 20px 20px 20px;
       color: white;
@@ -1358,6 +1416,30 @@ body.article-page .unhide {
       font-size: 0.75em; }
     .card.story-weekend {
       border-bottom: 2px solid #fe9e48; }
+    .card.story-breaking .breaking {
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 35px;
+      padding: 10px;
+      position: relative;
+      background-color: red;
+      text-align: center; }
+      .card.story-breaking .breaking h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.8em;
+        color: white;
+        display: inline-block;
+        margin-right: 5px; }
+        .card.story-breaking .breaking h3:after {
+          content: "  |"; }
+      .card.story-breaking .breaking time {
+        position: relative;
+        font-size: 0.8em;
+        bottom: auto;
+        margin: 0;
+        display: inline-block; }
     .card.story-simple {
       height: auto;
       width: 100%;
@@ -1392,6 +1474,7 @@ body.article-page .unhide {
         height: 100%; }
     .card.story-kahuna {
       width: 100%;
+      margin-bottom: -45px;
       background-color: white; }
       .card.story-kahuna .card-image {
         display: block;
@@ -1429,21 +1512,38 @@ body.article-page .unhide {
       content: "";
       position: absolute; }
     .card.cross-campus {
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      border-left: 3px solid #2a9dea; }
       .card.cross-campus .xc-content {
         height: 100%; }
       .card.cross-campus #xc-close-button {
         display: inline;
         float: right;
         margin-top: -40px;
-        margin-right: 5px; }
+        margin-right: 5px;
+        cursor: pointer; }
       .card.cross-campus #xc {
-        margin: 0 0 0 0;
         width: 100%;
         text-align: center;
-        height: 50px; }
-        .card.cross-campus #xc p {
-          margin-top: -5px; }
+        height: 50px;
+        margin: 0 0 0 0;
+        font-size: 1.25em;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-style: normal;
+        font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif; }
+      .card.cross-campus #xc p {
+        padding: 24px 20px 20px 20px;
+        letter-spacing: 2px;
+        color: white;
+        opacity: 0.9;
+        margin-top: -5px; }
+      .card.cross-campus::after {
+        background: -moz-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(25, 25, 25, 0) 100%), no-repeat;
+        background: -webkit-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(25, 25, 25, 0) 100%), no-repeat;
+        background: -o-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(25, 25, 25, 0) 100%), no-repeat;
+        background: -ms-linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(25, 25, 25, 0) 100%), no-repeat;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(25, 25, 25, 0) 100%), no-repeat; }
 
   .story-softcore-cover {
     margin-top: -125px; }
@@ -1471,12 +1571,9 @@ form input {
 
 .university .category {
   color: #2882C8; }
-<<<<<<< HEAD
-.university .card {
-  border-bottom: thick solid #2882C8; }
 .university .category-jump {
   background-color: #2882C8;
-  color: white !important; }
+  color: white; }
 .university.card {
   border-bottom: thick solid #2882C8; }
 

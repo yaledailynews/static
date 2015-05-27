@@ -108,12 +108,12 @@ p {
     margin-top: -40px;
   }
   #mobile-xc{
-    @extend %face-serif;
+    @extend %face-sans;
     text-decoration: none;
     color: black;
     display: inline-block;
     vertical-align: bottom;
-    padding-top: 16px;
+    padding-top: 17px;
     height: 52px;
     width: 15%;
     margin-top: -68px;
@@ -125,6 +125,7 @@ p {
     font-weight: 400;
     letter-spacing: 0;
     color: rgba(255, 255, 255, 0.8);
+    border-left: 3px solid $university-color;
 
   }
   .menu-link{
@@ -133,6 +134,7 @@ p {
     margin-top: -7px;
     margin-left: 11px;
     text-decoration: none;
+    cursor: pointer;
     // display: inline-block;
   }
 }
@@ -146,30 +148,134 @@ p {
   z-index: 4;
   left: -15.625em; /*left or right and the width of your navigation panel*/
   width: 15.625em; /*should match the above value*/
-  #nav-close-button{
+  border-right: 3px solid $university-color;
 
-
-  }
   a{
-    color: #191919;
+    color: #aaa;
     text-decoration: none;
     display: block;
-    padding: 1.2em 1.2em 1.2em 1.2em;
+    padding: 1.2em 1.2em 1.2em 1em;
     outline: none;
-    box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+    box-shadow: inset 0 -1px rgba(0,0,0,0.1);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-weight: 500;
+    transition: border-left 0.25s ease;
+    font-weight: 600;
     &.fa-times{
-      padding: 1em;
+      padding: 0.8em;
+    }
+
+    &:hover {
+      transition: border-left 0.25s ease;
     }
   }
-  a:hover{
-    color: white;
-    background-color:#003F87;
-    transition: background-color 1s ease,
-                color 0.5s ease;
-    // transition: color 0.5s ease;
+  
+  #nav-close-button {
+    &:hover {
+      background-color: white;
+      color: #191919;
+      cursor: pointer;
+    }
+  }
+  #tag-top {
+    border-left: 5px solid $university-color;
+    
+    &:hover {
+      background-color: white;
+      color: #191919;
+      border-left: 10px solid $university-color;
+      
+    }
+  }
+
+  #tag-opinion {
+    border-left: 5px solid $opinion-color;
+    &:hover {
+      border-left: 10px solid $opinion-color;
+      color: $opinion-color;
+
+    }
+  }
+
+  #tag-university {
+    border-left: 5px solid $university-color;
+
+    &:hover {
+      border-left: 10px solid $university-color;
+      color: $university-color;
+
+    }
+  }
+
+  #tag-city {
+    border-left: 5px solid $city-color;
+
+    &:hover {
+      border-left: 10px solid $city-color;
+      color: $city-color;
+
+    }
+  }
+
+  #tag-sports {
+    border-left: 5px solid $sports-color;
+
+    &:hover {
+      border-left: 10px solid $sports-color;
+      color: $sports-color;
+
+    }
+  }
+
+  #tag-scitech {
+    border-left: 5px solid $scitech-color;
+
+    &:hover {
+      border-left: 10px solid $scitech-color;
+      color: $scitech-color;
+
+    }
+  }
+
+  #tag-culture {
+    border-left: 5px solid $culture-color;
+
+    &:hover {
+      border-left: 10px solid $culture-color;
+      color: $culture-color;
+
+    }
+  }
+
+  #tag-ytv {
+    border-left: 5px solid $ytv-color;
+
+    &:hover {
+      border-left: 10px solid $ytv-color;
+      color: $ytv-color;
+
+    }
+  }
+
+  #tag-weekend {
+    border-left: 5px solid $weekend-color;
+
+    &:hover {
+      border-left: 10px solid $weekend-color;
+      color: $weekend-color;
+
+    }
+  }
+
+  #tag-magazine {
+    border-left: 5px solid $magazine-color;
+
+    &:hover {
+      border-left: 10px solid $magazine-color;
+      color: $magazine-color;
+
+    }
   }
 }
 
@@ -572,11 +678,13 @@ footer#site-footer{
       overflow: hidden; 
       width: 60px;
       height: 60px;
+      letter-spacing: 0;
       color: white;
-      font-size: 1.5em;
-      font-weight: 300;
+      font-size: 1.7em;
+      font-weight: 600;
       font-style: italic;
-      font-family: 'Playfair Display', "Georgia", serif;
+      @extend %face-sans;
+ 
     }
 
     #xc p {
@@ -1328,6 +1436,38 @@ section.category {
       border-bottom: 2px solid $weekend-color;
     }
 
+     &.story-breaking{
+  .breaking{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    position: relative;
+    background-color: red;
+    text-align: center;
+    h3{
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 0.8em;
+      color: white;
+      display: inline-block;
+      margin-right: 5px;
+
+      &:after {
+        content: "  |";
+      }
+    }
+    time{
+      position: relative;
+      font-size: 0.8em;
+      bottom: auto;
+      margin: 0;
+      display: inline-block;
+     }
+    }
+  }
+
 
     &.story-simple {
       height: auto;
@@ -1382,6 +1522,7 @@ section.category {
 
     &.story-kahuna{
       width: 100%;
+      margin-bottom: -45px;
 
       background-color: white;
       .card-image {
@@ -1449,6 +1590,7 @@ section.category {
     }
     &.cross-campus{
       padding-bottom: 15px;
+      border-left: 3px solid #2a9dea;
       .xc-content{
         height: 100%;
       }
@@ -1457,16 +1599,36 @@ section.category {
         float: right;
         margin-top: -40px;
         margin-right: 5px;
+        cursor: pointer;
       }
-      #xc{
-        margin: 0 0 0 0;
-        width: 100%;
-        text-align: center;
-        height: 50px;
-        p{
-          margin-top: -5px;
-        }
-      }
+
+      #xc {
+      width: 100%;
+      text-align: center;
+      height: 50px;
+      margin: 0 0 0 0;
+    
+      font-size: 1.25em;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-style: normal;
+
+      
+      font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
+ 
+    }
+
+    #xc p {
+      padding: 24px 20px 20px 20px;
+      letter-spacing: 2px;
+      color: white;
+      opacity: 0.9;
+      margin-top: -5px;
+    }
+
+    &::after {
+       @include bg-gradienter (( to bottom, rgba(255, 255, 255, 0) 0%, rgba(25, 25, 25, 0) 100% ));
+    }
     }
   }
 
