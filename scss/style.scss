@@ -1148,7 +1148,7 @@ section.front-page {
   } 
 
   time {
-    bottom: 30px !important;
+    bottom: 30px;
   }
 
   margin-top: 25px;
@@ -1463,7 +1463,7 @@ section.category {
 
     &.story > time {
       position: relative;
-      bottom: 0px !important;
+      bottom: 0px;
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em;
@@ -1492,7 +1492,8 @@ section.category {
 
 
       &:after {
-        content: "  ·";
+
+        content: " ·";
         font-weight: 800;
         color: rgba(255, 255, 255, 0.75);
       }
@@ -1500,7 +1501,7 @@ section.category {
     time{
       position: relative;
       font-size: 0.8em;
-      bottom: auto !important;
+      bottom: auto;
       margin: 0;
       display: inline-block;
      }
@@ -1580,7 +1581,7 @@ section.category {
 
     &.story-kahuna{
       width: 100%;
-      margin-bottom: -45px;
+      margin-bottom: 25px;
 
       background-color: white;
       .card-image {
@@ -1592,10 +1593,6 @@ section.category {
       h1 {
         margin-left: 0px;
         font-size: 24px;
-      }
-
-      h3 {
-        margin-right: 5px;
       }
    
     }

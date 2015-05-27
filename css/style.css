@@ -1284,7 +1284,7 @@ body.article-page .unhide {
     section.front-page p.category {
       display: block; }
     section.front-page time {
-      bottom: 30px !important; } }
+      bottom: 30px; } }
 @media (max-width: 870px) {
   #small-logo {
     display: none !important; } }
@@ -1466,7 +1466,7 @@ body.article-page .unhide {
         margin-bottom: 7px; }
     .card.story > time {
       position: relative;
-      bottom: 0px !important;
+      bottom: 0px;
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em; }
@@ -1488,13 +1488,13 @@ body.article-page .unhide {
         color: white;
         display: inline-block; }
         .card.story-breaking .breaking h3:after {
-          content: "  ·";
+          content: " ·";
           font-weight: 800;
           color: rgba(255, 255, 255, 0.75); }
       .card.story-breaking .breaking time {
         position: relative;
         font-size: 0.8em;
-        bottom: auto !important;
+        bottom: auto;
         margin: 0;
         display: inline-block; }
     .card.story-simple {
@@ -1541,7 +1541,7 @@ body.article-page .unhide {
         display: inline-block; }
     .card.story-kahuna {
       width: 100%;
-      margin-bottom: -45px;
+      margin-bottom: 25px;
       background-color: white; }
       .card.story-kahuna .card-image {
         display: block;
@@ -1550,8 +1550,6 @@ body.article-page .unhide {
       .card.story-kahuna h1 {
         margin-left: 0px;
         font-size: 24px; }
-      .card.story-kahuna h3 {
-        margin-right: 5px; }
     .card.story-photo, .card.story-preview, .card.story-mag, .card.story-weekend {
       width: 100%;
       background-color: white;
