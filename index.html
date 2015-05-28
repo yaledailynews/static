@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="./fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
@@ -28,6 +29,8 @@
   <script src="./js/jquery.smooth-scroll.min.js"></script>
   <script src="./js/bigSlide.js"></script>
   <script src="./js/bigSlideXC.js"></script>
+  <script src="./fancybox/jquery.fancybox.pack.js"></script>
+
 
 
 
@@ -529,28 +532,28 @@
 
    <section id="ytv" class="container ytv category">
     <h2>YTV</h2>      
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/mayday.jpg">
         <h1>OCS same-day appointments serve job seekers </h1>        
         <time>Apr 11, 4:23 pm</time>
         <p class="category">YTV</p>
       </article></a>
 
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/colbert.jpg">
         <h1>Everybody has a story with Stephen Colbert</h1>          
         <time>Apr 11, 4:23 pm</time>
         <p class="category">YTV</p>
       </article></a>
 
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/fossil-free.jpg">
         <h1>Fossil Free Yale's Fight to Divest</h1>          
         <time>Apr 11, 4:23 pm</time>
         <p class="category">YTV</p>
       </article></a>
 
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/debate.jpg">
         <h1>YCC Presidential Debate 2015</h1>
         <time>Apr 11, 4:23 pm</time>
@@ -749,6 +752,12 @@
     $('#tag-weekend').smoothScroll({offset: 18});
     $('#tag-magazine').smoothScroll({offset: 18});
   </script>
+
+  <script>
+    $(document).ready(function() {
+        $('.link-wrap').fancybox();
+    });
+</script>
 
   <script>
     //navbar highlighting
