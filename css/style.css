@@ -1149,7 +1149,7 @@ body.article-page .bottom-bar {
   z-index: 3;
   display: none; }
   body.article-page .bottom-bar .bottom-bar-wrap {
-    width: 960px;
+    width: 950px;
     margin: 0 auto; }
     @media (max-width: 970px) {
       body.article-page .bottom-bar .bottom-bar-wrap {
