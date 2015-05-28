@@ -302,9 +302,9 @@ p {
   background-color: white;
   opacity: 0.975;
   z-index: 4;
-  left: -15.625em;
+  left: -200px;
   /*left or right and the width of your navigation panel*/
-  width: 15.625em;
+  width: 200px;
   /*should match the above value*/
   border-right: 3px solid #2882C8; }
   #mobile-navigation a {
