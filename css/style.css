@@ -1273,6 +1273,10 @@ body.article-page .unhide {
   nav#site-navigation a {
     font-size: 12px !important;
     padding: 10px !important; }
+  nav#site-navigation #nav-search {
+    font-size: 12px;
+    padding-left: 6px !important;
+    padding-right: 6px !important; }
 
   section.category {
     margin: 0 auto;
@@ -1303,7 +1307,7 @@ body.article-page .unhide {
       left: -42%; }
 
   .story-softcore-cover {
-    height: 450px !important; }
+    height: 450px; }
     .story-softcore-cover h1, .story-softcore-cover .byline {
       margin-left: 10%; }
     .story-softcore-cover h1 {
