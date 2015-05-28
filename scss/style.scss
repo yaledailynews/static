@@ -925,6 +925,13 @@ section#weekend, section#magazine {
   border-bottom: 1px solid #ddd;
 }
 
+section.front-page {
+
+  p.category {
+    display: inline;
+  }
+}
+
 
 .story-softcore-cover {
   overflow: hidden;
@@ -1071,6 +1078,7 @@ header#site-header {
       }
     }
   }
+
 }
 
 /// ARTICLE PAGE STUFF
@@ -1322,6 +1330,12 @@ section.front-page {
   }
   
 }
+
+  @media (min-width: 480px) {
+  time {
+    bottom: 30px !important;
+  }
+
 
 
 @media(max-width:480px) {
