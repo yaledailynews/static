@@ -329,9 +329,6 @@ footer#site-footer{
     text-transform: uppercase;
     margin: 0px 10px 0px 10px;
   }
-  @media(max-width: 980px){
-    margin-top: 50px;
-  }
    @media(max-width: 550px){
     margin-top: 20px;
   }
@@ -912,6 +909,7 @@ section.opinion {
 }
 
 
+
 section.magazine, section.weekend {
 
   padding-top: 100px;
@@ -930,9 +928,9 @@ section.magazine, section.weekend {
   }
 }
 
-section#weekend {
+section#weekend, section#magazine {
   margin-top: 0px;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
   border-bottom: 1px solid #ddd;
 }
 
