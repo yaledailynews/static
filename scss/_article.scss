@@ -134,7 +134,7 @@ body.article-page {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
   }
   
-  .more-from-top {
+  .most-read-top {
     @extend %more-from;
     position: absolute; 
     top: 350px;
@@ -149,6 +149,10 @@ body.article-page {
     @media (max-width: 780px) {
       display: none;
     }
+  }
+
+  .more-from-top {
+    display: none;   
   }
 
   .more-from-bottom {

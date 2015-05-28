@@ -206,7 +206,7 @@ a:focus {
   .offset-by-one-half.column,
   .offset-by-one-half.columns {
     margin-left: 52%; } }
-body, #mobile-header #mobile-xc, header#site-header nav#site-navigation a, footer#site-footer a, .card.cross-campus #xc, body.article-page .more-from-top, body.article-page .more-from-bottom, body.article-page .more-from-top h2, body.article-page .more-from-bottom h2 {
+body, #mobile-header #mobile-xc, header#site-header nav#site-navigation a, footer#site-footer a, .card.cross-campus #xc, body.article-page .most-read-top, body.article-page .more-from-bottom, body.article-page .most-read-top h2, body.article-page .more-from-bottom h2 {
   font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
   font-weight: 600;
   letter-spacing: 2px; }
@@ -996,15 +996,15 @@ body.article-page .video-container {
     width: 100%; }
 body.article-page h1 {
   letter-spacing: 1.2px; }
-body.article-page .more-from-top, body.article-page .more-from-bottom {
+body.article-page .most-read-top, body.article-page .more-from-bottom {
   border-bottom: none;
   font-weight: normal;
   height: auto;
   overflow: hidden;
   background-color: white; }
-  body.article-page .more-from-top .most-read, body.article-page .more-from-bottom .most-read {
+  body.article-page .most-read-top .most-read, body.article-page .more-from-bottom .most-read {
     padding: 0 20px; }
-  body.article-page .more-from-top h2, body.article-page .more-from-bottom h2 {
+  body.article-page .most-read-top h2, body.article-page .more-from-bottom h2 {
     background-color: #2882C8;
     font-size: 19px;
     font-weight: 800;
@@ -1013,7 +1013,7 @@ body.article-page .more-from-top, body.article-page .more-from-bottom {
     letter-spacing: 0.075em;
     text-align: center;
     color: rgba(255, 255, 255, 0.9); }
-  body.article-page .more-from-top a, body.article-page .more-from-bottom a {
+  body.article-page .most-read-top a, body.article-page .more-from-bottom a {
     text-decoration: none;
     border-bottom: 1px solid #eee;
     display: block;
@@ -1023,26 +1023,28 @@ body.article-page .more-from-top, body.article-page .more-from-bottom {
     line-height: 1.2em;
     padding-bottom: 15px;
     transition: all 0.25s ease; }
-  body.article-page .more-from-top a:hover, body.article-page .more-from-bottom a:hover {
+  body.article-page .most-read-top a:hover, body.article-page .more-from-bottom a:hover {
     color: #2882C8;
     transition: all 0.25s ease; }
-  body.article-page .more-from-top a:last-child, body.article-page .more-from-bottom a:last-child {
+  body.article-page .most-read-top a:last-child, body.article-page .more-from-bottom a:last-child {
     border-bottom: none;
     padding-bottom: 0; }
 body.article-page .card {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }
-body.article-page .more-from-top {
+body.article-page .most-read-top {
   position: absolute;
   top: 350px;
   right: 40px;
   height: auto;
   width: 250px; }
   @media (max-width: 970px) {
-    body.article-page .more-from-top {
+    body.article-page .most-read-top {
       right: 30px; } }
   @media (max-width: 780px) {
-    body.article-page .more-from-top {
+    body.article-page .most-read-top {
       display: none; } }
+body.article-page .more-from-top {
+  display: none; }
 body.article-page .more-from-bottom {
   width: 60%; }
   @media (min-width: 980px) {
@@ -1360,21 +1362,27 @@ body.article-page .unhide {
     top: 0;
     right: 0;
     width: 100%;
-    height: 66px;
-    padding: 20px;
+    height: 35px;
+    padding: 10px;
     position: relative;
     background-color: red;
     text-align: center; }
     .card.story-breaking .breaking h3 {
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 1em;
-      color: white; }
+      font-size: 0.8em;
+      color: white;
+      display: inline-block; }
+      .card.story-breaking .breaking h3:after {
+        content: " ·";
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.75); }
     .card.story-breaking .breaking time {
       position: relative;
-      font-size: 0.675em;
+      font-size: 0.8em;
       bottom: auto;
-      margin: 0; }
+      margin: 0;
+      display: inline-block; }
 
   .story-softcore-cover {
     height: 300px; }

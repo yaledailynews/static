@@ -1239,27 +1239,38 @@ section.front-page {
         font-size: 2.5em;
       }
     }
+
     &.story-breaking{
   .breaking{
     top: 0;
     right: 0;
     width: 100%;
-    height: 66px;
-    padding: 20px;
+    height: 35px;
+    padding: 10px;
     position: relative;
     background-color: red;
     text-align: center;
     h3{
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 1em;
+      font-size: 0.8em;
       color: white;
+      display: inline-block;
+
+
+      &:after {
+
+        content: " ·";
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.75);
+      }
     }
     time{
       position: relative;
-      font-size: 0.675em;
+      font-size: 0.8em;
       bottom: auto;
       margin: 0;
+      display: inline-block;
      }
     }
   }
@@ -1313,6 +1324,7 @@ section.front-page {
   #mobile-xc {
     display: none !important;
   }
+  
 }
 
 
