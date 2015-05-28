@@ -18,7 +18,7 @@ $wild-sand: #f6f4f4;
 %time-category-style{
   text-transform: uppercase;
   position: absolute;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.075em;
   font-size: .75em;
   margin-left: 15px;
 }
@@ -156,7 +156,7 @@ p {
     display: block;
     padding: 1.2em 1.2em 1.2em 1em;
     outline: none;
-    box-shadow: inset 0 -1px rgba(0,0,0,0.1);
+    box-shadow: inset 0 -1px rgba(0,0,0,0.05);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 500;
@@ -352,6 +352,10 @@ footer#site-footer{
   display: table;
 }
 
+p.category {
+  display: none;
+}
+
 .byline {
   text-transform: uppercase;
   letter-spacing: 1.8;
@@ -405,8 +409,9 @@ footer#site-footer{
       margin-right: 15px;
     }
     time {
-      bottom: 30px;
-      color: $dark-gray; 
+      bottom: 15px;
+      color: #aaa;
+      font-weight: 300; 
       @extend %time-category-style;
     }
     .category{
@@ -461,7 +466,7 @@ footer#site-footer{
         position: absolute;
       }
 
-      
+
     }
 
     &.city {
@@ -885,18 +890,18 @@ a.link-wrap{
   display: block;
 }
 
-section.front-page {
-
-  margin-top: 25px;
-
-}
-
 section.opinion, section.university, section.city, 
 section.sports, section.culture, 
 section.scitech, section.ytv {
   padding-bottom: 125px;
   padding-top: 25px;
   border-bottom: 1px solid #ddd;
+}
+
+section.opinion {
+  p.category {
+    display: inline;
+  }
 }
 
 
@@ -1158,6 +1163,19 @@ header#site-header {
   padding-top: 50px;
 }
 
+section.front-page {
+  p.category {
+    display: block;
+  } 
+
+  time {
+    bottom: 30px;
+  }
+
+  margin-top: 25px;
+
+}
+
 }
 
 
@@ -1211,7 +1229,6 @@ header#site-header {
     &.story-kahuna{
       width: 100%;
       height: auto;
-      margin-top: 50px;
       h1 {
         font-size: 2.5em;
       }
@@ -1497,7 +1514,10 @@ section.category {
 
 
       &:after {
-        content: "  |";
+
+        content: " ·";
+        font-weight: 800;
+        color: rgba(255, 255, 255, 0.75);
       }
     }
     time{
@@ -1587,7 +1607,7 @@ section.category {
 
     &.story-kahuna{
       width: 100%;
-      margin-bottom: -45px;
+      margin-bottom: 25px;
 
       background-color: white;
       .card-image {
@@ -1599,10 +1619,6 @@ section.category {
       h1 {
         margin-left: 0px;
         font-size: 24px;
-      }
-
-      h3 {
-        margin-right: 5px;
       }
    
     }
