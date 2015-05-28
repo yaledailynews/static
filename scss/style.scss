@@ -329,9 +329,6 @@ footer#site-footer{
     text-transform: uppercase;
     margin: 0px 10px 0px 10px;
   }
-   @media(max-width: 550px){
-    margin-top: 20px;
-  }
   
 }
 
@@ -862,15 +859,9 @@ p.category {
 
   transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    text-decoration: underline;
-    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   &:after {
     content:"→";
     margin-left: 2px;
-    text-decoration: none;
   }
 }
 

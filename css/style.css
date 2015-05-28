@@ -420,9 +420,6 @@ footer#site-footer {
     line-height: 50px;
     text-transform: uppercase;
     margin: 0px 10px 0px 10px; }
-  @media (max-width: 550px) {
-    footer#site-footer {
-      margin-top: 20px; } }
 
 .article-footer {
   background-color: #ccc !important; }
@@ -806,13 +803,9 @@ p.category {
     background-color: #f7ca18; }
   .category-jump.ytv {
     background-color: #c89664; }
-  .category-jump:hover {
-    text-decoration: underline;
-    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
   .category-jump:after {
     content: "→";
-    margin-left: 2px;
-    text-decoration: none; }
+    margin-left: 2px; }
 
 section.category {
   clear: both;
