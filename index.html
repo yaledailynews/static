@@ -843,7 +843,7 @@
       //
 
     //resize function for breaking at 480
-    function breakingPackery(num, array){
+    function breakingPackery(num, array, text){
       $(window).resize(function(){
         waitForFinalEvent(function(){
           if (windowWatcher > num){
@@ -861,13 +861,13 @@
                   windowWatcher = $(window).width();
               }
           }
-          }, 1500, "Break");  
+          }, 1500, text) ;  
 
       });
     }
 
-    breakingPackery(480, $sections);
-    breakingPackery(710, $kahuna);
+    breakingPackery(480, $sections, "1st");
+    breakingPackery(710, $kahuna), "2nd";
 
 
     });
