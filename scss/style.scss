@@ -1124,10 +1124,14 @@ header#site-header {
       width: 2*$card-width + $gutter-size;
     }
     &.story-kahuna{
-
+    
       width: 3*$card-width + 2*$gutter-size;
       h1 {
         font-size: 40px;
+      }
+      img.card-image{
+        width: auto;
+        height:100%;
       }
     }
     &.story-softcore{

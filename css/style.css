@@ -1273,6 +1273,9 @@ body.article-page .unhide {
       width: 710.54px; }
       .card.story-kahuna h1 {
         font-size: 40px; }
+      .card.story-kahuna img.card-image {
+        width: auto;
+        height: 100%; }
     .card.story-softcore .card-image {
       height: 100%;
       width: auto;
