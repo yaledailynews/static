@@ -1412,7 +1412,7 @@ body.article-page .unhide {
   #mobile-xc {
     display: none !important; } }
 @media (min-width: 480px) {
-  section.front-page time {
+  section.front-page .card.story-simple time, section.front-page .card.story-preview time, section.front-page .card.story-photo time {
     bottom: 30px !important; } }
 @media (max-width: 480px) {
   a {

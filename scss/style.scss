@@ -1333,9 +1333,16 @@ section.front-page {
 
   @media (min-width: 480px) {
     section.front-page {
-  time {
+
+      .card {
+        &.story-simple, &.story-preview, &.story-photo {
+          time {
     bottom: 30px !important;
   }
+
+        }
+      }
+  
 }
   }
 
