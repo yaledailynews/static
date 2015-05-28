@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <link rel="stylesheet" href="./font-awesome-4.3.0/css/font-awesome.min.css"> 
+  <link rel="stylesheet" href="./fancybox/jquery.fancybox.css" type="text/css" media="screen" />
 
   <script src="./js/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
@@ -28,6 +29,8 @@
   <script src="./js/jquery.smooth-scroll.min.js"></script>
   <script src="./js/bigSlide.js"></script>
   <script src="./js/bigSlideXC.js"></script>
+  <script src="./fancybox/jquery.fancybox.pack.js"></script>
+
 
 
 
@@ -108,7 +111,8 @@
 
   </header>
 
-  <section id="front-page" class=" container category front-page" >
+  <section id="kahuna" class=" container category kahuna">
+
 
     <a class="link-wrap" href="#"><article class="card story story-breaking story-kahuna university">
       <div class="breaking">
@@ -118,6 +122,10 @@
       <h1>Harrassment at SAE and its fallout</h1>
         <img class="card-image" src="images/sae.jpg">
     </article></a>
+    
+  </section>
+
+  <section id="front-page" class=" container category front-page" >
 
     <div class="link-wrap" id = "xc-web" href="#"><article class="card story cross-campus">
       <h1>Cross Campus</h1>
@@ -524,28 +532,28 @@
 
    <section id="ytv" class="container ytv category">
     <h2>YTV</h2>      
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/mayday.jpg">
         <h1>OCS same-day appointments serve job seekers </h1>        
         <time>Apr 11, 4:23 pm</time>
         <p class="category">YTV</p>
       </article></a>
 
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/colbert.jpg">
         <h1>Everybody has a story with Stephen Colbert</h1>          
         <time>Apr 11, 4:23 pm</time>
         <p class="category">YTV</p>
       </article></a>
 
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/fossil-free.jpg">
         <h1>Fossil Free Yale's Fight to Divest</h1>          
         <time>Apr 11, 4:23 pm</time>
         <p class="category">YTV</p>
       </article></a>
 
-      <a class="link-wrap" href="#"><article class="card story story-softcore ytv weekend magazine">
+      <a class="link-wrap fancybox fancybox.iframe" href="https://www.youtube.com/embed/-BGBwymqWg8?rel=0&autoplay=1"><article class="card story story-softcore ytv weekend magazine">
         <img class="card-image" src="images/debate.jpg">
         <h1>YCC Presidential Debate 2015</h1>
         <time>Apr 11, 4:23 pm</time>
@@ -746,6 +754,12 @@
   </script>
 
   <script>
+    $(document).ready(function() {
+        $('.fancybox').fancybox();
+    });
+</script>
+
+  <script>
     //navbar highlighting
 
     // init controller
@@ -783,7 +797,9 @@
 
     $(function() {
 
-      $sections = ["#front-page", "#university", "#opinion", "#city", "#scitech", "#culture", "#ytv", "#weekend", "#magazine", "#sports"];
+      $sections = [ "#front-page", "#university", "#opinion", "#city", "#scitech", "#culture", "#ytv", "#weekend", "#magazine", "#sports"];
+
+      $kahuna = ["#kahuna"]
 
 
       //functions for creating and destroying
@@ -828,28 +844,41 @@
       if($(window).width() > 480) {
          setUpPackery($sections);
       };
+
+      if($(window).width() > 710) {
+         setUpPackery($kahuna);
+      };
+
       //
 
     //resize function for breaking at 480
+    function breakingPackery(num, array, text){
       $(window).resize(function(){
         waitForFinalEvent(function(){
-          if (windowWatcher > 480){
-              if ( $(window).width() < 480 ){
-                  destroyPackery($sections);
+          if (windowWatcher > num){
+              if ( $(window).width() < num ){
+                  destroyPackery(array);
                   windowWatcher = $(window).width();
               }
               else{
-                layoutPackery($sections);
+                layoutPackery(array);
               }
           }
           else{
-              if ( $(window).width() >= 480 ){
-                  setUpPackery($sections);
+              if ( $(window).width() >= num ){
+                  setUpPackery(array);
                   windowWatcher = $(window).width();
               }
           }
-          }, 1000, "Break");  
+          }, 1000, text) ;  
+
       });
+    }
+
+    breakingPackery(480, $sections, "1st");
+    breakingPackery(710, $kahuna), "2nd";
+
+
     });
   </script>
    <script>

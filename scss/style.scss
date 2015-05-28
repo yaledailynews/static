@@ -622,10 +622,12 @@ p.category {
     width: 2 * $card-width + $gutter-size;
     height: $gutter-size / 2 + $card-height;
     .card-image {
+      position: absolute;
       width: 100%;
-      height: 100%;
+      height: auto;
     }
     h1 {
+      position: absolute;
       color: white;
       width: 200px;
     }
@@ -634,6 +636,7 @@ p.category {
       font-weight: 100;
     }
     time {
+      position: absolute;
       color: white;
     }
     p.category {
@@ -647,6 +650,17 @@ p.category {
       height:100%;
       content: "";
       position: absolute;
+    }
+    &:hover:after{
+    background-image: url("../images/play_button.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(25, 25, 25, 0.6);
+    }
+    &:hover{
+          h1, time {
+      opacity: .5;
+    }
     }
   }
 
@@ -1116,6 +1130,13 @@ header#site-header {
         font-size: 40px;
       }
     }
+    &.story-softcore{
+      .card-image{
+        height: 100%;
+        width: auto;
+        left: -42%;
+      }
+    }
   }
 
   .story-softcore-cover {
@@ -1157,6 +1178,7 @@ section.front-page {
 
 }
 
+
 @media(max-width: 870px) {
   #small-logo {
     display: none !important;
@@ -1188,9 +1210,12 @@ section.front-page {
     width: 460px;
     margin-top: 3%;
   }
-
+  section.kahuna{
+    width: 100%;
+    margin-top: 50px;
+  }
   section.front-page {
-    margin-top: 80px;
+
   }
 
   section.magazine, section.weekend {
@@ -1206,7 +1231,10 @@ section.front-page {
     }
     &.story-kahuna{
       width: 100%;
-      height: auto;
+      .card-image{
+        width: auto;
+        height: 100%;
+      }
       h1 {
         font-size: 2.5em;
       }
@@ -1289,9 +1317,6 @@ section.front-page {
 
 
 @media(max-width:480px) {
-
- 
-
   a {
     text-decoration: none;
   }
@@ -1312,6 +1337,13 @@ section.front-page {
   border-bottom: 1px solid #ddd;
 }   
 
+  section.kahuna{
+    &.category{
+      width: 100% !important;
+    }
+
+  }
+
 section.category {
   margin: 50px auto 0 auto;
   width: 90%;
@@ -1323,9 +1355,8 @@ section.category {
   }
 
   section.front-page {
-    margin-top: 70px;
     margin-bottom: 50px;
-
+    margin-top: 0;
     .story-opinion {
       display: none;
     }
@@ -1532,11 +1563,15 @@ section.category {
         width: 100%;
         height: 203px;
         background-color: white;
-
+        
+      time{
+       display: none;
+      }
         .card-image {
           display: block;
           width: 100%;
-
+          height: auto;
+          left: 0;
         }
       }
 
@@ -1586,8 +1621,8 @@ section.category {
       background-color: white;
       .card-image {
         display: block;
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
       }
 
       h1 {
