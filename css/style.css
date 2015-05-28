@@ -784,13 +784,15 @@ p.category {
 .category-jump {
   width: auto;
   padding: 5px;
+  padding-left: 7px;
   font-size: 0.7em;
   margin-top: 100px;
   bottom: 11px;
   color: white;
   text-transform: uppercase;
   margin: 0 auto;
-  letter-spacing: 0.1em; }
+  letter-spacing: 0.1em;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
   .category-jump.opinion {
     background-color: #cf383e; }
   .category-jump.university {
@@ -807,9 +809,13 @@ p.category {
     background-color: #f7ca18; }
   .category-jump.ytv {
     background-color: #c89664; }
-  .category-jump::after {
+  .category-jump:hover {
+    text-decoration: underline;
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
+  .category-jump:after {
     content: "→";
-    margin-left: 2px; }
+    margin-left: 2px;
+    text-decoration: none; }
 
 section.category {
   clear: both;
@@ -1607,14 +1613,16 @@ body.article-page .unhide {
       width: 100%;
       background-color: white;
       height: auto;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      overflow: hidden; }
       .card.story-photo h1, .card.story-preview h1, .card.story-mag h1, .card.story-weekend h1 {
         color: #433f3f; }
       .card.story-photo .category, .card.story-preview .category, .card.story-mag .category, .card.story-weekend .category {
         display: none; }
       .card.story-photo .card-image, .card.story-preview .card-image, .card.story-mag .card-image, .card.story-weekend .card-image {
-        left: 250px;
-        height: 100%; }
+        left: 70%;
+        width: 50%;
+        height: auto; }
       .card.story-photo .card-preview, .card.story-photo .byline, .card.story-preview .card-preview, .card.story-preview .byline, .card.story-mag .card-preview, .card.story-mag .byline, .card.story-weekend .card-preview, .card.story-weekend .byline {
         display: none; }
     .card.story-mag .byline, .card.story-weekend .byline {
