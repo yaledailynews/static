@@ -1332,9 +1332,11 @@ section.front-page {
 }
 
   @media (min-width: 480px) {
+    section.front-page {
   time {
     bottom: 30px !important;
   }
+}
   }
 
 
