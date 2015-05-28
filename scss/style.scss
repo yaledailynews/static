@@ -1212,9 +1212,10 @@ section.front-page {
   }
   section.kahuna{
     width: 100%;
+    margin-top: 50px;
   }
   section.front-page {
-    margin-top: 80px;
+
   }
 
   section.magazine, section.weekend {
@@ -1316,9 +1317,6 @@ section.front-page {
 
 
 @media(max-width:480px) {
-
- 
-
   a {
     text-decoration: none;
   }
@@ -1343,6 +1341,7 @@ section.front-page {
     &.category{
       width: 100% !important;
     }
+
   }
 
 section.category {
@@ -1356,9 +1355,8 @@ section.category {
   }
 
   section.front-page {
-    margin-top: 70px;
     margin-bottom: 50px;
-
+    margin-top: 0;
     .story-opinion {
       display: none;
     }
@@ -1623,8 +1621,8 @@ section.category {
       background-color: white;
       .card-image {
         display: block;
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
       }
 
       h1 {
