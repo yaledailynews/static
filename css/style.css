@@ -1163,6 +1163,9 @@ body.article-page .bottom-bar {
     @media (max-width: 970px) {
       body.article-page .bottom-bar .bottom-bar-wrap {
         margin-left: 3%; } }
+    @media (max-width: 710px) {
+      body.article-page .bottom-bar .bottom-bar-wrap .byline {
+        display: none; } }
     @media (max-width: 600px) {
       body.article-page .bottom-bar .bottom-bar-wrap {
         width: 155px;
@@ -1222,6 +1225,27 @@ body.article-page .unhide {
   background-repeat: no-repeat; }
 .fancybox .card.story-ytv:hover h1 {
   opacity: .5; }
+
+section {
+  margin-top: 60px !important;
+  padding-bottom: 0 !important;
+  border-bottom: none !important;
+  padding-top: 0 !important; }
+  section h1 {
+    font-weight: 800 !important; }
+  section h2 {
+    margin-bottom: 25px; }
+  section p.byline {
+    margin-left: 15px !important; }
+  @media (max-width: 480px) {
+    section {
+      margin-top: 100px !important; } }
+
+footer {
+  margin-top: 125px; }
+  @media (max-width: 480px) {
+    footer {
+      margin-top: 50px; } }
 
 .card.author-card {
   height: 460.86px;
