@@ -208,11 +208,6 @@
   <div class="clear-floats"></div>
 
 -->
-
-    <div class="bottom-bar">
-      <p><span>UNIVERSITY</span>&nbsp;&nbsp;|&nbsp;&nbsp;Even artichokes have doubts</p> 
-      <p class="byline"> by Marina Keegan</p>
-    </div>
   
   </article>
 
@@ -248,20 +243,6 @@ $(document).ready(function(){
     });
 </script>
 
-<script>
-  //bottom bar appears after headline
-  // init controller
-  var controller = new ScrollMagic.Controller();
-
-  $(function () { // wait for document ready
-        // build scene
-        var scene = new ScrollMagic.Scene({triggerElement: "#bottom-bar-signal", triggerHook: 0.1})
-                .setClassToggle('.bottom-bar', 'unhide')
-                //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
-                .addTo(controller);
-      });
-
-</script>
 
 <script>
   //packery setup and handles breaking at 480

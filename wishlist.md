@@ -3,3 +3,6 @@ Opinion Page
 
 Sports Page
 - have different sports navbar, when clicked only display articles from that sport
+
+ytv
+-stylize video player appearance for popout
