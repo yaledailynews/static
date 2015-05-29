@@ -25,7 +25,7 @@
       'menu': ('#mobile-navigation'),
       'push': ('.push'),
       'side': 'left',
-      'menuWidth': '15.625em',
+      'menuWidth': '200px',
       'speed': '300',
       'state': 'closed',
       'activeBtn': 'active',
