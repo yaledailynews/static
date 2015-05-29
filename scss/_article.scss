@@ -172,6 +172,8 @@ footer {
     height: auto;   
     width: 250px;
 
+
+
      @media(max-width: 970px) {
       right: 30px;
     }
@@ -298,6 +300,18 @@ footer {
     margin-top: 35px;
     margin-bottom: 40px;
     margin-right: 100px;
+
+    p.caption {
+      font-style: italic;
+      color: #888;
+      margin-top: 5px;
+      font-size: 0.7em;
+    }
+
+    iframe {
+      margin-top: 25px;
+      width: 100%;
+    }
 
     a{
       color: #191919;

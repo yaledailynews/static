@@ -1137,6 +1137,14 @@ body.article-page .article-text {
   margin-top: 35px;
   margin-bottom: 40px;
   margin-right: 100px; }
+  body.article-page .article-text p.caption {
+    font-style: italic;
+    color: #888;
+    margin-top: 5px;
+    font-size: 0.7em; }
+  body.article-page .article-text iframe {
+    margin-top: 25px;
+    width: 100%; }
   body.article-page .article-text a {
     color: #191919;
     text-decoration: none;
