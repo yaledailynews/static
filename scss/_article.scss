@@ -245,10 +245,14 @@ footer {
 
   .article-header {
     width: 100%;
+
+    h1 {
+      margin-bottom: -12.5px;
+    }
   
 
 
-    h1{
+    h1, .subtitle {
       width: 600px;
       margin-top: 30px;
       z-index: 2;
@@ -273,6 +277,16 @@ footer {
     }
     }
 
+    .subtitle {
+      @extend %face-serif;
+      font-size: 1em;
+      font-style: italic;
+      color: #888;
+      line-height: 1.4;
+      font-weight: 300;
+      letter-spacing: 0.02em;
+    }
+
 
   }
 
@@ -280,7 +294,7 @@ footer {
     width: 600px;
     font-size: 22px;
     line-height: 1.2em;
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 40px;
     margin-right: 100px;
     img {
