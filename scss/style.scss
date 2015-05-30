@@ -1037,16 +1037,8 @@ header#site-header {
       text-transform: uppercase;
       text-decoration: none;
       color: #bbb; 
+      cursor: pointer;
       &:hover {
-        color: #333;
-      }
-
-      &#tag-home {
-        color: #bbb;
-        font-size: 18px;
-        cursor: pointer;
-      }
-      &#tag-home:hover {
         color: #333;
       }
     }
