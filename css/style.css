@@ -1510,10 +1510,8 @@ body.article-page .unhide {
   section.magazine, section.weekend {
     width: 100%; }
 
-  section.magazine {
-    margin-bottom: -60px; }
-    section.magazine .subtitle {
-      display: none; }
+  section.magazine .subtitle {
+    display: none; }
 
   section.opinion {
     padding-bottom: 40px; }
@@ -1557,11 +1555,18 @@ body.article-page .unhide {
       margin-top: 10px;
       font-size: 0.7em; }
 
-  section#weekend {
+  section#weekend, section#magazine {
     padding-bottom: 25px; }
 
   section#opinion .link-wrap {
     display: inline; }
+
+  .section-wrap {
+    padding: 5px 0 30px 0; }
+
+  footer#site-footer a.copy {
+    display: block;
+    padding: 0; }
 
   .card {
     margin-bottom: 25px;
