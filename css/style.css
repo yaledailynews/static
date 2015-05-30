@@ -285,7 +285,7 @@ p {
     text-align: center;
     font-size: 20px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0;
     color: rgba(255, 255, 255, 0.8);
     border-left: 3px solid #2882C8; }
@@ -1089,11 +1089,16 @@ body.article-page .byline {
     text-decoration: none; }
   body.article-page .byline date, body.article-page .byline time {
     color: #aaa; }
-  body.article-page .byline a:after {
+  @media (max-width: 480px) {
+    body.article-page .byline a, body.article-page .byline date, body.article-page .byline time {
+      display: block;
+      letter-spacing: 0.05em; } }
+@media (min-width: 481px) {
+  body.article-page a:after {
     content: "|";
     margin-left: 10px;
     margin-right: 10px;
-    color: #ccc; }
+    color: #ccc; } }
 body.article-page .article-header {
   width: 100%; }
   body.article-page .article-header h1 {
@@ -1124,6 +1129,10 @@ body.article-page .article-header {
     line-height: 1.4;
     font-weight: 300;
     letter-spacing: 0.02em; }
+    @media (max-width: 480px) {
+      body.article-page .article-header .subtitle {
+        font-weight: 800;
+        letter-spacing: 0.01em; } }
 body.article-page .article-text {
   color: #191919;
   width: 600px;
@@ -1177,6 +1186,9 @@ body.article-page .article-text {
   @media (max-width: 780px) {
     body.article-page .article-text {
       width: 100%; } }
+  @media (max-width: 480px) {
+    body.article-page .article-text {
+      margin-top: 25px; } }
 body.article-page .bottom-bar {
   position: fixed;
   border-top: 1px solid #ddd;
@@ -1595,9 +1607,6 @@ body.article-page .photo-credit {
     overflow: hidden; }
     .card .byline {
       opacity: 0.7; }
-    .card .card-preview {
-      font-size: 0.95em;
-      letter-spacing: 0.02em; }
     .card.story {
       border-width: 2px !important; }
       .card.story h1 {
@@ -1608,7 +1617,7 @@ body.article-page .photo-credit {
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em;
-      letter-spacing: 0.05em; }
+      letter-spacing: 0.025em; }
     .card.story-weekend {
       border-bottom: 2px solid #fe9e48; }
     .card.story-breaking .breaking {
@@ -1665,6 +1674,10 @@ body.article-page .photo-credit {
       height: 0;
       padding-bottom: 100%;
       background-color: white; }
+      .card.story-major p.card-preview, .card.story-kahuna p.card-preview, .card.story-opinion p.card-preview {
+        font-size: 0.9em;
+        font-weight: 600;
+        letter-spacing: 0px; }
       .card.story-major h1, .card.story-kahuna h1, .card.story-opinion h1 {
         font-size: 24px;
         font-weight: 600; }

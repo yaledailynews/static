@@ -122,7 +122,7 @@ p {
     text-align: center;
     font-size: 20px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0;
     color: rgba(255, 255, 255, 0.8);
     border-left: 3px solid $university-color;
@@ -1522,10 +1522,6 @@ section.category {
       opacity: 0.7;
     }
 
-    .card-preview {
-      font-size: 0.95em;
-      letter-spacing: 0.02em;
-    }
 
 
 
@@ -1546,7 +1542,7 @@ section.category {
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.025em;
     }
 
     &.story-weekend {
@@ -1629,6 +1625,12 @@ section.category {
       height: 0;
       padding-bottom: 100%;
       background-color: white;
+
+      p.card-preview {
+        font-size: 0.9em;
+        font-weight: 600;
+        letter-spacing: 0px;
+      }
 
       h1 {
         font-size: 24px;
