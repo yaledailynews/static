@@ -148,7 +148,7 @@
 				<p>One senior I spoke with (whom we’ll refer to as Shloe Carbib for the sake of Google anonymity) has known what she’s wanted since freshman year. When asked what she hopes to do with her life, Shloe responded immediately: “Oh you know, I want to write and direct films or be an indie music celebrity.” Ironies of expression aside, there was a sincerity to her avowal. “I want to devote my life to the things that I love. I want to create something lasting that I’m really proud of.”</p>
 
 				<img src="images/goldman.jpg" />
-        <p class="caption">A picture of Goldman Sachs.</p>
+        <p class="caption">This is a really long caption. The caption is for a picture of Goldman Sachs. The caption, as I said, is quite long. I'm not sure why this photo deserves such a long caption. But indeed, it has one.</p>
 
 				<p>At Yale, she’s worked hard in pursuit of these goals — directing theatrical productions, playing in a band and collaborating on the 2012 Class Day Video. Yet on Monday evening at 8 p.m., she found herself at a top-tier consulting firm event at the Study — meeting and greeting in anticipation of her interview the next morning.</p>
 
@@ -334,35 +334,7 @@
 	
 	</article>
 
-   <section id="university" class=" container category university" >
-    <h2>More from University</h2>
-
-     <a class="link-wrap" href="#"><article class="card story story-major university">
-      <h1>Is the Schwarzman Center necessary?</h1>
-      <p class="byline">Christopher Wan, Annie Cook</p>
-        <img class="card-image" src="images/schwarzman.jpg">
-      <p class="card-preview">Yale has promised to build a state-of-the-arts facility that will provide students with the opportunity to gather in a central space that has never existed before. But perhaps the reason it has never existed is that it has never been necessary.</p>
-    </article></a>
-    <a class="link-wrap" href="#"><article class="card story story-preview story-photo university">
-      <h1>Title IX Steering Committee promises changes following YCC</h1>
-      <p class="byline">VIVIAN WANG</p>
-      <p class="card-preview">Last night, the Native American Law Students Association brought to campus a genre-defying work that tackled a variety of urgent but under-addressed national issues.</p>
-      <img class="card-image" src="images/harkness.jpg">
-      <time class="published-time">Apr 5, 12:45 pm</time>
-      <p class="category">University</p>
-    </article></a>
-
-
-    <a class="link-wrap" href="#"><article class="card story story-photo story-preview university">
-      <h1>Admins Meet YCC Halfway On Mental Health Proposals</h1>
-      <p class="byline">Christopher van der Wan</p>
-      <img class="card-image" src="images/yale-health.jpg">
-      <p class="card-preview">Five weeks after an open forum in which Yale College Dean Jonathan Holloway refused to commit to addressing the Yale College Council’s 2013 and 2014 recommendations on mental health point by point.</p>
-      <time>Apr 19, 9:49 pm</time>
-      <p class="category">University</p>
-    </article></a>
-
-  </section>
+ 
 
   <footer class="article-footer" id="site-footer">
     <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
@@ -405,96 +377,6 @@ $(document).ready(function(){
       });
 
 </script>
-
-<script>
-    //packery setup and handles breaking at 480
-
-
-
-    $(function() {
-
-      $sections = ["#university"];
-
-
-      //functions for creating and destroying
-      function setUpPackery(sections){
-        for (i = 0; i < (sections.length) ; i++) { 
-          $(sections[i]).packery({
-          itemSelector: '.card',
-          gutter: 38.5,
-          containerStyle: null});
-        }
-      }
-
-      function destroyPackery(sections){
-        for (i = 0; i < (sections.length) ; i++) { 
-          $(sections[i]).packery('destroy');
-        }
-      } 
-
-      function layoutPackery(sections){
-        for (i = 0; i < (sections.length) ; i++) { 
-          $(sections[i]).packery('layout');
-        }
-      } 
-      //make packery fire only once after window resize is complete
-      var waitForFinalEvent = (function () {
-        var timers = {};
-        return function (callback, ms, uniqueId) {
-        if (!uniqueId) {
-          uniqueId = "Don't call this twice without a uniqueId";
-        }
-        if (timers[uniqueId]) {
-          clearTimeout (timers[uniqueId]);
-        }
-        timers[uniqueId] = setTimeout(callback, ms);
-        };
-      })();
-      //
-
-      //onLoad
-      var windowWatcher = $(window).width();
-
-      if($(window).width() > 480) {
-         setUpPackery($sections);
-      };
-
-      if($(window).width() > 710) {
-         setUpPackery($kahuna);
-      };
-
-      //
-
-    //resize function for breaking at 480
-    function breakingPackery(num, array, text){
-      $(window).resize(function(){
-        waitForFinalEvent(function(){
-          if (windowWatcher > num){
-              if ( $(window).width() < num ){
-                  destroyPackery(array);
-                  windowWatcher = $(window).width();
-              }
-              else{
-                layoutPackery(array);
-              }
-          }
-          else{
-              if ( $(window).width() >= num ){
-                  setUpPackery(array);
-                  windowWatcher = $(window).width();
-              }
-          }
-          }, 1000, text) ;  
-
-      });
-    }
-
-    breakingPackery(480, $sections, "1st");
-
-
-    });
-  </script>
-
 
 
 </body>

@@ -777,8 +777,7 @@ p.category {
 
 .category-jump {
   width: auto;
-  padding: 5px;
-  padding-left: 7px;
+  padding: 7px;
   font-size: 0.7em;
   margin-top: 100px;
   bottom: 11px;
@@ -962,20 +961,6 @@ header#site-header {
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
 
-body.article-page section {
-  margin-top: 60px;
-  padding-bottom: 0;
-  border-bottom: none;
-  padding-top: 0; }
-  body.article-page section h1 {
-    font-weight: 800; }
-  body.article-page section h2 {
-    margin-bottom: 25px; }
-  body.article-page section p.byline {
-    margin-left: 15px; }
-  @media (max-width: 480px) {
-    body.article-page section {
-      margin-top: 100px; } }
 body.article-page footer {
   margin-top: 125px; }
   @media (max-width: 480px) {
@@ -1139,8 +1124,9 @@ body.article-page .article-text {
   margin-right: 100px; }
   body.article-page .article-text p.caption {
     font-style: italic;
-    color: #888;
+    color: #999;
     margin-top: 5px;
+    line-height: 1.3;
     font-size: 0.7em; }
   body.article-page .article-text iframe {
     margin-top: 25px;
