@@ -122,7 +122,7 @@ p {
     text-align: center;
     font-size: 20px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0;
     color: rgba(255, 255, 255, 0.8);
     border-left: 3px solid $university-color;
@@ -148,7 +148,7 @@ p {
   z-index: 4;
   left: -200px; /*left or right and the width of your navigation panel*/
   width: 200px; /*should match the above value*/
-  border-right: 3px solid $university-color;
+  border-right: 3px solid #2a9dea;
 
   a{
     color: #aaa;
@@ -928,6 +928,10 @@ section.front-page {
   p.category {
     display: inline;
   }
+
+  time {
+    bottom: 30px;
+  }
 }
 
 
@@ -1032,6 +1036,7 @@ header#site-header {
       text-transform: uppercase;
       text-decoration: none;
       color: #bbb; 
+      cursor: pointer;
       &:hover {
         color: #333;
       }
@@ -1343,7 +1348,7 @@ section.front-page {
     section.front-page {
 
       .card {
-        &.story-simple, &.story-preview, &.story-photo {
+        &.story-simple, &.story-preview, &.story-photo, &.story-opinion {
           time {
             bottom: 30px !important;
           }
@@ -1518,9 +1523,6 @@ section.category {
       opacity: 0.7;
     }
 
-    .card-preview {
-      font-size: 0.8em;
-    }
 
 
 
@@ -1541,6 +1543,7 @@ section.category {
       color: #aaa;
       font-weight: 600;
       font-size: 0.75em;
+      letter-spacing: 0.025em;
     }
 
     &.story-weekend {
@@ -1623,6 +1626,12 @@ section.category {
       height: 0;
       padding-bottom: 100%;
       background-color: white;
+
+      p.card-preview {
+        font-size: 0.9em;
+        font-weight: 600;
+        letter-spacing: 0px;
+      }
 
       h1 {
         font-size: 24px;

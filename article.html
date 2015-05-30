@@ -34,7 +34,7 @@
 <header id="site-header">
   <a href="# "><h1 class="masthead-logo">Yale Daily News</h1></a>
   <nav id="site-navigation">
-    <a id="tag-top" href="#">Top</a>
+    <a id="tag-home">Home</a>
     <a id="tag-opinion" href="#">Opinion</a>
     <a id="tag-university" href="#">University</a>
     <a id="tag-city" href="#">City</a>
@@ -57,22 +57,22 @@
 </header>
 
 <header id="mobile-header">
-  <a href="#" class="menu-link fa fa-bars fa-2x"></a>
+  <a href="#" class="menu-link fa fa-bars fa-lg"></a>
   <img src = "./images/branding/YDN Nameplate Medium white.png">
   <a href="#" id="mobile-xc">xc</a>
   <nav id="mobile-navigation">
       <!-- <a id="close">&#10006;</a> EDITING THIS OUT FOR THE TIME BEING BECAUSE IT'S WEIRD TAKE A LOOK-->
       <a class = "fa fa-times fa-lg" id="nav-close-button"></a>
-      <a id="tag-top" href="#front-page">Top</a>
-      <a id="tag-opinion" href="#opinion">Opinion</a>
-      <a id="tag-university" href="#university">University</a>
-      <a id="tag-city" href="#city">City</a>
-      <a id="tag-sports" href="#sports">Sports</a>
-      <a id="tag-scitech" href="#scitech">Scitech</a>
-      <a id="tag-culture" href="#culture">Culture</a>
-      <a id="tag-ytv" href="#ytv">YTV</a>    
-      <a id="tag-weekend" href="#weekend-category">Wknd</a>
-      <a id="tag-magazine" href="#magazine-category">Mag</a>    
+      <a id="tag-top" href="#">Home</a>
+      <a id="tag-opinion" href="#">Opinion</a>
+      <a id="tag-university" href="#">University</a>
+      <a id="tag-city" href="#">City</a>
+      <a id="tag-sports" href="#">Sports</a>
+      <a id="tag-scitech" href="#">Scitech</a>
+      <a id="tag-culture" href="#">Culture</a>
+      <a id="tag-ytv" href="#">YTV</a>    
+      <a id="tag-weekend" href="#">Wknd</a>
+      <a id="tag-magazine" href="#">Mag</a>    
       <a id="nav-search" class= "fa fa-search" href="#"></a>
       <!-- <div id="nav-search">
         <i class="fa fa-search"></i>
@@ -83,8 +83,9 @@
     </nav>
   <div class="card story cross-campus xc-content-mobile">
     <div id="xc">
-          <p>Cross Campus</p>
-        </div>
+        <p>Cross Campus</p>
+        <i class = "fa fa-times fa-1x" id="xc-close-button"></i>
+      </div>
 
         <div class="xc-content">
           <p class="date">May 6, 2015</p>
@@ -107,14 +108,22 @@
 </header>
 
 
-
+<div id="article-content">
 	<article>
 
 
     <div class="hero-image">
 
 		<img src="images/wall-street-hero.jpg" />
+    
+
   </div>
+  <p class="photo-credit">Annie Cook</p>
+  <ul class="social-top">
+        <li><a href="#"><img src="images/fb-square.png"></a></li>
+        <li><a href="#"><img src="images/linkedin-square.png"></a></li>
+        <li><a href="#"><img src="images/twitter-square.png"></a></li>
+      </ul>
 
 
 		
@@ -124,6 +133,7 @@
 				<h1>Even artichokes have doubts</h1>
         <p class="subtitle">If this year is anything like the last 10, around 25 percent of employed Yale graduates will enter the consulting or finance industry*. We ought to be pausing for a second to ask why.</p>
 				<p id="bottom-bar-signal" class="byline"><a href="#" class="author">Marina Keegan</a><date>September 30, 2011</date></p>
+
 
 			</div>
 
@@ -323,7 +333,7 @@
       <div class="bottom-bar-wrap">
 			<p><span>NOW READING</span>&nbsp;&nbsp;|&nbsp;&nbsp;Even artichokes have doubts</p> 
 			<p class="byline">by Marina Keegan</p>
-      <ul class="social">
+      <ul class="social-bottom">
         <li><a href="#"><img src="images/fb.png"></a></li>
         <li><a href="#"><img src="images/twitter.png"></a></li>
         <li><a href="#"><img src="images/email.png"></a></li>
@@ -333,8 +343,9 @@
 		</div>
 	
 	</article>
+</div>
 
- 
+ <h1 id="append">Loading</h1>
 
   <footer class="article-footer" id="site-footer">
     <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
@@ -374,6 +385,33 @@ $(document).ready(function(){
                 .setClassToggle('.bottom-bar', 'unhide')
                 //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                 .addTo(controller);
+
+        var scene2 = new ScrollMagic.Scene({triggerElement: "#append", triggerHook: "onEnter"})
+          .addTo(controller)
+          .on("enter", function (e) {
+            if (!$("#append").hasClass("active") && !$("#append").hasClass("done")) {
+              $("#append").addClass("active");
+              if (console){
+                console.log("loading new items");
+              }
+              // simulate ajax call to add content using the function below
+              setTimeout(appendItems, 1000, 1);
+                // "loading" done -> revert to normal state
+                scene.update(); // make sure the scene gets the new start position
+                $("#append").removeClass("active");
+            }
+          });
+
+          //fake AJAX function
+      function appendItems(num) {
+      // create new item elements
+        var u = $("article:last").clone();
+        var elem = u[0];
+      
+      // append elements to container
+      document.getElementById("article-content").appendChild(elem);
+    }
+
       });
 
 </script>

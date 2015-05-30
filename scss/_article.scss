@@ -35,6 +35,10 @@ footer {
   }
 }
 
+#mobile-header{
+  height: 50px;
+}
+
   .box {
    
     
@@ -146,7 +150,7 @@ footer {
   .most-read-top {
     @extend %more-from;
     position: absolute; 
-    top: 350px;
+    top: 550px;
     right: 40px;
     height: auto;   
     width: 250px;
@@ -214,15 +218,30 @@ footer {
       color: #aaa;
     }
 
-    
+     @media(max-width: 480px) {
 
+    a, date, time {
+      display: block;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  @media (min-width: 481px) {
     a:after {
       content: "|";
       margin-left: 10px;
       margin-right: 10px;
       color: #ccc;
     }
+
   }
+
+    
+
+    
+  }
+
+
 
   .article-header {
     width: 100%;
@@ -230,6 +249,8 @@ footer {
     h1 {
       margin-bottom: -12.5px;
     }
+
+  
   
 
 
@@ -256,6 +277,7 @@ footer {
     @media (max-width: 600px) {
       font-size: 2.5em;
     }
+
     }
 
     .subtitle {
@@ -266,6 +288,11 @@ footer {
       line-height: 1.4;
       font-weight: 300;
       letter-spacing: 0.02em;
+
+      @media(max-width: 480px) {
+        font-weight: 800;
+        letter-spacing: 0.01em;
+      }
     }
 
 
@@ -341,6 +368,10 @@ footer {
 
     @media (max-width: 780px) {
       width: 100%;
+    }
+
+    @media(max-width: 480px) {
+      margin-top: 25px;
     }
 
 
@@ -442,6 +473,32 @@ footer {
 
   .unhide{
     display: block;
+  }
+
+  .social-top {
+      position: absolute !important;
+      top: 415px;
+      
+    img {
+      margin-top: -3px;
+      width: 50px;
+      height: 50px;
+    }
+
+    @media(max-width: 1180px) {
+      display: none;
+    }
+  }
+
+  .photo-credit {
+    z-index: 2;
+    color: #bbb;
+    float: right;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    margin-top: -30px;
+    margin-right: 2%;
   }
 
 }
