@@ -409,7 +409,8 @@ header#site-header {
         color: #333; }
 
 .responsive-head a {
-  padding: 11px !important; }
+  padding-left: 11px !important;
+  padding-right: 11px !important; }
 
 footer#site-footer {
   background-color: rgba(25, 25, 25, 0.95);
