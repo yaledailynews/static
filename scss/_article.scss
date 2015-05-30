@@ -463,6 +463,17 @@ footer {
     }
   }
 
+  .photo-credit {
+    z-index: 2;
+    color: #bbb;
+    float: right;
+    font-style: italic;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    margin-top: -30px;
+    margin-right: 1%;
+  }
+
 }
 
 .fancybox{
