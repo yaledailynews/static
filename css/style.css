@@ -966,6 +966,8 @@ body.article-page footer {
   @media (max-width: 480px) {
     body.article-page footer {
       margin-top: 50px; } }
+body.article-page #mobile-header {
+  height: 50px; }
 body.article-page .box {
   margin: 0 auto;
   transition: all 0.25s ease; }
