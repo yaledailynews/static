@@ -929,6 +929,10 @@ section.front-page {
   p.category {
     display: inline;
   }
+
+  time {
+    bottom: 30px;
+  }
 }
 
 
@@ -1035,6 +1039,11 @@ header#site-header {
       color: #bbb; 
       &:hover {
         color: #333;
+      }
+
+      &#tag-home {
+        color: #bbb;
+        font-size: 18px;
       }
     }
   a#small-logo{
@@ -1340,7 +1349,7 @@ section.front-page {
     section.front-page {
 
       .card {
-        &.story-simple, &.story-preview, &.story-photo {
+        &.story-simple, &.story-preview, &.story-photo, &.story-opinion {
           time {
             bottom: 30px !important;
           }

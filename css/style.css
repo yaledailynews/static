@@ -848,6 +848,8 @@ section#weekend, section#magazine {
 
 section.front-page p.category {
   display: inline; }
+section.front-page time {
+  bottom: 30px; }
 
 .story-softcore-cover {
   overflow: hidden;
@@ -932,6 +934,9 @@ header#site-header {
       color: #bbb; }
       header#site-header nav#site-navigation a:hover {
         color: #333; }
+      header#site-header nav#site-navigation a#tag-home {
+        color: #bbb;
+        font-size: 18px; }
     header#site-header nav#site-navigation a#small-logo {
       display: none;
       vertical-align: middle;
@@ -1036,7 +1041,7 @@ body.article-page .card {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12); }
 body.article-page .most-read-top {
   position: absolute;
-  top: 350px;
+  top: 550px;
   right: 40px;
   height: auto;
   width: 250px; }
@@ -1226,6 +1231,16 @@ body.article-page .bottom-bar {
       font-weight: 800; }
 body.article-page .unhide {
   display: block; }
+body.article-page .social-top {
+  position: absolute !important;
+  top: 415px; }
+  body.article-page .social-top img {
+    margin-top: -3px;
+    width: 50px;
+    height: 50px; }
+  @media (max-width: 1180px) {
+    body.article-page .social-top {
+      display: none; } }
 
 .fancybox .card.story-ytv h1 {
   color: white;
@@ -1469,7 +1484,7 @@ body.article-page .unhide {
   #mobile-xc {
     display: none !important; } }
 @media (min-width: 480px) {
-  section.front-page .card.story-simple time, section.front-page .card.story-preview time, section.front-page .card.story-photo time {
+  section.front-page .card.story-simple time, section.front-page .card.story-preview time, section.front-page .card.story-photo time, section.front-page .card.story-opinion time {
     bottom: 30px !important; } }
 @media (max-width: 480px) {
   a {
