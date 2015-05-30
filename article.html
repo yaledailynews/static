@@ -108,7 +108,7 @@
 </header>
 
 
-
+<div id="article-content">
 	<article>
 
 
@@ -343,8 +343,9 @@
 		</div>
 	
 	</article>
+</div>
 
- 
+ <h1 id="append">Loading</h1>
 
   <footer class="article-footer" id="site-footer">
     <a href="#">&#169; Yale Daily News <script>document.write(new Date().getFullYear());</script> </a>
@@ -384,6 +385,33 @@ $(document).ready(function(){
                 .setClassToggle('.bottom-bar', 'unhide')
                 //.addIndicators({name: "1 (duration: 300)"}) // add indicators (requires plugin)
                 .addTo(controller);
+
+        var scene2 = new ScrollMagic.Scene({triggerElement: "#append", triggerHook: "onEnter"})
+          .addTo(controller)
+          .on("enter", function (e) {
+            if (!$("#append").hasClass("active") && !$("#append").hasClass("done")) {
+              $("#append").addClass("active");
+              if (console){
+                console.log("loading new items");
+              }
+              // simulate ajax call to add content using the function below
+              setTimeout(appendItems, 1000, 1);
+                // "loading" done -> revert to normal state
+                scene.update(); // make sure the scene gets the new start position
+                $("#append").removeClass("active");
+            }
+          });
+
+          //fake AJAX function
+      function appendItems(num) {
+      // create new item elements
+        var u = $("article:last").clone();
+        var elem = u[0];
+      
+      // append elements to container
+      document.getElementById("article-content").appendChild(elem);
+    }
+
       });
 
 </script>
