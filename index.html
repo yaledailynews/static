@@ -23,7 +23,6 @@
   <script src="./js/jquery.min.js"></script>
   <script src="./js/packery.pkgd.min.js"></script>
   <script src="./js/ScrollMagic.min.js"></script>
-  <script src="./js/TweenMax.min.js"></script>
   <script src="./js/debug.addIndicators.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
   <script src="./js/jquery.smooth-scroll.min.js"></script>
@@ -746,6 +745,22 @@
             });
 
         });
+
+      window.setTimeout(function(){
+        if ($('#small-logo').css('display') == "inline-block" && !$('#site-navigation').hasClass('responsive-head')){
+        $('#site-navigation').addClass('responsive-head')
+      }} , 1);
+
+      $(window).scroll(function(){
+      if ($('#small-logo').css('display') == "inline-block" && !$('#site-navigation').hasClass('responsive-head') ){
+        $('#site-navigation').addClass('responsive-head')
+      }
+      else if($('#small-logo').css('display') == "none" && $('#site-navigation').hasClass('responsive-head')){
+        $('#site-navigation').removeClass('responsive-head')
+      }
+      });
+
+
     });
   </script>
 
