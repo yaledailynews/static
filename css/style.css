@@ -306,7 +306,7 @@ p {
   /*left or right and the width of your navigation panel*/
   width: 200px;
   /*should match the above value*/
-  border-right: 3px solid #2882C8; }
+  border-right: 3px solid #2a9dea; }
   #mobile-navigation a {
     color: #aaa;
     text-decoration: none;
@@ -1596,7 +1596,8 @@ body.article-page .photo-credit {
     .card .byline {
       opacity: 0.7; }
     .card .card-preview {
-      font-size: 0.8em; }
+      font-size: 0.95em;
+      letter-spacing: 0.02em; }
     .card.story {
       border-width: 2px !important; }
       .card.story h1 {
@@ -1606,7 +1607,8 @@ body.article-page .photo-credit {
       bottom: 0px;
       color: #aaa;
       font-weight: 600;
-      font-size: 0.75em; }
+      font-size: 0.75em;
+      letter-spacing: 0.05em; }
     .card.story-weekend {
       border-bottom: 2px solid #fe9e48; }
     .card.story-breaking .breaking {
