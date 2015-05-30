@@ -1093,12 +1093,12 @@ body.article-page .byline {
     body.article-page .byline a, body.article-page .byline date, body.article-page .byline time {
       display: block;
       letter-spacing: 0.05em; } }
-@media (min-width: 481px) {
-  body.article-page a:after {
-    content: "|";
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #ccc; } }
+  @media (min-width: 481px) {
+    body.article-page .byline a:after {
+      content: "|";
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #ccc; } }
 body.article-page .article-header {
   width: 100%; }
   body.article-page .article-header h1 {
