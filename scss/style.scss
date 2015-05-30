@@ -1046,6 +1046,9 @@ header#site-header {
         font-size: 18px;
         cursor: pointer;
       }
+      &#tag-home:hover {
+        color: #333;
+      }
     }
   a#small-logo{
       display: none;

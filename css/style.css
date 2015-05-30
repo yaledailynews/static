@@ -938,6 +938,8 @@ header#site-header {
         color: #bbb;
         font-size: 18px;
         cursor: pointer; }
+      header#site-header nav#site-navigation a#tag-home:hover {
+        color: #333; }
     header#site-header nav#site-navigation a#small-logo {
       display: none;
       vertical-align: middle;
@@ -1252,7 +1254,7 @@ body.article-page .photo-credit {
   letter-spacing: 0.05em;
   font-weight: 300;
   margin-top: -30px;
-  margin-right: 1%; }
+  margin-right: 2%; }
 
 .fancybox .card.story-ytv h1 {
   color: white;
