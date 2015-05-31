@@ -325,21 +325,21 @@ p {
     color: #191919;
     cursor: pointer; }
   #mobile-navigation #tag-top {
-    border-left: 5px solid #2882c8; }
+    border-left: 5px solid #2882C8; }
     #mobile-navigation #tag-top:hover {
       background-color: white;
       color: #191919;
-      border-left: 10px solid #2882c8; }
+      border-left: 10px solid #2882C8; }
   #mobile-navigation #tag-opinion {
     border-left: 5px solid #cf383e; }
     #mobile-navigation #tag-opinion:hover {
       border-left: 10px solid #cf383e;
       color: #cf383e; }
   #mobile-navigation #tag-university {
-    border-left: 5px solid #2882c8; }
+    border-left: 5px solid #2882C8; }
     #mobile-navigation #tag-university:hover {
-      border-left: 10px solid #2882c8;
-      color: #2882c8; }
+      border-left: 10px solid #2882C8;
+      color: #2882C8; }
   #mobile-navigation #tag-city {
     border-left: 5px solid #00be64; }
     #mobile-navigation #tag-city:hover {
@@ -709,14 +709,14 @@ p.category {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882c8;
+      background-color: #2882C8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882c8;
+      color: #2882C8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -731,7 +731,7 @@ p.category {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882c8;
+      color: #2882C8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -794,7 +794,7 @@ p.category {
   .category-jump.opinion {
     background-color: #cf383e; }
   .category-jump.university {
-    background-color: #2882c8; }
+    background-color: #2882C8; }
   .category-jump.city {
     background-color: #00be64; }
   .category-jump.sports {
@@ -961,10 +961,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882c8; }
+        border: 1px solid #2882C8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882c8;
+        background-color: #2882C8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -1018,7 +1018,7 @@ body.article-page .most-read-top, body.article-page .more-from-bottom {
   body.article-page .most-read-top .most-read, body.article-page .more-from-bottom .most-read {
     padding: 0 20px; }
   body.article-page .most-read-top h2, body.article-page .more-from-bottom h2 {
-    background-color: #2882c8;
+    background-color: #2882C8;
     font-size: 19px;
     font-weight: 800;
     text-transform: uppercase;
@@ -1037,7 +1037,7 @@ body.article-page .most-read-top, body.article-page .more-from-bottom {
     padding-bottom: 15px;
     transition: all 0.25s ease; }
   body.article-page .most-read-top a:hover, body.article-page .more-from-bottom a:hover {
-    color: #2882c8;
+    color: #2882C8;
     transition: all 0.25s ease; }
   body.article-page .most-read-top a:last-child, body.article-page .more-from-bottom a:last-child {
     border-bottom: none;
@@ -1069,7 +1069,7 @@ body.article-page .hero-image {
   overflow: hidden;
   z-index: 1; }
   body.article-page .hero-image:after {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), no-repeat;
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -1084,14 +1084,15 @@ body.article-page .byline {
   margin-left: 0;
   z-index: 2; }
   body.article-page .byline a {
-    color: #2882c8;
+    color: #2882C8;
     text-decoration: none; }
   body.article-page .byline date, body.article-page .byline time {
     color: #aaa; }
   @media (max-width: 480px) {
     body.article-page .byline a, body.article-page .byline date, body.article-page .byline time {
       display: block;
-      letter-spacing: 0.05em; } }
+      letter-spacing: 0.05em;
+      text-align: center; } }
   @media (min-width: 481px) {
     body.article-page .byline a:after {
       content: "|";
@@ -1121,6 +1122,9 @@ body.article-page .article-header {
     @media (max-width: 600px) {
       body.article-page .article-header h1, body.article-page .article-header .subtitle {
         font-size: 2.5em; } }
+    @media (max-width: 480px) {
+      body.article-page .article-header h1, body.article-page .article-header .subtitle {
+        text-align: center; } }
   body.article-page .article-header .subtitle {
     font-size: 1em;
     font-style: italic;
@@ -1189,6 +1193,7 @@ body.article-page .article-text {
     body.article-page .article-text {
       margin-top: 25px; } }
 body.article-page .bottom-bar {
+  opacity: 0.98;
   position: fixed;
   border-top: 1px solid #ddd;
   left: 0px;
@@ -1222,19 +1227,7 @@ body.article-page .bottom-bar {
         display: none; } }
     @media (max-width: 600px) {
       body.article-page .bottom-bar .bottom-bar-wrap {
-        width: 155px;
-        margin: 0 auto; }
-        body.article-page .bottom-bar .bottom-bar-wrap p {
-          display: none; }
-        body.article-page .bottom-bar .bottom-bar-wrap li {
-          margin-right: 10px; }
-        body.article-page .bottom-bar .bottom-bar-wrap img {
-          width: 40px;
-          height: 40px; }
-        body.article-page .bottom-bar .bottom-bar-wrap li:last-child {
-          margin-right: 0; }
-        body.article-page .bottom-bar .bottom-bar-wrap ul {
-          margin: 0 auto; } }
+        display: none; } }
   body.article-page .bottom-bar p {
     margin-left: 10px;
     top: 5px;
@@ -1558,7 +1551,7 @@ body.article-page .photo-credit {
       line-height: 1.2; }
 
   section.university .card {
-    border-bottom: 2px solid #2882c8; }
+    border-bottom: 2px solid #2882C8; }
 
   section.city .card {
     border-bottom: 2px solid #00be64; }
@@ -1793,12 +1786,12 @@ form input {
   font-size: 0.9em; }
 
 .university .category {
-  color: #2882c8; }
+  color: #2882C8; }
 .university .category-jump {
-  background-color: #2882c8;
+  background-color: #2882C8;
   color: white; }
 .university.card {
-  border-bottom: thick solid #2882c8; }
+  border-bottom: thick solid #2882C8; }
 
 .opinion .story .category {
   color: #cf383e; }
@@ -1863,7 +1856,7 @@ form input {
   border-bottom: thick solid #42d2ff; }
 
 .university-color {
-  color: #2882c8 !important; }
+  color: #2882C8 !important; }
 
 .opinion-color {
   color: #cf383e !important; }
@@ -1888,3 +1881,5 @@ form input {
 
 .sports-color {
   color: #42d2ff !important; }
+
+/*# sourceMappingURL=style.css.map */
