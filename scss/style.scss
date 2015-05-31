@@ -92,45 +92,41 @@ p {
 #mobile-header{
 
   height: 50px;
-  background-color: $university-color;
+  background-color: white;
   padding: 25px 0px 10px 10px;
   display: none;
   position: fixed;
   z-index: 6;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid #ddd;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF;
   img{
-    height: 80px;
+    height: 35px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -40px;
+    margin-top: -18px;
   }
   #mobile-xc{
     @extend %face-sans;
     text-decoration: none;
-    color: black;
+    height: 30px;
+    width: 30px;
+    margin-top: -28px;
+    margin-right: 12.5px;
     display: inline-block;
-    vertical-align: bottom;
-    padding-top: 17px;
-    height: 52px;
-    width: 15%;
-    margin-top: -68px;
+    vertical-align: bottom;    
     float: right;
-    background-color: #2a9dea;
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 0;
-    color: rgba(255, 255, 255, 0.8);
-    border-left: 3px solid $university-color;
-
+    color: #191919;
   }
   .menu-link{
     position: absolute;
-    color:white;
+    color: #191919;
     margin-top: -7px;
     margin-left: 11px;
     text-decoration: none;
@@ -149,6 +145,7 @@ p {
   left: -200px; /*left or right and the width of your navigation panel*/
   width: 200px; /*should match the above value*/
   border-right: 3px solid #2a9dea;
+
 
   a{
     color: #aaa;
@@ -294,11 +291,20 @@ header#site-header {
     display: block;
     margin: 0 auto 10px;
   }
+
+  .is-sticky nav {
+    
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF;
+      border-bottom: none;
+      opacity: 0.98;
+
+  }
   nav#site-navigation { 
     background-color: white;    
     text-align: center;
     z-index:100;
     border-bottom: 1px solid #ddd;
+
     a {
       @extend %face-sans;
       line-height: 1.2;
@@ -1506,7 +1512,11 @@ section.category {
   
 
   .card {
-    margin-bottom: 25px;
+
+
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+
+    margin-bottom: 20px;
     width: 100%;
     overflow: hidden;
 
@@ -1619,9 +1629,7 @@ section.category {
       background-color: white;
 
       p.card-preview {
-        font-size: 0.9em;
-        font-weight: 600;
-        letter-spacing: 0px;
+        display: none;
       }
 
       h1 {

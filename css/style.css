@@ -257,41 +257,38 @@ p {
 
 #mobile-header {
   height: 50px;
-  background-color: #2882C8;
+  background-color: white;
   padding: 25px 0px 10px 10px;
   display: none;
   position: fixed;
   z-index: 6;
   width: 100%;
   top: 0;
-  border-bottom: 1px solid #ddd; }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF; }
   #mobile-header img {
-    height: 80px;
+    height: 35px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -40px; }
+    margin-top: -18px; }
   #mobile-header #mobile-xc {
     text-decoration: none;
-    color: black;
+    height: 30px;
+    width: 30px;
+    margin-top: -28px;
+    margin-right: 12.5px;
     display: inline-block;
     vertical-align: bottom;
-    padding-top: 17px;
-    height: 52px;
-    width: 15%;
-    margin-top: -68px;
     float: right;
-    background-color: #2a9dea;
     text-align: center;
-    font-size: 20px;
+    font-size: 22px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: 0;
-    color: rgba(255, 255, 255, 0.8);
-    border-left: 3px solid #2882C8; }
+    color: #191919; }
   #mobile-header .menu-link {
     position: absolute;
-    color: white;
+    color: #191919;
     margin-top: -7px;
     margin-left: 11px;
     text-decoration: none;
@@ -392,6 +389,10 @@ header#site-header {
     height: 85px;
     display: block;
     margin: 0 auto 10px; }
+  header#site-header .is-sticky nav {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF;
+    border-bottom: none;
+    opacity: 0.98; }
   header#site-header nav#site-navigation {
     background-color: white;
     text-align: center;
@@ -1060,7 +1061,6 @@ body.article-page .more-from-bottom {
       display: none; } }
 body.article-page .hero-image {
   width: 100%;
-  max-width: 100%;
   height: 375px;
   overflow: hidden;
   z-index: 1; }
@@ -1597,7 +1597,8 @@ body.article-page .photo-credit {
     display: inline; }
 
   .card {
-    margin-bottom: 25px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
     width: 100%;
     overflow: hidden; }
     .card .byline {
@@ -1670,9 +1671,7 @@ body.article-page .photo-credit {
       padding-bottom: 100%;
       background-color: white; }
       .card.story-major p.card-preview, .card.story-kahuna p.card-preview, .card.story-opinion p.card-preview {
-        font-size: 0.9em;
-        font-weight: 600;
-        letter-spacing: 0px; }
+        display: none; }
       .card.story-major h1, .card.story-kahuna h1, .card.story-opinion h1 {
         font-size: 24px;
         font-weight: 600; }
