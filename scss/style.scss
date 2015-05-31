@@ -1108,12 +1108,18 @@ header#site-header {
 
 /// RESPONSIVE STUFF
 
+@media(max-width:1030px) {
+  .is-sticky a {
+    padding: 10px !important;
+  }
+}
+
 @media(max-width:980px) {
 
   nav#site-navigation {
     a {
       font-size: 13px !important;
-      padding: 9px !important;
+      padding: 8px !important;
     }
 
     #nav-search {
@@ -1207,7 +1213,7 @@ section.front-page {
 
 
 
-@media(max-width: 870px) {
+@media(max-width: 880px) {
   #small-logo {
     display: none !important;
   }

@@ -1355,10 +1355,13 @@ body.article-page .photo-credit {
   content: "";
   position: absolute; }
 
+@media (max-width: 1030px) {
+  .is-sticky a {
+    padding: 10px !important; } }
 @media (max-width: 980px) {
   nav#site-navigation a {
     font-size: 13px !important;
-    padding: 9px !important; }
+    padding: 8px !important; }
   nav#site-navigation #nav-search {
     font-size: 12px;
     padding-left: 6px !important;
@@ -1411,7 +1414,7 @@ body.article-page .photo-credit {
       display: block; }
     section.front-page time {
       bottom: 30px; } }
-@media (max-width: 870px) {
+@media (max-width: 880px) {
   #small-logo {
     display: none !important; } }
 @media (max-width: 810px) {
