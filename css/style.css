@@ -264,7 +264,7 @@ p {
   z-index: 6;
   width: 100%;
   top: 0;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF; }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px white; }
   #mobile-header img {
     height: 35px;
     display: block;
@@ -326,21 +326,21 @@ p {
       background-color: white;
       cursor: pointer; }
   #mobile-navigation #tag-top {
-    border-left: 5px solid #2882C8; }
+    border-left: 5px solid #2882c8; }
     #mobile-navigation #tag-top:hover {
       background-color: white;
       color: #191919;
-      border-left: 10px solid #2882C8; }
+      border-left: 10px solid #2882c8; }
   #mobile-navigation #tag-opinion {
     border-left: 5px solid #cf383e; }
     #mobile-navigation #tag-opinion:hover {
       border-left: 10px solid #cf383e;
       color: #cf383e; }
   #mobile-navigation #tag-university {
-    border-left: 5px solid #2882C8; }
+    border-left: 5px solid #2882c8; }
     #mobile-navigation #tag-university:hover {
-      border-left: 10px solid #2882C8;
-      color: #2882C8; }
+      border-left: 10px solid #2882c8;
+      color: #2882c8; }
   #mobile-navigation #tag-city {
     border-left: 5px solid #00be64; }
     #mobile-navigation #tag-city:hover {
@@ -391,7 +391,7 @@ header#site-header {
     display: block;
     margin: 0 auto 10px; }
   header#site-header .is-sticky nav {
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px white;
     border-bottom: none;
     opacity: 0.985; }
   header#site-header nav#site-navigation {
@@ -610,9 +610,10 @@ p.category {
   .card.story-photo {
     height: 460.86px; }
     .card.story-photo .card-image {
-      height: 50%;
+      height: auto;
       bottom: 0;
-      width: auto; }
+      width: 200%;
+      left: -30%; }
     .card.story-photo .card-preview {
       color: #696565; }
     .card.story-photo time {
@@ -632,21 +633,18 @@ p.category {
       content: "";
       position: absolute; }
   .card.story-softcore {
-    width: 460.86px;
-    height: 230.43px; }
+    width: 460.86px; }
     .card.story-softcore .card-image {
       position: absolute;
       width: 100%;
       height: auto; }
     .card.story-softcore h1 {
-      position: absolute;
       color: white;
       width: 200px; }
     .card.story-softcore .byline {
       color: #ccc;
       font-weight: 100; }
     .card.story-softcore time {
-      position: absolute;
       color: white; }
     .card.story-softcore p.category {
       color: #bbb; }
@@ -664,7 +662,7 @@ p.category {
       position: absolute; }
     .card.story-softcore:hover:after {
       background-image: url("../images/play_button.svg");
-      background-position: center;
+      background-position: 50% 55%;
       background-repeat: no-repeat;
       background-color: rgba(25, 25, 25, 0.6); }
     .card.story-softcore:hover h1, .card.story-softcore:hover time {
@@ -713,14 +711,14 @@ p.category {
       color: white;
       font-family: "Avenir", "Helvetica-Neue", "Arial", "Helvetica", sans-serif;
       text-transform: uppercase;
-      background-color: #2882C8;
+      background-color: #2882c8;
       width: 100%;
       margin: 0;
       padding: 15px 0 15px 0;
       letter-spacing: 0.15em;
       box-shadow: 0 1px 5px rgba(0, 0, 0, 0.23), 0 1px 5px rgba(0, 0, 0, 0.16); }
     .card.cross-campus time {
-      color: #2882C8;
+      color: #2882c8;
       margin: 0;
       position: relative;
       bottom: 0;
@@ -735,7 +733,7 @@ p.category {
     .card.cross-campus p.date {
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #2882C8;
+      color: #2882c8;
       font-weight: 800;
       margin-bottom: 15px; }
     .card.cross-campus .intro {
@@ -798,7 +796,7 @@ p.category {
   .category-jump.opinion {
     background-color: #cf383e; }
   .category-jump.university {
-    background-color: #2882C8; }
+    background-color: #2882c8; }
   .category-jump.city {
     background-color: #00be64; }
   .category-jump.sports {
@@ -965,10 +963,10 @@ header#site-header {
         position: absolute;
         right: 0px;
         top: 49px;
-        border: 1px solid #2882C8; }
+        border: 1px solid #2882c8; }
       header#site-header nav#site-navigation #nav-search:hover {
         cursor: pointer;
-        background-color: #2882C8;
+        background-color: #2882c8;
         color: white; }
         header#site-header nav#site-navigation #nav-search:hover .search-box {
           display: block; }
@@ -1022,7 +1020,7 @@ body.article-page .most-read-top, body.article-page .more-from-bottom {
   body.article-page .most-read-top .most-read, body.article-page .more-from-bottom .most-read {
     padding: 0 20px; }
   body.article-page .most-read-top h2, body.article-page .more-from-bottom h2 {
-    background-color: #2882C8;
+    background-color: #2882c8;
     font-size: 19px;
     font-weight: 800;
     text-transform: uppercase;
@@ -1041,7 +1039,7 @@ body.article-page .most-read-top, body.article-page .more-from-bottom {
     padding-bottom: 15px;
     transition: all 0.25s ease; }
   body.article-page .most-read-top a:hover, body.article-page .more-from-bottom a:hover {
-    color: #2882C8;
+    color: #2882c8;
     transition: all 0.25s ease; }
   body.article-page .most-read-top a:last-child, body.article-page .more-from-bottom a:last-child {
     border-bottom: none;
@@ -1073,7 +1071,7 @@ body.article-page .hero-image {
   overflow: hidden;
   z-index: 1; }
   body.article-page .hero-image:after {
-    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.9) 100%), no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), no-repeat;
     top: 0;
     left: 0;
     width: 100%;
@@ -1088,7 +1086,7 @@ body.article-page .byline {
   margin-left: 0;
   z-index: 2; }
   body.article-page .byline a {
-    color: #2882C8;
+    color: #2882c8;
     text-decoration: none; }
   body.article-page .byline date, body.article-page .byline time {
     color: #aaa; }
@@ -1395,9 +1393,9 @@ body.article-page .photo-credit {
       .card.story-kahuna h1 {
         font-size: 40px; }
     .card.story-softcore .card-image {
-      height: 100%;
-      width: auto;
-      left: -42%; }
+      height: auto;
+      width: 300%;
+      left: -90%; }
 
   .story-softcore-cover {
     height: 450px; }
@@ -1558,7 +1556,7 @@ body.article-page .photo-credit {
       line-height: 1.2; }
 
   section.university .card {
-    border-bottom: 2px solid #2882C8; }
+    border-bottom: 2px solid #2882c8; }
 
   section.city .card {
     border-bottom: 2px solid #00be64; }
@@ -1793,12 +1791,12 @@ form input {
   font-size: 0.9em; }
 
 .university .category {
-  color: #2882C8; }
+  color: #2882c8; }
 .university .category-jump {
-  background-color: #2882C8;
+  background-color: #2882c8;
   color: white; }
 .university.card {
-  border-bottom: thick solid #2882C8; }
+  border-bottom: thick solid #2882c8; }
 
 .opinion .story .category {
   color: #cf383e; }
@@ -1863,7 +1861,7 @@ form input {
   border-bottom: thick solid #42d2ff; }
 
 .university-color {
-  color: #2882C8 !important; }
+  color: #2882c8 !important; }
 
 .opinion-color {
   color: #cf383e !important; }
@@ -1888,5 +1886,3 @@ form input {
 
 .sports-color {
   color: #42d2ff !important; }
-
-/*# sourceMappingURL=style.css.map */

@@ -484,8 +484,8 @@
     <a class="link-wrap" href="#"><article class="card story story-preview story-photo culture">
       <h1>Student play follows family troubles after terrorist attacks</h1>
       <p class="byline">Christopher van der Wan</p>
-      <img class="card-image" src="images/terrorist.jpg">
       <p class="card-preview">In an upcoming play, a psychic who could have changed the flow of history instead ends up fleeing from his home and beginning a new life.</p>
+      <img class="card-image" src="images/terrorist.jpg">
       <time>Apr 11, 4:23 pm</time>
       <p class="category">Culture</p>
     </article></a>
@@ -493,8 +493,8 @@
     <a class="link-wrap" href="#"><article class="card story story-preview story-photo culture">
       <h1>In new musical, characters wrestle with love, loss and alligators</h1>
       <p class="byline">Jonathan Marx</p>
-      <img class="card-image" src="images/opera.jpg">
       <p class="card-preview">This week, a senior project production will venture through an alligator-wrestling theme park to delve into themes of family, loss and imagination.</p>
+      <img class="card-image" src="images/opera.jpg">
       <time>Apr 11, 4:23 pm</time>
       <p class="category">Culture</p>
     </article></a>
@@ -502,8 +502,8 @@
     <a class="link-wrap" href="#"><article class="card story story-major culture">
       <h1>Art majors close out undergraduate careers with thesis show</h1>
       <p class="byline">Joey Ye</p>
-        <img class="card-image" src="images/thesis.jpg">
       <p class="card-preview">As the latest exhibition at the Yale School of Art draws to a close, a group of seniors is preparing for the final critique of their undergraduate artistic career.</p>
+      <img class="card-image" src="images/thesis.jpg">
       <time class="published-time">Apr 5, 12:45 pm</time>
     </article></a>
 
@@ -732,8 +732,8 @@
   //fixednavbar
   $(document).ready(function(){
       $("#site-navigation").sticky({topSpacing: 0 });
-      $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
-      $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+      $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); $('#site-navigation').addClass('responsive-head');});
+      $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); $('#site-navigation').removeClass('responsive-head');});
       $('.menu-link').bigSlide();
       $('#mobile-xc').bigSlideXC();
       $('#mobile-xc').click(function() {
@@ -755,32 +755,9 @@
             });
 
         });
-
-      window.setTimeout(function(){
-        if ($('#small-logo').css('display') == "inline-block" && !$('#site-navigation').hasClass('responsive-head')){
-        $('#site-navigation').addClass('responsive-head')
-      }} , 1);
-
-      $(window).scroll(function(){
-      if ($('#small-logo').css('display') == "inline-block" && !$('#site-navigation').hasClass('responsive-head') ){
-        $('#site-navigation').addClass('responsive-head')
-      }
-      else if($('#small-logo').css('display') == "none" && $('#site-navigation').hasClass('responsive-head')){
-        $('#site-navigation').removeClass('responsive-head')
-      }
-      });
-
-
     });
   </script>
 
-  <script>
-    //smoothscroll
-    $('#site-navigation a').smoothScroll({exclude: ['#tag-weekend','#tag-magazine'], offset: -53});
-    $('#mobile-navigation a').smoothScroll({offset: -76});
-    $('#tag-weekend').smoothScroll({offset: 18});
-    $('#tag-magazine').smoothScroll({offset: 18});
-  </script>
 
   <script>
     $(document).ready(function() {
