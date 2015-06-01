@@ -290,7 +290,7 @@ p {
     position: absolute;
     color: #191919;
     margin-top: -7px;
-    margin-left: 11px;
+    margin-left: 10px;
     text-decoration: none;
     cursor: pointer; }
 
@@ -320,10 +320,11 @@ p {
       padding: 0.8em; }
     #mobile-navigation a:hover {
       transition: border-left 0.25s ease; }
-  #mobile-navigation #nav-close-button:hover {
-    background-color: white;
-    color: #191919;
-    cursor: pointer; }
+  #mobile-navigation #nav-close-button {
+    color: #191919; }
+    #mobile-navigation #nav-close-button:hover {
+      background-color: white;
+      cursor: pointer; }
   #mobile-navigation #tag-top {
     border-left: 5px solid #2882C8; }
     #mobile-navigation #tag-top:hover {
@@ -392,7 +393,7 @@ header#site-header {
   header#site-header .is-sticky nav {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF;
     border-bottom: none;
-    opacity: 0.98; }
+    opacity: 0.985; }
   header#site-header nav#site-navigation {
     background-color: white;
     text-align: center;
@@ -405,9 +406,12 @@ header#site-header {
       letter-spacing: 1.75px;
       text-transform: uppercase;
       text-decoration: none;
-      color: #bbb; }
+      color: #bbb;
+      transition: all 0.25s ease; }
       header#site-header nav#site-navigation a:hover {
-        color: #333; }
+        color: #191919;
+        transition: all 0.25s ease;
+        box-shadow: inset 0 -7.5px 0 #5ea6df; }
 
 .responsive-head a {
   padding-left: 11px !important;
@@ -1193,7 +1197,7 @@ body.article-page .article-text {
     body.article-page .article-text {
       margin-top: 25px; } }
 body.article-page .bottom-bar {
-  opacity: 0.98;
+  opacity: 0.95;
   position: fixed;
   border-top: 1px solid #ddd;
   left: 0px;

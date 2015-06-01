@@ -128,7 +128,7 @@ p {
     position: absolute;
     color: #191919;
     margin-top: -7px;
-    margin-left: 11px;
+    margin-left: 10px;
     text-decoration: none;
     cursor: pointer;
     // display: inline-block;
@@ -169,9 +169,9 @@ p {
   }
   
   #nav-close-button {
+    color: #191919;
     &:hover {
       background-color: white;
-      color: #191919;
       cursor: pointer;
     }
   }
@@ -281,6 +281,7 @@ header#site-header {
   padding: 10px 0 0;
   a {
     text-decoration: none;
+
   }
   h1.masthead-logo { 
     background: no-repeat url("../images/branding/YDN_Nameplate_Big.gif");
@@ -296,7 +297,7 @@ header#site-header {
     
       box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 -5px 3px -10px #FFF;
       border-bottom: none;
-      opacity: 0.98;
+      opacity: 0.985;
 
   }
   nav#site-navigation { 
@@ -314,8 +315,11 @@ header#site-header {
       text-transform: uppercase;
       text-decoration: none;
       color: #bbb; 
+      transition: all 0.25s ease;
       &:hover {
-        color: #333;
+        color: #191919;
+        transition: all 0.25s ease;
+        box-shadow: inset 0 -7.5px 0 #5ea6df;
       }
     }
   }
