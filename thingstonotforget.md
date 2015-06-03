@@ -80,3 +80,5 @@
 - article cards (same as home page)
 - endless scroll
 - weekend and magazine should get cover image
+
+##ASK AARON
