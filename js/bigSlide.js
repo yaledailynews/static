@@ -129,7 +129,12 @@
 
         // this makes my eyes blead, but adding it back in as it's a highly requested feature
         if (settings.easyClose) {
-          $('body').on('click.bigSlide', function(e) {
+          $('#nav-close-button').on('click.bigSlide', function(e) {
+           if (!$(e.target).parents().andSelf().is(menuLink) && controller.getState() === 'open')  {
+             view.toggleClose();
+           }
+          });
+          $('#mobile-xc').on('click.bigSlide', function(e) {
            if (!$(e.target).parents().andSelf().is(menuLink) && controller.getState() === 'open')  {
              view.toggleClose();
            }
