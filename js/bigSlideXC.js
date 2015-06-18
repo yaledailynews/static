@@ -102,6 +102,22 @@
         if (settings.state === 'closed') {
           this.$menu.css(positionOffScreen);
           this.$push.css(settings.side, '0');
+        } else {
+         //  var docHeight = $(document).height();
+
+         // $("body").append("<div id='overlay'></div>");
+
+         // $("#overlay")
+         //    .height(docHeight)
+         //    .css({
+         //       'opacity' : 0.4,
+         //       'position': 'fixed',
+         //       'top': 0,
+         //       'left': 0,
+         //       'background-color': 'black',
+         //       'width': '100%',
+         //       'z-index': 3
+         //    });
         }
 
         // css for the sliding animation
@@ -129,7 +145,12 @@
 
         // this makes my eyes blead, but adding it back in as it's a highly requested feature
         if (settings.easyClose) {
-          $('body').on('click.bigSlideXC', function(e) {
+          $('#xc-close-button').on('click.bigSlideXC', function(e) {
+           if (!$(e.target).parents().andSelf().is(menuLink) && controller.getState() === 'open')  {
+             view.toggleClose();
+           }
+          });
+          $('.menu-link').on('click.bigSlideXC', function(e) {
            if (!$(e.target).parents().andSelf().is(menuLink) && controller.getState() === 'open')  {
              view.toggleClose();
            }
