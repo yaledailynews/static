@@ -150,11 +150,11 @@
              view.toggleClose();
            }
           });
-          $('.menu-link').on('click.bigSlideXC', function(e) {
-           if (!$(e.target).parents().andSelf().is(menuLink) && controller.getState() === 'open')  {
-             view.toggleClose();
-           }
-          });
+          // $('.menu-link').on('click.bigSlideXC', function(e) {
+          //  if (!$(e.target).parents().andSelf().is(menuLink) && controller.getState() === 'open')  {
+          //    view.toggleClose();
+          //  }
+          // });
         }
       },
 
