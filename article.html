@@ -55,12 +55,19 @@
 </header>
 
 <header id="mobile-header">
-  <a href="#" class="menu-link fa fa-bars fa-lg"></a>
-  <img src = "./images/branding/YDN Nameplate Medium.gif">
-  <a href="#" id="mobile-xc">xc</a>
-  <nav id="mobile-navigation">
+    <a href="#" class="menu-link fa fa-bars fa-lg"></a>
+    <img src = "./images/branding/YDN Nameplate Medium.gif">
+    <a href="#" id="mobile-xc">xc</a>
+    <nav id="mobile-navigation">
       <!-- <a id="close">&#10006;</a> EDITING THIS OUT FOR THE TIME BEING BECAUSE IT'S WEIRD TAKE A LOOK-->
       <a class = "fa fa-times fa-lg" id="nav-close-button"></a>
+      <i class="fa fa-search first-row"></i>
+       <div id="nav-search-left">
+         <form class="search-box" autofocus>
+            <input type="text" placeholder="Search articles and authors">
+         </form>
+       </div>
+       <!-- </div> EDITING THIS OUT BECAUSE CLICKING IN THE FORM CLOSES THE MENU -->
       <a id="tag-top" href="#">Home</a>
       <a id="tag-opinion" href="#">Opinion</a>
       <a id="tag-university" href="#">University</a>
@@ -71,39 +78,32 @@
       <a id="tag-ytv" href="#">YTV</a>    
       <a id="tag-weekend" href="#">Wknd</a>
       <a id="tag-magazine" href="#">Mag</a>    
-      <a id="nav-search" class= "fa fa-search" href="#"></a>
-      <!-- <div id="nav-search">
-        <i class="fa fa-search"></i>
-         <form class="search-box">
-            <input type="text" placeholder="Search articles and authors">
-         </form>
-       </div> EDITING THIS OUT BECAUSE CLICKING IN THE FORM CLOSES THE MENU-->
     </nav>
-  <div class="card story cross-campus xc-content-mobile">
-    <div id="xc">
+    <div class="card story cross-campus xc-content-mobile">
+      <div id="xc">
         <p>Cross Campus</p>
         <i class = "fa fa-times fa-1x" id="xc-close-button"></i>
       </div>
 
-        <div class="xc-content">
-          <p class="date">May 6, 2015</p>
-          <p class="card-preview"><span class="intro">This is the end. With this issue, the News concludes production for the academic year.</span> Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+      <div class="xc-content">
+        <p class="date">May 6, 2015</p>
+        <p class="card-preview"><span class="intro">This is the end. With this issue, the News concludes production for the academic year.</span> Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
 
-          <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+        <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
 
-          <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+        <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
 
-          <p class="date">May 5, 2015</p>
+        <p class="date">May 5, 2015</p>
 
-          <p class="card-preview"><span class="intro">This is the end.</span> With this issue, the News concludes production for the academic year. Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
+        <p class="card-preview"><span class="intro">This is the end.</span> With this issue, the News concludes production for the academic year. Best of luck with finals, the summer and all else. We’ll see you on the other side.&nbsp;<time>5:43 pm</time></p>
 
-          <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
+        <p class="card-preview"><span class="intro">Farewell.</span> With the University’s 314th Commencement looming, seniors can officially begin feeling sentimental about their Bright College Years. But don’t get too sappy just yet. Senior Week, advertised as “the best week of your life,” kicks off on May 10 with events at all the places you’ll surely miss, notably Box, Bar and, of course, Toad’s.&nbsp;<time>5:43 pm</time></p>       
 
-          <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
-        </div>
-  </div>
+        <p class="card-preview"><span class="intro">Not done yet.</span> After all, Spring Fling is tomorrow. And then, Bang Bang into reading week and exams.&nbsp;<time>5:43 pm</time></p>
+      </div>
+    </div>
 
-</header>
+  </header>
 
 
 <div id="article-content">
@@ -373,6 +373,9 @@ $(document).ready(function(){
     $("#site-navigation").sticky({topSpacing: 0 });
     $('#site-navigation').on('sticky-start', function() { $('#small-logo').css('display', 'inline-block'); });
     $('#site-navigation').on('sticky-end', function() { $('#small-logo').css('display', 'none'); });
+    $('.first-row').click(function() {
+        $('#nav-search-left').toggle();
+      });
     $('.menu-link').bigSlide();
     $('#mobile-xc').bigSlideXC();
   });
