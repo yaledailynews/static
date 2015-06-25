@@ -114,7 +114,7 @@ footer {
         text-transform: uppercase;
         @extend %face-sans;
         padding: 15px 10px;
-        letter-spacing: 0.075em;
+        letter-spacing: 0.1em;
         text-align: center;
         color: rgba(255, 255, 255, 0.9);
       }
@@ -202,6 +202,20 @@ footer {
     }
   }
 
+  date, time {
+      color: #696565;
+      white-space: nowrap;
+      text-transform: uppercase;
+      display: inline;
+      font-size: 0.8em;
+      letter-spacing: 1.5px;
+
+      @media (max-width: 480px) {
+        text-align: center;
+        display: block;
+      }
+    }
+
   .byline{
     text-transform: uppercase;
     font-size: 0.8em;
@@ -209,19 +223,25 @@ footer {
     margin-top: 15px;
     margin-left: 0;
     z-index: 2;
+    display: inline-block;
+
+   
+
 
     a {
       color: $university-color;
       text-decoration: none;
     }
 
-    date, time {
-      color: #aaa;
-    }
-
      @media(max-width: 480px) {
+      text-align: center;
+      display: block;
 
-    a, date, time {
+      span {
+        display: none;
+      }
+
+    a {
       display: block;
       letter-spacing: 0.05em;
       text-align: center;
@@ -229,7 +249,7 @@ footer {
   }
 
   @media (min-width: 481px) {
-    a:after {
+    &:after {
       content: "|";
       margin-left: 10px;
       margin-right: 10px;
@@ -388,6 +408,7 @@ footer {
 
       ul {
         float: left;
+
         
         display: inline;
       }
@@ -400,6 +421,10 @@ footer {
         width: 25px;
         height: 25px;
       } 
+
+      .byline:after {
+        content: "";
+      }
 
       
     .bottom-bar-wrap {
@@ -486,7 +511,7 @@ footer {
     font-style: italic;
     letter-spacing: 0.05em;
     font-weight: 300;
-    margin-top: -30px;
+    margin-top: -20px;
     margin-right: 2%;
   }
 
