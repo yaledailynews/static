@@ -1711,9 +1711,15 @@ section.front-page {
 
     &.story {
       border-width: 2px !important;
-
+      height: auto;
+      width: 100%;
+      background-color: white;
+      padding-bottom: 17.5px;
       h1 {
         margin-bottom: 7px;
+      }
+      .category {
+        display: none;
       }
     }
 
@@ -1767,25 +1773,6 @@ section.front-page {
     }
 
 
-    &.story-simple {
-      height: auto;
-      width: 100%;
-      background-color: white;
-      padding-bottom: 17.5px;
-      &::after {
-        background: $wild-sand;
-      }
-      img {
-        display: none;
-      }
-      .category{
-        display: none;
-      }
-      h1{
-        color:$dark-gray;
-      }
-    }
-
     &.story-softcore {
         width: 100%;
         height: 203px;
@@ -1802,7 +1789,7 @@ section.front-page {
         }
       }
 
-    &.story-major, &.story-opinion {
+    &.story-major, {
       width: 100%;
       height: 0;
       padding-bottom: 100%;
@@ -1822,11 +1809,20 @@ section.front-page {
         height: 100%;
       }
 
+      //fix these in wordpress theme files
+      .byline {
+        //bottom: 30px;
+      }
+      time {
+        //bottom: 15px;
+      }
+
 
     }
 
     &.story-opinion {
       width: 48%;
+      height: 0;
       padding-bottom: 48%;
       display: inline-block;
       margin-right: 4px;
@@ -1838,10 +1834,12 @@ section.front-page {
 
       .card-image {
         display: inline-block;
+        width: 100%;
+        height: 100%;
       }
-
-
-  
+      .category{
+        display: block;
+      }
     }
 
 
