@@ -1526,12 +1526,18 @@ section.front-page {
     section.front-page {
 
       .card {
-        &.story-simple, &.story-preview, &.story-photo, &.story-opinion {
+        &.story {
           time {
             bottom: 30px !important;
           }
         }
-      }  
+
+        &.story-major{
+          time {
+            bottom: 15px !important;
+          }
+        }
+      } 
     }
   }
 
@@ -1590,7 +1596,6 @@ section.category {
     .subtitle {
       display: none;
     }
-
   }
 
   section.opinion {
@@ -1733,40 +1738,40 @@ section.category {
       border-bottom: 2px solid $weekend-color;
     }
 
-     &.story-breaking{
-  .breaking{
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 35px;
-    padding: 10px;
-    position: relative;
-    background-color: red;
-    text-align: center;
-    h3{
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 0.8em;
-      color: white;
-      display: inline-block;
+    &.story-breaking{
+      .breaking{
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        position: relative;
+        background-color: red;
+        text-align: center;
+        h3{
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 0.8em;
+          color: white;
+          display: inline-block;
 
 
-      &:after {
+          &:after {
 
-        content: " ·";
-        font-weight: 800;
-        color: rgba(255, 255, 255, 0.75);
+            content: " ·";
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.75);
+          }
+        }
+        time{
+          position: relative;
+          font-size: 0.8em;
+          bottom: auto;
+          margin: 0;
+          display: inline-block;
+        }
       }
     }
-    time{
-      position: relative;
-      font-size: 0.8em;
-      bottom: auto;
-      margin: 0;
-      display: inline-block;
-     }
-    }
-  }
 
 
     &.story-simple {
