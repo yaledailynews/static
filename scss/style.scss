@@ -1558,10 +1558,10 @@ section.front-page {
   section.opinion, section.university, section.city, 
   section.sports, section.culture, 
   section.scitech, section.ytv {
-  padding-bottom: 25px;
-  padding-top: 25px;
-  border-bottom: 1px solid #ddd;
-}   
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid #ddd;
+  }   
 
   section.kahuna{
     &.category{
@@ -1570,9 +1570,9 @@ section.front-page {
 
   }
 
-section.category {
-  margin: 50px auto 0 auto;
-  width: 90%;
+  section.category {
+    margin: 50px auto 0 auto;
+    width: 90%;
 
     h2 {
       font-size: 2em;
@@ -1699,8 +1699,6 @@ section.category {
   
 
   .card {
-
-
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
 
     margin-bottom: 20px;
@@ -1711,9 +1709,6 @@ section.category {
       opacity: 0.7;
     }
 
-
-
-
     &.story {
       border-width: 2px !important;
 
@@ -1721,8 +1716,6 @@ section.category {
         margin-bottom: 7px;
       }
     }
-
-
 
 
     &.story > time {
