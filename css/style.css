@@ -1649,8 +1649,10 @@ body.article-page .photo-credit {
   #mobile-xc {
     display: none !important; } }
 @media (min-width: 480px) {
-  section.front-page .card.story-simple time, section.front-page .card.story-preview time, section.front-page .card.story-photo time, section.front-page .card.story-opinion time {
-    bottom: 30px !important; } }
+  section.front-page .card.story time {
+    bottom: 30px !important; }
+  section.front-page .card.story-major time, section.front-page .card.story-kahuna time {
+    bottom: 15px !important; } }
 @media (max-width: 480px) {
   a {
     text-decoration: none; }
