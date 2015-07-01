@@ -1,25 +1,34 @@
-Card Types
-# story				1X1
+Card Logic
+
+Cards per section = 8
+
+*non opionons
+# story			1X1
+- default new post 
 
 # story story-photo		2X1 
+- if has featured image exists (will have 3 images for each story - 1x1, 2x1, hero);
 
 # story story-preview	 	2X1 
-- any story that does not have a photo and is not the featured story in the section
+- if has preview text (excerpt in wordpress lingo)
 
 # story story-photo story-preview 2X1			
-- any story that has a photo and is not the featured story in the section 
+- if there is both featured image and preview text 
 
-story story-opinion		1X1 WITH PHOTO
+# story story-opinion		1X1 WITH PHOTO
+- if in category opinion
+- add author photo if exists
 
 # story story-major		2X2
-- one per section
-- selected by section editors each night
-
-story story-simple  1x1
+- custom field in backend will be selected each night
  
-story-kahuna
-category-jump
-author cards
-ads
+# story-kahuna
+- custom field in backend (drop down: regular, feature, kahuna)
+
+# breaking
+- separate checkbox 
+
+
+
 
 

@@ -1529,6 +1529,9 @@ body.article-page .photo-credit {
       width: 710.54px; }
       .card.story-kahuna h1 {
         font-size: 40px; }
+      .card.story-kahuna img.card-image {
+        width: auto;
+        height: 100%; }
     .card.story-softcore .card-image {
       height: auto;
       width: 300%;
@@ -1646,8 +1649,10 @@ body.article-page .photo-credit {
   #mobile-xc {
     display: none !important; } }
 @media (min-width: 480px) {
-  section.front-page .card.story-simple time, section.front-page .card.story-preview time, section.front-page .card.story-photo time, section.front-page .card.story-opinion time {
-    bottom: 30px !important; } }
+  section.front-page .card.story time {
+    bottom: 30px !important; }
+  section.front-page .card.story-major time, section.front-page .card.story-kahuna time {
+    bottom: 15px !important; } }
 @media (max-width: 480px) {
   a {
     text-decoration: none; }
@@ -1684,10 +1689,8 @@ body.article-page .photo-credit {
   section.magazine, section.weekend {
     width: 100%; }
 
-  section.magazine {
-    margin-bottom: -60px; }
-    section.magazine .subtitle {
-      display: none; }
+  section.magazine .subtitle {
+    display: none; }
 
   section.opinion {
     padding-bottom: 40px; }
@@ -1731,11 +1734,18 @@ body.article-page .photo-credit {
       margin-top: 10px;
       font-size: 0.7em; }
 
-  section#weekend {
+  section#weekend, section#magazine {
     padding-bottom: 25px; }
 
   section#opinion .link-wrap {
     display: inline; }
+
+  .section-wrap {
+    padding: 5px 0 30px 0; }
+
+  footer#site-footer a.copy {
+    display: block;
+    padding: 0; }
 
   .card {
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
@@ -1745,9 +1755,15 @@ body.article-page .photo-credit {
     .card .byline {
       opacity: 0.7; }
     .card.story {
-      border-width: 2px !important; }
+      border-width: 2px !important;
+      height: auto;
+      width: 100%;
+      background-color: white;
+      padding-bottom: 17.5px; }
       .card.story h1 {
         margin-bottom: 7px; }
+      .card.story .category {
+        display: none; }
     .card.story > time {
       position: relative;
       bottom: 0px;
@@ -1782,19 +1798,6 @@ body.article-page .photo-credit {
         bottom: auto;
         margin: 0;
         display: inline-block; }
-    .card.story-simple {
-      height: auto;
-      width: 100%;
-      background-color: white;
-      padding-bottom: 17.5px; }
-      .card.story-simple::after {
-        background: #f6f4f4; }
-      .card.story-simple img {
-        display: none; }
-      .card.story-simple .category {
-        display: none; }
-      .card.story-simple h1 {
-        color: #433f3f; }
     .card.story-softcore {
       width: 100%;
       height: 203px;
@@ -1806,22 +1809,23 @@ body.article-page .photo-credit {
         width: 100%;
         height: auto;
         left: 0; }
-    .card.story-major, .card.story-kahuna, .card.story-opinion {
+    .card.story-major, .card.story-kahuna {
       width: 100%;
       height: 0;
       padding-bottom: 100%;
       background-color: white; }
-      .card.story-major p.card-preview, .card.story-kahuna p.card-preview, .card.story-opinion p.card-preview {
+      .card.story-major p.card-preview, .card.story-kahuna p.card-preview {
         display: none; }
-      .card.story-major h1, .card.story-kahuna h1, .card.story-opinion h1 {
+      .card.story-major h1, .card.story-kahuna h1 {
         font-size: 24px;
         font-weight: 600; }
-      .card.story-major .card-image, .card.story-kahuna .card-image, .card.story-opinion .card-image {
+      .card.story-major .card-image, .card.story-kahuna .card-image {
         display: block;
         width: 100%;
         height: 100%; }
     .card.story-opinion {
       width: 48%;
+      height: 0;
       padding-bottom: 48%;
       display: inline-block;
       margin-right: 4px;
@@ -1829,7 +1833,11 @@ body.article-page .photo-credit {
       .card.story-opinion h1 {
         font-size: 19px; }
       .card.story-opinion .card-image {
-        display: inline-block; }
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+      .card.story-opinion .category {
+        display: block; }
     .card.story-kahuna {
       width: 100%;
       margin-bottom: 25px;

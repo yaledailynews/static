@@ -359,7 +359,6 @@ footer#site-footer{
     text-transform: uppercase;
     margin: 0px 10px 0px 10px;
   }
-  
 }
 
 .article-footer {
@@ -1312,10 +1311,14 @@ header#site-header {
       width: 2*$card-width + $gutter-size;
     }
     &.story-kahuna{
-
+    
       width: 3*$card-width + 2*$gutter-size;
       h1 {
         font-size: 40px;
+      }
+      img.card-image{
+        width: auto;
+        height:100%;
       }
     }
     &.story-softcore{
@@ -1523,12 +1526,18 @@ section.front-page {
     section.front-page {
 
       .card {
-        &.story-simple, &.story-preview, &.story-photo, &.story-opinion {
+        &.story {
           time {
             bottom: 30px !important;
           }
         }
-      }  
+
+        &.story-major{
+          time {
+            bottom: 15px !important;
+          }
+        }
+      } 
     }
   }
 
@@ -1549,10 +1558,10 @@ section.front-page {
   section.opinion, section.university, section.city, 
   section.sports, section.culture, 
   section.scitech, section.ytv {
-  padding-bottom: 25px;
-  padding-top: 25px;
-  border-bottom: 1px solid #ddd;
-}   
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid #ddd;
+  }   
 
   section.kahuna{
     &.category{
@@ -1561,9 +1570,9 @@ section.front-page {
 
   }
 
-section.category {
-  margin: 50px auto 0 auto;
-  width: 90%;
+  section.category {
+    margin: 50px auto 0 auto;
+    width: 90%;
 
     h2 {
       font-size: 2em;
@@ -1584,12 +1593,9 @@ section.category {
   }
 
   section.magazine {
-    margin-bottom: -60px;
-
     .subtitle {
       display: none;
     }
-
   }
 
   section.opinion {
@@ -1670,7 +1676,7 @@ section.category {
     }
   }
 
-  section#weekend {
+  section#weekend, section#magazine {
     padding-bottom: 25px;
   }
 
@@ -1680,11 +1686,19 @@ section.category {
     }
   }
 
+  .section-wrap{
+    padding: 5px 0 30px 0;
+  }
+
+  footer#site-footer{
+    a.copy{
+      display: block;
+      padding: 0;
+    }
+  }
   
 
   .card {
-
-
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
 
     margin-bottom: 20px;
@@ -1695,18 +1709,19 @@ section.category {
       opacity: 0.7;
     }
 
-
-
-
     &.story {
       border-width: 2px !important;
-
+      height: auto;
+      width: 100%;
+      background-color: white;
+      padding-bottom: 17.5px;
       h1 {
         margin-bottom: 7px;
       }
+      .category {
+        display: none;
+      }
     }
-
-
 
 
     &.story > time {
@@ -1722,60 +1737,41 @@ section.category {
       border-bottom: 2px solid $weekend-color;
     }
 
-     &.story-breaking{
-  .breaking{
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 35px;
-    padding: 10px;
-    position: relative;
-    background-color: red;
-    text-align: center;
-    h3{
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 0.8em;
-      color: white;
-      display: inline-block;
+    &.story-breaking{
+      .breaking{
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        position: relative;
+        background-color: red;
+        text-align: center;
+        h3{
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 0.8em;
+          color: white;
+          display: inline-block;
 
 
-      &:after {
+          &:after {
 
-        content: " ·";
-        font-weight: 800;
-        color: rgba(255, 255, 255, 0.75);
+            content: " ·";
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.75);
+          }
+        }
+        time{
+          position: relative;
+          font-size: 0.8em;
+          bottom: auto;
+          margin: 0;
+          display: inline-block;
+        }
       }
     }
-    time{
-      position: relative;
-      font-size: 0.8em;
-      bottom: auto;
-      margin: 0;
-      display: inline-block;
-     }
-    }
-  }
 
-
-    &.story-simple {
-      height: auto;
-      width: 100%;
-      background-color: white;
-      padding-bottom: 17.5px;
-      &::after {
-        background: $wild-sand;
-      }
-      img {
-        display: none;
-      }
-      .category{
-        display: none;
-      }
-      h1{
-        color:$dark-gray;
-      }
-    }
 
     &.story-softcore {
         width: 100%;
@@ -1793,7 +1789,7 @@ section.category {
         }
       }
 
-    &.story-major, &.story-opinion {
+    &.story-major, {
       width: 100%;
       height: 0;
       padding-bottom: 100%;
@@ -1813,11 +1809,20 @@ section.category {
         height: 100%;
       }
 
+      //fix these in wordpress theme files
+      .byline {
+        //bottom: 30px;
+      }
+      time {
+        //bottom: 15px;
+      }
+
 
     }
 
     &.story-opinion {
       width: 48%;
+      height: 0;
       padding-bottom: 48%;
       display: inline-block;
       margin-right: 4px;
@@ -1829,10 +1834,12 @@ section.category {
 
       .card-image {
         display: inline-block;
+        width: 100%;
+        height: 100%;
       }
-
-
-  
+      .category{
+        display: block;
+      }
     }
 
 
